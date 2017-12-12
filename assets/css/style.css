@@ -341,4 +341,10 @@ header.open-menu{
           background: #fff;
           padding: 10px;
         }
-    }
+        .header-menu ul li{
+        margin:30px 0;
+        }
+        #hamburger{
+        width: 35px;
+        }
+      }
