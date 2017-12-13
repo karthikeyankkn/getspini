@@ -66,6 +66,16 @@ canvas{
 .banner-header li a i{
   font-size: 30px;
   vertical-align: middle;
+  -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+}
+@-webkit-keyframes shake {
+  from {
+      -webkit-transform: rotate(10deg);
+  }
+  to {
+     -webkit-transform-origin:center center;
+     -webkit-transform: rotate(-10deg);
+  }
 }
 .logo{
 
@@ -212,6 +222,14 @@ header.open-menu{
   display: block;
   margin: 30px auto 0;
 }*/
+.modal-title{
+  font-size: 24px;
+  color: red;
+  text-align: center;
+}
+.modal-header{
+  border: 0;
+}
 .banner-content a{
   padding: 15px 30px;
   background: #f55344;
@@ -446,12 +464,19 @@ header.open-menu{
           
         }
         .banner-content{
-          top: 10%;
+          /*top: 10%;*/
         }
         canvas{
           display: none;
         }
         .banner-header {
             padding: 28px 80px 0 25px;
+        }
+        .spini-services ul li a img {
+            width: 60px;
+        }
+        .logo a img {
+          width: 100px;
+          vertical-align: -webkit-baseline-middle;
         }
       }
