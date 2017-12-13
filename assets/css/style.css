@@ -12,6 +12,7 @@ a:hover{
 canvas{
   display:block;
   vertical-align:bottom;
+  max-height: 600px;
 }
 /* ---- stats.js ---- */
 
@@ -479,7 +480,7 @@ header.open-menu{
             width: 60px;
         }
         .logo a img {
-          width: 100px;
+          /*width: 100px;*/
           vertical-align: -webkit-baseline-middle;
         }
         .christmas-tree{
