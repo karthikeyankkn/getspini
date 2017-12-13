@@ -1,5 +1,5 @@
 body{
-	background: #f1f1f1; 
+	background: #f6f6f6; 
 }
 ul,li{
 	list-style: none;
@@ -86,7 +86,7 @@ canvas{
 /*header style starts here*/
 header{
   position: fixed;
-  background: #333;
+  background: #1d2531;
   color: #fff;
   width: 100%;
   height: 100%;
@@ -481,5 +481,8 @@ header.open-menu{
         .logo a img {
           width: 100px;
           vertical-align: -webkit-baseline-middle;
+        }
+        .christmas-tree{
+          margin-left: 1% !important;
         }
       }
