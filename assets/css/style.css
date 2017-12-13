@@ -464,7 +464,10 @@ header.open-menu{
           
         }
         .banner-content{
-          /*top: 10%;*/
+          top: 15%;
+        }
+        .banner-content a{
+          margin-top: 20px;
         }
         canvas{
           display: none;

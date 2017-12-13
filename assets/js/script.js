@@ -9,11 +9,7 @@ $(document).ready(function(){
 	// window height
 	function windowHight(){
 		var window_height = $(window).height();
-		var window_width = $(window).width();
 		$(".banner-container, canvas").css("height", window_height);
-		if (window_width <= 500) {
-			$(".banner-container").removeAttr("id");
-		}
 	}
 
 	// slider1 code
@@ -40,8 +36,5 @@ $(document).ready(function(){
 	    $("header").toggleClass("open-menu");
 	    $("body").toggleClass("stop-scrolling");
 	  }
-
-	  // detect mobile
-
 	 
 });
