@@ -9,7 +9,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
    <!-- css files ends -->
 </head>
 <body>
@@ -40,24 +39,52 @@
 </header>
 <!-- haader ends -->
 <!-- banner container starts -->
-<section class="banner-container">
-  <!-- <video autoplay style="height: inherit; width: 100%;">
-    <source src="https://cdn.getspini.com/bg/red-xmas-loop.mp4" type="video/mp4">
-    <source src="http://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-   </video> -->
-   <div class="hamburger-menu">
-     <div id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+
+<section class="banner-container" id="particles-js">
+  <ul class="banner-header">
+    <!-- logo -->
+   <li class="logo">
+      <a href="http://getspini.com/" >
+        <img src="https://cdn.getspini.com/spini_white.png" alt="Getspini-logo" />
+      </a>
+    </li>
+    <li class="pull-right">
+      <a href="tel: +91 8682 800800"><i class="fa fa-phone-square" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> +91 8682 800800</span></a>
+    </li>
+    <!-- hamburger -->
+    <li class="hamburger-menu">
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+     </li>
+  </ul>
+   
+    <!-- Trigger the modal with a button -->
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Get Started</button> -->
+    <div class="banner-content">
+      <h1>SPINI CONNECTS BUYERS WITH SELLERS</h1>
+      <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Get Started</button> -->
+      <a data-toggle="modal" data-target="#home-form">Post Your Requirements</a>
     </div>
-   </div>
-   <div class="navbar-brand">
-                <a href="http://getspini.com/" >
-                    <img src="https://cdn.getspini.com/v2/images/logo.png" alt="Getspini">
-                </a>
-            </div>
+     <!-- <video autoplay style="width: 100%;">
+      <source src="home_bg.mp4" type="video/mp4">
+     </video> -->
+    
+    <!-- Modal -->
+    <div id="home-form" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe src="http://getspini.com/post.html" style="border:none;min-height: 400px;width: 100%;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="container spini-services">
     <ul>
       <li class="col-lg-3 col-xs-6">
@@ -306,9 +333,40 @@
   <p>&copy 2017 All Rights Reserved</p>
 </footer>
 <!-- script files starts -->
-<script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/script.js"></script>
+<script src="assets/js/lib/jquery.min.js"></script>
+<script src="assets/js/lib/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+<!-- scripts -->
+<script src="assets/js/lib/particles.min.js"></script>
+<script src="assets/js/lib/app.js"></script>
+
+<!-- stats.js -->
+<script src="assets/js/lib/stats.js"></script>
 <!-- script files ends -->
+<script>
+  var ApiEndPoint = 'https://api.getspini.com:8443';
+var data = {
+    "prospectiveBuyersName" : "testname",
+    "phoneNumOfProspectiveBuyer" : "9999999999",
+    "cityName" : "chennai",
+    "categoryName" : "categoryName"
+};
+// debugger
+  $.ajax({
+      url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
+      type: "POST",
+      headers: {
+          'Content-Type': 'application/json',
+          'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
+      },
+      data: JSON.stringify(data),
+      cache: false,
+      success: function(response) {
+        debugger
+        alert(response);
+      }
+  });
+</script>
 </body>
 </html>

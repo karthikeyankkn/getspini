@@ -9,6 +9,70 @@ ul,li{
 a:hover{
 	text-decoration: none;
 }
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  display: none;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+.banner-header{
+  padding: 25px 100px;
+}
+.banner-header li{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.banner-header li a{
+  color: #fff;
+}
+.banner-header li a i{
+  font-size: 30px;
+  vertical-align: middle;
+}
+.logo{
+
+}
+.logo a img{
+  width: 150px;
+}
 /*header style starts here*/
 header{
   position: fixed;
@@ -129,13 +193,43 @@ header.open-menu{
 }
 /*hamburger menu style ends*/
 
+/*banner content style starts*/
+.banner-content{
+  text-align: center;
+  position: absolute;
+  /*z-index: 1;*/
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+.banner-content h1{
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+/*.banner-content button{
+  display: block;
+  margin: 30px auto 0;
+}*/
+.banner-content a{
+  padding: 15px 30px;
+  background: #f55344;
+  color: #fff;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 50px;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+/*banner content style ends*/
 .banner-container{
-	background: url(https://www.answerconnect.com/images/photos/hero-home.jpg) no-repeat;
-	/*height: 500px;*/
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
+	background: #2f363d url(https://assets-cdn.github.com/images/modules/marketplace/bg-hero.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
 .spini-services{
 	background: #fff;
@@ -272,7 +366,7 @@ header.open-menu{
     .left_go1, .left_go2{
       padding: 10px 2px;
 	    position: absolute;
-	    top: 90%;
+	    top: 88%;
 	    left: 40%;
 	    cursor: pointer;
 	    outline: none;
@@ -286,7 +380,7 @@ header.open-menu{
     .right_go1, .right_go2{
       padding: 10px 2px;
 	    position: absolute;
-	    top: 90%;
+	    top: 88%;
 	    right: 40%;
 	    cursor: pointer;
 	    outline: none;
@@ -339,12 +433,25 @@ header.open-menu{
         }
         .hamburger-menu{
           background: #fff;
-          padding: 10px;
+          padding: 5px;
+          padding-bottom: 0;
         }
         .header-menu ul li{
         margin:30px 0;
         }
         #hamburger{
         width: 35px;
+        }
+        .banner-container{
+          
+        }
+        .banner-content{
+          top: 10%;
+        }
+        canvas{
+          display: none;
+        }
+        .banner-header {
+            padding: 28px 80px 0 25px;
         }
       }
