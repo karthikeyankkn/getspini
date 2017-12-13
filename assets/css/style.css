@@ -446,12 +446,19 @@ header.open-menu{
           
         }
         .banner-content{
-          top: 10%;
+          /*top: 10%;*/
         }
         canvas{
           display: none;
         }
         .banner-header {
             padding: 28px 80px 0 25px;
+        }
+        .spini-services ul li a img {
+            width: 60px;
+        }
+        .logo a img {
+          width: 100px;
+          vertical-align: -webkit-baseline-middle;
         }
       }

@@ -10,7 +10,7 @@ $(document).ready(function(){
 	function windowHight(){
 		var window_height = $(window).height();
 		var window_width = $(window).width();
-		$(".banner-container").css("height", window_height);
+		$(".banner-container, canvas").css("height", window_height);
 		if (window_width <= 500) {
 			$(".banner-container").removeAttr("id");
 		}
