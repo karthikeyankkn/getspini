@@ -486,4 +486,7 @@ header.open-menu{
         .christmas-tree{
           margin-left: 1% !important;
         }
+        .spini-services ul li a h4{
+          font-size: 16px;
+        }
       }
