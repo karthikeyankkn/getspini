@@ -244,7 +244,8 @@ header.open-menu{
 }
 /*banner content style ends*/
 .banner-container{
-	background: #2f363d url(https://assets-cdn.github.com/images/modules/marketplace/bg-hero.svg) no-repeat;
+	/*background: #2f363d url(https://assets-cdn.github.com/images/modules/marketplace/bg-hero.svg) no-repeat;*/
+  background: linear-gradient(to left,#009090,#000201);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
