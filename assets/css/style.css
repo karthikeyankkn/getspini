@@ -443,30 +443,6 @@ header.open-menu{
     	color: #fff;
     	text-align: center;
     }
-    .button-ebook {
-        background-color: #f55344;
-        border: none;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        float: right;
-        border-radius: 50%;
-        margin-right: 15px;
-    }
-    .btn-download{
-      display: none;
-      float: right;
-      background-color: #f55344 !important;
-      margin-top: 11px;
-      margin-right: 5px;
-      padding: 10px;
-      border-radius: 30px;
-    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li {
