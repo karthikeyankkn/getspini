@@ -1,16 +1,21 @@
 $(document).ready(function(){
 	// variable declarations
 	// preload funcitons
-	windowHight();
+	// windowHight();
 
-	$( window ).resize(function() {
-		windowHight();
-	});
+	// $( window ).resize(function() {
+	// 	windowHight();
+	// });
 	// window height
-	function windowHight(){
-		var window_height = $(window).height();
-		$(".banner-container").css("height", window_height);
-	}
+	// function windowHight(){
+	// 	var window_height = $(window).height();
+	// 	$(".banner-container").css("height", window_height;
+	// }
+
+	// load header and footer
+	$("header").load("header.html"); 
+  	$("footer").load("footer.html");
+
 
 	// slider1 code
 	  $("#left_go").click(function(){
@@ -39,16 +44,5 @@ $(document).ready(function(){
 	    $('#slider2').animate({scrollLeft: pos}, 300);
 	    
 	  });
-
-	  // hamburger menu code
-	  $('#hamburger, .header-menu ul li a').click(function(){
-	    toggleMenu();
-	  });
-
-	  function toggleMenu(){
-	  	$('#hamburger').toggleClass('open');
-	    $("header").toggleClass("open-menu");
-	    $("body").toggleClass("stop-scrolling");
-	  }
 	 
 });
