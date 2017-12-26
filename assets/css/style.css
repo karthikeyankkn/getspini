@@ -182,6 +182,7 @@ header{
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  margin-top: 51px;
 }
 /*slider-banner styles starts*/
 .slider-banner{
