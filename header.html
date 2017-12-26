@@ -1,0 +1,59 @@
+<ul class="banner-header">
+  <!-- logo -->
+ <li class="logo">
+    <a href="http://getspini.com/" >
+      <img src="https://s3-ap-southeast-1.amazonaws.com/getspiniprod/xmas.png" alt="Getspini-logo" />
+    </a>
+  </li>
+  <li class="pull-right">
+    <a href="tel: +91 8682 800800"><i class="fa fa-phone-square" aria-hidden="true"></i><span class="hidden-xs hidden-sm"> +91 8682 800800</span></a>
+  </li>
+  <!-- hamburger -->
+  <li class="hamburger-menu">
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+   </li>
+</ul>
+<div class="toggle-menu">
+  <div class="header-menu">
+    <ul>
+      <li>
+        <a href="http://getspini.com/about-us.html">About Us</a>
+      </li>
+      <li>
+        <a href="http://getspini.com/partner-with-us.html">Partner With Us</a>
+      </li>
+      <li>
+        <a href="http://blog.getspini.com/">Blog</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.referyogi.com/#!/"><img src="https://cdn.getspini.com/bg/reflogo.png"> <img src="https://cdn.getspini.com/bg/blink.gif" /></a>
+      </li>
+      <li>
+        <a href="https://leads.getspini.com/">Get Leads</a>
+      </li>
+      <!-- <li>
+        <a href="#">Refer a Friend</a>
+      </li> -->
+    </ul>
+  </div>
+</div>
+
+<!-- script codes for header -->
+<script>
+  // hamburger menu code
+    $('#hamburger, .header-menu ul li a').click(function(){
+      debugger
+      toggleMenu();
+    });
+
+    function toggleMenu(){
+      $('#hamburger').toggleClass('open');
+      $(".toggle-menu").toggleClass("open-menu");
+      $("body").toggleClass("stop-scrolling");
+    }
+</script>
