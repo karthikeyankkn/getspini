@@ -226,6 +226,7 @@ header{
   font-weight: 400;
   font-size: 34px;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 .spini-sep-services ul li{
   text-align: center;
@@ -274,6 +275,9 @@ header{
 }
 .spini-services ul li a h4{
 	color: #333;
+}
+.spini-services-card{
+  margin-top: 30px;
 }
 .spini-services-card h2{
 	text-align: center;
