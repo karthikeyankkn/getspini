@@ -13,8 +13,13 @@ $(document).ready(function(){
 	// }
 
 	// load header and footer
-	$("header").load("header.html"); 
-  	$("footer").load("footer.html");
+	if (index_page == true) {
+		$("header").load("header.html"); 
+  		$("footer").load("footer.html");
+	}else{
+		$("header").load("../header.html"); 
+  		$("footer").load("../footer.html");
+	}
 
 
 	// slider1 code

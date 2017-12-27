@@ -65,6 +65,7 @@ header{
   z-index: 100;
   transition: 0.5s ease;
   left: -100%;
+  top: 0;
 }
 .toggle-menu.open-menu{
   left: 0;
@@ -207,13 +208,51 @@ header{
   font-size: 40px;
 }
 /*slider-banner styles ends*/
-.spini-services, .spini-customers{
+.spini-services, .spini-customers, .spini-sep-services{
 	background: #fff;
   padding: 0;
   margin: 10px auto 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
   border-top: 1px solid #eaeaea;
 }
+    /*spini-sep-services style starts*/
+.spini-sep-services{
+  margin-top: 51px;
+  padding: 30px 0px;
+}
+.spini-sep-services h2{
+  text-align: center;
+  color: #f55344;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.spini-sep-services ul li{
+  text-align: center;
+}
+.spini-sep-services ul li a img{
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+  transition: 0.2s ease-in-out;
+}
+.spini-sep-services ul li a img:hover{
+  -ms-transform: rotate(360deg); /* IE 9 */
+  -webkit-transform: rotate(360deg); /* Safari */
+  transform: rotate(360deg);
+  transition: 0.2s ease-in-out;
+}
+.spini-sep-services ul li a label{
+  color: #878787;
+  text-transform: capitalize;
+  display: block;
+  cursor: pointer;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+    /*spini-sep-services style starts*/
 .spini-services ul{
 	text-align: center;
 }
@@ -284,32 +323,26 @@ header{
   padding: 10px;
 }
 /*slider code*/
-.slider-container1, .slider-container2{
-      position: relative;
-      /*padding: 0;*/
-    }
     .slider-parent{
       list-style: none;
       overflow-x: scroll;
-      display: flex;
+      /*display: flex;*/
       padding: 0;
       transition: 1s ease;
     }
     .slider-parent li{
       list-style: none;
-      min-width: 274px;
-      display: -webkit-inline-box;
-      margin:0 15px 0 0;
       position: relative;
       transition: 1s ease;
-    	background: #fff;
-    	border-radius: 3px;
+      border-radius: 3px;
+      margin-bottom: 20px;
     }
     .list-card{
       /*border: 1px solid #888;*/
       cursor: pointer;
       transition: 0.3s ease-in-out;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      background-color: #fff;
     }
     .list-card:hover{
     	-ms-transform: translate(0px, -3px); /* IE 9 */
