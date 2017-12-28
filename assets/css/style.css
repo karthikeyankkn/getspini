@@ -1,5 +1,6 @@
 body{
 	background: #f1f3f6; 
+  position: relative;
 }
 ul,li{
 	list-style: none;
@@ -451,6 +452,91 @@ header{
     	color: #fff;
     	text-align: center;
     }
+
+    /* spini-popup style starts here*/
+    .spini-popup-container{
+      background: #f9f8f7;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #555;
+      z-index: 200;
+      overflow: scroll;
+    }
+    .toggle-page-container ul li{
+      display: none;
+    }
+    .toggle-page-container ul li:first-child{
+      display: block;
+    }
+    /**/
+    .toggle-page-container ul li h2{
+      text-align: center;
+    }
+    .toggle-page-container ul li ol{
+      padding: 0;
+    }
+    .spini-popup-ans{
+      max-width: 800px;
+      margin: 25px auto 0;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+      border-radius: 8px;
+    }
+    .spini-popup-ans span{
+      padding: 30px 15px;
+      cursor: pointer;
+      display: block;
+    }
+    .active-answer{
+      background: #00cdac;
+      /*background: linear-gradient(to right, #f43b47 , #453a94);*/
+      color: #fff;
+    }
+    .spini-popup-ans span:hover{
+      background: #00cdac;
+      /*background: linear-gradient(to right, #f43b47 , #453a94);*/
+      color: #fff;
+    }
+    .spini-popup-ans span:first-child{
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .spini-popup-ans span:last-child{
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .spini-popup-ans span input{
+
+    }
+    .spini-popup-ans span label{
+      padding-left: 20px;
+      cursor: pointer;
+    }
+    .toggle-page-container ul li button{
+      text-align: center;
+      margin-top: 20px;
+      background: #fff;
+      color: #fff;
+      border-radius: 25px;
+      background: #fab131;
+      border: 2px solid #fab131;
+      padding: 5px 20px;
+    }
+    .spini-poup-nav{
+      text-align: center;
+    }
+    .toggle-page-container ul li button:disabled {
+        opacity: 0.2;
+        cursor:no-drop
+    }
+    .toggle-page-container ul li button:hover{
+      background: #f9a818;
+    }
+    /* spini-popup style ends here*/
+
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li {
