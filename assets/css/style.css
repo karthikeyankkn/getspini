@@ -235,6 +235,9 @@ header{
 .spini-sep-services ul li{
   text-align: center;
 }
+.spini-sep-services ul li a{
+  display: inline-block;
+}
 .spini-sep-services ul li a img{
   width: 200px;
   border-radius: 50%;
