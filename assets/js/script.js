@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6;
-  var short_traverse;
+  var short_traverse, data;
 	// preload funcitons
 	windowHight();
 
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
     // contact form script starts
     function contact_form(){
-      debugger
+      // debugger
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
@@ -117,6 +117,7 @@ $(document).ready(function(){
       qa2 = $("input[name='what_kind']:checked").val();
       qa3 = $("input[name='how_old']:checked").val();
       qa4 = $("input[name='what_carpet']:checked").val();
+      debugger
     }
     // questions for interior ends
 	
