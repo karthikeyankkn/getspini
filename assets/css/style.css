@@ -1,5 +1,9 @@
 body{
 	background: #f1f3f6; 
+  position: relative;
+}
+*{
+  outline: none;
 }
 ul,li{
 	list-style: none;
@@ -183,7 +187,7 @@ header{
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  margin-top: 51px;
+  padding-top: 51px;
 }
 /*slider-banner styles starts*/
 .slider-banner{
@@ -217,8 +221,8 @@ header{
 }
     /*spini-sep-services style starts*/
 .spini-sep-services{
-  margin-top: 51px;
-  padding: 30px 0px;
+  margin-top: 0px;
+  padding: 51px 0px;
 }
 .spini-sep-services h2{
   text-align: center;
@@ -230,6 +234,9 @@ header{
 }
 .spini-sep-services ul li{
   text-align: center;
+}
+.spini-sep-services ul li a{
+  display: inline-block;
 }
 .spini-sep-services ul li a img{
   width: 200px;
@@ -451,6 +458,135 @@ header{
     	color: #fff;
     	text-align: center;
     }
+
+    /* spini-popup style starts here*/
+    .toggle-page-container{
+      background: #f9f8f7;
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #555;
+      z-index: 200;
+      overflow: scroll;
+      display: none;
+    }
+    .toggle-page-container ul{
+      padding: 0 10px;
+    }
+    .toggle-page-container ul li{
+      display: none;
+      text-align: left;
+    }
+    .toggle-page-container ul li:first-child{
+      display: block;
+    }
+    /**/
+    .toggle-page-container ul li h2{
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 2px;
+      color: #555;
+    }
+    .toggle-page-container ul li ol{
+      padding: 0;
+    }
+    .spini-popup-ans{
+      max-width: 800px;
+      margin: 25px auto 0;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+      border-radius: 8px;
+    }
+    .spini-contact-form{
+      max-width: 800px;
+      margin: 25px auto;
+      background: #fff;
+      box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .spini-contact-form p input{
+      border: 1px solid #ddd;
+      color: #000;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 15px;
+      margin-top: 0;
+      padding: 13px 15px;
+      width: 100%;
+    } 
+    .spini-contact-form p input:focus{
+      border-color: #7cb7b6;
+    }
+    .loding_image img{
+      margin:auto;
+    }
+    .alert{
+      max-width: 500px;
+      margin: 10px auto;
+      display: none;
+    }
+    .error-mandatory{
+      display: none;
+    }
+    .spini-popup-ans span{
+      padding: 15px;
+      cursor: pointer;
+      display: block;
+    }
+    .active-answer{
+      background: #7cb7b6;
+      /*background: linear-gradient(to right, #f43b47 , #453a94);*/
+      color: #fff;
+    }
+    .spini-popup-ans span:hover{
+      background: #7cb7b6;
+      /*background: linear-gradient(to right, #f43b47 , #453a94);*/
+      color: #fff;
+    }
+    .spini-popup-ans span:first-child{
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .spini-popup-ans span:last-child{
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .spini-popup-ans span input{
+
+    }
+    .spini-popup-ans span label{
+      padding-left: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    .toggle-page-container ul li button{
+      text-align: center;
+      margin-top: 20px;
+      background: #fff;
+      color: #fff;
+      border-radius: 25px;
+      background: #fab131;
+      border: 2px solid #fab131;
+      padding: 5px 20px;
+    }
+    .spini-poup-nav{
+      text-align: center;
+      margin: 10px 0px;
+    }
+    .toggle-page-container ul li button:disabled {
+        opacity: 0.2;
+        cursor:no-drop
+    }
+    .toggle-page-container ul li button:hover{
+      background: #f9a818;
+    }
+    /* spini-popup style ends here*/
+
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li {

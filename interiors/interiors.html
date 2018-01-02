@@ -38,10 +38,131 @@
     <h2>Are you looking for residential plots?</h2>
     <ul>
       <li class="col-md-12">
-        <a href="http://getspini.com/spini-realestate.html">
+        <a href="#">
           <img src="http://www.wsinteriors.in/img/gallery/11.jpg" alt="interior-image" />
           <label>Interiors</label>
         </a>
+        <!-- popup for interiors starts -->
+        <div class="toggle-page-container">
+          <ul>
+            <li>
+              <h2>1) What service do you need?</h2>
+              <div class="spini-popup-ans">
+                <span>
+                  <input type="radio" name="what_services" value="Interior Design">
+                  <label>Interior Design</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_services" value="Modular Kitchen">
+                  <label>Modular Kitchen</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_services" value="Tiles Relaying">
+                  <label>Tiles Relaying</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_services" value="Building Construction">
+                  <label>Building Construction</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_services" value="others">
+                  <label>others</label>
+                </span>
+              </div>
+              <div class="spini-poup-nav">
+                <button class="next">Next</button>
+              </div>
+            </li>
+            <li>
+              <h2>2) What Kind of Property is this?</h2>
+              <div class="spini-popup-ans">
+                <span>
+                  <input type="radio" name="what_kind" value="Independent House">
+                  <label>Independent House</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_kind" value="Villas / Bungalow">
+                  <label>Villas / Bungalow</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_kind" value="Flat / Apartments">
+                  <label>Flat / Apartments</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_kind" value="Others">
+                  <label>Others</label>
+                </span>
+              </div>
+              <div class="spini-poup-nav">
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+              </div>
+            </li>
+            <li>
+              <h2>3) How Old is the property?</h2>
+              <div class="spini-popup-ans">
+                <span>
+                  <input type="radio" name="how_old" value="NEW">
+                  <label>NEW</label>
+                </span>
+                <span>
+                  <input type="radio" name="how_old" value="1-5 years old">
+                  <label>1-5 years old</label>
+                </span>
+                <span>
+                  <input type="radio" name="how_old" value="older than 5 years">
+                  <label>older than 5 years</label>
+                </span>
+              </div>
+              <div class="spini-poup-nav">
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+              </div>
+            </li>
+            <li>
+              <h2>4) What is the carpet area of your residential space?</h2>
+              <div class="spini-popup-ans">
+                <span>
+                  <input type="radio" name="what_carpet" value="Less than 500 Sq Ft">
+                  <label>Less than 500 Sq Ft</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_carpet" value="501 - 1000 Sq Ft">
+                  <label>501 - 1000 Sq Ft</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_carpet" value="1001 - 3000 Sq Ft">
+                  <label>1001 - 3000 Sq Ft</label>
+                </span>
+                <span>
+                  <input type="radio" name="what_carpet" value="">
+                  <label>Above 3000 Sq Ft</label>
+                </span>
+              </div>
+              <div class="spini-poup-nav">
+                <button class="back">Back</button>
+                <button class="next">Next</button>
+              </div>
+            </li>
+            <li>
+              <h2>You are almost done</h2>
+              <div class="spini-contact-form">
+                <p>
+                  <input type="text" name="name" placeholder="Enter Your Name">
+                  <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+                  <input type="email" name="email" placeholder="Enter Your Email">
+                </p>
+              </div>
+              <div class="spini-poup-nav">
+                <button class="back">Back</button>
+                <button class="submit">Submit</button>
+              </div>  
+            </li>
+          </ul>
+          <!-- load alert page -->
+          <div class="alerts_page"></div>
+        </div>
+        <!-- popup for interiors ends -->
       </li>
     </ul>
   </div>
@@ -98,6 +219,8 @@
     </ul>
   </div>
   <!-- listing cards ends -->
+
+  
 
 <!-- body content ends -->
 <!-- footer content -->
