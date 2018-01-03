@@ -124,7 +124,7 @@ header{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #fff;
+  background: #ee5243;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -689,8 +689,92 @@ header{
       border: none;
       margin: auto;
     }
-    
     /*additional pages style ends*/
+
+    /*footer pages styles starts*/
+    .lead {
+      margin-bottom: 20px;
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+    .footer-page-title{
+      padding: 0;
+      padding-top: 51px;
+      margin-bottom: 20px;
+    }
+    .footer-page-title h2{
+      background: #f55344;
+      margin: 0;
+      color: #fff;
+      padding: 30px 0;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    .footer-page-body{
+      background: #fff;
+      box-shadow: 0 0 10px #888;
+      margin-bottom: 20px;
+    }
+    .how-spini-works{
+      margin: 30px 0;
+    }
+    .how-spini-works li{
+
+    }
+    .how-spini-works li img{
+      width: 100%;
+    }
+    .how-spini-works li p{
+      padding-top: 10px;
+    }
+    .who-we-are{
+      padding: 40px 0;
+    }
+    .who-we-are li{
+
+    } 
+    .who-we-are li img{
+
+    }
+    .who-we-are li span{
+
+    }   
+    .who-we-are li span h4{
+      display: block;
+      padding: 5px 0;
+    }
+    .who-we-are li span small{
+      display: block;
+      padding: 5px 0;
+    }
+    .who-we-are li p{
+      padding: 5px 0;
+    }
+    .who-we-are a{
+      padding: 5px 0;
+    }
+    .who-we-are a i{
+      font-size: 40px;
+    }
+    .information-box{
+      margin: 20px 0;
+      text-align: center;
+    }
+    .information-box h2{
+      margin-bottom: 20px;
+    }
+    .information-box a{
+      padding: 10px 15px;
+      border-radius: 25px;
+      background: #1d2530;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+    /*footer page styles ends*/
 
     /* mobile view css */
     @media only screen and (max-width: 500px) {
@@ -710,6 +794,9 @@ header{
         }
         #hamburger{
         width: 35px;
+        }
+        #hamburger span{
+          background: #fff;
         }
         .banner-container{
           
@@ -737,6 +824,9 @@ header{
           margin-left: 1% !important;
         }
         .spini-services ul li a h4{
+          font-size: 16px;
+        }
+        .lead{
           font-size: 16px;
         }
       }
