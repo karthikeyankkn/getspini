@@ -187,6 +187,7 @@ header{
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  padding: 0;
   padding-top: 51px;
 }
 /*slider-banner styles starts*/
@@ -586,6 +587,110 @@ header{
       background: #f9a818;
     }
     /* spini-popup style ends here*/
+
+    /*additional pages style starts*/
+    .project-container{
+      background: #fff;
+      color: #555;
+    }
+    .project-description, .project-details, .project-features, .location-map, .contact-us{
+      border-bottom: 5px solid #f1f3f6;
+      padding: 15px 0px;
+    }
+    .project-description h2, .project-details h2, .project-features h2, .location-map h2, .contact-us h2{
+      border-left: 3px solid #f55344;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }
+    .project-description p{
+      text-align: justify;
+    }
+    .slider-details{
+      background: #fff;
+      padding: 10px 20px;
+      border-left: 5px solid #f55344;
+    }
+    .slider-details h2{
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+      color: #555;
+      padding-right: 10px;
+    }
+    .slider-details span{
+
+    }
+    /*.project-details{
+      border-bottom: 5px solid #f1f3f6;
+      padding: 15px 0px;
+    }*/
+    .project-details-heading{
+
+    }
+    .project-details h2{
+
+    }
+    .project-details-heading li{
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 16px;
+      padding: 5px 0;
+    }
+    .project-details-description{
+  
+    }
+    .project-details-description ul{
+
+    }
+    .project-details-description ul li{
+      font-size: 16px;
+      padding: 5px 0;
+    }
+   /* .project-features{
+      border-bottom: 5px solid #f1f3f6;
+      padding: 15px 0px;
+    }*/
+    /*.project-features h2{
+      border-left: 3px solid #f55344;
+      padding-left: 10px;
+      text-transform: uppercase;
+    }*/
+    .project-features ul{
+
+    }
+    .project-features ul li{
+      padding: 15px;
+    }
+    .project-features ul li i{
+      padding-left: 10px;
+      font-size: 30px;
+      vertical-align: middle;
+    }
+    .project-features ul li label{
+      font-weight: normal;
+    }
+    .contact-us{
+      border: 0;
+    }
+    .contact-us ul{
+
+    }
+    .contact-us ul li{
+      padding: 10px 0;
+    }
+    .contact-us ul li input{
+      width: 100%;
+      padding: 10px 15px;
+    }
+    .contact-us ul li button{
+      background: #1d2530;
+      color: #fff;
+      padding: 10px 30px;
+      border: none;
+      margin: auto;
+    }
+    
+    /*additional pages style ends*/
 
     /* mobile view css */
     @media only screen and (max-width: 500px) {
