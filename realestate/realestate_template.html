@@ -42,7 +42,7 @@
       <span>Solinganallur,</span>
       <span>chennai</span>
     </div>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -71,6 +71,23 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <form class="col-md-6 contact-us" method="post" action="../sendemail.php">
+      <h2>Contact-Us</h2>
+      <ul>
+        <li>
+          <input type="text" name="name" placeholder="Enter Your Name">
+        </li>
+        <li>
+          <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+        </li>
+        <li>
+          <input type="email" name="email" placeholder="Enter Your Email">
+        </li>
+        <li>
+          <button>Submit</button>
+        </li>
+      </ul>
+    </form>
   </div>
 </section>
 
@@ -119,58 +136,42 @@
     <div class="row">
       <ul>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
         <li class="col-md-4">
-          <i class="fa fa-bell" aria-hidden="true"></i>
+          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
           <label>Feature name</label>
         </li>
       </ul>
     </div>
   </div>
   <!-- location and contact-us -->
-  <div class="col-md-6 location-map">
+  <div class="col-md-12 location-map">
     <h2>Location Map</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.347589882913!2d80.20731372149652!3d12.896887717905416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b79de7f381b%3A0xffbb2dd48afe3f1b!2sSholinganallur%2C+Chennai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1504295888379" width="95%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
   </div>
-  <form class="col-md-6 contact-us" method="post" action="../sendemail.php">
-    <h2>Contact-Us</h2>
-    <ul>
-      <li>
-        <input type="text" name="name" placeholder="Enter Your Name">
-      </li>
-      <li>
-        <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
-      </li>
-      <li>
-        <input type="email" name="email" placeholder="Enter Your Email">
-      </li>
-      <li>
-        <button>Submit</button>
-      </li>
-    </ul>
-  </form>
+  
 </section>
 <!-- banner container ends -->
 

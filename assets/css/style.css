@@ -182,7 +182,8 @@ header{
 
 .banner-container{
 	/*background: #2f363d url(https://assets-cdn.github.com/images/modules/marketplace/bg-hero.svg) no-repeat;*/
-  background: linear-gradient(to left,#009090,#000201);
+  /*background: linear-gradient(to left,#009090,#000201);*/
+  background: #fff;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -591,16 +592,17 @@ header{
     /*additional pages style starts*/
     .project-container{
       background: #fff;
-      color: #555;
+      color: #455C64;
     }
     .project-description, .project-details, .project-features, .location-map, .contact-us{
       border-bottom: 5px solid #f1f3f6;
-      padding: 15px 0px;
+      padding: 15px;
     }
     .project-description h2, .project-details h2, .project-features h2, .location-map h2, .contact-us h2{
       border-left: 3px solid #f55344;
       padding-left: 10px;
       text-transform: uppercase;
+      color: #455C64;
     }
     .project-description p{
       text-align: justify;
@@ -614,7 +616,7 @@ header{
       margin: 0;
       display: inline-block;
       vertical-align: middle;
-      color: #555;
+      color: #455C64;
       padding-right: 10px;
     }
     .slider-details span{
@@ -661,13 +663,13 @@ header{
     .project-features ul li{
       padding: 15px;
     }
-    .project-features ul li i{
-      padding-left: 10px;
-      font-size: 30px;
+    .project-features ul li img{
+      padding-right: 10px;
       vertical-align: middle;
+      width: 75px;
     }
     .project-features ul li label{
-      font-weight: normal;
+      /*font-weight: normal;*/
     }
     .contact-us{
       border: 0;
@@ -704,12 +706,12 @@ header{
       margin-bottom: 20px;
     }
     .footer-page-title h2{
-      background: #f55344;
+      /*background: #f55344;*/
       margin: 0;
-      color: #fff;
+      color: #F56956;
       padding: 30px 0;
       text-align: center;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 2px;
     }
     .footer-page-body{
