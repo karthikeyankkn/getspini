@@ -143,7 +143,7 @@
   <script src="assets/js/script.js"></script>
 
 <script>
-  var ApiEndPoint = 'https://api.getspini.com:8443';
+  var ApiEndPoint = 'http://sportal.getspini.com:8080';
   var success;
 var data = {
     "prospectiveBuyersName" : "testname",
@@ -151,52 +151,53 @@ var data = {
     "cityName" : "Chennai",
     "categoryName" : "Loans"
 };
-// debugger
-  // $.ajax({
-  //     url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
-  //     type: "POST",
-  //     headers: {
-  //         'Content-Type': 'application/json',
-  //         'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
-  //     },
-  //     data: JSON.stringify(data),
-  //     cache: false,
-  //     success: function(response) {
-  //         //console.log(response);
-  //         $('#success').show();
-  //         $('#success').html("<div class='alert alert-success'>");
-  //         $('#success > .alert-success').html("<button type='button' onclick='resetFormCloseTypeForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;</button><span style='float:right;padding-right:5px;color:red' onclick='resetFormCloseTypeForm();'><strong>Close Form</strong></span>");
-  //         $('#success > .alert-success').append("<strong>Thank you for the information. Please fill in the typeform to complete the process.</strong>");
-  //         // $('#success > .alert-success').append("");
-  //         $('#success > .alert-success').append('</div>');
-  //         $("#category option:eq(0)").prop("selected", true);
-  //         $("#sel1 option:eq(0)").prop("selected", true);
-  //         $('#menu-slider').hide();
-  //         $('#selfRequirementDiv').show();
-  //         $('#selfRequirementiframe').attr('src',response.urlOfTypeForm);
-  //         window.onbeforeunload = function(){
-  //             return "";
-  //         }
-  //     },
-  //     error: function(response) {
-  //         var errorID = response.responseJSON.errorList[0].errorID;
-  //         if (errorID == 400036) {
-  //             $('#success').show();
-  //             $('#success').html("<div class='alert alert-danger'>");
-  //             $('#success > .alert-danger').html("<button type='button' onclick='resetForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;").append("</button>");
-  //             $('#success > .alert-danger').append("<strong>Sorry, it seems that the promotion code you have entered is invalid. If you want to submit the lead without the code, please click <a onclick='submitWithoutPromoSR()'>here</a>. If you want to change the code, please click <a onclick='resetPromoSR()'>here</a>.");
-  //             $('#success > .alert-danger').append('</div>');
-  //         } else {
-  //             $('#success').html("<div class='alert alert-danger'>");
-  //             $('#success > .alert-danger').html("<button type='button' onclick='resetForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;").append("</button>");
-  //             $('#success > .alert-danger').append("<strong>Sorry, it seems that we were not able to process your request. Please try again later.");
-  //             $('#success > .alert-danger').append('</div>');
-  //         }
-  //     },
-  //     complete: function() {
-  //         $('#fsuccess').hide();
-  //     }
-  // });
+debugger
+  $.ajax({
+      url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
+      type: "POST",
+      headers: {
+          'Content-Type': 'application/json',
+          'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
+      },
+      data: JSON.stringify(data),
+      cache: false,
+      success: function(response) {
+          alert("Api working successfully..!");
+          //console.log(response);
+          $('#success').show();
+          $('#success').html("<div class='alert alert-success'>");
+          $('#success > .alert-success').html("<button type='button' onclick='resetFormCloseTypeForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;</button><span style='float:right;padding-right:5px;color:red' onclick='resetFormCloseTypeForm();'><strong>Close Form</strong></span>");
+          $('#success > .alert-success').append("<strong>Thank you for the information. Please fill in the typeform to complete the process.</strong>");
+          // $('#success > .alert-success').append("");
+          $('#success > .alert-success').append('</div>');
+          $("#category option:eq(0)").prop("selected", true);
+          $("#sel1 option:eq(0)").prop("selected", true);
+          $('#menu-slider').hide();
+          $('#selfRequirementDiv').show();
+          $('#selfRequirementiframe').attr('src',response.urlOfTypeForm);
+          window.onbeforeunload = function(){
+              return "";
+          }
+      },
+      error: function(response) {
+          var errorID = response.responseJSON.errorList[0].errorID;
+          if (errorID == 400036) {
+              $('#success').show();
+              $('#success').html("<div class='alert alert-danger'>");
+              $('#success > .alert-danger').html("<button type='button' onclick='resetForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;").append("</button>");
+              $('#success > .alert-danger').append("<strong>Sorry, it seems that the promotion code you have entered is invalid. If you want to submit the lead without the code, please click <a onclick='submitWithoutPromoSR()'>here</a>. If you want to change the code, please click <a onclick='resetPromoSR()'>here</a>.");
+              $('#success > .alert-danger').append('</div>');
+          } else {
+              $('#success').html("<div class='alert alert-danger'>");
+              $('#success > .alert-danger').html("<button type='button' onclick='resetForm();' class='close' data-dismiss='alert' aria-hidden='true'>&#10006;").append("</button>");
+              $('#success > .alert-danger').append("<strong>Sorry, it seems that we were not able to process your request. Please try again later.");
+              $('#success > .alert-danger').append('</div>');
+          }
+      },
+      complete: function() {
+          $('#fsuccess').hide();
+      }
+  });
 </script>
 <!-- Start of spinircle Zendesk Widget script -->
 <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var e=this.createElement("script");n&&(this.domain=n),e.id="js-iframe-async",e.src="https://assets.zendesk.com/embeddable_framework/main.js",this.t=+new Date,this.zendeskHost="spinircle.zendesk.com",this.zEQueue=a,this.body.appendChild(e)},o.write('<body onload="document._l();">'),o.close()}();
