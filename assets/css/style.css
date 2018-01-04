@@ -678,7 +678,7 @@ header{
     .contact-us ul li{
       padding: 10px 0;
     }
-    .contact-us ul li input{
+    .contact-us ul li input, select{
       width: 100%;
       padding: 10px 15px;
     }
@@ -776,6 +776,72 @@ header{
     }
     /*footer page styles ends*/
 
+
+    /*about us page style starts*/
+    .about-us-container{
+      background: #fff;
+      padding-top: 51px;
+    }
+    .about-us-container h2{
+      color: #F56956;
+      text-align: center;
+      font-size: 40px;
+      margin: 40px 0;
+    }
+    .about-us-img img{
+      width: 100%;
+      max-height: 875px;
+    }
+    .about-us-para{
+      padding-top: 60px;
+    }
+    .about-us-para h3{
+      color: #455C64;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 36px;
+    }
+    .about-us-para p{
+      color: #455C64;
+      font-size: 18px;
+      font-weight: 200;
+      margin-bottom: 20px;
+    }
+    .about-us-galery{
+      background: #f1f3f6;
+      padding: 30px 0;
+    }
+    .about-us-galery h3{
+      color: #455C64;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 36px;
+    }
+    .about-us-galery ul{
+
+    }
+    .about-us-galery ul li{
+      min-height: 100px;
+    }
+    .about-us-galery ul li img{
+      width: 200px;
+    }
+    /*about us page style ends*/
+
+    /*partner with us style starts*/
+    .partner-with-us-container{
+      background: #fff;
+      padding-top: 51px;
+      text-align: center;
+    }
+    .partner-with-us-container h2{
+      color: #455C64;
+      margin: 20px 0
+    }
+    .partner-with-us-container img{
+      width: 100%;
+    }
+    /*partner with us style ends*/
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li {
