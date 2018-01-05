@@ -35,6 +35,7 @@ canvas{
 }
 .banner-header li a{
   color: #fff;
+  display: inline-block;
 }
 .banner-header li a i{
   font-size: 30px;
