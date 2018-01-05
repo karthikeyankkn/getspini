@@ -102,6 +102,7 @@ $(document).ready(function(){
     }
     // success contact form script
     function success_contact_form(){
+      senddata();
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
@@ -120,6 +121,40 @@ $(document).ready(function(){
       debugger
     }
     // questions for interior ends
+
+    // send data using API script starts
+    function senddata(){
+      var ApiEndPoint = 'https://sapi.getspini.com:8443';
+      var success;
+      var data = {
+          "prospectiveBuyersName" : name,
+          "phoneNumOfProspectiveBuyer" : ph_number,
+          "cityName" : "Chennai",
+          "categoryName" : "Loans"
+      };
+      debugger
+      $.ajax({
+          url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
+          type: "POST",
+          headers: {
+              'Content-Type': 'application/json',
+              'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
+          },
+          data: JSON.stringify(data),
+          cache: false,
+          success: function(response) {
+              alert("Api working successfully..!");
+              console.log(response);
+          },
+          error: function(response) {
+            alert("Api WAS not working :( ");
+          },
+          complete: function() {
+              
+          }
+      });
+    }
+    // send data using API script ends
 	
 	 
 });
