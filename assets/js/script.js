@@ -130,7 +130,7 @@ $(document).ready(function(){
           "prospectiveBuyersName" : name,
           "phoneNumOfProspectiveBuyer" : ph_number,
           "cityName" : "Chennai",
-          "categoryName" : "Loans"
+          "categoryName" : categoryName,
       };
       debugger
       $.ajax({
