@@ -124,6 +124,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
+      debugger
       var ApiEndPoint = 'https://sapi.getspini.com:8443';
       var success;
       var data = {
@@ -132,7 +133,6 @@ $(document).ready(function(){
           "cityName" : "Chennai",
           "categoryName" : categoryName,
       };
-      debugger
       $.ajax({
           url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
           type: "POST",
@@ -150,7 +150,7 @@ $(document).ready(function(){
             alert("Api WAS not working :( ");
           },
           complete: function() {
-              
+              alert("Api Request WAS completed :D ");
           }
       });
     }
