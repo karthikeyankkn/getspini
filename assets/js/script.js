@@ -141,7 +141,6 @@ $(document).ready(function(){
               'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
           },
           data: JSON.stringify(data),
-          cache: false,
           success: function(response) {
               alert("Api working successfully..!");
               console.log(response);
