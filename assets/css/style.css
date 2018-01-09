@@ -21,7 +21,7 @@ canvas{
 .banner-header{
   padding: 10px 100px;
   background: #1d2531;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -887,7 +887,7 @@ header{
         }
         .logo a img {
           /*width: 100px;*/
-          vertical-align: -webkit-baseline-middle;
+          vertical-align: super;
         }
         .christmas-tree{
           margin-left: 1% !important;
