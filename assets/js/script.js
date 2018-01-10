@@ -33,6 +33,7 @@ $(document).ready(function(){
 		$("header").load("../header.html"); 
   	$("footer").load("../footer.html");
     $(".alerts_page").load("../alerts.html");
+    // $(".contact-us").load("../contactus.html");
 	}
 
 	// spini-popup-scripts
@@ -98,7 +99,6 @@ $(document).ready(function(){
     	alert(qa1+""+qa2+""+qa3+""+qa4+""+name+""+ph_number+""+email);
     });
 
-
     $(".submit_innerpage").click(function(){
       debugger
       name = $("input[type='text']").val();
@@ -137,7 +137,7 @@ $(document).ready(function(){
       if(name == "" && ph_number == "" && email == "") {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
-        $(".error-contact-ph_number").fadeIn()
+        $(".error-contact-ph_number").fadeIn();
       }else if (email != "" && email != undefined) {
         if (validateEmail(email)) {
           success_contact_form();
@@ -255,6 +255,5 @@ $(document).ready(function(){
       });
     }
     // send data using API script ends
-	
 	 
 });

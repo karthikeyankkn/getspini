@@ -1,0 +1,38 @@
+<h2>Contact-Us</h2>
+<ul>
+  <li>
+    <input type="text" name="name" placeholder="Enter Your Name">
+  </li>
+  <li>
+    <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+  </li>
+  <li>
+    <input type="email" name="email" placeholder="Enter Your Email">
+  </li>
+  <li>
+    <button class="submit_innerpage" id="submit_innerpage">Submit</button>
+  </li>
+</ul>
+<div class="alerts_page">
+  <!-- validation alert starts -->
+  <div class="alert alert-success success-contact">
+    <strong>Success!</strong> We will contact you soon.
+  </div>
+  <div class="alert loading_image">
+    <img src="../assets/images/loading_image.gif" alt="loading_image" width="50" />
+    <p>Please wait ...!</p>
+  </div>
+  <div class="alert alert-danger error-contact">
+    <strong>Error!</strong> Please contact spini ADMIN.
+  </div>
+  <div class="alert alert-danger error-contact-ph_number">
+    <strong>Error!</strong> Phone number should be 10 digits.
+  </div>
+  <div class="alert alert-danger error-contact-email">
+    <strong>Error!</strong> Please enter valid email.
+  </div>
+  <div class="alert alert-danger error-mandatory">
+    <strong>Error!</strong> Please Fill all mandatory fields.
+  </div>
+<!-- validation alerts ends -->
+</div>
