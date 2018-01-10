@@ -266,6 +266,7 @@ $(document).ready(function(){
           }
       });
       $("#scrolltop").click(function(){
+        debugger
         var scroll = $("html, body");
         scroll.stop().animate({scrollTop:0}, 700, 'swing', function() {
         });
