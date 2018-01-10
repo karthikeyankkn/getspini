@@ -255,5 +255,20 @@ $(document).ready(function(){
       });
     }
     // send data using API script ends
+
+    // scroll top script
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > 100) {
+              $("#scrolltop").fadeIn();
+          }
+          else {
+              $("#scrolltop").fadeOut();
+          }
+      });
+      $("#scrolltop").click(function(){
+        var scroll = $("html, body");
+        scroll.stop().animate({scrollTop:0}, 700, 'swing', function() {
+        });
+      });
 	 
 });
