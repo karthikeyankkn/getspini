@@ -1,6 +1,12 @@
+/*font-family for all the page*/
+/*@font-face {
+      font-family: 'Open Sans', sans-serif;
+      src: url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+}*/
 body{
 	background: #f1f3f6; 
   position: relative;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 *{
   outline: none;
@@ -21,7 +27,7 @@ canvas{
 .banner-header{
   padding: 10px 100px;
   background: #1d2531;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -350,6 +356,7 @@ header{
       transition: 1s ease;
       border-radius: 3px;
       margin-bottom: 20px;
+      /*display: inherit;*/
     }
     .list-card{
       /*border: 1px solid #888;*/
@@ -460,6 +467,29 @@ header{
     footer p{
     	color: #fff;
     	text-align: center;
+    }
+
+    #scrolltop{
+      /*display: none;*/
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+    }
+    #scrolltop i{
+      background: #f1f3f6;
+      color: #ed3833;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 15px;
+      transition: 0.2s ease;
+    }
+    #scrolltop i:hover{
+      opacity: 0.8;
     }
 
     /* spini-popup style starts here*/
@@ -887,7 +917,7 @@ header{
         }
         .logo a img {
           /*width: 100px;*/
-          vertical-align: -webkit-baseline-middle;
+          vertical-align: super;
         }
         .christmas-tree{
           margin-left: 1% !important;
