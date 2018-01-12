@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page=false;
+  var short_traverse, data, check_inner_page = false;
 	// preload funcitons
 	windowHight();
 
@@ -270,6 +270,120 @@ $(document).ready(function(){
         var scroll = $("html, body");
         scroll.stop().animate({scrollTop:0}, 700, 'swing', function() {
         });
+      });
+
+
+      // radio accordion
+      $('input[type="radio"]').click(function(){
+        debugger
+        $(this).parent("label").siblings().show();
+        $(this).parents("li").siblings().find("span").hide();
+        // check_getestimate();
+      });
+
+      
+
+      // function check_getestimate(){
+      //   debugger
+      //   if (type_of_kitchen != undefined && quality_of_accessories != undefined && type_of_material != undefined ) {
+      //     $(".getestimate").attr("disabled", false);
+      //   }else{
+      //     $(".getestimate").attr("disabled", true);
+      //   }
+      // }
+
+      $(".submit_estimation").click(function(){
+        debugger
+        var type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
+        var quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
+        var type_of_material = $("input[name='type_of_material']:checked").val();
+        // type of kitchen value
+        var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile;
+        if (type_of_kitchen == "L-shape") {
+          lenghtx = document.getElementById('lshapex').value;
+          lenghty = document.getElementById('lshapey').value;
+          type_of_kitchenvalue = parseInt(lenghtx) + parseInt(lenghty);
+        }else if (type_of_kitchen == "stright") {
+          lenghtx = document.getElementById('sshapex').value;
+          type_of_kitchenvalue = parseInt(lenghtx);
+        }else if (type_of_kitchen == "U-Shape") {
+          lenghtx = document.getElementById('ushapex').value;
+          lenghty = document.getElementById('ushapey').value;
+          lenghtz = document.getElementById('ushapez').value;
+          type_of_kitchenvalue = parseInt(lenghtx) + parseInt(lenghty) + parseInt(lenghtz);
+        }else if(type_of_kitchen == "Custom") {
+          lenghtx = document.getElementById('customxyz').value;
+          type_of_kitchenvalue = parseInt(lenghtx);
+        }else{
+          ("error in typeofkitchen");
+        }
+
+        // type of material value
+        if (type_of_material == "Pre") {
+          type_of_materialvalue = 6000;
+        }else if (type_of_material == "MDF/HDF") {
+          type_of_materialvalue = 8000;
+        }
+        else if (type_of_material == "Hardwood") {
+          type_of_materialvalue = 8000;
+        }else if (type_of_material == "Commercial") {
+          type_of_materialvalue = 9000;
+        }else if (type_of_material == "Boiling") {
+          type_of_materialvalue = 10000;
+        }else if (type_of_material == "Boiling-w") {
+          type_of_materialvalue = 12500;
+        }else if (type_of_material == "Marine") {
+          type_of_materialvalue = 16000;
+        }else{
+          ("error in type_of_material");
+        }
+
+        // calculation for design
+        if (quality_of_accessories == "simple") {
+          quality_of_accessoriesvalue = 15000;
+        }else if (quality_of_accessories == "medium") {
+          quality_of_accessoriesvalue = 30000;
+        }
+        else if (quality_of_accessories == "high") {
+          quality_of_accessoriesvalue = 60000;
+        }else{
+          ("error in design");
+        }
+
+        uname = $("input[name = estimate_name]").val();
+        uemail = $('input[name = estimate_email]').val();
+        umobile = $('input[name = estimate_ph_number]').val();
+
+        estimatedcost = type_of_kitchenvalue * type_of_materialvalue + quality_of_accessoriesvalue;
+        var rangecost = (estimatedcost * 0.3) + estimatedcost;
+        document.getElementById("estimatedcost").innerHTML = estimatedcost;
+        document.getElementById("rangecost").innerHTML = rangecost;
+        document.getElementById("uname").innerHTML = uname;
+
+         // validation script
+        if(uname == "" && umobile == "" && uemail == "") {
+          $(".error-mandatory").fadeIn();
+        }else if(umobile.length != 10){
+          $(".error-contact-ph_number").fadeIn()
+        }else if (uemail != "" && uemail != undefined) {
+          if (validateEmail(uemail)) {
+            check_inner_page = true;
+            // success_contact_form();
+            $(this).attr("data-dismiss","modal");
+             $("#calculate-area").fadeIn(2000);
+        }else{
+          $(".alert-danger").hide();
+          $(".error-contact-email").fadeIn();
+        }
+        }else{
+          check_inner_page = true;
+          $("#calculate-area").fadeIn(2000);
+        }
+
+        
+
+        
+
       });
 	 
 });
