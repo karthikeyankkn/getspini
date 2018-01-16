@@ -557,7 +557,7 @@ header{
       border-radius: 8px;
       padding: 20px;
     }
-    .spini-contact-form p input{
+    .spini-contact-form p input, select{
       border: 1px solid #ddd;
       color: #000;
       display: block;
@@ -566,12 +566,18 @@ header{
       margin-top: 0;
       padding: 13px 15px;
       width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 50px !important;
+      border-radius: 0 !important;
+      background: #fff;
     } 
     .spini-contact-form p input:focus{
       border-color: #7cb7b6;
     }
     .loding_image img{
       margin:auto;
+      width: 100px;
     }
     .alert{
       max-width: 500px;
@@ -890,7 +896,7 @@ header{
       margin: 20px 0
     }
     .partner-with-us-container img{
-      width: 100%;
+      width: 100px;
     }
     /* estimation styles starts */
     .type-of-kitchen-container{

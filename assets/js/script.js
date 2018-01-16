@@ -107,6 +107,10 @@ $(document).ready(function(){
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
+      cityName = $("select[name='city']").val();
+      if (categoryName == undefined) {
+        categoryName = $("select[name='catagoryName']").val();
+      }
 
       // validation script
       if(name == "" && ph_number == "" && email == "") {
@@ -129,10 +133,11 @@ $(document).ready(function(){
 
     // contact form script starts
     function contact_form(){
-      // debugger
+      debugger
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
+      cityName = short_traverse.find("select[name='city']").val();
 
 
 
@@ -199,8 +204,9 @@ $(document).ready(function(){
       data = {
         "prospectiveBuyersName" : name,
         "phoneNumOfProspectiveBuyer" : ph_number,
-        "cityName" : "Chennai",
-        "categoryName" : categoryName
+        "cityName" : cityName,
+        "categoryName" : categoryName,
+        "subCityname" : "avadi"
       };
 
       
