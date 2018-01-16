@@ -6,6 +6,8 @@ $(document).ready(function(){
 	// preload funcitons
 	windowHight();
 
+
+  
 	$( window ).resize(function() {
 		windowHight();
 	});
@@ -152,11 +154,12 @@ $(document).ready(function(){
     // success contact form script
     function success_contact_form(){
       debugger
-      if (check_inner_page == false) {
-        senddata();
-      }else{
-        senddata_for_internal_page();
-      }
+      // if (check_inner_page == false) {
+      //   senddata();
+      // }else{
+      //   senddata_for_internal_page();
+      // }
+      senddata();
       
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
@@ -197,40 +200,6 @@ $(document).ready(function(){
         "phoneNumOfProspectiveBuyer" : ph_number,
         "cityName" : "Chennai",
         "categoryName" : categoryName
-      };
-
-      
-      $.ajax({
-          url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
-          type: "POST",
-          headers: {
-              'Content-Type': 'application/json',
-              'X-SPIN-API-ACCESS-TOKEN': 'KOIA8sl#4kasdd98!29jskdlmcxr48b39882#@'
-          },
-          data: JSON.stringify(data),
-          success: function(response) {
-              alert("Api working successfully..!");
-              console.log(response);
-          },
-          error: function(response) {
-            alert("Api WAS not working :( ");
-          },
-          complete: function() {
-              alert("Api Request WAS completed :D ");
-          }
-      });
-    }
-
-    function senddata_for_internal_page(){
-      debugger
-      var ApiEndPoint = 'https://sapi.getspini.com:8443';
-      var success;
-      var data;
-      data = {
-        "prospectiveBuyersName" : name,
-        "phoneNumOfProspectiveBuyer" : ph_number,
-        "cityName" : "Chennai",
-        "categoryName" : "Loans"
       };
 
       
@@ -371,19 +340,14 @@ $(document).ready(function(){
             // success_contact_form();
             $(this).attr("data-dismiss","modal");
              $("#calculate-area").fadeIn(2000);
-        }else{
-          $(".alert-danger").hide();
-          $(".error-contact-email").fadeIn();
-        }
+          }else{
+            $(".alert-danger").hide();
+            $(".error-contact-email").fadeIn();
+          }
         }else{
           check_inner_page = true;
           $("#calculate-area").fadeIn(2000);
         }
-
-        
-
-        
-
       });
 	 
 });
