@@ -228,6 +228,9 @@ header{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
   border-top: 1px solid #eaeaea;
 }
+.spini-customers ul li a img{
+  max-width: 100px;
+}
     /*spini-sep-services style starts*/
 .spini-sep-services{
   margin-top: 0px;
@@ -496,13 +499,27 @@ header{
     .toggle-page-container{
       background: #f9f8f7;
       position: fixed;
-      top: 0px;
+      top: 100px;
+      left: 0;
+      right: 0;
+      /*bottom: 0;*/
+      color: #555;
+      z-index: 99;
+      overflow: scroll;
+      display: none;
+      max-width: 700px;
+      margin: auto;
+      padding: 0 15px;
+    }
+    .bg-overlay{
+      background: #000;
+      position: fixed;
+      top: 0;
       left: 0;
       right: 0;
       bottom: 0;
-      color: #555;
-      z-index: 200;
-      overflow: scroll;
+      opacity: 0.4;
+      z-index: 10;
       display: none;
     }
     .toggle-page-container ul{
@@ -603,8 +620,8 @@ header{
       background: #fff;
       color: #fff;
       border-radius: 25px;
-      background: #fab131;
-      border: 2px solid #fab131;
+      background: #1e2631;
+      border: 2px solid #1e2631;
       padding: 5px 20px;
     }
     .spini-poup-nav{
@@ -616,7 +633,8 @@ header{
         cursor:no-drop
     }
     .toggle-page-container ul li button:hover{
-      background: #f9a818;
+      background: transparent;
+      color: #1e2631;
     }
     /* spini-popup style ends here*/
 
@@ -982,5 +1000,9 @@ header{
         }
         .lead{
           font-size: 16px;
+        }
+        .spini-sep-services ul li a img{
+          height: 150px;
+          width: 150px;
         }
       }

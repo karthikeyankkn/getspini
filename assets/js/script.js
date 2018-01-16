@@ -15,7 +15,7 @@ $(document).ready(function(){
 	function windowHight(){
 		var window_height = $(window).height();
 		// $(".banner-container").css("height", window_height);
-		$(".toggle-page-container").css("height", window_height);
+		// $(".toggle-page-container").css("height", window_height);
 	}
 
 	// validate email
@@ -71,6 +71,7 @@ $(document).ready(function(){
     // open popup
     $(".spini-sep-services ul li a").click(function(){
     	$(this).siblings(".toggle-page-container").fadeIn();
+      $(".bg-overlay").show();
     });
 
     $(".submit").click(function(){
