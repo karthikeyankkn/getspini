@@ -1,7 +1,7 @@
 <ul class="banner-header">
   <!-- logo -->
  <li class="logo">
-    <a href="http://localhost:8080" id="hostname">
+    <a href="#" id="hostname">
       <img src="http://cdn.getspini.com/spini_white.png" alt="Getspini-logo" />
     </a>
   </li>
@@ -53,4 +53,7 @@
       $(".toggle-menu").toggleClass("open-menu");
       $("body").toggleClass("stop-scrolling");
     }
+
+    $("#hostname").attr("href", window.location.origin)
+
 </script>
