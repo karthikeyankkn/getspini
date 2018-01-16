@@ -25,6 +25,7 @@
 
   <script>
      var index_page = false;
+     var categoryName = undefined;
    </script>    
 </head>
 <body>
@@ -54,7 +55,7 @@
           </div>
         </div>
       </div>
-      <form class="col-md-4 contact-us" method="post" action="../sendemail.php">
+      <div class="col-md-4 contact-us">
         <h2>Contact-Us</h2>
         <ul>
           <li>
@@ -67,19 +68,31 @@
             <input type="email" name="email" placeholder="Enter Your Email">
           </li>
           <li>
-            <select>
-              <option value="insurances"><--- Select Categories ---></option>
-              <option value="Interiors">Interiors</option>
-              <option value="Realestate">Realestate</option>
-              <option value="loan">loan</option>
-              <option value="insurances">insurances</option>
+            <select name="catagoryName">
+              <option value="Interior/Renovation/Modular Kitchen">Interiors</option>
+              <option value="Real Estate(Buying)">Realestate</option>
+              <option value="Loans">loan</option>
+              <option value="Insurance">insurances</option>
             </select>
           </li>
           <li>
-            <button>Submit</button>
+            <select name="city">
+              <option value="">City</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Pune">Pune</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </li>
+          <li>
+            <button class="submit_innerpage">Submit</button>
           </li>
         </ul>
-      </form>  
+        <div class="alerts_page"></div>
+      </div>  
     </div>  
   </div>
 </div>
