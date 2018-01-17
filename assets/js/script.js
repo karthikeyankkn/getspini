@@ -206,7 +206,7 @@ $(document).ready(function(){
         "phoneNumOfProspectiveBuyer" : ph_number,
         "cityName" : cityName,
         "categoryName" : categoryName,
-        "subCityname" : "avadi"
+        "subLocality" : "avadi"
       };
 
       
