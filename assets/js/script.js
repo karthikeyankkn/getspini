@@ -15,7 +15,7 @@ $(document).ready(function(){
 	function windowHight(){
 		var window_height = $(window).height();
 		// $(".banner-container").css("height", window_height);
-		// $(".toggle-page-container").css("height", window_height);
+		$(".toggle-page-container").css("height", window_height-102);
 	}
 
 	// validate email
