@@ -221,9 +221,9 @@ header{
   font-size: 40px;
 }
 /*slider-banner styles ends*/
-.spini-services, .spini-customers, .spini-sep-services{
+.spini-services, .spini-customers, .spini-sep-services, .how-spini-works{
 	background: #fff;
-  padding: 0;
+  padding: 30px 0;
   margin: 10px auto 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
   border-top: 1px solid #eaeaea;
@@ -244,7 +244,7 @@ header{
   margin-bottom: 30px;
   text-transform: capitalize;
 }
-.spini-sep-services ul li{
+.spini-sep-services ul li, .how-spini-works ul li{
   text-align: center;
 }
 .spini-sep-services ul li a{
@@ -277,7 +277,7 @@ header{
 	text-align: center;
 }
 .spini-services ul li{
-	padding: 15px;
+	/*padding: 15px;*/
 }
 .spini-services ul li a{
 
@@ -336,16 +336,21 @@ header{
 .view-more a:hover{
 	color: #f06f59;
 }
-.spini-customers h2{
+.spini-customers h2, .how-spini-works h2{
   text-align: center;
   color: #666;
   font-weight: 300;
+  margin: 0 0 10px;
 }
 .spini-customers ul li{
   text-align: center;
   padding: 10px;
 }
 /*slider code*/
+    .slider-container1,
+    .slider-container2 {
+      position: relative;
+    }
     .slider-parent{
       list-style: none;
       overflow-x: scroll;
@@ -782,12 +787,16 @@ header{
     }
     .how-spini-works{
       margin: 30px 0;
+      /*box-shadow: none;
+      border: 0;
+      background: transparent;*/
     }
     .how-spini-works li{
 
     }
     .how-spini-works li img{
-      width: 100%;
+      /*width: 100%;*/
+      border-radius: 70px 0;
     }
     .how-spini-works li p{
       padding-top: 10px;
@@ -958,6 +967,17 @@ header{
       font-size: 24px !important;
       color: #4CAF50 !important;
     }
+    .spini-thankyou{
+
+    }
+    .spini-thankyou label{
+      color: green;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      display: block;
+      padding-top: 30px;
+    }
     /* estimation styles ends */
     /*partner with us style ends*/
     /* mobile view css */
@@ -1017,4 +1037,7 @@ header{
           height: 150px;
           width: 150px;
         }
+        /*.how-spini-works li img{
+          width: 100%;
+        }*/
       }
