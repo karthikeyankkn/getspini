@@ -196,7 +196,7 @@ header{
   background-attachment: fixed;
   position: relative;
   padding: 0;
-  padding-top: 51px;
+  padding-top: 50px;
 }
 /*slider-banner styles starts*/
 .slider-banner{
@@ -994,6 +994,26 @@ header{
     }
     /* estimation styles ends */
     /*partner with us style ends*/
+
+    .unsubscribe-container{
+      padding: 50px 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    .unsubscribe-container input{
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+    }
+    .unsubscribe-container button{
+      background: #1d2531;
+      padding: 10px 20px;
+      display: block;
+      margin: 10px auto;
+      color: #fff;
+      border: 0;
+      border-radius: 25px;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
