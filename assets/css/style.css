@@ -364,7 +364,21 @@ header{
       transition: 1s ease;
       border-radius: 3px;
       margin-bottom: 20px;
-      /*display: inherit;*/
+    }
+
+    .thankyou-slider-parent{
+      display: flex;
+      overflow: scroll;
+    }
+    .thankyou-slider-parent li{
+      list-style: none;
+      min-width: 274px;
+      display: -webkit-inline-box;
+      margin: 0 15px 0 0;
+      position: relative;
+      transition: 1s ease;
+      background: #fff;
+      border-radius: 3px;
     }
     .list-card{
       /*border: 1px solid #888;*/
@@ -413,7 +427,7 @@ header{
     .list-card article p{
     	color: #666;
     }
-    .slider-parent::-webkit-scrollbar { 
+    .thankyou-slider-parent::-webkit-scrollbar { 
     display: none; 
     }
     .left_go1, .left_go2{
@@ -982,7 +996,7 @@ header{
     /*partner with us style ends*/
     /* mobile view css */
     @media only screen and (max-width: 500px) {
-         .slider-parent li {
+         .slider-parent li, .thankyou-slider-parent li {
             min-width: 160px;
         }
         .list-card article p{
