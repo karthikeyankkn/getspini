@@ -9,7 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 *{
-  outline: none;
+  outline: none !important;
 }
 ul,li{
 	list-style: none;
@@ -911,6 +911,10 @@ header{
     }
     .about-us-galery ul li img{
       width: 200px;
+      height: 100px;
+      margin-bottom: 30px;
+      display: block;
+      margin:0 auto 30px;
     }
     /*about us page style ends*/
 
@@ -925,7 +929,7 @@ header{
       margin: 20px 0
     }
     .partner-with-us-container img{
-      width: 100px;
+      width: 100%;
     }
     /* estimation styles starts */
     .type-of-kitchen-container{
@@ -1013,6 +1017,12 @@ header{
       color: #fff;
       border: 0;
       border-radius: 25px;
+    }
+    .careers-iframe{
+      width: 100%;
+    }
+    .spini-press li img{
+      width: 100%;
     }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
