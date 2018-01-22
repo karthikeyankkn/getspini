@@ -1090,3 +1090,7 @@ header{
           width: 100%;
         }*/
       }
+      .spini-customers ul li a img{
+         max-width: 100px;
+      }
+
