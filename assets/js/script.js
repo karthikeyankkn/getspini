@@ -75,6 +75,12 @@ $(document).ready(function(){
       $(".bg-overlay").show();
     });
 
+    // close popup
+    $(".toggle-page-container").append("<i class='toggle-page-container-close'>X<i/>");
+    $(".toggle-page-container-close").click(function(){
+      $(".toggle-page-container, .bg-overlay").fadeOut();
+    });
+
     $(".submit").click(function(){
       debugger
       var thiskey = $(this);

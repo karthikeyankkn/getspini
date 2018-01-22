@@ -530,9 +530,15 @@ header{
       margin: auto;
       padding: 0 15px;
     }
-    /*.toggle-page-container::after{
-      content: 'X';
-    }*/
+    .toggle-page-container-close{
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      color: #1e2631;
+      cursor: pointer;
+      font-size: 24px;
+      font-style: normal;
+    }
     .bg-overlay{
       background: #000;
       position: fixed;
@@ -600,9 +606,9 @@ header{
     .spini-contact-form p input:focus{
       border-color: #7cb7b6;
     }
-    .loding_image img{
+    .loading_image img{
       margin:auto;
-      width: 100px;
+      width: 100px !important;
     }
     .alert{
       max-width: 500px;
