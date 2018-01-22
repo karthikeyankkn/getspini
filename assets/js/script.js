@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false;
+  var short_traverse, data, check_inner_page = false, selected_package;
 	// preload funcitons
 	windowHight();
 
@@ -15,7 +15,8 @@ $(document).ready(function(){
 	function windowHight(){
 		var window_height = $(window).height();
 		// $(".banner-container").css("height", window_height);
-		// $(".toggle-page-container").css("height", window_height-102);
+		$(".toggle-page-container").css("height", window_height-102);
+    $(".careers-iframe").css("height", window_height-115);
 	}
 
 	// validate email
@@ -110,24 +111,25 @@ $(document).ready(function(){
       cityName = $("select[name='city']").val();
       if (categoryName == undefined) {
         categoryName = $("select[name='catagoryName']").val();
+        selected_package = $("select[name='selected_package']").val();
       }
 
       // validation script
-      if(name == "" && ph_number == "" && email == "") {
+      if(name == "" && ph_number == "" && email == "" || cityName == "") {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn()
       }else if (email != "" && email != undefined) {
         if (validateEmail(email)) {
           check_inner_page = true;
-          success_contact_form();
+            success_contact_form();
       }else{
         $(".alert-danger").hide();
         $(".error-contact-email").fadeIn();
       }
       }else{
         check_inner_page = true;
-        success_contact_form();
+          success_contact_form();
       }
     });
 
@@ -142,7 +144,7 @@ $(document).ready(function(){
 
 
       // validation script
-      if(name == "" && ph_number == "" && email == "") {
+      if(name == "" && ph_number == "" && email == "" || cityName == "") {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn();
@@ -165,8 +167,28 @@ $(document).ready(function(){
       // }else{
       //   senddata_for_internal_page();
       // }
-      senddata();
+      if (selected_package == undefined) {
+        senddata();
+      }else{
+        // send email
+        $.ajax({
+            url: "https://formspree.io/karthikeyan@spinircle.com", 
+            method: "POST",
+            data: {
+              "Name" : name,
+              "Phone Number": ph_number,
+              "Email" : email,
+              "City" : cityName,
+              "category": categoryName,
+              "Selected_Package" : selected_package,
+              "_subject" : "Get spini partner-with-us!"
+            },
+            dataType: "json"
+        });
+      }
       
+
+        
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
@@ -347,6 +369,7 @@ $(document).ready(function(){
             // success_contact_form();
             $(this).attr("data-dismiss","modal");
              $("#calculate-area").fadeIn(2000);
+             interior_estimate_mailsend();
           }else{
             $(".alert-danger").hide();
             $(".error-contact-email").fadeIn();
@@ -354,7 +377,32 @@ $(document).ready(function(){
         }else{
           check_inner_page = true;
           $("#calculate-area").fadeIn(2000);
+          // send email
+          interior_estimate_mailsend();
+          debugger
         }
+
+        function interior_estimate_mailsend(){
+          $.ajax({
+            url: "https://formspree.io/karthikeyan@spinircle.com", 
+            method: "POST",
+            data: {
+              "Name" : uname,
+              "Phone Number": umobile,
+              "Email" : uemail,
+              "Type_of_kitchen": type_of_kitchen,
+              "Type_of_kitchenvalue" : type_of_kitchenvalue,
+              "Type_of_material" : type_of_material,
+              "Type_of_materialvalue" : type_of_materialvalue,
+              "Quality_of_accessories" : quality_of_accessories,
+              "Quality_of_accessoriesvalue" : quality_of_accessoriesvalue,
+              "Estimatedcost" : estimatedcost,
+              "Rangecost" : rangecost,
+              "_subject" : "Lead from Interior Estimation Page !"
+            },
+            dataType: "json"
+          });
+        }  
       });
 	 
 });
