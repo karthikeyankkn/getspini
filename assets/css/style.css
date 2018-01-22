@@ -1018,6 +1018,11 @@ header{
       border: 0;
       border-radius: 25px;
     }
+
+    .realestate-sites{
+      border-bottom: 1px solid #666;
+      margin-bottom: 15px;
+    }
     .careers-iframe{
       width: 100%;
     }
