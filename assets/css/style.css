@@ -1,8 +1,8 @@
 /*font-family for all the page*/
-/*@font-face {
+@font-face {
       font-family: 'Open Sans', sans-serif;
       src: url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
-}*/
+}
 body{
 	background: #f1f3f6; 
   position: relative;
@@ -1028,6 +1028,10 @@ header{
     }
     .spini-press li img{
       width: 100%;
+    }
+    .seo-links ul li{
+      display: block;
+      padding-bottom: 5px;
     }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
