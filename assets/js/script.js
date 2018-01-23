@@ -226,7 +226,7 @@ $(document).ready(function(){
     // send data using API script starts
     function senddata(){
       debugger
-      var ApiEndPoint = 'https://sapi.getspini.com:8443';
+      var ApiEndPoint = 'https://api.getspini.com:8443';
       var success;
       var data;
       data = {
