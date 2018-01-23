@@ -106,7 +106,7 @@ $(document).ready(function(){
       
       short_traverse = $(this).parents(".toggle-page-container ul li");
       contact_form();
-    	alert(qa1+""+qa2+""+qa3+""+qa4+""+name+""+ph_number+""+email);
+    	// alert(qa1+""+qa2+""+qa3+""+qa4+""+name+""+ph_number+""+email);
     });
 
     $(".submit_innerpage").click(function(){
@@ -193,14 +193,6 @@ $(document).ready(function(){
         });
       }
       
-
-        
-      $(".alert-danger").hide();
-      $(".success-contact, .loading_image").fadeIn();
-      setTimeout(function(){ 
-        location.reload();
-      }, 3000);
-      $(".submit").hide();
       }
     // contact form script ends
 
@@ -226,7 +218,7 @@ $(document).ready(function(){
     // send data using API script starts
     function senddata(){
       debugger
-      var ApiEndPoint = 'https://api.getspini.com:8443';
+      var ApiEndPoint = 'https://sapi.getspini.com:8443';
       var success;
       var data;
       data = {
@@ -247,14 +239,21 @@ $(document).ready(function(){
           },
           data: JSON.stringify(data),
           success: function(response) {
-              alert("Api working successfully..!");
+              // alert("Api working successfully..!");
               console.log(response);
+              $(".alert-danger").hide();
+              $(".success-contact, .loading_image").fadeIn();
+              setTimeout(function(){ 
+                location.reload();
+              }, 3000);
+              $(".submit").hide();
           },
           error: function(response) {
-            alert("Api WAS not working :( ");
+            // alert("Api WAS not working :( ");
+            $(".error-contact").fadeIn();
           },
           complete: function() {
-              alert("Api Request WAS completed :D ");
+              // alert("Api Request WAS completed :D ");
           }
       });
     }
