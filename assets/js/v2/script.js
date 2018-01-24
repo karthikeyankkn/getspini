@@ -258,7 +258,8 @@ $(document).ready(function(){
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
-        location.reload();
+        // location.reload();
+        window.location.href = '../thankyou-pages/thankyoupage-template.html';
       }, 3000);
       $(".submit").hide();
     }
