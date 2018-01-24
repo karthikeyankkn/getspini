@@ -17,7 +17,12 @@ $(document).ready(function(){
 		// $(".banner-container").css("height", window_height);
 		$(".toggle-page-container").css("height", window_height-102);
     $(".careers-iframe").css("height", window_height-115);
+    $(".error-page").css("height", window_height);
 	}
+
+  $(".error-page").click(function(){
+    $(this).attr("href", window.location.origin);
+  });
 
 	// validate email
 	function validateEmail(sEmail) {
@@ -191,7 +196,7 @@ $(document).ready(function(){
             },
             dataType: "json"
         });
-        sucsess_alert();
+        succsess_alert();
       }
       
       }
@@ -242,7 +247,7 @@ $(document).ready(function(){
           success: function(response) {
               // alert("Api working successfully..!");
               // console.log(response);
-              sucsess_alert();
+              succsess_alert();
           },
           error: function(response) {
             // alert("Api WAS not working :( ");
@@ -254,7 +259,7 @@ $(document).ready(function(){
       });
     }
 
-    function sucsess_alert(){
+    function succsess_alert(){
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
