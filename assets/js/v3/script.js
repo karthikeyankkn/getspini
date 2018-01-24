@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   
 	$( window ).resize(function() {
-		windowHight();
+		// windowHight();
 	});
 	// window height
 	function windowHight(){
