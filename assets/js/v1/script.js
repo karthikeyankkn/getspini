@@ -191,6 +191,7 @@ $(document).ready(function(){
             },
             dataType: "json"
         });
+        sucsess_alert();
       }
       
       }
@@ -240,13 +241,8 @@ $(document).ready(function(){
           data: JSON.stringify(data),
           success: function(response) {
               // alert("Api working successfully..!");
-              console.log(response);
-              $(".alert-danger").hide();
-              $(".success-contact, .loading_image").fadeIn();
-              setTimeout(function(){ 
-                location.reload();
-              }, 3000);
-              $(".submit").hide();
+              // console.log(response);
+              sucsess_alert();
           },
           error: function(response) {
             // alert("Api WAS not working :( ");
@@ -256,6 +252,15 @@ $(document).ready(function(){
               // alert("Api Request WAS completed :D ");
           }
       });
+    }
+
+    function sucsess_alert(){
+      $(".alert-danger").hide();
+      $(".success-contact, .loading_image").fadeIn();
+      setTimeout(function(){ 
+        location.reload();
+      }, 3000);
+      $(".submit").hide();
     }
     // send data using API script ends
 
