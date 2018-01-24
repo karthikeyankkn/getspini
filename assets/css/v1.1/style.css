@@ -290,6 +290,15 @@ header{
   box-sizing: unset;
   border-radius: 50%;
   border: 2px solid transparent;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #00bbe5;
+  }
+  100% {
+    background-color: #00bbe566;
+  }
 }
 .spini-services ul li a img:hover{
   -ms-transform: scale(1,2); /* IE 9 */
