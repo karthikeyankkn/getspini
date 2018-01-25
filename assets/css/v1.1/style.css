@@ -228,6 +228,11 @@ header{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
   border-top: 1px solid #eaeaea;
 }
+.spini-services, .spini-customers{
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
 .spini-customers ul li a img{
   max-width: 200px;
 }
