@@ -228,6 +228,11 @@ header{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
   border-top: 1px solid #eaeaea;
 }
+.spini-services, .spini-customers{
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
 .spini-customers ul li a img{
   max-width: 200px;
 }
@@ -283,14 +288,30 @@ header{
 
 }
 .spini-services ul li a img{
-	width: 70px;
-  transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+  display: inline-block;
+  background: #00bbe566;
+  padding: 30px;
+  box-sizing: unset;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  animation: pulse 3s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #00bbe5;
+  }
+  100% {
+    background-color: #00bbe566;
+  }
 }
 .spini-services ul li a img:hover{
   -ms-transform: scale(1,2); /* IE 9 */
   -webkit-transform: scale(1,2); /* Safari */
   transform: scale(1.1,1.1); /* Standard syntax */
   transition: 0.3s ease-in-out;
+  border-color: #00BBE5;
+  background: #fff;
 }
 .spini-services ul li a h4{
 	color: #333;
@@ -815,7 +836,7 @@ header{
 
     }
     .how-spini-works li img{
-      /*width: 100%;*/
+      width: 90%;
       border-radius: 70px 0;
     }
     .how-spini-works li p{
@@ -996,11 +1017,11 @@ header{
     }
     .spini-thankyou label{
       color: green;
-      text-align: center;
+      text-align: justify;
       font-size: 26px;
       font-weight: 400;
       display: block;
-      padding-top: 30px;
+      padding: 30px 20px 0;
     }
     /* estimation styles ends */
     /*partner with us style ends*/
@@ -1038,6 +1059,14 @@ header{
     .seo-links ul li{
       display: block;
       padding-bottom: 5px;
+    }
+    .error-page{
+      padding-top: 50px;
+      background: url(/assets/images/404-img.gif)no-repeat;
+      margin: auto;
+      background-position: center;
+      background-size: contain;
+      display: block;
     }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
@@ -1077,7 +1106,7 @@ header{
             padding: 16px 80px 5px 25px;
         }
         .spini-services ul li a img {
-            width: 70px;
+            /*width: 70px;*/
         }
         .logo a img {
           /*width: 100px;*/
@@ -1104,3 +1133,6 @@ header{
          max-width: 100px;
       }
 
+      .carousel-inner>.item>a>img, .carousel-inner>.item>img{
+        height: unset;
+      }

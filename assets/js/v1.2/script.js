@@ -2,14 +2,14 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint;
 	// preload funcitons
 	windowHight();
 
 
   
 	$( window ).resize(function() {
-		windowHight();
+		// windowHight();
 	});
 	// window height
 	function windowHight(){
@@ -17,7 +17,19 @@ $(document).ready(function(){
 		// $(".banner-container").css("height", window_height);
 		$(".toggle-page-container").css("height", window_height-102);
     $(".careers-iframe").css("height", window_height-115);
+    $(".error-page").css("height", window_height);
 	}
+
+   debugger
+  if (location.origin == "http://getspini.com") {
+    ApiEndPoint = 'https://api.getspini.com:8443';
+  }else{
+    ApiEndPoint = 'https://sapi.getspini.com:8443';
+  }
+
+  $(".error-page").click(function(){
+    $(this).attr("href", window.location.origin);
+  });
 
 	// validate email
 	function validateEmail(sEmail) {
@@ -178,7 +190,7 @@ $(document).ready(function(){
       }else{
         // send email
         $.ajax({
-            url: "https://formspree.io/karthikeyan@spinircle.com", 
+            url: "https://formspree.io/contact@getspini.com", 
             method: "POST",
             data: {
               "Name" : name,
@@ -187,10 +199,12 @@ $(document).ready(function(){
               "City" : cityName,
               "category": categoryName,
               "Selected_Package" : selected_package,
-              "_subject" : "Get spini partner-with-us!"
+              "_subject" : "Get spini partner-with-us!",
+              "_cc" : "karthikeyan@spinircle.com"
             },
             dataType: "json"
         });
+        succsess_alert();
       }
       
       }
@@ -218,7 +232,6 @@ $(document).ready(function(){
     // send data using API script starts
     function senddata(){
       debugger
-      var ApiEndPoint = 'https://api.getspini.com:8443';
       var success;
       var data;
       data = {
@@ -240,13 +253,8 @@ $(document).ready(function(){
           data: JSON.stringify(data),
           success: function(response) {
               // alert("Api working successfully..!");
-              console.log(response);
-              $(".alert-danger").hide();
-              $(".success-contact, .loading_image").fadeIn();
-              setTimeout(function(){ 
-                location.reload();
-              }, 3000);
-              $(".submit").hide();
+              // console.log(response);
+              succsess_alert();
           },
           error: function(response) {
             // alert("Api WAS not working :( ");
@@ -256,6 +264,16 @@ $(document).ready(function(){
               // alert("Api Request WAS completed :D ");
           }
       });
+    }
+
+    function succsess_alert(){
+      $(".alert-danger").hide();
+      $(".success-contact, .loading_image").fadeIn();
+      setTimeout(function(){ 
+        // location.reload();
+        window.location.href = '../thankyou-pages/thankyoupage-template.html';
+      }, 3000);
+      $(".submit").hide();
     }
     // send data using API script ends
 
@@ -389,7 +407,7 @@ $(document).ready(function(){
 
         function interior_estimate_mailsend(){
           $.ajax({
-            url: "https://formspree.io/karthikeyan@spinircle.com", 
+            url: "https://formspree.io/contact@getspini.com", 
             method: "POST",
             data: {
               "Name" : uname,
@@ -403,7 +421,8 @@ $(document).ready(function(){
               "Quality_of_accessoriesvalue" : quality_of_accessoriesvalue,
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
-              "_subject" : "Lead from Interior Estimation Page !"
+              "_subject" : "Lead from Interior Estimation Page !",
+              "_cc" : "karthikeyan@spinircle.com"
             },
             dataType: "json"
           });
