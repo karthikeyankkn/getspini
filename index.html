@@ -18,7 +18,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/v1.2/style.css">
    <!-- css files ends -->
 
    <script>
@@ -33,47 +33,34 @@
 
 <section class="banner-container">
   <div class="slider-banner">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- desktop -->
+    <div id="myCarousel" class="carousel slide hidden-xs" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li> -->
         <!-- <li data-target="#myCarousel" data-slide-to="4"></li> -->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-        <div class="item active">
+        <div class="item">
           <a href="realestate/nest-amaze.html">
             <img src="https://cdn.getspini.com/optimized/nest-bn.jpg" alt="Realestate-banner" style="width:100%;">
           </a>
         </div>
-
-        <div class="item">
-          <a href="realestate/akshaya-today.html">
-            <img src="https://cdn.getspini.com/optimized/akshaya-today-bn.jpg" alt="Interior-banner" style="width:100%;">
-          </a>
-        </div>
-      
-        <div class="item">
+        <div class="item active">
           <a href="http://hiranandaniparks.com/">
             <img src="https://cdn.getspini.com/optimized/hiranandani-bn.jpg" alt="Loans-banner" style="width:100%;">
           </a>
         </div>
-
         <div class="item">
           <a href="realestate/stepstone-ananthaya.html">
             <img src="https://cdn.getspini.com/optimized/stepsstone-bn.jpg" alt="Insurance-banner" style="width:100%;">
           </a>
         </div>
-
-        <!-- <div class="item">
-          <a href="realestate/realestate.html">
-            <img src="https://cdn.getspini.com/category/optimized/Building-b.jpg" alt="Building-banner" style="width:100%;">
-          </a>
-        </div> -->
       </div>
 
       <!-- Left and right controls -->
@@ -86,6 +73,49 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <!-- mobile -->
+    <div id="myCarousel2" class="carousel slide hidden-sm hidden-md hidden-lg" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <!-- <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+        <li data-target="#myCarousel2" data-slide-to="3"></li> -->
+        <!-- <li data-target="#myCarousel" data-slide-to="4"></li> -->
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="realestate/nest-amaze.html">
+            <img src="https://cdn.getspini.com/nest-mob-v2-1.jpg" alt="Realestate-banner" style="width:100%;">
+          </a>
+        </div>      
+        <div class="item">
+          <a href="http://hiranandaniparks.com/">
+            <img src="https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg" alt="Loans-banner" style="width:100%;">
+          </a>
+        </div>
+
+        <div class="item">
+          <a href="realestate/stepstone-ananthaya.html">
+            <img src="https://cdn.getspini.com/stepstone-mob-v2-1.jpg" alt="Insurance-banner" style="width:100%;">
+          </a>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
   </div>
 </section>
 <!-- banner container ends -->
@@ -184,7 +214,7 @@
 <!-- script files starts -->
   <script src="assets/js/lib/jquery.min.js"></script>
   <script src="assets/js/lib/bootstrap.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/v1.2/script.js"></script>
 
 <script>
   
@@ -233,5 +263,19 @@
     fbq('track', 'PageView');
 </script>
 <!-- facebook pixel ends -->
+
+<!-- Start of Woopra Code -->
+<script>
+(function(){
+       var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+})("woopra");
+
+woopra.config({
+   domain: 'spinircle.com'
+});
+woopra.track();
+</script>
+<!-- End of Woopra Code -->
+
 </body>
 </html>
