@@ -1,0 +1,66 @@
+{
+	"multicard":[{
+		"id":"1",
+		"a_href":"nest-amaze.html",
+		"card_title":"nest amaze",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
+		"card_description":"Fantastic Flat equipped with world class specs and facilities.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"2",
+		"a_href":"akshaya-today.html",
+		"card_title":"akshaya today",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Today.jpg",
+		"card_description":"Luxurious apartment with all comforts of best-in-class amenities.",
+		"card_area":"OMR Thaiyur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"3",
+		"a_href":"nest-njoy-villa.html",
+		"card_title":"nest njoy villa",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
+		"card_description":"The Nest njoy a landmark project in the world of affordable homes.",
+		"card_area":"Kanathur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"4",
+		"a_href":"akshaya-republic.html",
+		"card_title":"akshaya republic",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Republic.jpg",
+		"card_description":"Fantastic apartments with world class facilities &amp; comfort.",
+		"card_area":"Kovur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"5",
+		"a_href":"nest-enjoy-apartment.html",
+		"card_title":"nest enjoy apartment",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
+		"card_description":"Bright & Spacious home designed to international standards.",
+		"card_area":"Kanathur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"6",
+		"a_href":"nest-glory.html",
+		"card_title":"nest glory",
+		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Glory.jpg",
+		"card_description":"Stunning Nest-Glory flats equipped with world class facilities.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_idname":"realestate-cards"
+		},
+		{
+		"id":"7",
+		"a_href":"annanagar.html",
+		"card_title":"annanagar",
+		"img_src": "https://cdn.getspini.com/property/anna/14.jpg",
+		"card_description":"Awesome anna nagar apartment equipped for comfortable lifestyle.",
+		"card_area":"Anna Nagar, Chennai",
+		"card_idname":"realestate-cards"
+		}
+		]
+}
