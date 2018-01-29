@@ -20,7 +20,7 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-   debugger
+   
   if (location.origin == "http://getspini.com") {
     ApiEndPoint = 'https://api.getspini.com:8443';
   }else{
@@ -59,7 +59,7 @@ $(document).ready(function(){
 
 	// navigation script
 	$('.next').click(function(){
-		// debugger
+		// 
       $(this).parents(".toggle-page-container ul li").hide();
       $(this).parents(".toggle-page-container ul li").next().fadeIn();
       // var lastindex = $(this).parents(".toggle-page-container ul li").siblings();
@@ -71,7 +71,7 @@ $(document).ready(function(){
     });
     
     $('.back').click(function(){
-    	// debugger
+    	// 
       $(this).parents(".toggle-page-container ul li").hide();
       $(this).parents(".toggle-page-container ul li").prev().fadeIn();
       // var index = $(this).parents(".toggle-page-container ul li").index();
@@ -94,7 +94,7 @@ $(document).ready(function(){
     });
 
     $(".submit").click(function(){
-      debugger
+      
       var thiskey = $(this);
       var type =  thiskey[0].value;
 
@@ -122,7 +122,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      debugger
+      
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
@@ -153,7 +153,7 @@ $(document).ready(function(){
 
     // contact form script starts
     function contact_form(){
-      debugger
+      
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
@@ -179,7 +179,7 @@ $(document).ready(function(){
     }
     // success contact form script
     function success_contact_form(){
-      debugger
+      
       // if (check_inner_page == false) {
       //   senddata();
       // }else{
@@ -216,7 +216,7 @@ $(document).ready(function(){
       qa2 = $("input[name='what_kind']:checked").val();
       qa3 = $("input[name='how_old']:checked").val();
       qa4 = $("input[name='what_carpet']:checked").val();
-      debugger
+      
     }
     // questions for interior ends
 
@@ -224,14 +224,14 @@ $(document).ready(function(){
     function apartments_qa(){
       qa1 = $("input[name='apartments']:checked").val();
       qa2 = $("input[name='base']:checked").val();
-      debugger
+      
     }
     // questions for apartments ends
 
 
     // send data using API script starts
     function senddata(){
-      debugger
+      
       var success;
       var data;
       data = {
@@ -287,7 +287,7 @@ $(document).ready(function(){
           }
       });
       $("#scrolltop").click(function(){
-        debugger
+        
         var scroll = $("html, body");
         scroll.stop().animate({scrollTop:0}, 700, 'swing', function() {
         });
@@ -296,7 +296,7 @@ $(document).ready(function(){
 
       // radio accordion
       $('input[type="radio"]').click(function(){
-        debugger
+        
         $(this).parent("label").siblings().show();
         $(this).parents("li").siblings().find("span").hide();
         // check_getestimate();
@@ -305,7 +305,7 @@ $(document).ready(function(){
       
 
       // function check_getestimate(){
-      //   debugger
+      //   
       //   if (type_of_kitchen != undefined && quality_of_accessories != undefined && type_of_material != undefined ) {
       //     $(".getestimate").attr("disabled", false);
       //   }else{
@@ -314,7 +314,7 @@ $(document).ready(function(){
       // }
 
       $(".submit_estimation").click(function(){
-        debugger
+        
         var type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
         var quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
         var type_of_material = $("input[name='type_of_material']:checked").val();
@@ -402,7 +402,7 @@ $(document).ready(function(){
           $("#calculate-area").fadeIn(2000);
           // send email
           interior_estimate_mailsend();
-          debugger
+          
         }
 
         function interior_estimate_mailsend(){
@@ -428,5 +428,23 @@ $(document).ready(function(){
           });
         }  
       });
+
+      // multi cards repeat
+      var multicard;
+      // debugger
+      $.get("../assets/js/v1.2/multicard.json", function(data, status){
+      
+            multicard = data.multicard;
+            for( var i = 0; i < multicard.length; i++ ){
+              $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6'><div class='list-card'><a href="+multicard[i].a_href+"><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><span>"+multicard[i].card_area+"</span><a href="+multicard[i].a_href+" class='btn btn-primary'>See more</a></article></div></li>");
+            }
+      });
+
+      
+     
+
+        
+
+      
 	 
 });
