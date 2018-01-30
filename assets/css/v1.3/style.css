@@ -285,7 +285,7 @@ header{
 	/*padding: 15px;*/
 }
 .spini-services ul li a{
-
+  display: inline-block;
 }
 .spini-services ul li a img{
 	transition: 0.3s ease-in-out;

@@ -37,26 +37,13 @@
 <section class="banner-container container">
   <div class="slider-banner">
     <div class="slider-details">
-      <h2 id="page-title"></h2>
-      <span id="page-area"></span>
+      <h2 id="card-title"></h2>
+      <span id="card-area" onclick="kkn()"></span>
     </div>
     <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li> -->
-      </ol>
-
+      
       <!-- Wrapper for slides -->
-      <div class="carousel-inner" id="page-slider">
-        <div class="item active">
-          <img src="https://cdn.getspini.com/property/republicbanner.jpg" alt="Los Angeles" style="width:100%;">
-        </div>
-
-        
-      </div>
+      <div class="carousel-inner" id="page-slider"></div>
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
         <span class="fa fa-angle-left"></span>
@@ -104,7 +91,7 @@
   <!-- project description -->
   <div class="project-description">
     <h2>Property Description</h2>
-    <p id="page-description">Akshaya Republic in Kovur, Chennai West, that offers luxurious 2 and 3 BHK apartments. Akshaya Republic is Akshaya Pvt. Ltd.’s 152nd project which brings out the classic style of colonial architecture. With over 77% of the project dedicated to open spaces, reside close to nature in a unique on-the-road project at Akshaya Republic.</p>
+    <p id="card-description"></p>
   </div>
   <!-- project details -->
   <div class="project-details">
@@ -115,6 +102,7 @@
           <li>Property Type:</li>
           <li>Budget :</li>
           <li>Possision:</li>
+          <li>No-of-apartments:</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
@@ -122,20 +110,21 @@
           <li id="page-property-type"></li>
           <li id="page-budget"></li>
           <li id="page-possision"></li>
+          <li id="page-no-of-apartments"></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-heading" >
         <ul>
           <li>Location:</li>
           <li>Configurations:</li>
-          <!-- <li>loream</li> -->
+          <li>no of floors</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
         <ul>
-          <li id="page-locaiton"></li>
+          <li id="page-location"></li>
           <li id="page-configurations"></li>
-          <!-- <li>ipusm</li> -->
+          <li id="page-no-of-floors"></li>
         </ul>
       </div>
     </div>
@@ -215,5 +204,44 @@
     </div>
 <script async data-rocketsrc="https://static.addtoany.com/menu/page.js" type="text/rocketscript"></script>
   <!-- AddToAny END -->
+  <script>
+      var multicard;
+      var index = getCookie("index");
+    $.get("../assets/js/v1.4/multicard.json", function(data, status){
+      multicard = data.multicard;
+        $("#card-title").text(multicard[index].card_title);
+        $("#card-area").text(multicard[index].card_area);
+        $("#card-description").text(multicard[index].card_description);
+        $("#page-property-type").text(multicard[index].page_property_type);
+        $("#page-budget").text(multicard[index].page_budget);
+        $("#page-possision").text(multicard[index].page_possision);
+        $("#page-location").text(multicard[index].page_location);
+        $("#page-configurations").text(multicard[index].page_configurations);
+        $("#page-no-of-apartments").text(multicard[index].page_no_of_apartments);
+        $("#page-no-of-floors").text(multicard[index].page_no_of_floors)
+
+        // slider repeat
+        for(var j = 0; j < multicard[index].page_slider.length; j++ ){
+          $("#page-slider").append(" <div class='item'><img src='"+multicard[index].page_slider[j]+"'></div>");
+        }
+        $("#page-slider .item:first").addClass("active"); 
+    });
+      // get data form cookie
+      function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
+  </script>
 </body>
 </html>

@@ -1,21 +1,59 @@
 {
 	"multicard":[{
 		"id":"1",
-		"a_href":"nest-amaze.html",
+		"a_href":"",
 		"card_title":"nest amaze",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
-		"card_description":"Fantastic Flat equipped with world class specs and facilities.",
+		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments starting from 45 lakhs designed to international standards. Nest Amaze is located off OMR and has easy access to several renown educational institutions and IT companies.",
 		"card_area":"Sholinganallur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"-",
+		"page_possision": "Under Construction",
+		"page_location":"Sholinganallur",
+		"page_configurations":"1,2,3 BHK Flats",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"1 Tower,12 Units",
+		"page_no_of_floors":"2 Floors",
+		"page_slider":[
+						 "https://cdn.getspini.com/img/nest_amaze/02.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/03.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/04.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/05.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/06.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/07.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/08.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/09.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/10.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/11.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/12.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/13.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/14.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/15.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/16.jpg"
+					]
+					
 		},
 		{
 		"id":"2",
-		"a_href":"akshaya-today.html",
+		"a_href":"",
 		"card_title":"akshaya today",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Today.jpg",
-		"card_description":"Luxurious apartment with all comforts of best-in-class amenities.",
-		"card_area":"OMR Thaiyur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_description":"The inspiring development of Akshaya Today in Thaiyur creates a place of peace and solace for you and your loved ones. This sprawling 21 acre project comprises of spacious 1, 2 & 3 BHK apartments. In keeping with the gorgeous surroundings, Akshaya Today boasts of 83% of open spaces. Homes here come equipped with all the comforts of best-in-class amenities and specifications. Furthermore, the sense of luxury extends to the unparalleled location advantages of Thaiyur, which brings a number of educational institutions, healthcare facilities and lifestyle & entertainment centres within easy reach. Akshaya Today is designed to give you a complete living experience.",
+		"card_area":"OMR Thaiyur near kelambakkam, Chennai",
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"46 Lacs to 55 lacs",
+		"page_possision": "Under Construction",
+		"page_location":"OMR in Thaiyur near Kelambakkam",
+		"page_configurations":"2,3 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/property/todaybanner.jpg"
+						
+					]
 		},
 		{
 		"id":"3",
