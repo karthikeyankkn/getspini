@@ -432,7 +432,7 @@ $(document).ready(function(){
       // multi cards repeat
       var multicard;
       // debugger
-      $.get("../assets/js/v1.3/multicard.json", function(data, status){
+      $.get("../assets/js/v1.4/multicard.json", function(data, status){
       
             multicard = data.multicard;
             for( var i = 0; i < multicard.length; i++ ){
