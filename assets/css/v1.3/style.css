@@ -204,6 +204,7 @@ header{
 }
 .carousel-inner>.item>a>img, .carousel-inner>.item>img{
   height: 400px;
+  width: 100%;
 }
 .carousel-control{
   width: 0%;
@@ -285,7 +286,7 @@ header{
 	/*padding: 15px;*/
 }
 .spini-services ul li a{
-
+  display: inline-block;
 }
 .spini-services ul li a img{
 	transition: 0.3s ease-in-out;
@@ -727,8 +728,7 @@ header{
     }
     .slider-details{
       background: #fff;
-      padding: 10px 20px;
-      border-left: 5px solid #f55344;
+      padding: 30px 15px 15px;
     }
     .slider-details h2{
       margin: 0;
@@ -736,9 +736,10 @@ header{
       vertical-align: middle;
       color: #455C64;
       padding-right: 10px;
+      text-transform: uppercase;
     }
     .slider-details span{
-
+      text-transform: capitalize;
     }
     /*.project-details{
       border-bottom: 5px solid #f1f3f6;
@@ -1139,11 +1140,12 @@ header{
         /*.how-spini-works li img{
           width: 100%;
         }*/
-      }
-      .spini-customers ul li a img{
+         .spini-customers ul li a img{
          max-width: 100px;
-      }
+        }
 
-      .carousel-inner>.item>a>img, .carousel-inner>.item>img{
-        height: unset;
+        .carousel-inner>.item>a>img, .carousel-inner>.item>img{
+          height: unset;
+        }
       }
+     

@@ -1,66 +1,192 @@
 {
 	"multicard":[{
 		"id":"1",
-		"a_href":"nest-amaze.html",
+		"a_href":"",
 		"card_title":"nest amaze",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
-		"card_description":"Fantastic Flat equipped with world class specs and facilities.",
+		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments starting from 45 lakhs designed to international standards. Nest Amaze is located off OMR and has easy access to several renown educational institutions and IT companies.",
 		"card_area":"Sholinganallur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"-",
+		"page_possision": "Under Construction",
+		"page_location":"Sholinganallur",
+		"page_configurations":"1,2,3 BHK Flats",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"1 Tower,12 Units",
+		"page_no_of_floors":"2 Floors",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/img/nest_amaze/02.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/03.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/04.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/05.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/06.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/07.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/08.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/09.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/10.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/11.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/12.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/13.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/14.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/15.jpg",
+						 "https://cdn.getspini.com/img/nest_amaze/16.jpg"
+					]
+					
 		},
 		{
 		"id":"2",
-		"a_href":"akshaya-today.html",
+		"a_href":"",
 		"card_title":"akshaya today",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Today.jpg",
-		"card_description":"Luxurious apartment with all comforts of best-in-class amenities.",
-		"card_area":"OMR Thaiyur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_description":"The inspiring development of Akshaya Today in Thaiyur creates a place of peace and solace for you and your loved ones. This sprawling 21 acre project comprises of spacious 1, 2 & 3 BHK apartments. In keeping with the gorgeous surroundings, Akshaya Today boasts of 83% of open spaces. Homes here come equipped with all the comforts of best-in-class amenities and specifications. Furthermore, the sense of luxury extends to the unparalleled location advantages of Thaiyur, which brings a number of educational institutions, healthcare facilities and lifestyle & entertainment centres within easy reach. Akshaya Today is designed to give you a complete living experience.",
+		"card_area":"OMR Thaiyur near kelambakkam, Chennai",
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"46 Lacs to 55 lacs",
+		"page_possision": "Under Construction",
+		"page_location":"OMR in Thaiyur near Kelambakkam",
+		"page_configurations":"2,3 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"-",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/property/todaybanner.jpg"
+						
+					]
 		},
 		{
 		"id":"3",
-		"a_href":"nest-njoy-villa.html",
+		"a_href":"",
 		"card_title":"nest njoy villa",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
-		"card_description":"The Nest njoy a landmark project in the world of affordable homes.",
+		"card_description":"The Nest njoy a landmark project in the world of affordable homes, which is a beautiful gated community having Duplex Row Houses with all the modern amenities, blossoming green landscape with advanced architecture, a stylish art of clubhouse nestled with Gym, Swimming Pool, Party Hall, Children play area etc, complete this exquisite portrait of effective living.  THE NEST - The name itself indicates the idealness of shelter, is the most common need of every family. The aspiration to improve the quality of life for people and to build dream home's with timely and cost-effective solutions is the motto of every person associated with THE NEST. Luxury and affordability brings a combination of style and comfort for every customers for both investment and living-in. We deliver qualified reality of the customers dreams and imaginations on their home towards affordability.",
 		"card_area":"Kanathur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"-",
+		"page_possision": "Under Construction",
+		"page_location":"Kanathur",
+		"page_configurations":"2,3 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"53 Units",
+		"page_no_of_floors":"3 Floors",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/img/nest/1.jpg",
+						 "https://cdn.getspini.com/img/nest/2.jpg",
+						 "https://cdn.getspini.com/img/nest/3.jpg",
+						 "https://cdn.getspini.com/img/nest/4.jpg",
+						 "https://cdn.getspini.com/img/nest/5.jpg",
+						 "https://cdn.getspini.com/img/nest/6.jpg",
+						 "https://cdn.getspini.com/img/nest/7.jpg",
+						 "https://cdn.getspini.com/img/nest/8.jpg",
+						 "https://cdn.getspini.com/img/nest/9.jpg",
+						 "https://cdn.getspini.com/img/nest/10.jpg",
+						 "https://cdn.getspini.com/img/nest/11.jpg"
+						
+					]
 		},
 		{
 		"id":"4",
-		"a_href":"akshaya-republic.html",
+		"a_href":"",
 		"card_title":"akshaya republic",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Republic.jpg",
-		"card_description":"Fantastic apartments with world class facilities &amp; comfort.",
-		"card_area":"Kovur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_description":"Akshaya Republic in Kovur, Chennai West, that offers luxurious 2 and 3 BHK apartments. Akshaya Republic is Akshaya Pvt. Ltd.’s 152nd project which brings out the classic style of colonial architecture. With over 77% of the project dedicated to open spaces, reside close to nature in a unique on-the-road project at Akshaya Republic.",
+		"card_area":"Kovur near Porur, Chennai",
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"38 Lacs to 90 lacs",
+		"page_possision": "Under Construction",
+		"page_location":"Kovur near Porur",
+		"page_configurations":"2,3 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"-",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/property/republicbanner.jpg"
+					]
 		},
 		{
 		"id":"5",
-		"a_href":"nest-enjoy-apartment.html",
+		"a_href":"",
 		"card_title":"nest enjoy apartment",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
-		"card_description":"Bright & Spacious home designed to international standards.",
-		"card_area":"Kanathur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_description":"Nest njoy apartment by The Nest Builders located in Sholinganallur offers premium 1 & 2 BHK apartments designed to international standards. It is built with thoughtful designs and is developed with all the modern day amenities.Nest-njoy apartments are located off OMR and have easy access to several renown schools, colleges and IT companies.",
+		"card_area":" Sholinganallur, Chennai",
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"48L - 60L",
+		"page_possision": "Ready to occupy",
+		"page_location":"Sholinganallur, Chennai",
+		"page_configurations":"1 & 2 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"3 Floors",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/property/njoybanner.jpg"
+					]
 		},
 		{
 		"id":"6",
-		"a_href":"nest-glory.html",
+		"a_href":"",
 		"card_title":"nest glory",
 		"img_src": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Glory.jpg",
-		"card_description":"Stunning Nest-Glory flats equipped with world class facilities.",
+		"card_description":"Nest Glory by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments designed to international standards. It is built with thoughtful designs and is developed with all the modern day amenities.Nest Glory is located off OMR and has easy access to several renown schools, colleges and IT companies.",
 		"card_area":"Sholinganallur, Chennai",
-		"card_idname":"realestate-cards"
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"25L - 35L",
+		"page_possision": "Ready to occupy",
+		"page_location":"Sholinganallur, Chennai",
+		"page_configurations":"1,2 & 3 BHK",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"2 Floors",
+		"page_built_up_area":"-",
+		"page_age_of_the_property":"-",
+		"page_slider":[
+						 "https://cdn.getspini.com/property/glorybanner.jpg"
+					]
 		},
 		{
 		"id":"7",
-		"a_href":"annanagar.html",
-		"card_title":"annanagar",
+		"a_href":"",
+		"card_title":"Shanthi Colony",
 		"img_src": "https://cdn.getspini.com/property/anna/14.jpg",
-		"card_description":"Awesome anna nagar apartment equipped for comfortable lifestyle.",
+		"card_description":"Shanthi Colony Apartment located in Anna nagar offers premium 2 & 3 BHK apartment starting from 2 crore designed for comfortable lifestyle. This Apartment off shanthi colony and has easy access to several renown educational institutions and Located in major part of the city.",
 		"card_area":"Anna Nagar, Chennai",
-		"card_idname":"realestate-cards"
+		"card_idname":"realestate-cards",
+		"page_property_type":"Residential",
+		"page_budget":"-",
+		"page_possision": "Ready to occupy",
+		"page_location":"Anna Nagar",
+		"page_configurations":"-",
+		"page_slider_status": "active",
+		"page_no_of_apartments":"-",
+		"page_no_of_floors":"3rd Floor",
+		"page_built_up_area":"1400 sq ft approx",
+		"page_age_of_the_property":"3 Years old",
+		"page_slider":[
+						"https://cdn.getspini.com/property/anna/14.jpg",
+						"https://cdn.getspini.com/property/anna/2.jpg",
+						"https://cdn.getspini.com/property/anna/3.jpg",
+						"https://cdn.getspini.com/property/anna/4.jpg",
+						"https://cdn.getspini.com/property/anna/6.jpg",
+						"https://cdn.getspini.com/property/anna/8.jpg",
+						"https://cdn.getspini.com/property/anna/13.jpg",
+						"https://cdn.getspini.com/property/anna/1.jpg",
+						"https://cdn.getspini.com/property/anna/15.jpg"
+					]
 		}
 		]
 }
