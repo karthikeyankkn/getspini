@@ -103,6 +103,7 @@
           <li>Budget :</li>
           <li>Possision:</li>
           <li>No-of-apartments:</li>
+          <li>Built Up Area:</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
@@ -111,13 +112,15 @@
           <li id="page-budget"></li>
           <li id="page-possision"></li>
           <li id="page-no-of-apartments"></li>
+          <li id="page-built-up-area"></li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-heading" >
         <ul>
           <li>Location:</li>
           <li>Configurations:</li>
-          <li>no of floors</li>
+          <li>no of floors:</li>
+          <li>Age of the Property:</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
@@ -125,6 +128,7 @@
           <li id="page-location"></li>
           <li id="page-configurations"></li>
           <li id="page-no-of-floors"></li>
+          <li id="page-age-of-the-property"></li>
         </ul>
       </div>
     </div>
@@ -218,11 +222,13 @@
         $("#page-location").text(multicard[index].page_location);
         $("#page-configurations").text(multicard[index].page_configurations);
         $("#page-no-of-apartments").text(multicard[index].page_no_of_apartments);
-        $("#page-no-of-floors").text(multicard[index].page_no_of_floors)
+        $("#page-no-of-floors").text(multicard[index].page_no_of_floors);
+        $("#page-built-up-area").text(multicard[index].page_built_up_area);
+        $("#page-age-of-the-property").text(multicard[index].page_age_of_the_property);
 
         // slider repeat
         for(var j = 0; j < multicard[index].page_slider.length; j++ ){
-          $("#page-slider").append(" <div class='item'><img src='"+multicard[index].page_slider[j]+"'></div>");
+          $("#page-slider").append(" <div class='item'><img src='"+multicard[index].page_slider[j]+"' alt='"+multicard[index].card_title+"'></div>");
         }
         $("#page-slider .item:first").addClass("active"); 
     });
