@@ -848,7 +848,7 @@ header{
 
     }
     .how-spini-works li img{
-      width: 90%;
+      max-width: 250px;
       border-radius: 70px 0;
     }
     .how-spini-works li p{
