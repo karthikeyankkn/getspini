@@ -24,6 +24,9 @@ canvas{
   vertical-align:bottom;
   max-height: 600px;
 }
+.mt-20{
+  margin-top: 20px;
+}
 .banner-header{
   padding: 10px 100px;
   background: #1d2531;
@@ -314,8 +317,9 @@ header{
   border-color: #00BBE5;
   background: #fff;
 }
-.spini-services ul li a h4{
+.spini-services ul li a h1{
 	color: #333;
+  font-size: 1.5em;
 }
 .spini-services-card{
   margin-top: 30px;
@@ -1127,7 +1131,7 @@ header{
         .christmas-tree{
           margin-left: 1% !important;
         }
-        .spini-services ul li a h4{
+        .spini-services ul li a h1{
           font-size: 16px;
         }
         .lead{

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -109,4 +110,13 @@
 </url>
 
 
+=======
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://getspini.com/</loc>
+        <lastmod>2018-02-01</lastmod>
+        <changefreq>1</changefreq>
+        <priority>0.5</priority>
+    </url>
+>>>>>>> 398a088c2b7e41cb6042e3210bbf06ce29f2dca6
 </urlset>
