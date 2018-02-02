@@ -314,14 +314,14 @@ $(document).ready(function(){
       //     $(".getestimate").attr("disabled", true);
       //   }
       // }
+      var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile, type_of_kitchen, quality_of_accessories, type_of_material;
+      $(".getestimate").click(function(){
+        debugger
+        type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
+        quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
+        type_of_material = $("input[name='type_of_material']:checked").val();
 
-      $(".submit_estimation").click(function(){
-        
-        var type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
-        var quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
-        var type_of_material = $("input[name='type_of_material']:checked").val();
         // type of kitchen value
-        var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile;
         if (type_of_kitchen == "L-shape") {
           lenghtx = document.getElementById('lshapex').value;
           lenghty = document.getElementById('lshapey').value;
@@ -338,7 +338,7 @@ $(document).ready(function(){
           lenghtx = document.getElementById('customxyz').value;
           type_of_kitchenvalue = parseInt(lenghtx);
         }else{
-          ("error in typeofkitchen");
+          alert("Please select type of kitchen");
         }
 
         // type of material value
@@ -358,9 +358,19 @@ $(document).ready(function(){
         }else if (type_of_material == "Marine") {
           type_of_materialvalue = 16000;
         }else{
-          ("error in type_of_material");
+          alert("Please select Type of Material");
         }
 
+        if(isNaN(type_of_kitchenvalue)){
+          alert("Please enter all measurements");
+          $(".radio span input").css("border-color","red");
+        }else{
+          $('#myModal').modal('show');
+          $(".radio span input").css("border-color","green");
+        }
+      });
+      $(".submit_estimation").click(function(){
+        
         // calculation for design
         if (quality_of_accessories == "simple") {
           quality_of_accessoriesvalue = 15000;
@@ -370,7 +380,7 @@ $(document).ready(function(){
         else if (quality_of_accessories == "high") {
           quality_of_accessoriesvalue = 60000;
         }else{
-          ("error in design");
+          alert("Please select Quality of Accessories");
         }
 
         uname = $("input[name = estimate_name]").val();
