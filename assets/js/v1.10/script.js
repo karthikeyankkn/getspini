@@ -5,8 +5,50 @@ $(document).ready(function(){
   var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint;
 	// preload funcitons
 	windowHight();
+    // script for common device image starts
+     // images for desktop
+      var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
+                          "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
+                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg"
+                        ];
 
+      // images for mobile
+      var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
+                        "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+                        "https://cdn.getspini.com/stepstone-mob-v2-1.jpg"];
+      // links for slider
+      var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
+                         "http://hiranandaniparks.com/",
+                         "realestate/stepstone-ananthaya-Urapakkam.html"];
 
+      var window_width, devices, slider_id, alt, parts, astSegment;
+      debugger
+      
+      common_img();
+      
+      function common_img(){
+        window_width = $(window).width(); //get device width
+      
+        if (window_width > 500) {
+          devices = desktop_img;
+        }else{
+          devices = mobile_img;
+        }
+
+        slider_id = $(".carousel").attr("id"); //get id of the carousel
+        for(var i = 0; i < devices.length; i++){
+
+          alt = devices[i];
+          parts = alt.split('/');
+          lastSegment = parts.pop() || parts.pop();
+
+          $("#common-img").append('<div class="item"><a href ="'+slider_link[i]+'"><img src="'+devices[i]+'" alt="'+lastSegment+'" /></a></div>');
+          $("#common-img-indicators").append('<li data-target="#'+slider_id+'" data-slide-to="'+i+'"></li>')
+        }
+        $("#common-img .item:first-child, #common-img-indicators li:first-child").addClass("active");
+
+      }
+    // script for common device image load end
   
 	$( window ).resize(function() {
 		// windowHight();
@@ -45,10 +87,10 @@ $(document).ready(function(){
 	// load header and footer
 	if (index_page == true) {
 		$("header").load("header.html"); 
-  		$("footer").load("footer.html");
+  		$("footer").load("footer1.html");
 	}else{
 		$("header").load("../header.html"); 
-  	$("footer").load("../footer.html");
+  	$("footer").load("../footer1.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -202,7 +244,7 @@ $(document).ready(function(){
               "category": categoryName,
               "Selected_Package" : selected_package,
               "_subject" : "Get spini partner-with-us!",
-              "_cc" : "karthikeyan@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
             },
             dataType: "json"
         });
@@ -314,14 +356,14 @@ $(document).ready(function(){
       //     $(".getestimate").attr("disabled", true);
       //   }
       // }
+      var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile, type_of_kitchen, quality_of_accessories, type_of_material;
+      $(".getestimate").click(function(){
+        debugger
+        type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
+        quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
+        type_of_material = $("input[name='type_of_material']:checked").val();
 
-      $(".submit_estimation").click(function(){
-        
-        var type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
-        var quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
-        var type_of_material = $("input[name='type_of_material']:checked").val();
         // type of kitchen value
-        var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile;
         if (type_of_kitchen == "L-shape") {
           lenghtx = document.getElementById('lshapex').value;
           lenghty = document.getElementById('lshapey').value;
@@ -338,7 +380,7 @@ $(document).ready(function(){
           lenghtx = document.getElementById('customxyz').value;
           type_of_kitchenvalue = parseInt(lenghtx);
         }else{
-          ("error in typeofkitchen");
+          alert("Please select type of kitchen");
         }
 
         // type of material value
@@ -358,9 +400,19 @@ $(document).ready(function(){
         }else if (type_of_material == "Marine") {
           type_of_materialvalue = 16000;
         }else{
-          ("error in type_of_material");
+          alert("Please select Type of Material");
         }
 
+        if(isNaN(type_of_kitchenvalue)){
+          alert("Please enter all measurements");
+          $(".radio span input").css("border-color","red");
+        }else{
+          $('#myModal').modal('show');
+          $(".radio span input").css("border-color","green");
+        }
+      });
+      $(".submit_estimation").click(function(){
+        
         // calculation for design
         if (quality_of_accessories == "simple") {
           quality_of_accessoriesvalue = 15000;
@@ -370,7 +422,7 @@ $(document).ready(function(){
         else if (quality_of_accessories == "high") {
           quality_of_accessoriesvalue = 60000;
         }else{
-          ("error in design");
+          alert("Please select Quality of Accessories");
         }
 
         uname = $("input[name = estimate_name]").val();
@@ -424,7 +476,7 @@ $(document).ready(function(){
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
               "_subject" : "Lead from Interior Estimation Page !",
-              "_cc" : "karthikeyan@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
             },
             dataType: "json"
           });
@@ -436,7 +488,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.6/multicard.json", function(data, status){
+        $.get("../assets/js/v1.10/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");

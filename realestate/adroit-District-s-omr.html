@@ -24,6 +24,7 @@
    <!-- css files ends -->
    <script>
      var index_page = false;
+     var categoryName = "Real Estate(Buying)";
    </script> 
         
 </head>
@@ -38,28 +39,28 @@
 <section class="banner-container container">
   <div class="slider-banner">
     <div class="slider-details">
-      <h2>Nest</h2>
-      <span>Solinganallur,</span>
-      <span>chennai</span>
+      <h2>Adroit District</h2>
+      <span>Thalambur,</span>
+      <span>Chennai</span>
     </div>
     <div id="myCarousel" class="carousel slide col-md-6" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <!-- <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li> -->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="assets/images/ban1.png" alt="Los Angeles" style="width:100%;">
+          <img src="../assets/images/Adroit_District.jpg" alt="Adroit_District.jpg">
         </div>
-
         <div class="item">
-          <img src="assets/images/ban2.png" alt="Chicago" style="width:100%;">
+          <img src="../assets/images/adroit-district-s-construction-status-7894233.jpeg" alt="adroit-district-s-construction-status-7894233.jpeg">
         </div>
+        
       </div>
       <!-- Left and right controls -->
       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -71,7 +72,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <form class="col-md-6 contact-us" method="post" action="../sendemail.php">
+    <div class="col-md-6 contact-us">
       <h2>Contact-Us</h2>
       <ul>
         <li>
@@ -84,49 +85,65 @@
           <input type="email" name="email" placeholder="Enter Your Email">
         </li>
         <li>
-          <button>Submit</button>
+          <select name="city">
+            <option value="">City</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+          </select>
         </li>
+        <li>
+          <button class="submit_innerpage" id="submit_innerpage">Submit</button>
+        </li>
+        
       </ul>
-    </form>
+      <div class="alerts_page"></div>
+    </div>
   </div>
 </section>
 
 <section class="container project-container">
   <!-- project description -->
   <div class="project-description">
-    <h2>Project Heading</h2>
-    <p>loream ipsum doller currem loream ipsum doller currem.  loream ipsum doller currem loream ipsum doller currem loream ipsum doller currem.  loream ipsum doller currem loream ipsum doller currem loream ipsum doller currem.</p>
+    <h2>Property Description</h2>
+    <p>Adroit  District, location from Chennai Thalambur Very near to Sholinganallur junction OMR, Availability : 1 BHK flat 606 Sq Ft to 626 Saft , budget from all inclusive 30 lakhs to 32 lakhs Ready to move property, 3 BHK flat 1409 Sqft to 1482 Sq Ft, budget from all inclusive 65 lakhs to 70 lakhs, Ready to move property, USP selling point is Already 100 families are occupied. Offer is on Home loan 5 % of interest rate. </p>
   </div>
   <!-- project details -->
   <div class="project-details">
-    <h2>Project details</h2>
+    <h2>Project Details</h2>
     <div class="row">
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-heading">
         <ul>
-          <li>loream</li>
-          <li>loream</li>
-          <li>loream</li>
+          <!-- <li>Property Type:</li> -->
+          <!-- <li>No of Floors:</li> -->
+          <li>SQ.FT:</li>
+          <li>Position</li>
+          <li>Budget</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
         <ul>
-          <li>ipusm</li>
-          <li>ipusm</li>
-          <li>ipusm</li>
+          <!-- <li>Residential</li> -->
+          <!-- <li>4 Floors</li> -->
+          <li>606-626 and 1409 - 1482</li>
+          <li>Readt to move</li>
+          <li>30L -32L and 65 to 70</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-heading" >
         <ul>
-          <li>loream</li>
-          <li>loream</li>
-          <li>loream</li>
+          <li>Location:</li>
+          <li>Configurations:</li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-6 project-details-description">
         <ul>
-          <li>ipusm</li>
-          <li>ipusm</li>
-          <li>ipusm</li>
+          <li>Thalambur</li>
+          <li>1 BHK & 3BHK</li>
         </ul>
       </div>
     </div>
@@ -136,32 +153,44 @@
     <div class="row">
       <ul>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/lift.png" alt="Feature-img" />
+          <label>Lift</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/gym.png" alt="Feature-img" />
+          <label>Gym</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/swimming.png" alt="Feature-img" />
+          <label>Swimming Pool</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/child_play.png" alt="Feature-img" />
+          <label>Children's Play area</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/indoor_games.png" alt="Feature-img" />
+          <label>Indoor games room</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/multi_hall.png" alt="Feature-img" />
+          <label>Multipurpose hall</label>
         </li>
         <li class="col-md-4">
-          <img src="https://cdn.getspini.com/category/Villa.png" alt="Feature-img" />
-          <label>Feature name</label>
+          <img src="https://cdn.getspini.com/img/icons/power_backup.png" alt="Feature-img" />
+          <label>Power backup</label>
+        </li>
+        <li class="col-md-4">
+          <img src="https://cdn.getspini.com/img/icons/cctv.png" alt="Feature-img" />
+          <label>CCTV security system</label>
+        </li>
+        <li class="col-md-4">
+          <img src="https://cdn.getspini.com/img/icons/lib.png" alt="Feature-img" />
+          <label>E - Library</label>
+        </li>
+        <li class="col-md-4">
+          <img src="https://cdn.getspini.com/img/icons/security.png" alt="Feature-img" />
+          <label>Security</label>
         </li>
       </ul>
     </div>
@@ -169,7 +198,7 @@
   <!-- location and contact-us -->
   <div class="col-md-12 location-map">
     <h2>Location Map</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31113.347589882913!2d80.20731372149652!3d12.896887717905416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b79de7f381b%3A0xffbb2dd48afe3f1b!2sSholinganallur%2C+Chennai%2C+Tamil+Nadu!5e0!3m2!1sen!2sin!4v1504295888379" width="95%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d124478.04974303159!2d80.13105865749984!3d12.847212919373842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3a525a323157b9c3%3A0xd6a3f568f5cd8578!2sAdroit+District!3m2!1d12.8472222!2d80.2010992!5e0!3m2!1sen!2sin!4v1518004872908" width="95%" height="300" frameborder="0" style="border:0;margin: 20px" allowfullscreen></iframe>
   </div>
   
 </section>
@@ -181,7 +210,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.6/script.js"></script>
+  <script src="../assets/js/v1.10/script.js"></script>
 
   <!-- AddToAny BEGIN -->
     <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">

@@ -16,13 +16,13 @@
 
 <!-- realestate page -->
 /realestate/realestate.html
-/realestate/nest-amaze.html
-/realestate/akshaya-today.html
-/realestate/nest-njoy-villa.html
-/realestate/akshaya-republic.html
-/realestate/nest-enjoy-apartment.html
-/realestate/nest-glory.html
-/realestate/annanagar.html
+/realestate/nest-amaze-Sholinganallur.html
+/realestate/akshaya-today-OMR-Thaiyur.html
+/realestate/nest-njoy-villa-kanathur.html
+/realestate/akshaya-republic-kovur.html
+/realestate/nest-njoy-apartments-Sholinganallur.html
+/realestate/nest-glory-Sholinganallur-apartments.html
+/realestate/Apartments-in-annanagar.html
 
 <!-- loans page -->
 /loans/loans.html
