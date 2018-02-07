@@ -202,7 +202,7 @@ $(document).ready(function(){
               "category": categoryName,
               "Selected_Package" : selected_package,
               "_subject" : "Get spini partner-with-us!",
-              "_cc" : "karthikeyan@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
             },
             dataType: "json"
         });
@@ -434,7 +434,7 @@ $(document).ready(function(){
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
               "_subject" : "Lead from Interior Estimation Page !",
-              "_cc" : "karthikeyan@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
             },
             dataType: "json"
           });
@@ -446,7 +446,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.8/multicard.json", function(data, status){
+        $.get("../assets/js/v1.9/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
