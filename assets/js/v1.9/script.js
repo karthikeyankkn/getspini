@@ -5,8 +5,50 @@ $(document).ready(function(){
   var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint;
 	// preload funcitons
 	windowHight();
+    // script for common device image starts
+     // images for desktop
+      var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
+                          "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
+                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg"
+                        ];
 
+      // images for mobile
+      var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
+                        "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+                        "https://cdn.getspini.com/stepstone-mob-v2-1.jpg"];
+      // links for slider
+      var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
+                         "http://hiranandaniparks.com/",
+                         "realestate/stepstone-ananthaya-Urapakkam.html"];
 
+      var window_width, devices, slider_id, alt, parts, astSegment;
+      debugger
+      
+      common_img();
+      
+      function common_img(){
+        window_width = $(window).width(); //get device width
+      
+        if (window_width > 500) {
+          devices = desktop_img;
+        }else{
+          devices = mobile_img;
+        }
+
+        slider_id = $(".carousel").attr("id"); //get id of the carousel
+        for(var i = 0; i < devices.length; i++){
+
+          alt = devices[i];
+          parts = alt.split('/');
+          lastSegment = parts.pop() || parts.pop();
+
+          $("#common-img").append('<div class="item"><a href ="'+slider_link[i]+'"><img src="'+devices[i]+'" alt="'+lastSegment+'" /></a></div>');
+          $("#common-img-indicators").append('<li data-target="#'+slider_id+'" data-slide-to="'+i+'"></li>')
+        }
+        $("#common-img .item:first-child, #common-img-indicators li:first-child").addClass("active");
+
+      }
+    // script for common device image load end
   
 	$( window ).resize(function() {
 		// windowHight();
