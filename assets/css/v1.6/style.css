@@ -1084,6 +1084,28 @@ header{
       background-size: contain;
       display: block;
     }
+    .post-lead{
+      background: #fff;
+      max-width: 500px;
+      margin: 70px auto 7px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
+    .post-lead-tab{
+      position: fixed;
+      left: -36px;
+      top: 85%;
+      z-index: 150;
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Safari */
+      transform: rotate(90deg);
+    }
+    .post-lead-tab a{
+      background: #ee5243;
+      color: #fff;
+      padding: 5px 11px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
