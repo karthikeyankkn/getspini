@@ -1106,6 +1106,20 @@ header{
       font-size: 1.5rem;
       letter-spacing: 1px;
     }
+    .download-ebook{
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+    .download-ebook a{
+      background: #ee5243;
+      color: #fff;
+      display: block;
+      max-width: 150px;
+      padding: 10px;
+      margin: 17px auto 0;
+      border-radius: 25px;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {

@@ -166,6 +166,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
+      // debugger
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
@@ -184,10 +185,10 @@ $(document).ready(function(){
         if (validateEmail(email)) {
           check_inner_page = true;
             success_contact_form();
-      }else{
-        $(".alert-danger").hide();
-        $(".error-contact-email").fadeIn();
-      }
+        }else{
+          $(".alert-danger").hide();
+          $(".error-contact-email").fadeIn();
+        }
       }else{
         check_inner_page = true;
           success_contact_form();
@@ -222,34 +223,51 @@ $(document).ready(function(){
     }
     // success contact form script
     function success_contact_form(){
-      
+      debugger
       // if (check_inner_page == false) {
       //   senddata();
       // }else{
       //   senddata_for_internal_page();
       // }
-      if (selected_package == undefined) {
+      // debugger
+      if(selected_package == undefined){
+        // send email
+          $.ajax({
+              url: "https://formspree.io/contact@getspini.com", 
+              method: "POST",
+              data: {
+                "Name" : name,
+                "Phone Number": ph_number,
+                "Email" : email,
+                "City" : cityName,
+                "_subject" : "Lead from Ebook Download!",
+                "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+              },
+              dataType: "json"
+          });
+          succsess_alert(true);
+      }
+      else if (selected_package == undefined) {
         senddata();
       }else{
         // send email
-        $.ajax({
-            url: "https://formspree.io/contact@getspini.com", 
-            method: "POST",
-            data: {
-              "Name" : name,
-              "Phone Number": ph_number,
-              "Email" : email,
-              "City" : cityName,
-              "category": categoryName,
-              "Selected_Package" : selected_package,
-              "_subject" : "Get spini partner-with-us!",
-              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
-            },
-            dataType: "json"
-        });
-        succsess_alert();
-      }
-      
+          $.ajax({
+              url: "https://formspree.io/contact@getspini.com", 
+              method: "POST",
+              data: {
+                "Name" : name,
+                "Phone Number": ph_number,
+                "Email" : email,
+                "City" : cityName,
+                "category": categoryName,
+                "Selected_Package" : selected_package,
+                "_subject" : "Get spini partner-with-us!",
+                "_cc" : "karthikeyan@spinircle.com,  dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+              },
+              dataType: "json"
+          });
+          succsess_alert();
+        }
       }
     // contact form script ends
 
@@ -309,7 +327,23 @@ $(document).ready(function(){
       });
     }
 
-    function succsess_alert(){
+    function succsess_alert(ebook){
+      if (ebook == true) {
+        // download ebook script
+        var req = new XMLHttpRequest();
+        req.open("GET", "../assets/doc/ebook.pdf", true);
+        req.responseType = "blob";
+
+        req.onload = function (event) {
+          var blob = req.response;
+          var link=document.createElement('a');
+          link.href=window.URL.createObjectURL(blob);
+          link.download="Ebook_" + new Date() + ".pdf";
+          link.click();
+        };
+        req.send();
+
+      }
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
@@ -475,7 +509,7 @@ $(document).ready(function(){
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
               "_subject" : "Lead from Interior Estimation Page !",
-              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
             },
             dataType: "json"
           });
