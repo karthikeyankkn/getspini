@@ -22,7 +22,7 @@ $(document).ready(function(){
                          "realestate/stepstone-ananthaya-Urapakkam.html"];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
-      debugger
+      // debugger
       
       common_img();
       
@@ -166,7 +166,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      
+      // debugger
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
@@ -185,10 +185,10 @@ $(document).ready(function(){
         if (validateEmail(email)) {
           check_inner_page = true;
             success_contact_form();
-      }else{
-        $(".alert-danger").hide();
-        $(".error-contact-email").fadeIn();
-      }
+        }else{
+          $(".alert-danger").hide();
+          $(".error-contact-email").fadeIn();
+        }
       }else{
         check_inner_page = true;
           success_contact_form();
@@ -223,34 +223,33 @@ $(document).ready(function(){
     }
     // success contact form script
     function success_contact_form(){
-      
       // if (check_inner_page == false) {
       //   senddata();
       // }else{
       //   senddata_for_internal_page();
       // }
+      debugger
       if (selected_package == undefined) {
         senddata();
       }else{
         // send email
-        $.ajax({
-            url: "https://formspree.io/contact@getspini.com", 
-            method: "POST",
-            data: {
-              "Name" : name,
-              "Phone Number": ph_number,
-              "Email" : email,
-              "City" : cityName,
-              "category": categoryName,
-              "Selected_Package" : selected_package,
-              "_subject" : "Get spini partner-with-us!",
-              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
-            },
-            dataType: "json"
-        });
-        succsess_alert();
-      }
-      
+          $.ajax({
+              url: "https://formspree.io/contact@getspini.com", 
+              method: "POST",
+              data: {
+                "Name" : name,
+                "Phone Number": ph_number,
+                "Email" : email,
+                "City" : cityName,
+                "category": categoryName,
+                "Selected_Package" : selected_package,
+                "_subject" : "Get spini partner-with-us!",
+                "_cc" : "karthikeyan@spinircle.com,  dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+              },
+              dataType: "json"
+          });
+          succsess_alert();
+        }
       }
     // contact form script ends
 
@@ -310,7 +309,7 @@ $(document).ready(function(){
       });
     }
 
-    function succsess_alert(){
+    function succsess_alert(ebook){
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
@@ -358,7 +357,7 @@ $(document).ready(function(){
       // }
       var lenghtx, lenghty, lenghtz, type_of_kitchenvalue, type_of_materialvalue, quality_of_accessoriesvalue, estimatedcost,uname, uemail,umobile, type_of_kitchen, quality_of_accessories, type_of_material;
       $(".getestimate").click(function(){
-        debugger
+        // debugger
         type_of_kitchen = $("input[name='type_of_kitchen']:checked").val();
         quality_of_accessories = $("input[name='quality_of_accessories']:checked").val();
         type_of_material = $("input[name='type_of_material']:checked").val();
@@ -476,7 +475,7 @@ $(document).ready(function(){
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
               "_subject" : "Lead from Interior Estimation Page !",
-              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
             },
             dataType: "json"
           });
@@ -488,7 +487,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.10/multicard.json", function(data, status){
+        $.get("../assets/js/v1.15/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");

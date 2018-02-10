@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Basic Page Needs ================================================== -->
+    <title>Spini - Best Buyer & Sellers| Verified Leads | Experts Advice</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="assets/../assets/images/favicon.png">
+    <meta name="description" content="Spini India's No 1 Leads generation company provides Best Verified leads for real estate, loans, Insurance, Interiors.Talk with our Sale Experts & Get your job done.">
+    <meta name="keywords" content="spini , real estate buyers , stepstones apartments , Stepstone akshara, duplex flats, flats in chennai ,life insurance ,health insurance, mortgage loans , business loans, home loans,personal loans, interior,interior designer in chennai, building construction in chennai ,real estate in bangalore, buyer and seller, nest glory, luxurious apartments , 1bhk in chennai ,2bhk apartment in chennai, loans at low interest,">
+    <link rel="canonical" href="http://getspini.com/"/>
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/v1.8/style.css">
+   <!-- css files ends -->
+
+  <script>
+    var index_page = false;
+    var categoryName = undefined;
+    var ebook = true;
+    var selected_package = 0;
+  </script>     
+  <style>
+    .post-lead-tab{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+  <!-- <div class="contact-us post-lead">
+    <h2>Just a step away..!</h2>
+    <ul>
+      <li>
+        <input type="text" name="name" placeholder="Enter Your Name">
+      </li>
+      <li>
+        <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+      </li>
+      <li>
+        <input type="email" name="email" placeholder="Enter Your Email">
+      </li>
+      <li>
+        <select name="city">
+          <option value="" disabled>City</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Delhi">Delhi</option>
+        </select>
+      </li>
+      <li class="text-center">
+        <button type="submit" class="submit_innerpage" download="assets/doc/ebook.pdf">Submit</button>
+      </li>
+    </ul>
+    <input type="hidden" name="_subject" value="Get spini partner-with-us!">
+    <input type="text" name="_gotcha" style="display:none">
+    <div class="alerts_page"></div>
+  </div> -->
+  <form action="https://formspree.io/contact@getspini.com"
+      method="POST" class="contact-us post-lead">
+      <h2>Just a step away..!</h2>
+      <ul>
+        <li>
+          <input type="text" name="name" placeholder="Enter Your Name" id="name">
+        </li>
+        <li>
+           <input type="number" name="ph_number" min="10" placeholder="Enter Your Phone Number" id="mobile">
+        </li>
+        <li>
+          <select name="city" id="city">
+            <option value="" disabled>City</option>
+            <option value="">Select Your City</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Delhi">Delhi</option>
+          </select>
+        </li>
+        <li class="text-center">
+          <input type="submit" id="submit-ebook"></input>
+        </li>
+      </ul>
+      <input type="hidden" name="_cc" value="karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com" />
+  </form>
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script src="assets/js/lib/jquery.min.js"></script>
+  <script src="assets/js/lib/bootstrap.min.js"></script>
+  <script src="assets/js/v1.15/script.js"></script>
+
+  <script>
+    // download ebook script
+        $("#submit-ebook").click(function(){
+              download_ebook();
+        });
+        function download_ebook(){
+          var req = new XMLHttpRequest();
+          req.open("GET", "assets/doc/ebook.pdf", true);
+          req.responseType = "blob";
+
+          req.onload = function (event) {
+            var blob = req.response;
+            var link=document.createElement('a');
+            link.href=window.URL.createObjectURL(blob);
+            link.download="Ebook_" + new Date() + ".pdf";
+            link.click();
+          };
+          req.send();
+        }
+          
+      
+
+
+        $(document).ready(function (){
+            validate();
+            $('#name, #mobile, #city').change(validate);
+        });
+
+        function validate(){
+            if ($('#name').val().length   >   0   &&
+                $('#mobile').val().length  >   0   &&
+                $('#city').val().length    >   0) {
+                $("input[type=submit]").prop("disabled", false);
+            }
+            else {
+                $("input[type=submit]").prop("disabled", true);
+            }
+        }
+  </script>
+</body>
+</html>
