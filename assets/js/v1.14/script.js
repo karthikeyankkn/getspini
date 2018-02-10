@@ -229,25 +229,24 @@ $(document).ready(function(){
       // }else{
       //   senddata_for_internal_page();
       // }
-      // debugger
-      if(selected_package == undefined){
-        // send email
-          $.ajax({
-              url: "https://formspree.io/contact@getspini.com", 
-              method: "POST",
-              data: {
-                "Name" : name,
-                "Phone Number": ph_number,
-                "Email" : email,
-                "City" : cityName,
-                "_subject" : "Lead from Ebook Download!",
-                "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
-              },
-              dataType: "json"
-          });
-          succsess_alert(true);
-      }
-      else if (selected_package == undefined) {
+      debugger
+      // if(selected_package == undefined){
+      //     $.ajax({
+      //         url: "https://formspree.io/contact@getspini.com", 
+      //         method: "POST",
+      //         data: {
+      //           "Name" : name,
+      //           "Phone Number": ph_number,
+      //           "Email" : email,
+      //           "City" : cityName,
+      //           "_subject" : "Lead from Ebook Download!",
+      //           "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+      //         },
+      //         dataType: "json"
+      //     });
+      //     succsess_alert(true);
+      // }else
+      if (selected_package == undefined) {
         senddata();
       }else{
         // send email
@@ -328,22 +327,23 @@ $(document).ready(function(){
     }
 
     function succsess_alert(ebook){
-      if (ebook == true) {
-        // download ebook script
-        var req = new XMLHttpRequest();
-        req.open("GET", "../assets/doc/ebook.pdf", true);
-        req.responseType = "blob";
+      // download ebook script
+      // if (ebook == true) {
+        
+      //   var req = new XMLHttpRequest();
+      //   req.open("GET", "../assets/doc/ebook.pdf", true);
+      //   req.responseType = "blob";
 
-        req.onload = function (event) {
-          var blob = req.response;
-          var link=document.createElement('a');
-          link.href=window.URL.createObjectURL(blob);
-          link.download="Ebook_" + new Date() + ".pdf";
-          link.click();
-        };
-        req.send();
+      //   req.onload = function (event) {
+      //     var blob = req.response;
+      //     var link=document.createElement('a');
+      //     link.href=window.URL.createObjectURL(blob);
+      //     link.download="Ebook_" + new Date() + ".pdf";
+      //     link.click();
+      //   };
+      //   req.send();
 
-      }
+      // }
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
@@ -521,7 +521,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.13/multicard.json", function(data, status){
+        $.get("../assets/js/v1.14/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
