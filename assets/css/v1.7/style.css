@@ -1120,6 +1120,17 @@ header{
       margin: 17px auto 0;
       border-radius: 25px;
     }
+    button[disabled], html input[disabled] {
+    cursor: no-drop;
+    opacity: 0.3;
+    }
+    #submit-ebook{
+      background: #1d2530;
+      color: #fff;
+      display: inline-block;
+      width: unset;
+      padding: 10px 30px;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {

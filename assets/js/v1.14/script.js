@@ -223,29 +223,12 @@ $(document).ready(function(){
     }
     // success contact form script
     function success_contact_form(){
-      debugger
       // if (check_inner_page == false) {
       //   senddata();
       // }else{
       //   senddata_for_internal_page();
       // }
       debugger
-      // if(selected_package == undefined){
-      //     $.ajax({
-      //         url: "https://formspree.io/contact@getspini.com", 
-      //         method: "POST",
-      //         data: {
-      //           "Name" : name,
-      //           "Phone Number": ph_number,
-      //           "Email" : email,
-      //           "City" : cityName,
-      //           "_subject" : "Lead from Ebook Download!",
-      //           "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
-      //         },
-      //         dataType: "json"
-      //     });
-      //     succsess_alert(true);
-      // }else
       if (selected_package == undefined) {
         senddata();
       }else{
@@ -327,23 +310,6 @@ $(document).ready(function(){
     }
 
     function succsess_alert(ebook){
-      // download ebook script
-      // if (ebook == true) {
-        
-      //   var req = new XMLHttpRequest();
-      //   req.open("GET", "../assets/doc/ebook.pdf", true);
-      //   req.responseType = "blob";
-
-      //   req.onload = function (event) {
-      //     var blob = req.response;
-      //     var link=document.createElement('a');
-      //     link.href=window.URL.createObjectURL(blob);
-      //     link.download="Ebook_" + new Date() + ".pdf";
-      //     link.click();
-      //   };
-      //   req.send();
-
-      // }
       $(".alert-danger").hide();
       $(".success-contact, .loading_image").fadeIn();
       setTimeout(function(){ 
