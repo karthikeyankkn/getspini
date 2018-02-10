@@ -1092,7 +1092,7 @@ header{
     }
     .post-lead-tab{
       position: fixed;
-      left: -36px;
+      left: -33px;
       top: 85%;
       z-index: 150;
       -ms-transform: rotate(90deg); /* IE 9 */
@@ -1102,8 +1102,8 @@ header{
     .post-lead-tab a{
       background: #ee5243;
       color: #fff;
-      padding: 5px 11px;
-      font-size: 1.5rem;
+      padding: 11px;
+      font-size: 1.7rem;
       letter-spacing: 1px;
     }
     .download-ebook{
