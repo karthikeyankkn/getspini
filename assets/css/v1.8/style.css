@@ -324,18 +324,18 @@ header{
 .spini-services-card{
   margin-top: 30px;
 }
-.spini-services-card h2{
+.spini-services-card h2, .spini-interior-gallery h2{
 	text-align: center;
 	position: relative;
 	margin-bottom: 30px;
 	text-transform: uppercase;
 }
-.spini-services-card h2 b{
+.spini-services-card h2 b, .spini-interior-gallery h2 b{
 	color: #666;
 	font-size: 18px;
 	font-weight: 400;
 }
-.spini-services-card h2 b:after{
+.spini-services-card h2 b:after, .spini-interior-gallery h2 b:after{
 	position: absolute;
   width: 70px;
   content: '';
@@ -494,6 +494,18 @@ header{
 	    font-size: 20px;
 	    font-weight: bold;
 	    border: 0;
+    }
+    .spini-interior-gallery{
+
+    }
+    .spini-interior-gallery ul{
+
+    }
+    .spini-interior-gallery ul li{
+
+    }
+    .spini-interior-gallery ul li img{
+      
     }
     /*footer style*/
     footer{
