@@ -487,7 +487,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.15/multicard.json", function(data, status){
+        $.get("../assets/js/v1.16/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -495,6 +495,66 @@ $(document).ready(function(){
        });
       }
 
-      
+      // script for gallery-slider starts
+        var index, gallery_lenght;
+        var gallery = [
+                        "../assets/images/bedroom1.jpg",
+                        "../assets/images/bedroom2.jpg",
+                        "../assets/images/bedroom3.jpg",
+                        "../assets/images/bedroom4.jpg",
+                        "../assets/images/livingroom1.jpg",
+                        "../assets/images/livingroom2.jpg",
+                        "../assets/images/livingroom3.jpg",
+                        "../assets/images/livingroom4.jpg",
+                        "../assets/images/kitchen1.jpg",
+                        "../assets/images/kitchen2.jpg",
+                        "../assets/images/kitchen3.jpg",
+                        "../assets/images/kitchen4.jpg"
+                      ];
+        // append images
+        gallery_lenght = gallery.length
+
+        for(var i = 0; i < gallery_lenght ; i++ ){
+          $(".spini-interior-gallery ul").append('<li class="col-md-3" index="'+i+'"><a><img src="'+gallery[i]+'" alt="interior-gallery" /></a></li>');
+        }
+
+        // view image based on click
+        $(".spini-interior-gallery ul li").click(function(){
+          index = $(this).attr("index");
+          view_img(index);
+        });
+
+        // close gallery
+
+        $(".view-gallery").click(function(){
+          $(".view-gallery, .overlay").fadeOut();
+        });
+        $(".view-gallery img, .left-move, .right-move").click(function(event){
+          event.stopPropagation();
+        });
+
+        // view-gallery function
+        function view_img(index){
+          $(".view-gallery, .overlay").fadeIn();
+          $(".view-gallery img").attr("src", gallery[index]);
+        }
+
+        $(".right-move").click(function(){
+          index++;
+          if (index >= gallery_lenght) {
+            index = 0;
+          }
+          view_img(index);
+        });
+        $(".left-move").click(function(){
+          debugger
+          index--;
+          if (index < 0) {
+            index = gallery_lenght - 1;
+          }
+          // alert(index);
+          view_img(index);
+        })
+      // script for gallery-slider ends 
 	 
 });
