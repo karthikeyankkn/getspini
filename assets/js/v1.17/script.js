@@ -63,12 +63,13 @@ $(document).ready(function(){
 	}
 
    
-  if (location.origin == "http://getspini.com") {
-    ApiEndPoint = 'https://api.getspini.com:8443';
-  }else{
-    ApiEndPoint = 'https://sapi.getspini.com:8443';
-  }
-
+  // if (location.origin == "http://getspini.com") {
+  //   ApiEndPoint = 'https://api.getspini.com:8443';
+  // }else{
+  //   ApiEndPoint = 'https://sapi.getspini.com:8443';
+  // }
+   ApiEndPoint = 'https://api.getspini.com:8443';
+  
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
   });
@@ -87,10 +88,10 @@ $(document).ready(function(){
 	// load header and footer
 	if (index_page == true) {
 		$("header").load("header.html"); 
-  		$("footer").load("footer1.html");
+  		$("footer").load("footer2.html");
 	}else{
 		$("header").load("../header.html"); 
-  	$("footer").load("../footer1.html");
+  	$("footer").load("../footer2.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -487,7 +488,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.16/multicard.json", function(data, status){
+        $.get("../assets/js/v1.17/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
