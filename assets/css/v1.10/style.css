@@ -243,7 +243,7 @@ header{
     /*spini-sep-services style starts*/
 .spini-sep-services{
   margin-top: 0px;
-  padding: 51px 0px;
+  padding: 100px 0px;
 }
 .spini-sep-services h2{
   text-align: center;
@@ -899,7 +899,7 @@ header{
     }
     .footer-page-title{
       padding: 0;
-      padding-top: 51px;
+      padding-top: 100px;
       margin-bottom: 20px;
     }
     .footer-page-title h2{
@@ -983,7 +983,7 @@ header{
     /*about us page style starts*/
     .about-us-container{
       background: #fff;
-      padding-top: 51px;
+      padding-top: 50px;
     }
     .about-us-container h2{
       color: #F56956;
@@ -1038,7 +1038,7 @@ header{
     /*partner with us style starts*/
     .partner-with-us-container{
       background: #fff;
-      padding-top: 51px;
+      padding-top: 100px;
       text-align: center;
     }
     .partner-with-us-container h2{
@@ -1207,7 +1207,7 @@ header{
     }
     .style-banner{
       background: url(../../images/ebook_banner.jpg)no-repeat;
-      padding-top: 50px;
+      padding-top: 100px;
       height: 250px;
       text-align: center;
       color: #fff;
@@ -1215,9 +1215,16 @@ header{
       /*background-attachment: fixed;*/
     }
     .style-banner h2{
-      line-height: 200px;
-      margin: 0;
+      margin-top: 50px;
       background: #00000042;
+      display: inline-block;
+      padding: 10px;
+    }
+    .typeform-share{
+      position: absolute;
+      z-index: 99;
+      right: 20px;
+      top: 60px;
     }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
@@ -1242,7 +1249,7 @@ header{
           background: #fff;
         }
         .banner-container{
-          
+          padding-top: 100px;
         }
         .banner-content{
           top: 15%;
@@ -1290,7 +1297,15 @@ header{
           margin-top: 30%;
           width: 100%;
         }
-
+        .typeform-share{
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 0 !important;
+        }
+        .about-us-container{
+          padding-top: 100px;
+        }
 
       }
      
