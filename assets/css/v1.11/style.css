@@ -1206,12 +1206,12 @@ header{
       padding: 10px 30px;
     }
     .style-banner{
-      background: url(../../images/ebook_banner.jpg)no-repeat;
-      padding-top: 100px;
-      height: 250px;
+      /*background: url(../../images/ebook_banner.jpg)no-repeat;*/
+      /*padding-top: 100px;*/
+      /*height: 250px;*/
       text-align: center;
-      color: #fff;
-      background-size: cover;
+      /*color: #fff;*/
+      /*background-size: cover;*/
       /*background-attachment: fixed;*/
     }
     .style-banner h2{
@@ -1219,6 +1219,10 @@ header{
       background: #00000042;
       display: inline-block;
       padding: 10px;
+    }
+    .style-banner img{
+      width: 250px;
+      padding-top: 10px;
     }
     .typeform-share{
       position: absolute;
