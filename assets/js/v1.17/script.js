@@ -68,7 +68,7 @@ $(document).ready(function(){
   // }else{
   //   ApiEndPoint = 'https://sapi.getspini.com:8443';
   // }
-   ApiEndPoint = 'https://sapi.getspini.com:8443';
+   ApiEndPoint = 'https://api.getspini.com:8443';
   
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
