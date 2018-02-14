@@ -488,7 +488,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.19/multicard.json", function(data, status){
+        $.get("../assets/js/v1.20/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -557,5 +557,10 @@ $(document).ready(function(){
           view_img(index);
         })
       // script for gallery-slider ends 
+
+      // show ebook popup script
+      setTimeout(function(){ 
+        $("#ebook-popup").modal('show');
+      }, 5000);
 	 
 });

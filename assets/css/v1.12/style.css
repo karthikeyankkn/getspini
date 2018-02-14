@@ -1230,6 +1230,21 @@ header{
       right: 20px;
       top: 60px;
     }
+    .ebook-popup{
+      text-align: center;
+    }
+    .ebook-popup img{
+      max-width:  300px;
+      display: block;
+      margin: auto;
+    }
+    .ebook-popup a{
+      color: #fff;
+      background: #1d2531;
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
