@@ -9,17 +9,25 @@ $(document).ready(function(){
      // images for desktop
       var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
-                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg"
+                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
+                          "../assets/images/banner/Nest Kanathur.jpg",
+                          "../assets/images/banner/Stepstone Prasanna.jpg"
                         ];
 
       // images for mobile
       var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
-                        "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
-                        "https://cdn.getspini.com/stepstone-mob-v2-1.jpg"];
+                          "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+                          "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
+                          "../assets/images/banner/Nest mob.jpg",
+                          "../assets/images/banner/Stepstone Prasanna Mob.jpg"
+                        ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
                          "http://hiranandaniparks.com/",
-                         "realestate/stepstone-ananthaya-Urapakkam.html"];
+                         "realestate/stepstone-ananthaya-Urapakkam.html",
+                         "realestate/nest-njoy-villa-kanathur.html",
+                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html"
+                         ];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
       // debugger
@@ -488,7 +496,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.21/multicard.json", function(data, status){
+        $.get("../assets/js/v1.22/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
