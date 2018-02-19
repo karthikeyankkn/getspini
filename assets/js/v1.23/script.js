@@ -10,8 +10,8 @@ $(document).ready(function(){
       var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
                           "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
-                          "../assets/images/banner/Nest Kanathur.jpg",
-                          "../assets/images/banner/Stepstone Prasanna.jpg"
+                          "../assets/images/banner/Nest_20Kanathur.jpg",
+                          "../assets/images/banner/Stepstone_20Prasanna.jpg"
                         ];
 
       // images for mobile
@@ -496,7 +496,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.22/multicard.json", function(data, status){
+        $.get("../assets/js/v1.23/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
