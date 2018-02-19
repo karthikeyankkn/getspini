@@ -253,7 +253,7 @@ $(document).ready(function(){
                 "category": categoryName,
                 "Selected_Package" : selected_package,
                 "_subject" : "Get spini partner-with-us!",
-                "_cc" : "karthikeyan@spinircle.com,  sharat.n@spinircle.com, anuradha.v@spinircle.com"
+                "_cc" : "karthikeyan@spinircle.com, prathap@spinircle.com, gowrishankar@spinircle.com"
               },
               dataType: "json"
           });
