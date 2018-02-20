@@ -42,8 +42,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <form action="https://formspree.io/contact@getspini.com"
-          method="POST" class="contact-us post-lead" style="margin-top: 20px;">
+        <div class="contact-us post-lead" style="margin-top: 20px;">
           <h2>Just a step away..!</h2>
           <ul>
             <li>
@@ -69,8 +68,9 @@
               <input type="submit" id="submit-ebook" value="Download Ebook"></input>
             </li>
           </ul>
-          <input type="hidden" name="_cc" value="karthikeyan@spinircle.com, sharat.n@spinircle.com, anuradha.v@spinircle.com" />
-        </form>
+          <input type="hidden" name="_next" value="../thankyou-pages/thankyoupage-template.html" />
+          <!-- <input type="hidden" name="_cc" value="karthikeyan@spinircle.com, sharat.n@spinircle.com, anuradha.v@spinircle.com" /> -->
+        </div>
       </div>
     </div>
   </div>
@@ -79,12 +79,13 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.24/script.js"></script>
+  <script src="../assets/js/v1.25/script.js"></script>
 
   <script>
     // download ebook script
         $("#submit-ebook").click(function(){
-              download_ebook();
+              // download_ebook();
+              mail_data();
         });
         function download_ebook(){
           var req = new XMLHttpRequest();
@@ -100,6 +101,31 @@
           };
           req.send();
         }
+
+        function mail_data(){
+          var name = $("input[name='name']").val();
+          var ph_number = $("input[name='ph_number']").val();
+          var city = $("select[name='city']").val();
+          var next = "../thankyou-pages/thankyoupage-template.html";
+          debugger
+          $.ajax({
+              url: "https://formspree.io/contact@getspini.com", 
+              method: "POST",
+              data: {
+                "name": name,
+                "ph_number": ph_number,
+                "city": city,
+                "_subject" : "Lead from DOWNLOAD EBOOK page!",
+                "_cc": "karthikeyan@spinircle.com, sharat.n@spinircle.com, anuradha.v@spinircle.com"
+              },
+              dataType: "json"
+          });
+
+          setTimeout(function(){ 
+            // location.reload();
+            window.location.href = '../thankyou-pages/thankyoupage-template.html';
+          }, 1000);
+        }
           
       
 
@@ -109,16 +135,17 @@
             $('#name, #mobile, #city').change(validate);
         });
 
-        function validate(){
-            if ($('#name').val().length   >   0   &&
-                $('#mobile').val().length  >   0   &&
-                $('#city').val().length    >   0) {
-                $("input[type=submit]").prop("disabled", false);
-            }
-            else {
-                $("input[type=submit]").prop("disabled", true);
-            }
-        }
+          function validate(){
+              if ($('#name').val().length   >   0   &&
+                  $('#mobile').val().length  >   0   &&
+                  $('#city').val().length    >   0) {
+                  $("input[type=submit]").prop("disabled", false);
+              }
+              else {
+                  $("input[type=submit]").prop("disabled", true);
+              }
+          }
+        // }
   </script>
 </body>
 </html>
