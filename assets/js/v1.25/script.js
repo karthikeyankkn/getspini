@@ -23,7 +23,7 @@ $(document).ready(function(){
                         ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
-                         "http://hiranandaniparks.com/",
+                         "realestate/hiranandani-parks-orgadam.html",
                          "realestate/stepstone-ananthaya-Urapakkam.html",
                          "realestate/nest-njoy-villa-kanathur.html",
                          "realestate/stepstone-prasanas-apartments-Sholinganallur.html"
