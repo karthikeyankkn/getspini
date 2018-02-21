@@ -237,7 +237,7 @@ $(document).ready(function(){
       // }else{
       //   senddata_for_internal_page();
       // }
-      debugger
+      // debugger
       if (selected_package == undefined) {
         senddata();
       }else{
@@ -496,7 +496,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.25/multicard.json", function(data, status){
+        $.get("../assets/js/v1.26/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -556,7 +556,7 @@ $(document).ready(function(){
           view_img(index);
         });
         $(".left-move").click(function(){
-          debugger
+          // debugger
           index--;
           if (index < 0) {
             index = gallery_lenght - 1;
