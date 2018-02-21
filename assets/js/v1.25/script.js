@@ -9,17 +9,25 @@ $(document).ready(function(){
      // images for desktop
       var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
-                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg"
+                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
+                          "../assets/images/banner/Nest_20Kanathur.jpg",
+                          "../assets/images/banner/Stepstone_20Prasanna.jpg"
                         ];
 
       // images for mobile
       var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
-                        "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
-                        "https://cdn.getspini.com/stepstone-mob-v2-1.jpg"];
+                          "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+                          "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
+                          "../assets/images/banner/Nest Mob.jpg",
+                          "../assets/images/banner/Stepstone Prasanna Mob.jpg"
+                        ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
-                         "http://hiranandaniparks.com/",
-                         "realestate/stepstone-ananthaya-Urapakkam.html"];
+                         "realestate/hiranandani-parks-orgadam.html",
+                         "realestate/stepstone-ananthaya-Urapakkam.html",
+                         "realestate/nest-njoy-villa-kanathur.html",
+                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html"
+                         ];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
       // debugger
@@ -87,10 +95,10 @@ $(document).ready(function(){
 	}
 	// load header and footer
 	if (index_page == true) {
-		$("header").load("header.html"); 
+		$("header").load("header1.1.html"); 
   		$("footer").load("footer2.html");
 	}else{
-		$("header").load("../header.html"); 
+		$("header").load("../header1.1.html"); 
   	$("footer").load("../footer2.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
@@ -245,7 +253,7 @@ $(document).ready(function(){
                 "category": categoryName,
                 "Selected_Package" : selected_package,
                 "_subject" : "Get spini partner-with-us!",
-                "_cc" : "karthikeyan@spinircle.com,  dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+                "_cc" : "karthikeyan@spinircle.com, prathap@spinircle.com, gowrishankar@spinircle.com"
               },
               dataType: "json"
           });
@@ -476,7 +484,7 @@ $(document).ready(function(){
               "Estimatedcost" : estimatedcost,
               "Rangecost" : rangecost,
               "_subject" : "Lead from Interior Estimation Page !",
-              "_cc" : "karthikeyan@spinircle.com, dhivya.d@spinircle.com, anuradha.v@spinircle.com"
+              "_cc" : "karthikeyan@spinircle.com, sharat.n@spinircle.com, anuradha.v@spinircle.com"
             },
             dataType: "json"
           });
@@ -488,7 +496,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.17/multicard.json", function(data, status){
+        $.get("../assets/js/v1.25/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -557,5 +565,10 @@ $(document).ready(function(){
           view_img(index);
         })
       // script for gallery-slider ends 
+
+      // show ebook popup script
+      setTimeout(function(){ 
+        $("#ebook-popup").modal('show');
+      }, 5000);
 	 
 });

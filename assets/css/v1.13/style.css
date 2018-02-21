@@ -35,6 +35,8 @@ canvas{
   left: 0;
   right: 0;
   z-index: 101;
+  height: 60px;
+  line-height: 35px;
 }
 .banner-header li{
   display: inline-block;
@@ -243,7 +245,7 @@ header{
     /*spini-sep-services style starts*/
 .spini-sep-services{
   margin-top: 0px;
-  padding: 51px 0px;
+  padding: 60px 0px;
 }
 .spini-sep-services h2{
   text-align: center;
@@ -899,7 +901,7 @@ header{
     }
     .footer-page-title{
       padding: 0;
-      padding-top: 51px;
+      padding-top: 60px;
       margin-bottom: 20px;
     }
     .footer-page-title h2{
@@ -983,7 +985,7 @@ header{
     /*about us page style starts*/
     .about-us-container{
       background: #fff;
-      padding-top: 51px;
+      padding-top: 50px;
     }
     .about-us-container h2{
       color: #F56956;
@@ -1038,7 +1040,7 @@ header{
     /*partner with us style starts*/
     .partner-with-us-container{
       background: #fff;
-      padding-top: 51px;
+      padding-top: 100px;
       text-align: center;
     }
     .partner-with-us-container h2{
@@ -1205,6 +1207,94 @@ header{
       width: unset;
       padding: 10px 30px;
     }
+    .style-banner{
+      /*background: url(../../images/ebook_banner.jpg)no-repeat;*/
+      /*padding-top: 100px;*/
+      /*height: 250px;*/
+      text-align: center;
+      /*color: #fff;*/
+      /*background-size: cover;*/
+      /*background-attachment: fixed;*/
+    }
+    .style-banner h2{
+      margin-top: 50px;
+      background: #00000042;
+      display: inline-block;
+      padding: 10px;
+    }
+    .style-banner img{
+      width: 250px;
+      padding-top: 10px;
+    }
+    /*post your add animation starts*/
+    .typeform-share{
+      height: 40px !important;
+      line-height: 40px !important;
+      background: unset !important;
+      font-weight: 400 !important;
+      /*border: 1px solid #77a32c;*/
+      box-sizing: border-box !important;
+      margin-right: 10px !important;
+      background-color: #77a32c !important;
+      /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
+      /*background-size: 400% 400%;*/
+      /*-webkit-animation: Gradient 15s ease infinite;*/
+      /*-moz-animation: Gradient 15s ease infinite;*/
+      /*animation: Gradient 15s ease infinite;*/
+       /*-webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;*/
+    }
+
+    @-webkit-keyframes Gradient {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @-moz-keyframes Gradient {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
+
+    @keyframes Gradient {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
+    /*post your add animation ends*/
+    .ebook-popup{
+      text-align: center;
+    }
+    .ebook-popup img{
+      max-width:  300px;
+      display: block;
+      margin: auto;
+    }
+    .ebook-popup a{
+      color: #fff;
+      background: #1d2531;
+      padding: 10px;
+      margin-top: 10px;
+      display: inline-block;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
@@ -1228,7 +1318,7 @@ header{
           background: #fff;
         }
         .banner-container{
-          
+          padding-top: 60px;
         }
         .banner-content{
           top: 15%;
@@ -1276,7 +1366,11 @@ header{
           margin-top: 30%;
           width: 100%;
         }
-
-
+        .typeform-share{
+          /*left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 0 !important;*/
+        }
       }
      
