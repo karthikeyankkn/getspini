@@ -589,6 +589,7 @@ header{
 	    font-weight: 300;
 	    font-size: 13px;
 	    letter-spacing: 1px;
+      /*text-transform: capitalize;*/
     }
     footer ul li a:hover{
     	color: #fff;

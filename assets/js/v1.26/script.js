@@ -99,10 +99,10 @@ $(document).ready(function(){
 	// load header and footer
 	if (index_page == true) {
 		$("header").load("header1.1.html"); 
-  		$("footer").load("footer3.html");
+  		$("footer").load("footer1.1.html");
 	}else{
 		$("header").load("../header1.1.html"); 
-  	$("footer").load("../footer3.html");
+  	$("footer").load("../footer1.1.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
