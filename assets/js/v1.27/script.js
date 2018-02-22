@@ -7,26 +7,29 @@ $(document).ready(function(){
 	windowHight();
     // script for common device image starts
      // images for desktop
-      var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
+      var desktop_img = [ "https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
                           "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
                           "../assets/images/banner/Nest_20Kanathur.jpg",
-                          "../assets/images/banner/Stepstone_20Prasanna.jpg"
+                          "../assets/images/banner/Stepstone_20Prasanna.jpg",
+                          "../assets/images/gvspl/GVSPl banner.jpg"
                         ];
 
       // images for mobile
-      var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
+      var mobile_img = [  "https://cdn.getspini.com/nest-mob-v2-1.jpg",
                           "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
                           "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
                           "../assets/images/banner/Nest Mob.jpg",
-                          "../assets/images/banner/Stepstone Prasanna Mob.jpg"
+                          "../assets/images/banner/Stepstone Prasanna Mob.jpg",
+                          "../assets/images/gvspl/GVSPL Mob.jpg"
                         ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
                          "realestate/hiranandani-parks-orgadam.html",
                          "realestate/stepstone-ananthaya-Urapakkam.html",
                          "realestate/nest-njoy-villa-kanathur.html",
-                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html"
+                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html",
+                         "realestate/gvspl-coimbatore.html"
                          ];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
@@ -96,10 +99,10 @@ $(document).ready(function(){
 	// load header and footer
 	if (index_page == true) {
 		$("header").load("header1.1.html"); 
-  		$("footer").load("footer2.html");
+  		$("footer").load("footer1.1.html");
 	}else{
 		$("header").load("../header1.1.html"); 
-  	$("footer").load("../footer2.html");
+  	$("footer").load("../footer1.1.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -253,7 +256,7 @@ $(document).ready(function(){
                 "category": categoryName,
                 "Selected_Package" : selected_package,
                 "_subject" : "Get spini partner-with-us!",
-                "_cc" : "karthikeyan@spinircle.com, prathap@spinircle.com, gowrishankar@spinircle.com"
+                "_cc" : "karthikeyan@spinircle.com, prathap@spinircle.com, gowrishankar@spinircle.com, anuradha.v@spinircle.com"
               },
               dataType: "json"
           });
@@ -496,7 +499,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.26/multicard.json", function(data, status){
+        $.get("../assets/js/v1.27/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
