@@ -7,26 +7,29 @@ $(document).ready(function(){
 	windowHight();
     // script for common device image starts
      // images for desktop
-      var desktop_img = ["https://cdn.getspini.com/optimized/nest-bn.jpg",
+      var desktop_img = [ "https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
                           "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
                           "../assets/images/banner/Nest_20Kanathur.jpg",
-                          "../assets/images/banner/Stepstone_20Prasanna.jpg"
+                          "../assets/images/banner/Stepstone_20Prasanna.jpg",
+                          "../assets/images/gvspl/GVSPl banner.jpg"
                         ];
 
       // images for mobile
-      var mobile_img = ["https://cdn.getspini.com/nest-mob-v2-1.jpg",
+      var mobile_img = [  "https://cdn.getspini.com/nest-mob-v2-1.jpg",
                           "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
                           "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
                           "../assets/images/banner/Nest Mob.jpg",
-                          "../assets/images/banner/Stepstone Prasanna Mob.jpg"
+                          "../assets/images/banner/Stepstone Prasanna Mob.jpg",
+                          "../assets/images/gvspl/GVSPL Mob.jpg"
                         ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
                          "realestate/hiranandani-parks-orgadam.html",
                          "realestate/stepstone-ananthaya-Urapakkam.html",
                          "realestate/nest-njoy-villa-kanathur.html",
-                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html"
+                         "realestate/stepstone-prasanas-apartments-Sholinganallur.html",
+                         "realestate/gvspl-coimbatore.html"
                          ];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
