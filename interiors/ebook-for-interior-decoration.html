@@ -88,18 +88,10 @@
               mail_data();
         });
         function download_ebook(){
-          var req = new XMLHttpRequest();
-          req.open("GET", "assets/doc/ebook.pdf", true);
-          req.responseType = "blob";
-
-          req.onload = function (event) {
-            var blob = req.response;
-            var link=document.createElement('a');
-            link.href=window.URL.createObjectURL(blob);
-            link.download="Ebook_" + new Date() + ".pdf";
-            link.click();
-          };
-          req.send();
+          var link = document.createElement('a');
+          link.href = "../assets/doc/ebook.pdf";
+          link.download = 'ebook.pdf';
+          link.dispatchEvent(new MouseEvent('click'));
         }
 
         function mail_data(){
