@@ -227,11 +227,9 @@ header{
   font-size: 40px;
 }
 /*slider-banner styles ends*/
-.hsw-content{
-  color: #fff !important;
-}
+
 .spini-services, .spini-customers, .spini-sep-services, .how-spini-works{
-	background: #1d2531;
+	background: #fff;
   padding: 30px 0;
   margin: 10px auto 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
