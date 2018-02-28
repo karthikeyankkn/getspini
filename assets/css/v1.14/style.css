@@ -227,6 +227,7 @@ header{
   font-size: 40px;
 }
 /*slider-banner styles ends*/
+
 .spini-services, .spini-customers, .spini-sep-services, .how-spini-works{
 	background: #fff;
   padding: 30px 0;
@@ -240,7 +241,7 @@ header{
   border: 0;
 }
 .spini-customers ul li a img{
-  max-width: 200px;
+  max-width: 100px;
 }
     /*spini-sep-services style starts*/
 .spini-sep-services{
@@ -589,6 +590,7 @@ header{
 	    font-weight: 300;
 	    font-size: 13px;
 	    letter-spacing: 1px;
+      /*text-transform: capitalize;*/
     }
     footer ul li a:hover{
     	color: #fff;
@@ -920,9 +922,14 @@ header{
     }
     .how-spini-works{
       margin: 30px 0;
+      background-color: #1d2531;
+      color: #fff;
       /*box-shadow: none;
       border: 0;
       background: transparent;*/
+    }
+    .hsw{
+      color: #fff !important;
     }
     .how-spini-works li{
 
