@@ -922,9 +922,14 @@ header{
     }
     .how-spini-works{
       margin: 30px 0;
+      background-color: #1d2531;
+      color: #fff;
       /*box-shadow: none;
       border: 0;
       background: transparent;*/
+    }
+    .hsw{
+      color: #fff !important;
     }
     .how-spini-works li{
 
