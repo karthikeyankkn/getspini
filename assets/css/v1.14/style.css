@@ -297,10 +297,10 @@ header{
 .spini-services ul li a img{
 	transition: 0.3s ease-in-out;
   display: inline-block;
-  background: #9e9e9e40;
-  padding: 30px;
+  /*background: #9e9e9e40;*/
+  padding-top: 10px;
   box-sizing: unset;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   border: 2px solid transparent;
   /*animation: pulse 3s infinite;*/
 }
@@ -317,8 +317,8 @@ header{
   -webkit-transform: scale(1,2); /* Safari */
   transform: scale(1.1,1.1); /* Standard syntax */
   transition: 0.3s ease-in-out;
-  border-color: #9e9e9e40;
-  background: #fff;
+  /*border-color: #9e9e9e40;
+  background: #fff;*/
 }
 .spini-services ul li a h1{
 	color: #333;
