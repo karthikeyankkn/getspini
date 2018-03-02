@@ -297,10 +297,10 @@ header{
 .spini-services ul li a img{
 	transition: 0.3s ease-in-out;
   display: inline-block;
-  background: #9e9e9e40;
+  /*background: #9e9e9e40;*/
   padding: 30px;
   box-sizing: unset;
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   border: 2px solid transparent;
   /*animation: pulse 3s infinite;*/
 }
