@@ -12,7 +12,10 @@ $(document).ready(function(){
                           "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
                           "../assets/images/banner/Nest_20Kanathur.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna.jpg",
-                          "../assets/images/gvspl/GVSPl_20banner.jpg"
+                          "../assets/images/gvspl/GVSPl_20banner.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Suraj.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Life.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Fortune.jpg"
                         ];
 
       // images for mobile
@@ -21,7 +24,10 @@ $(document).ready(function(){
                           "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
                           "../assets/images/banner/Nest_20Mob.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna_20Mob.jpg",
-                          "../assets/images/gvspl/GVSPL_20Mob.jpg"
+                          "../assets/images/gvspl/GVSPL_20Mob.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Suraj-Mob.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Life-Mob.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Fortune-Mob.jpg"
                         ];
       // links for slider
       var slider_link = ["realestate/nest-amaze-Sholinganallur.html",
@@ -29,7 +35,10 @@ $(document).ready(function(){
                          "realestate/stepstone-ananthaya-Urapakkam.html",
                          "realestate/nest-njoy-villa-kanathur.html",
                          "realestate/stepstone-prasanas-apartments-Sholinganallur.html",
-                         "realestate/gvspl-coimbatore.html"
+                         "realestate/gvspl-coimbatore.html",
+                         "realestate/nest-suraj-mahalingapuram.html",
+                         "realestate/nest-life-thiruvanmiyur.html",
+                         "realestate/nest-fortune-choolaimedu.html"
                          ];
 
       var window_width, devices, slider_id, alt, parts, astSegment;
