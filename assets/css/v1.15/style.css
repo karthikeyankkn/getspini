@@ -386,6 +386,7 @@ header{
       /*display: flex;*/
       padding: 0;
       transition: 1s ease;
+      padding-top: 5px;
     }
     .slider-parent li{
       list-style: none;
@@ -415,6 +416,7 @@ header{
       transition: 0.3s ease-in-out;
       box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       background-color: #fff;
+      /*height: 230px;*/
     }
     .list-card:hover{
     	-ms-transform: translate(0px, -3px); /* IE 9 */
@@ -440,6 +442,7 @@ header{
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      text-transform: capitalize;
     }
     .list-card article a{
       text-align: center;
@@ -466,6 +469,8 @@ header{
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      text-transform: uppercase;
+      margin-bottom: 0;
     }
     .thankyou-slider-parent::-webkit-scrollbar { 
     display: none; 
@@ -1306,6 +1311,9 @@ header{
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
             min-width: 160px;
+        }
+        .list-card{
+          /*height: 162px;*/
         }
         .list-card article p{
         	font-size: 12px;
