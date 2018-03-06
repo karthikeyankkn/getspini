@@ -465,7 +465,7 @@ header{
     .list-card article p{
       color: #666;
     	display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -1313,7 +1313,10 @@ header{
             min-width: 160px;
         }
         .list-card{
-          /*height: 162px;*/
+          height: 170px;
+        }
+        .list-card img{
+          height: 110px;
         }
         .list-card article p{
         	font-size: 12px;
