@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"28",
+		"a_href":"tata-santorini.html",
+		"card_title":"tata santorini",
+		"card_img": "https://cdn.getspini.com/landing/tata-sant-card.jpg",
+		"card_description":"Tata Santorini by Tata Value Homes offers an unbeatable lifestyle at Santorini.The Spanish themed project spread over 18 acres in Poonamallee, Chennai.",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"27",
+		"a_href":"tata-new-haven-ribbon-walk-mambakkam.html",
+		"card_title":"TATA NEW HAVEN",
+		"card_img": "https://cdn.getspini.com/landing/tata-nh-card.jpg",
+		"card_description":"New Haven Ribbon Walk at Mambakkam comprises of multi-level courtyards and green spaces connected by a ribbon landscape.",
+		"card_area":"mambakkam",
+		"card_city": "chennai"
+		},
+		{
 		"id":"26",
 		"a_href":"Nexus-Sobha-Pristine-bangalore.html",
 		"card_title":"NEXUS SHOBA PRISTINE",
