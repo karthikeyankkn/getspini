@@ -1,0 +1,30 @@
+{
+	"cards":[
+		{
+		"id":"3",
+		"a_href":"akshaya-today-OMR-Thaiyur.html",
+		"card_title":"AKSHAYA TODAY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Today.jpg",
+		"card_description":"Luxurious apartment with all comforts of best-in-class amenities.",
+		"card_area":"OMR Thaiyur Near Kelambakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"2",
+		"a_href":"adroit-District-s-omr.html",
+		"card_title":"ADROIT DISTRICT",
+		"card_img": "../assets/images/adirot/01-optimized.jpg",
+		"card_description":"Adroit urban developers, one of the leading builders in Chennai have been offering its customers quintessential apartments for years.",
+		"card_area":"Thalambur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"1",
+		"a_href":"",
+		"card_title":"nest amaze",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
+		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		}	
+]}
