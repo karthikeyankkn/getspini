@@ -446,7 +446,8 @@ header{
     }
     .list-card article a{
       text-align: center;
-      display: block;
+      /*display: block;*/
+      display: none;
       width: 100px;
       margin:10px auto;
       background-color: #fff;
@@ -465,7 +466,7 @@ header{
     .list-card article p{
       color: #666;
     	display: -webkit-box;
-      -webkit-line-clamp: 1;
+      -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -1313,7 +1314,7 @@ header{
             min-width: 160px;
         }
         .list-card{
-          height: 170px;
+          /*height: 170px;*/
         }
         .list-card img{
           height: 110px;
