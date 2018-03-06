@@ -503,18 +503,7 @@ $(document).ready(function(){
         }  
       });
 
-      // multi cards repeat
-      var multicard;
-      get_json();
-      // debugger
-      function get_json(index){
-        $.get("../assets/js/v1.30.1/multicard.json", function(data, status){
-          multicard = data.multicard;
-          for( var i = 0; i < multicard.length; i++ ){
-            $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
-          }
-       });
-      }
+      
 
       // script for gallery-slider starts
         var index, gallery_lenght;

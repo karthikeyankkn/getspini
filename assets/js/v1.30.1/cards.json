@@ -1,12 +1,40 @@
 {
 	"cards":[
 		{
+		"id":"",
+		"a_href":"",
+		"card_title":"",
+		"card_img": "",
+		"card_description":"",
+		"card_area":"",
+		"card_city": ""
+		},
+
+		{
+		"id":"5",
+		"a_href":"akshaya-republic-kovur.html",
+		"card_title":"AKSHAYA REPUBLIC",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Republic.jpg",
+		"card_description":"Fantastic apartments with world class facilities & comfort.",
+		"card_area":"Kovur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"4",
+		"a_href":"nest-njoy-villa-kanathur.html",
+		"card_title":"NEST NJOY VILLAS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
+		"card_description":"The Nest njoy a landmark project in the world of affordable homes.",
+		"card_area":"Kanathur, Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"3",
 		"a_href":"akshaya-today-OMR-Thaiyur.html",
 		"card_title":"AKSHAYA TODAY",
 		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Today.jpg",
 		"card_description":"Luxurious apartment with all comforts of best-in-class amenities.",
-		"card_area":"OMR Thaiyur Near Kelambakkam, Chennai",
+		"card_area":"OMR, Chennai",
 		"card_city": "chennai"
 		},
 		{
@@ -20,7 +48,7 @@
 		},
 		{
 		"id":"1",
-		"a_href":"",
+		"a_href":"nest-amaze-Sholinganallur.html",
 		"card_title":"nest amaze",
 		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
 		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
