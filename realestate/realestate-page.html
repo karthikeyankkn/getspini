@@ -195,7 +195,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.3/script.js"></script>
+  <script src="../assets/js/v1.30.2/script.js"></script>
 
   <!-- AddToAny BEGIN -->
     <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
@@ -211,7 +211,7 @@
   <script>
       var multicard;
       var index = getCookie("index");
-    $.get("../assets/js/v1.30.3/multicard.json", function(data, status){
+    $.get("../assets/js/v1.30.2/multicard.json", function(data, status){
       multicard = data.multicard;
         $("#card-title").text(multicard[index].card_title);
         $("#card-area").text(multicard[index].card_area);
