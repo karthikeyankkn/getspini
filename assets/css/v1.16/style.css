@@ -470,7 +470,6 @@ header{
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      text-transform: uppercase;
       margin-bottom: 0;
     }
     .thankyou-slider-parent::-webkit-scrollbar { 

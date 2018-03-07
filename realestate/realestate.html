@@ -30,11 +30,11 @@
       .list-card{
       height: 170px;
      }
-     .list-card article p{
-      -webkit-line-clamp: 1;
-     }
    }
-   
+   .list-card article p{
+      -webkit-line-clamp: 1;
+      text-transform: uppercase;
+     }
     
    </style>     
 </head>
@@ -318,18 +318,15 @@
     // }
     
 
-    var cards, url;   
-    $(document).on('click', '.card', function(e){
-      url = $(this).attr("url");
-      window.location.href = url;
-    });
+    var cards;   
+    
     // multi cards repeat
       get_json();
       function get_json(index){
         $.get("../assets/js/v1.30.2/cards.json", function(data, status){
           cards = data.cards;
           for( var i = 0; i < cards.length; i++ ){
-            $(".realestate-"+cards[i].card_city+"").append("<li class='col-md-3 col-xs-6 card' url="+cards[i].a_href+"><div class='list-card'><a><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+            $(".realestate-"+cards[i].card_city+"").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
           }
        });
       }
