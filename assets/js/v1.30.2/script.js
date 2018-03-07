@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-   
+    
   // if (location.origin == "http://getspini.com") {
   //   ApiEndPoint = 'https://api.getspini.com:8443';
   // }else{
@@ -582,5 +582,12 @@ $(document).ready(function(){
       // setTimeout(function(){ 
       //   $("#ebook-popup").modal('show');
       // }, 5000);
+
+      // on click li go to corresponding page
+      $(document).on('click', '.list-card', function(e){
+        url = $(this).children(".list-card a").attr("href");
+        debugger
+        window.location.href = url;
+      });
 	 
 });
