@@ -2,32 +2,32 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
      // images for desktop
-      var desktop_img = [ "https://cdn.getspini.com/banner/Nest-Fortune.jpg",
+      var desktop_img = [ "https://cdn.getspini.com/banner/Nest-Fortune1.jpg",
                           "https://cdn.getspini.com/optimized/nest-bn.jpg",
                           "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
                           "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
                           "../assets/images/banner/Nest_20Kanathur.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna.jpg",
                           "../assets/images/gvspl/GVSPl_20banner.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Suraj.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Life.jpg"
+                          "https://cdn.getspini.com/banner/Nest-Suraj1.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Life1.jpg"
                         ];
 
       // images for mobile
-      var mobile_img = [  "https://cdn.getspini.com/banner/Nest-Fortune-Mob.jpg",
+      var mobile_img = [  "https://cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
                           "https://cdn.getspini.com/nest-mob-v2-1.jpg",
                           "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
                           "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
                           "../assets/images/banner/Nest_20Mob.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna_20Mob.jpg",
                           "../assets/images/gvspl/GVSPL_20Mob.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Suraj-Mob.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Life-Mob.jpg"
+                          "https://cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
+                          "https://cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
                         ];
       // links for slider
       var slider_link = ["realestate/nest-fortune-choolaimedu.html",
@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-   
+    
   // if (location.origin == "http://getspini.com") {
   //   ApiEndPoint = 'https://api.getspini.com:8443';
   // }else{
@@ -108,10 +108,10 @@ $(document).ready(function(){
 	// load header and footer
 	if (index_page == true) {
 		$("header").load("header1.1.html"); 
-  		$("footer").load("footer1.1.html");
+  		$("footer").load("footer1.2.html");
 	}else{
 		$("header").load("../header1.1.html"); 
-  	$("footer").load("../footer1.1.html");
+  	$("footer").load("../footer1.2.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -508,7 +508,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.1/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.3/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -582,5 +582,12 @@ $(document).ready(function(){
       // setTimeout(function(){ 
       //   $("#ebook-popup").modal('show');
       // }, 5000);
+
+      // on click li go to corresponding page
+      $(document).on('click', '.list-card', function(e){
+        url = $(this).children(".list-card a").attr("href");
+        debugger
+        window.location.href = url;
+      });
 	 
 });
