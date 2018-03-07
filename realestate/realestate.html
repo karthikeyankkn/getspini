@@ -19,7 +19,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.16/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.17/style.css">
    <!-- css files ends -->
    <script>
      var index_page = false;
@@ -310,7 +310,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.2/script.js"></script>
+  <script src="../assets/js/v1.30.3/script.js"></script>
   <script>
     // function show_page(index){
     //   document.cookie = "index="+index;
@@ -323,7 +323,7 @@
     // multi cards repeat
       get_json();
       function get_json(index){
-        $.get("../assets/js/v1.30.2/cards.json", function(data, status){
+        $.get("../assets/js/v1.30.3/cards.json", function(data, status){
           cards = data.cards;
           for( var i = 0; i < cards.length; i++ ){
             $(".realestate-"+cards[i].card_city+"").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
