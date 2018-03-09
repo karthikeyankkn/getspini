@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// variable declarations
-  var name, ph_number, email;
+  var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
   var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
 	// preload funcitons
@@ -88,7 +88,7 @@ $(document).ready(function(){
   // }else{
   //   ApiEndPoint = 'https://sapi.getspini.com:8443';
   // }
-   ApiEndPoint = 'https://api.getspini.com:8443';
+   ApiEndPoint = 'https://sapi.getspini.com:8443';
   
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
@@ -192,6 +192,7 @@ $(document).ready(function(){
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
       cityName = $("select[name='city']").val();
+      budgetAmount = $("input[name='budgetAmount']").val();
       if (categoryName == undefined) {
         categoryName = $("select[name='catagoryName']").val();
         selected_package = $("select[name='selected_package']").val();
@@ -223,6 +224,7 @@ $(document).ready(function(){
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
       cityName = short_traverse.find("select[name='city']").val();
+      budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
 
 
 
@@ -303,7 +305,8 @@ $(document).ready(function(){
         "phoneNumOfProspectiveBuyer" : ph_number,
         "cityName" : cityName,
         "categoryName" : categoryName,
-        "emailOfProspectiveBuyer" : email
+        "emailOfProspectiveBuyer" : email,
+        "budgetAmount" : budgetAmount
       };
 
       
