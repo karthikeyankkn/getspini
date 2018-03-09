@@ -10,6 +10,105 @@
 		"card_city": ""
 		},
 		{
+		"id":"",
+		"a_href":"",
+		"card_title":"",
+		"card_img": "",
+		"card_description":"",
+		"card_area":"",
+		"card_city": ""
+		},
+		{
+		"id":"38",
+		"a_href":"Casagrand-Irene.html",
+		"card_title":"CASAGRAND IRENE",
+		"card_img": "http://cdn.getspini.com/landing/irene.jpg",
+		"card_description":"Casagrand Irene is a project by Casagrand Builder Pvt. Ltd. located in Manapakkam.",
+		"card_area":"Manapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"37",
+		"a_href":"Rajparis-Crystal-Spring.html",
+		"card_title":"RAJPARIS CRYSTAL SPRING-IMAGE",
+		"card_img": "http://cdn.getspini.com/landing/crystal.jpg",
+		"card_description":"Rajparis Crystal Spring is a project by Rajparis Civil Construction Ltd. located in Medavakkam Chennai.",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"36",
+		"a_href":"Radiance-Mercury.html",
+		"card_title":"RADIANCE MERCURY",
+		"card_img": "http://cdn.getspini.com/landing/mercury.jpg",
+		"card_description":"Developed by Radiance Realty Developers India Ltd., Radiance Mercury is one of the upcoming residential development with possession by June 2018 located in Perumbakkam, Chennai.",
+		"card_area":"Perumbakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"35",
+		"a_href":"Nahar-Jaishree.html",
+		"card_title":"NAHAR JAISHREE",
+		"card_img": "http://cdn.getspini.com/landing/jaishree.jpg",
+		"card_description":"Nahar Jaishree is a strategically located residential project currently under construction. ",
+		"card_area":"Pallikaranai, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"34",
+		"a_href":"Pacifica-Aurum.html",
+		"card_title":"PACIFICA AURUM",
+		"card_img": "http://cdn.getspini.com/landing/pacifica-aurum.jpg",
+		"card_description":"Pacifica Aurum is a project by Pacifica Companies strategically located in Old Mahabalipuram Road Chennai.",
+		"card_area":"OMR, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"33",
+		"a_href":"White-field-Mudra.html",
+		"card_title":"WHITE FIELD MUDRA",
+		"card_img": "http://cdn.getspini.com/landing/mudra.jpg",
+		"card_description":"White field Mudra Phase 3 have come up with 2 and 3 BHK flats in Chennai, developed by the prestigious Shirdi Shelters, Medavakkam – Chennai. The total number of 119 units divided into 7 huge towers are still under construction with an estimated time of possession in June 2019.",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"32",
+		"a_href":"Adroit-Urban-District.html",
+		"card_title":"ADROIT URBAN DISTRICT",
+		"card_img": "http://cdn.getspini.com/landing/urban.jpg",
+		"card_description":"A 100% vastu compliant gated community, the Adroit Urban District S in Thalambur, Chennai provides spacious, modern and well- ventilated flats that are efficiently designed with smart floor plan, latest architecture, high- quality raw material and modern interiors.",
+		"card_area":"Thalambur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"31",
+		"a_href":"rkc-subrabath.html",
+		"card_title":"RKC SUBRABATH",
+		"card_img": "http://cdn.getspini.com/landing/rkc.jpg",
+		"card_description":"RKC Subrabath is a project currently undergoing construction in Vadapalani, Chennai offering 2 BHK and 3 BHK apartments.",
+		"card_area":"Vadapalani, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"30",
+		"a_href":"lancor-lumina.html",
+		"card_title":"LANCOR LUMINA",
+		"card_img": "http://cdn.getspini.com/landing/lumina.jpg",
+		"card_description":"Lumina in Guduvancheri, Chennai is one residential project that features attractive towers, smart floor plan, excellent architecture, latest amenities and modern technology. ",
+		"card_area":"Guduvancheri, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"29",
+		"a_href":"bollineni-hillside-phase.html",
+		"card_title":"BOLLINENI HILLSIDE PHASE",
+		"card_img": "http://cdn.getspini.com/landing/bollineni.jpg",
+		"card_description":"Bollineni Hillside Phase II is a project by BSCPL Infrastructure Ltd.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"28",
 		"a_href":"tata-santorini.html",
 		"card_title":"tata santorini",
