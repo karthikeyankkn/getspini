@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	// variable declarations
-  var name, ph_number, email;
+  var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
   var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
 	// preload funcitons
@@ -192,6 +192,7 @@ $(document).ready(function(){
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
       cityName = $("select[name='city']").val();
+      budgetAmount = $("input[name='budgetAmount']").val();
       if (categoryName == undefined) {
         categoryName = $("select[name='catagoryName']").val();
         selected_package = $("select[name='selected_package']").val();
@@ -223,6 +224,7 @@ $(document).ready(function(){
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
       cityName = short_traverse.find("select[name='city']").val();
+      budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
 
 
 
@@ -303,7 +305,8 @@ $(document).ready(function(){
         "phoneNumOfProspectiveBuyer" : ph_number,
         "cityName" : cityName,
         "categoryName" : categoryName,
-        "emailOfProspectiveBuyer" : email
+        "emailOfProspectiveBuyer" : email,
+        "budgetAmount" : budgetAmount
       };
 
       
@@ -508,7 +511,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.3/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.4/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
