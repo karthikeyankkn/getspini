@@ -10,13 +10,400 @@
 		"card_city": ""
 		},
 		{
-		"id":"",
-		"a_href":"",
-		"card_title":"",
-		"card_img": "",
+		"id":"82",
+		"a_href":"Adroit-House-of-Ambal.html",
+		"card_title":"ADROIT HOUSE OF AMBAL",
+		"card_img": "http://cdn.getspini.com/landing/House-of-Ambal.jpg",
+		"card_description":"Adroit House of Ambal is an exquisite project currently under construction by Adroit Urban Developers Pvt. Ltd.",
+		"card_area":"Anna Salai, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"81",
+		"a_href":"The-Courtyard.html",
+		"card_title":"THE COURTYARD",
+		"card_img": "http://cdn.getspini.com/landing/Courtyard.jpg",
+		"card_description":"The Courtyard is a project by Raunaq Foundations located in Manapakkam, Chennai offering elegant and luxuriously designed 2 BHK and 3 BHK spacious apartments.",
+		"card_area":"Manapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"80",
+		"a_href":"Felicia.html",
+		"card_title":"FELICIA",
+		"card_img": "http://cdn.getspini.com/landing/Felicia.jpg",
+		"card_description":"Welcome to Felicia - 12 independent fully furnished villas spread over in 10.5 grounds, crafted for people who like only the best. Felicia with the promise of quality villa with car park & landscape garden complimented by fully fitted wardrobe, modular kitchen with hob and chimney, Air conditioners in all bed rooms and living rooms, light, fans and automatic lift with an aesthetic elevation.",
+		"card_area":"Neelankarai, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"79",
+		"a_href":"Casagrand-Uptown.html",
+		"card_title":"CASAGRAND UPTOWN",
+		"card_img": "http://cdn.getspini.com/landing/Uptown.jpg",
+		"card_description":"An integrated township of Plots, Casagrand Uptown is set on a 30 acre expanse. The project is located at Thandalam, Poonamallee - an upcoming locality with outstanding connectivity and rapid land value appreciation.",
+		"card_area":"Thandalam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"78",
+		"a_href":"Sumeru-Conclave.html",
+		"card_title":"SUMERU CONCLAVE",
+		"card_img": "http://cdn.getspini.com/landing/Conclave.jpg",
+		"card_description":"Sumeru Conclave is an ongoing residential project by Sumeru Housing Co being based in Selaiyur, Chennai offering thoughtfully crafted residential plots. It consists of 12 units spanned over 5 towers. Sumeru Conclave price rate starts from Rs. 31.2 Lac onward.",
+		"card_area":"Selaiyur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"77",
+		"a_href":"KG-Signature-City.html",
+		"card_title":"KG SIGNATURE CITY",
+		"card_img": "http://cdn.getspini.com/landing/Signature-City.jpg",
+		"card_description":"KG Signature City in Mogappair, Chennai offers a combination of 1, 2 and 3BHK flats at a starting rate of Rs.4400 per sqft. The apartments are ready to occupy and are available in the area size of 610 sqft and 1400 sqft.",
+		"card_area":"Mogappair, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"76",
+		"a_href":"Arham-Harmony.html",
+		"card_title":"ARHAM HARMONY",
+		"card_img": "http://cdn.getspini.com/landing/Harmony.jpg",
+		"card_description":"Arham Harmony is a luxurious residential project located in Iyyappanthangal, Chennai and developed by Arham Builders; offering thoughtfully crafted and aesthetically designed 2 BHK and 3 BHK villas.",
+		"card_area":"Iyyappanthangal, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"75",
+		"a_href":"Olympia-Opaline-Sequel.html",
+		"card_title":"OLYMPIA OPALINE SEQUEL",
+		"card_img": "http://cdn.getspini.com/landing/Opaline.jpg",
+		"card_description":"Olympia Opaline Sequel in Navalur, Chennai is designed by the renowned Olympia Group. The residential project in Chennai offers 608 units comprising of 2BHK, 3BHK, 4BHK apartments across 4 towers that have been developed to ensure comfortable living for its residents.",
+		"card_area":"Navalur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"74",
+		"a_href":"Aashritha.html",
+		"card_title":"AASHRITHA",
+		"card_img": "http://cdn.getspini.com/landing/aashritha.jpg",
 		"card_description":"",
-		"card_area":"",
-		"card_city": ""
+		"card_area":"Perumbakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"73",
+		"a_href":"Casagrand-Bellissimo.html",
+		"card_title":"CASAGRAND BELLISSIMO",
+		"card_img": "http://cdn.getspini.com/landing/bellissimo.jpg",
+		"card_description":"Casagrand Bellissimo is a project by Casagrand Builder Pvt. Ltd. located strategically in Alandur, Chennai offering spaciously crafted luxurious 2 BHK, 3 BHK and 4 BHK apartments.",
+		"card_area":"Alandur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"72",
+		"a_href":"Khurinjis-Zinnia.html",
+		"card_title":"KHURINJIS ZINNIA",
+		"card_img": "http://cdn.getspini.com/landing/Zinnia.jpg",
+		"card_description":"Khurinji is Zinnia is an ongoing Project by Khurinji Homes. Zinnia is a premium residential community that houses a conclave of 126 elegantly built dwellings spread across 4 separate units namely ZINNIA CITREA, ELEGANS, GOLD and NITRA.",
+		"card_area":"Tambaram, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"71",
+		"a_href":"Arihant-Chetna.html",
+		"card_title":"ARIHANT CHETNA",
+		"card_img": "http://cdn.getspini.com/landing/Chetna.jpg",
+		"card_description":"Chetna is our newest residential offering in a stunningly peaceful and picturesque 50 acre setting in Perambur.",
+		"card_area":"Perambur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"70",
+		"a_href":"Casagrand-ECR14.html",
+		"card_title":"CASAGRAND ECR 14",
+		"card_img": "http://cdn.getspini.com/landing/ecr-14.jpg",
+		"card_description":"Casagrand ECR 14 is a currently under construction project by Casagrand Builder Pvt. Ltd. ",
+		"card_area":"ECR, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"69",
+		"a_href":"anika.html",
+		"card_title":"ANIKA",
+		"card_img": "http://cdn.getspini.com/landing/Anika.jpg",
+		"card_description":"Anika is a project consisting 47 units of luxurious and spaciously designed 2 BHK and 3 BHK apartments over a span of 1 tower. ",
+		"card_area":"Siruseri, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"68",
+		"a_href":"Elegants-Pinnacle.html",
+		"card_title":"ELEGANTS PINNACLE",
+		"card_img": "http://cdn.getspini.com/landing/Pinnacle.jpg",
+		"card_description":"Elegant’s Pinnacle in Semmanchery is located in a very calm and prominent location, just before Sathyabama Engineering College in OMR.",
+		"card_area":"Semmancheri Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"67",
+		"a_href":"Magnolia.html",
+		"card_title":"MAGNOLIA",
+		"card_img": "http://cdn.getspini.com/landing/Magnolia.jpg",
+		"card_description":"Magnolia, Old Mahabalipuram Road, Chennai is a lavishly developed residential project that offers its residents an affordable housing solution. This location in Chennai is the most preferable residential locality for those who are looking for their dream home with all the facilities. At Magnolia, Old Mahabalipuram Road, Chennai there are number of housing options 112 units that comes with the specification of 2bhk apartments.",
+		"card_area":"OMR, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"66",
+		"a_href":"Marutham-Prestige.html",
+		"card_title":"MARUTHAM PRESTIGE",
+		"card_img": "http://cdn.getspini.com/landing/marutham-prestige.jpg",
+		"card_description":"The Marutham Prestige is a luxurious residential property that is equipped with many spacious and well- ventilated flats, which are constructed to complement or update your modern lifestyle.",
+		"card_area":"Tambaram West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"65",
+		"a_href":"L&T-Eden-Park-Phase-II.html",
+		"card_title":"L&T EDEN PARK PHASE II",
+		"card_img": "http://cdn.getspini.com/landing/Eden.jpg",
+		"card_description":"Residential development by the renowned L&T Realty, L and T Eden Park Phase II in Siruseri, Chennai is a lavish project comprising of 1288 units of 1BHK, 2BHK & 3BHK apartments spread across 5 towers.",
+		"card_area":"Siruseri Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"64",
+		"a_href":"RS-Luminous.html",
+		"card_title":"RS LUMINOUS",
+		"card_img": "http://cdn.getspini.com/landing/luminous.jpg",
+		"card_description":"RS Luminous is a residential project consisting of 12 units spanned over 2 towers and offering luxurious and thoughtfully designed 3 BHK apartments.",
+		"card_area":"OMR, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"63",
+		"a_href":"Palmera-Garden-Phase-II.html",
+		"card_title":"PALMERA GARDEN PHASE II",
+		"card_img": "http://cdn.getspini.com/landing/Palmera.jpg",
+		"card_description":"Palmera Garden Phase II is a project by Elegant Constructions skilfully crafted in Thoraipakkam, Chennai offering lavish and elegantly designed 2 BHK and 3 BHK apartments.",
+		"card_area":"Thoraipakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"62",
+		"a_href":"Aanandham.html",
+		"card_title":"AANANDHAM",
+		"card_img": "http://cdn.getspini.com/landing/Anandham.jpg",
+		"card_description":"Aanandham, a picture perfect amalgamation of luxury, comfort and style is developed by one of the renowned developers named M and N Builders.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"61",
+		"a_href":"Marutham-Breeze.html",
+		"card_title":"MARUTHAM BREEZE",
+		"card_img": "http://cdn.getspini.com/landing/Marutham-Breeze.jpg",
+		"card_description":"Marutham Breeze is located in a serene green atmosphere, away from the puzzling city noise and dust pollution on the state highway road near Manimangalam in the Tambaram locality. ",
+		"card_area":"Tambaram West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"60",
+		"a_href":"Green-Home-Villa-Green-Vista.html",
+		"card_title":"GREEN HOME VILLA GREEN VISTA",
+		"card_img": "http://cdn.getspini.com/landing/Green-Home-villa1.jpg",
+		"card_description":"Villa Green Vista is a project by Green Home located in Kelambakkam, Chennai offering 3 BHK and 4 BHK villas. It is currently under construction and consists of 850 units.",
+		"card_area":"Kelambakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"59",
+		"a_href":"Adroit-Artistica.html",
+		"card_title":"ADROIT ARTISTICA",
+		"card_img": "http://cdn.getspini.com/landing/Adroit.jpg",
+		"card_description":"Adroit Artistica is a project by Adroit Urban Developers Pvt. Ltd., located in Sholinganallur, Chennai, offering elegantly designed currently under construction 3 BHK and 4 BHK apartments and penthouses.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"58",
+		"a_href":"BSR-Balaji-Enclave.html",
+		"card_title":"BSR BALAJI ENCLAVE",
+		"card_img": "http://cdn.getspini.com/landing/Balaji-Enclave.jpg",
+		"card_description":"BSR Balaji Enclave is a project by BSR Builders being developed in Mogappair West, Chennai offering aesthetically designed and spacious 2 BHK and 3 BHK apartments.",
+		"card_area":"Mogappair West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"57",
+		"a_href":"Lakeside-ll.html",
+		"card_title":"LAKESIDE 2",
+		"card_img": "http://cdn.getspini.com/landing/lakeside-2.jpg",
+		"card_description":"An Enchanting Community An Enriching Lifestyle Sugal and Damani has successful completed LakeSide , a prestigious residential gated community at Puzhal in Chennai. ",
+		"card_area":"Puzhal, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"56",
+		"a_href":"KG-Earth-Homes.html",
+		"card_title":"KG EARTH HOMES",
+		"card_img": "http://cdn.getspini.com/landing/earth.jpg",
+		"card_description":"Designed for those who dare to care for our planet, with Earth-Friendly Apartments built into the very fabric of its creation, KG Earth Homes will change your lifestyle forever.",
+		"card_area":"Siruseri, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"55",
+		"a_href":"KG-Centre-Point.html",
+		"card_title":"KG CENTRE POINT",
+		"card_img": "http://cdn.getspini.com/landing/centre-point.jpg",
+		"card_description":"Away from the maddening crowd, yet within easy reach of all the benefits of city life, our luxury home project in Poonamallee will set a new standard in the area.",
+		"card_area":"Poonamalle, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"54",
+		"a_href":"Express-Exclusive.html",
+		"card_title":"EXPRESS EXCLUSIVE",
+		"card_img": "http://cdn.getspini.com/landing/Express.jpg",
+		"card_description":"A lavish 5 acre spread with 70% landscaped garden with no common walls and Panaromic view of Bay of Bengal Located at heart of the city, Mount Road.",
+		"card_area":"Mount Road, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"53",
+		"a_href":"Avigna-Eminence.html",
+		"card_title":"AVIGNA EMINENCE",
+		"card_img": "http://cdn.getspini.com/landing/Avigna-Eminence.jpg",
+		"card_description":"Avigna Eminence is one of the popular residential developments in GST Road, neighborhood of Chennai. It is among the completed projects of its Builder.",
+		"card_area":"Mahindra World City, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"52",
+		"a_href":"Casagrand-Ferns.html",
+		"card_title":"CASAGRAND FERNS",
+		"card_img": "http://cdn.getspini.com/landing/ferns.jpg",
+		"card_description":"Built in a very popular area of Tamilnadu, Casagrand Ferns from Casagrand Private Limited offers affordably priced 2BHK and 3BHK residential apartments spread across an area of 4.31 acres.",
+		"card_area":"Tambaram, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"51",
+		"a_href":"Ideal-Homes.html",
+		"card_title":"IDEAL HOMES",
+		"card_img": "http://cdn.getspini.com/landing/Ideal-Homes.jpg",
+		"card_description":"Ideal Homes from the well known Vijay Raja Group has developed a low price yet premium quality residential project featuring 224 residences in the combination of 1BHK",
+		"card_area":"Thirumazhisai, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"50",
+		"a_href":"Pooja-Diamond-Villas.html",
+		"card_title":"POOJA DIAMOND VILLAS",
+		"card_img": "http://cdn.getspini.com/landing/diamond-villas.jpg",
+		"card_description":"Diamond Villas is a residential project that fulfills all your desires of owning the dream house.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"49",
+		"a_href":"Brigade-Xanadu.html",
+		"card_title":"BRIGADE XANADU",
+		"card_img": "http://cdn.getspini.com/landing/Brigade.jpg",
+		"card_description":"RERA certified, Brigade Xanadu located in Mogappair West, Chennai is an excellent 33-acre residential township by the award-winning developer Brigade Group.",
+		"card_area":"Mogappair West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"48",
+		"a_href":"Lokaa-M-One.html",
+		"card_title":"LOKAA M ONE",
+		"card_img": "http://cdn.getspini.com/landing/m-one.jpg",
+		"card_description":"M One is a residential project by Lokaa Developer Pvt. Ltd. located in Madhavaram, Chennai offering thoughtfully planned and elegantly designed 2 BHK and 3 BHK apartments.",
+		"card_area":"Madhavaram, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"47",
+		"a_href":"Caspia.html",
+		"card_title":"CASPIA",
+		"card_img": "http://cdn.getspini.com/landing/caspia.jpg",
+		"card_description":"Caspia is a fabulous residential project where you can savor the joys of modern living.",
+		"card_area":"Korattur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"46",
+		"a_href":"KG-Good-Fortune.html",
+		"card_title":"KG GOOD FORTUNE",
+		"card_img": "http://cdn.getspini.com/landing/good-fortune.jpg",
+		"card_description":"KG Good Fortune presents a beautiful range of 1bhk, 2bhk and 3bhk residential apartments that you will surely consider to buy once you see and know the benefits that are offered with this residential project.",
+		"card_area":"Perumbakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"45",
+		"a_href":"KG-Chandra-Vista.html",
+		"card_title":"KG CHANDRA VISTA",
+		"card_img": "http://cdn.getspini.com/landing/Chandraa.jpg",
+		"card_description":"KG Chandra vista is a multistory residential building, which is located in the temple city of south India, Chennai. The building stands in old Mhabalipuram road, Chennai.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"44",
+		"a_href":"Doshi-Risington.html",
+		"card_title":"DOSHI RISINGTON",
+		"card_img": "http://cdn.getspini.com/landing/risington.jpg",
+		"card_description":"Doshi Risington by Doshi Housing in Karapakkam, Chennai is a beautifully designed project featuring a combination of 1, 2, 3 and 4BHK",
+		"card_area":"Karapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"43",
+		"a_href":"Perfect-Pedestal.html",
+		"card_title":"PERFECT PEDESTAL",
+		"card_img": "http://cdn.getspini.com/landing/pedestal1.jpeg",
+		"card_description":"Perfect Pedestal is a well crafted project by Perfect Builders thoughtfully based in Kovilambakkam, Chennai and offering lavish and aesthetically designed 1 BHK and 2 BHK apartments.",
+		"card_area":"Kovilambakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"42",
+		"a_href":"Pearl-Iris.html",
+		"card_title":"PEARL IRIS",
+		"card_img": "http://cdn.getspini.com/landing/Iris.jpg",
+		"card_description":"Pearl Iris is a project by G. P. Homes located in Ayappakkam, Chennai offering spaciously crafted 1 BHK, 2 BHK and 3 BHK apartments. ",
+		"card_area":"Ayappakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"41",
+		"a_href":"CasaGrand-Monte-Carlo.html",
+		"card_title":"CASAGRAND MONTE CARLO",
+		"card_img": "http://cdn.getspini.com/landing/monte-carlo.jpg",
+		"card_description":"Casagrand Monte Carlo is a ravishing project by Casagrand Builder Pvt. Ltd. located in Saidapet, Chennai offering luxurious and high quality designed 2 BHK, 3 BHK and 4 BHK apartments.",
+		"card_area":"Saidapet, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"40",
+		"a_href":"RS-Elegance.html",
+		"card_title":"R S ELEGANCE",
+		"card_img": "http://cdn.getspini.com/landing/Elegance.jpg",
+		"card_description":"RS Elegance, Phase II has 30 apartments Ranging From 1040 sq.ft, to 1600 sq.ft, which are located in Vadakupattu, 1 Km from Kovilambakkam, for those who prefer to be in a serene and picture perfect atmosphere. ",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"39",
+		"a_href":"Pine-Ridge.html",
+		"card_title":"PINE RIDGE",
+		"card_img": "http://cdn.getspini.com/landing/Ridge1.jpg",
+		"card_description":"SALMA is a reputed construction company named for its quality and perfection from Chennai, fully dedicated to establish ever standing landmarks in Chennai's city scape.",
+		"card_area":"Velachery, Chennai",
+		"card_city": "chennai"
 		},
 		{
 		"id":"38",
@@ -30,7 +417,7 @@
 		{
 		"id":"37",
 		"a_href":"Rajparis-Crystal-Spring.html",
-		"card_title":"RAJPARIS CRYSTAL SPRING-IMAGE",
+		"card_title":"RAJPARIS CRYSTAL SPRING",
 		"card_img": "http://cdn.getspini.com/landing/crystal.jpg",
 		"card_description":"Rajparis Crystal Spring is a project by Rajparis Civil Construction Ltd. located in Medavakkam Chennai.",
 		"card_area":"Medavakkam, Chennai",
