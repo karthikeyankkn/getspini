@@ -10,6 +10,231 @@
 		"card_city": ""
 		},
 		{
+		"id":"107",
+		"a_href":"Swarnabhoomi.html",
+		"card_title":"SWARNABHOOMI",
+		"card_img": "http://cdn.getspini.com/landing/swarnaboomi.jpg",
+		"card_description":"Located on one of the most lucrative areas in Sembakkam this project boast the best in all the departments.",
+		"card_area":"Sembakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"106",
+		"a_href":"Garden-City-Extn.html",
+		"card_title":"GARDEN CITY EXTN",
+		"card_img": "http://cdn.getspini.com/landing/Garden-City.jpg",
+		"card_description":"Garden City” is a exceptionally unique villa project in Near Tambaram – Chennai. ",
+		"card_area":"Tambaram West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"105",
+		"a_href":"Advaita-Blossom.html",
+		"card_title":"ADVAITA BLOSSOM",
+		"card_img": "http://cdn.getspini.com/landing/Advaita-Blossom.jpg",
+		"card_description":"Advaita Blossom is a residential project by Advaita Homes, located in Kelambakkam, Chennai.",
+		"card_area":"Kelambakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"104",
+		"a_href":"Urban-Tree-Superb.html",
+		"card_title":"URBAN TREE SUPERB",
+		"card_img": "http://cdn.getspini.com/landing/Urban-Tree-Superb.jpg",
+		"card_description":"Urban Tree Superb, build on 6 acres of land is a High-rise residential development project near upcoming Gold Chowk Mall.Urban Tree Superb by Urban Tree Infrastructures has been nested in Urapakkam in Chennai.",
+		"card_area":"Urapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"103",
+		"a_href":"Aashika.html",
+		"card_title":"AASHIKA",
+		"card_img": "http://cdn.getspini.com/landing/Aashika.jpg",
+		"card_description":"Aashika is a residential project that feature all the modern facilities and located in the heart of the city Chennai, Maduravoyal.",
+		"card_area":"Maduravoyal, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"102",
+		"a_href":"Anugraha.html",
+		"card_title":"ANUGRAHA",
+		"card_img": "http://cdn.getspini.com/landing/Anugraha.jpg",
+		"card_description":"SREE GURU ANUGRAHA located at Plot No.C-24, Kanagambaram Street, Vivekanada Nagar, Ambattur, Chennai -600 053.",
+		"card_area":"Thirumullaivoyal, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"101",
+		"a_href":"Rajkham-Emerald.html",
+		"card_title":"RAJKHAM EMERALD",
+		"card_img": "http://cdn.getspini.com/landing/Rajkham-Emerald.jpg",
+		"card_description":"Emerald, the symbol of love, opens the heart, soothes the mind and energizes the bonds in life to bring freshness and vitality to the spirit. ",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"100",
+		"a_href":"Orchid.html",
+		"card_title":"ORCHID",
+		"card_img": "http://cdn.getspini.com/landing/Orchid.jpg",
+		"card_description":"Orchid is a popular residential development by Karuppasamy Builders in Porur, Chennai.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"99",
+		"a_href":"VGN-Royale.html",
+		"card_title":"VGN ROYALE",
+		"card_img": "http://cdn.getspini.com/landing/VGN-Royale.jpg",
+		"card_description":"",
+		"card_area":"Avadi, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"98",
+		"a_href":"Salims-Skylight-Enclave.html",
+		"card_title":"SALIMS SKYLIGHT ENCLAVE",
+		"card_img": "http://cdn.getspini.com/landing/Salims-Skylight-Enclave1.jpg",
+		"card_description":"Salims Skylight Enclave is a skilfully planned residential project located in Porur, Chennai by the quite experienced Civil Engineering Enterprises offering aesthetically crafted 1 BHK, 2 BHK and 3 BHK apartments.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"97",
+		"a_href":"Green-Rajguru.html",
+		"card_title":"GREEN RAJGURU",
+		"card_img": "http://cdn.getspini.com/landing/Green-Rajguru.jpg",
+		"card_description":"Green Valleys Shelters Rajguru at Medavakkam, is situated at the epicenter of the growing Chennai Metropolis, a quintessential project right at the crossroads of a bustling locality.",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"96",
+		"a_href":"Radiance-Royale.html",
+		"card_title":"RADIANCE ROYALE",
+		"card_img": "http://cdn.getspini.com/landing/Radiance-Royale.jpg",
+		"card_description":"Radiance Royale is a project by Radiance Realty Developers India Limited located in Porur Chennai. It is build on an area of 3 Acre encompassing 247 units across 2 towers.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"95",
+		"a_href":"Thiruvengadam-Enclave.html",
+		"card_title":"THIRUVENGADAM ENCLAVE",
+		"card_img": "http://cdn.getspini.com/landing/Thiruvengadam-Enclave.jpg",
+		"card_description":"Thiruvengadam Enclave is a meticulously planned residential project located in Porur, Chennai by RTV Builders.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"94",
+		"a_href":"Rajkham-Silver-Crest.html",
+		"card_title":"RAJKHAM SILVER CREST",
+		"card_img": "http://cdn.getspini.com/landing/Rajkham-Silver-Crest.jpg",
+		"card_description":"Silver Crest is a truly an attractive, one-of-a-kind residential development in Chennai at Madurapakkam.",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"93",
+		"a_href":"Urban-Tree-Oxygen.html",
+		"card_title":"URBAN TREE OXYGEN",
+		"card_img": "http://cdn.getspini.com/landing/Urban-Tree-Oxygen.jpg",
+		"card_description":"Oxygen is an outcome of the use of climate responsive design, intelligent technology and the most ideal construction materials to ensure maximum heat reduction, minimum energy consumption, regular cross ventilation and limitless supply of clean air along with copious potable groundwater.",
+		"card_area":"Perumbakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"92",
+		"a_href":"Urban-Tree-Infinity.html",
+		"card_title":"URBAN TREE INFINITY",
+		"card_img": "http://cdn.getspini.com/landing/Urban-Tree-Infinity.jpg",
+		"card_description":"Presenting a new destination of unlimited happiness, amazing comfort and magnificence. Welcome to splendid apartments for sale at Urban Tree Infinity in Porur.",
+		"card_area":"Porur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"91",
+		"a_href":"Urban-Tree-WOW.html",
+		"card_title":"URBAN TREE WOW",
+		"card_img": "http://cdn.getspini.com/landing/Urban-Tree-WOW.jpg",
+		"card_description":"Presenting a new destination of unlimited happiness, amazing comfort and magnificence.",
+		"card_area":"Medavakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"90",
+		"a_href":"LML-Atita.html",
+		"card_title":"LML ATITA",
+		"card_img": "http://cdn.getspini.com/landing/LML-Atita.jpg",
+		"card_description":"LML Atita is an aesthetically designed residential project by LML Homes situated in the locality of Perungudi, Chennai offering 3 BHK lavish apartments. ",
+		"card_area":"Perungudi, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"89",
+		"a_href":"Sarvam.html",
+		"card_title":"SARVAM",
+		"card_img": "http://cdn.getspini.com/landing/SS-Sarvam.jpg",
+		"card_description":"Sarvam, lifestyle homes that embody every aspect of exquisite living is all set to redefine the standards of apartment living in the metropolis.",
+		"card_area":"Pallavaram-Thoraipakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"88",
+		"a_href":"Appaswamy-Cerus.html",
+		"card_title":"APPASWAMY CERUS",
+		"card_img": "http://cdn.getspini.com/landing/appaswamy-cerus.jpg",
+		"card_description":"Appaswamy Cerus is a project by Appaswamy Real Estate located in Virugambakkam Chennai. It is build on an area of 2 Acre encompassing 166 units across 3 towers.",
+		"card_area":"Virugambakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"87",
+		"a_href":"TCP-LAKE-FRONT.html",
+		"card_title":"TCP LAKE FRONT",
+		"card_img": "http://cdn.getspini.com/landing/TCP.jpg",
+		"card_description":"TCP Lake Front in Sholinganallur, Chennai is one of the supreme projects developed by Lancor Holdings Limited. This strategically located residential project presents 136 Units of 3-bedroom apartments that are spread across 8 towers.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"86",
+		"a_href":"Casagrand-Vivant.html",
+		"card_title":"CASAGRAND VIVANT",
+		"card_img": "http://cdn.getspini.com/landing/Vivant.jpg",
+		"card_description":"The modern, well- maintained and well- ventilated flats in Casagrand Vivant are smartly planned and are skillfully designed to utilize maximum space and to offer proper sunlight and cross ventilation, which is important for a healthy life.",
+		"card_area":"Kolapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"85",
+		"a_href":"Casa-Grand-Masseys.html",
+		"card_title":"CASA GRAND MASSEYS",
+		"card_img": "http://cdn.getspini.com/landing/Casa-Grande-Masseys.jpg",
+		"card_description":"Casa Grand Masseys is a project by Casagrand Builder Pvt. Ltd. located in Royapuram, Chennai offering aesthetic and skilfully crafted 2 BHK and 3 BHK lavish apartments.",
+		"card_area":"Royapuram, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"84",
+		"a_href":"Vedanshi.html",
+		"card_title":"VEDANSHI",
+		"card_img": "http://cdn.getspini.com/landing/Vedanshi.jpg",
+		"card_description":"Shrusti Vedanshi is one of the popular residential developments in Velachery, neighborhood of Chennai.",
+		"card_area":"Velachery, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"83",
+		"a_href":"Sai-Niketan.html",
+		"card_title":"SAI NIKETAN",
+		"card_img": "http://cdn.getspini.com/landing/Sri_Visthara_Sai_Niketan_1.jpg",
+		"card_description":"Sai Niketan a project from Sri Visthara located in an Eco friendly environment with 36 designer dwellings near 300 acres of lake. Great work life balance: live near lake, in ECO friendly environment, at 5 KM from OMR,unique designer dwellings - maximum exposed walls, ensures maximum ventilation and lighting.",
+		"card_area":"Sithalapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"82",
 		"a_href":"Adroit-House-of-Ambal.html",
 		"card_title":"ADROIT HOUSE OF AMBAL",
