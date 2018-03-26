@@ -27,6 +27,88 @@ canvas{
 .mt-20{
   margin-top: 20px;
 }
+/*style for banner video container starts*/
+.banner-video-container{
+  text-align: center;
+  margin-top: 60px;
+  /*background: url(https://cdn.getspini.com/hd-gif.gif);*/
+  /*background: url(https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036);*/
+  /*background: url(https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg);*/
+  height: 400px;
+  color: #fff;
+}
+.banner-video-layer{
+  background: #00000050;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  z-index: 1;
+}
+.homepage-lead-container{
+  position: relative;
+  z-index: 2
+}
+.homepage-lead-container h1{
+  padding-top: 40px;
+}
+.home-page-categories{
+  padding-top: 50px;
+}
+.home-page-categories li{
+  display: inline-block;
+  background: transparent;
+  padding: 15px 10px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 0 5px;
+  min-width: 200px;
+  position: relative;
+  transition: 0.5s ease;
+}
+.selected-category{
+  background: orange !important;
+  border-color: orange !important
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid orange;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  display: none;
+}
+.home-page-categories li a{
+  color: #fff;
+}
+.home-page-leads{
+  padding-top: 35px;
+}
+.home-page-leads li{
+  min-width: 200px;
+  display: inline-block;
+  margin: 0 5px;
+}
+.home-page-leads li input{
+  width: 100%;
+  padding: 13px;
+  color: #000;
+}
+.home-page-leads li button{
+  background: red;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: 0; 
+}
+/*style for banner video container ends*/
 .banner-header{
   padding: 10px 100px;
   background: #1d2531;

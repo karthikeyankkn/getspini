@@ -24,6 +24,7 @@
 
    <script>
      var index_page = true;
+     var categoryName = categoryName;
    </script> 
 
 
@@ -34,7 +35,7 @@
 <!-- haader ends -->
 
 <!-- Banner Video Starts -->
-<style>
+<!-- <style>
   .banner-video-section{
     text-align: center;
     margin-top: 60px;
@@ -76,8 +77,8 @@
     padding: 13px 40px;
     border: none;
   }
-</style>
-<section class="banner-video-section">
+</style> -->
+<!-- <section class="banner-video-section">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -92,9 +93,9 @@
           <ul>
             <li>
               <button class="banner-btn">REALESTATE</button>
-          <button class="banner-btn">INTERIOR</button>
-          <button class="banner-btn">LOANS</button>
-          <button class="banner-btn">INSURANCE</button>
+              <button class="banner-btn">INTERIOR</button>
+              <button class="banner-btn">LOANS</button>
+              <button class="banner-btn">INSURANCE</button>
             </li>
           </ul>
         </div>
@@ -117,6 +118,73 @@
       </div>
     </div>
   </div>
+</section> -->
+<section class="banner-video-container">
+  <div class="container homepage-lead-container">
+    <h1>SPINI CONNECTS BUYERS WITH SELLERS</h1>
+    <ul class="home-page-categories">
+      <li category="realestate">
+        <a>REALESTATE</a>
+        <span class="arrow-down"></span>
+      </li>
+      <li category="interior">
+        <a>INTERIOR</a>
+        <span class="arrow-down"></span>
+      </li>
+      <li category="loans">
+        <a>LOANS</a>
+        <span class="arrow-down"></span>
+      </li>
+      <li category="insurance">
+        <a>INSURANCE</a>
+        <span class="arrow-down"></span>
+      </li>
+    </ul>
+    <ul class="home-page-leads">
+      <li>
+        <input type="text" name="name" placeholder="Enter Name">
+      </li>
+      <li>
+        <select name="city">
+          <option value="" disabled>City</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+        </select>
+      </li>
+      <li>
+        <input type="Number" name="name" placeholder="Enter Phone Number">
+      </li>
+      <li>
+        <button class="submit_innerpage">Submit</button>
+      </li>
+    </ul>
+    <div class="alerts_page">
+      <!-- validation alert starts -->
+      <div class="alert alert-success success-contact">
+        <strong>Success!</strong> We will contact you soon.
+      </div>
+      <div class="alert loading_image">
+        <img src="../assets/images/loading_image.gif" alt="loading_image" width="50" />
+        <p>Redirecting to Home page</p>
+      </div>
+      <div class="alert alert-danger error-contact">
+        <strong>Error!</strong> Please contact spini ADMIN.
+      </div>
+      <div class="alert alert-danger error-contact-ph_number">
+        <strong>Error!</strong> Phone number should be 10 digits.
+      </div>
+      <div class="alert alert-danger error-contact-email">
+        <strong>Error!</strong> Please enter valid email.
+      </div>
+      <div class="alert alert-danger error-mandatory">
+        <strong>Error!</strong> Please Fill all mandatory fields.
+      </div>
+      <!-- validation alerts ends -->
+    </div>
+  </div>
+  <div class="banner-video-layer"></div>
 </section>
 <!-- Banner Video Starts -->
 
