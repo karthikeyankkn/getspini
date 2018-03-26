@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -88,7 +88,7 @@ $(document).ready(function(){
   // }else{
   //   ApiEndPoint = 'https://sapi.getspini.com:8443';
   // }
-   ApiEndPoint = 'https://api.getspini.com:8443';
+   ApiEndPoint = 'https://sapi.getspini.com:8443';
   
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
@@ -187,7 +187,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      // debugger
+      debugger
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
@@ -251,7 +251,7 @@ $(document).ready(function(){
       // }else{
       //   senddata_for_internal_page();
       // }
-      // debugger
+      debugger
       if (selected_package == undefined) {
         senddata();
       }else{
@@ -297,7 +297,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
-      
+      debugger
       var success;
       var data;
       data = {
@@ -589,8 +589,48 @@ $(document).ready(function(){
       // on click li go to corresponding page
       $(document).on('click', '.list-card', function(e){
         url = $(this).children(".list-card a").attr("href");
-        debugger
+        // debugger
         window.location.href = url;
       });
+
+      // script files for banner page starts
+      $(".home-page-categories li").click(function(){
+        homepage_category = $(this).attr("category");
+        $(this).addClass("selected-category");
+        $(this).siblings().removeClass("selected-category");
+
+        $(this).children("span").show();
+        $(this).siblings().children("span").hide();
+        
+        debugger
+        function homepage_toggle(){
+          $(".homepage-lead-container h1").text(banner_heading);
+          
+          $(".banner-video-container").css('background-image', 'url(' + banner_background + ')');
+
+        } 
+        if (homepage_category == 'realestate') {
+          categoryName = "Real Estate(Buying)";
+          banner_heading = "Realestate heading";
+          banner_background = "https://cdn.getspini.com/hd-gif.gif"
+        }else if(homepage_category == 'interior'){
+          categoryName = "Interior/Renovation/Modular Kitchen";
+          banner_heading = "interior heading";
+          banner_background = "https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036"
+        }else if(homepage_category == 'loans'){
+          categoryName = "Loans";
+          banner_heading = "loans heading";
+          banner_background = "https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg"
+        }else if(homepage_category == 'insurance'){
+          categoryName = "Insurance";
+          banner_heading = "insurance heading";
+          banner_background = "https://cdn.pixabay.com/photo/2017/08/04/10/36/background-2579719_960_720.jpg"
+        }
+
+        homepage_toggle();
+      });
+      $('.home-page-categories li:first').click();
+      // script files for banner page ends
+
 	 
 });
