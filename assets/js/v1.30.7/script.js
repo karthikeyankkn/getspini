@@ -187,7 +187,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      debugger
+      // debugger
       name = $("input[type='text']").val();
       ph_number = $("input[type='number']").val();
       email = $("input[type='email']").val();
@@ -251,7 +251,7 @@ $(document).ready(function(){
       // }else{
       //   senddata_for_internal_page();
       // }
-      debugger
+      // debugger
       if (selected_package == undefined) {
         senddata();
       }else{
@@ -297,7 +297,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
-      debugger
+      // debugger
       var success;
       var data;
       data = {
