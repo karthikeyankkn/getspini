@@ -34,8 +34,9 @@ canvas{
   /*background: url(https://cdn.getspini.com/hd-gif.gif);*/
   /*background: url(https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036);*/
   /*background: url(https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg);*/
-  height: 400px;
+  height: 450px;
   color: #fff;
+  /*background-repeat: no-repeat;*/
 }
 .banner-video-layer{
   background: #00000050;
@@ -65,20 +66,20 @@ canvas{
   cursor: pointer;
   border: 2px solid #fff;
   margin: 0 5px;
-  min-width: 200px;
+  min-width: 130px;
   position: relative;
   transition: 0.5s ease;
 }
-.selected-category{
-  background: orange !important;
-  border-color: orange !important
+.selected-category {
+    background: red !important;
+    border-color: #fff !important;
 }
 .arrow-down {
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid orange;
+  border-top: 10px solid red;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -95,23 +96,24 @@ canvas{
   min-width: 200px;
   display: inline-block;
   margin: 0 5px;
+  margin-top: 10px;
 }
 .home-page-leads li input{
-  width: 100%;
+  width: 90%;
   padding: 13px;
   color: #000;
 }
 .home-page-leads li button{
   background: red;
   color: #fff;
-  padding: 12px;
-  width: 100%;
+  padding: 15px;
+  width: 90%;
   border: 0; 
 }
 /*style for banner video container ends*/
 .banner-header{
   padding: 10px 100px;
-  background: #1d2531;
+  background: #ff0002;
   position: fixed;
   top: 0;
   left: 0;
@@ -218,7 +220,7 @@ header{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #ee5243;
+  background: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -307,6 +309,48 @@ header{
 .carousel-control.left span, .carousel-control.right span{
   line-height: 50px;
   font-size: 40px;
+}
+@media only screen and (max-width: 500px) {
+.home-page-categories li {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin: 0 0px;
+    min-width: 50px;
+    position: relative;
+    transition: 0.5s ease;
+    font-size: 12px;
+}
+.home-page-leads li{
+  min-width: 200px;
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 15px;
+}
+.home-page-leads{
+  padding-top: 15px;
+}
+.banner-video-container{
+  height: 500px;
+}
+.home-page-leads li select{
+  margin-bottom: 1px;
+  height: 40px !important;
+}
+.home-page-leads li input {
+    width: 100%;
+    padding: 5px;
+    color: #000;
+}
+.home-page-leads li button {
+    background: red;
+    color: #fff;
+    padding: 9px;
+    width: 50%;
+    border: 0;
+    border-radius: 20px;
+}
 }
 /*slider-banner styles ends*/
 
@@ -1275,6 +1319,7 @@ header{
       padding: 11px;
       font-size: 1.7rem;
       letter-spacing: 1px;
+      display: none;
     }
     .download-ebook{
       width: 100%;
@@ -1329,7 +1374,7 @@ header{
       /*border: 1px solid #77a32c;*/
       box-sizing: border-box !important;
       margin-right: 10px !important;
-      background-color: #77a32c !important;
+      background-color: #fff !important;
       /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
       /*background-size: 400% 400%;*/
       /*-webkit-animation: Gradient 15s ease infinite;*/

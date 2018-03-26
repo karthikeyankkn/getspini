@@ -602,7 +602,7 @@ $(document).ready(function(){
         $(this).children("span").show();
         $(this).siblings().children("span").hide();
         
-        debugger
+        // debugger
         function homepage_toggle(){
           $(".homepage-lead-container h1").text(banner_heading);
           
@@ -611,20 +611,20 @@ $(document).ready(function(){
         } 
         if (homepage_category == 'realestate') {
           categoryName = "Real Estate(Buying)";
-          banner_heading = "Realestate heading";
-          banner_background = "https://cdn.getspini.com/hd-gif.gif"
+          banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif"
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
-          banner_heading = "interior heading";
-          banner_background = "https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036"
+          banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif"
         }else if(homepage_category == 'loans'){
           categoryName = "Loans";
-          banner_heading = "loans heading";
-          banner_background = "https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg"
+          banner_heading = "Don't go for Common Floor, When you can get your private space";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif"
         }else if(homepage_category == 'insurance'){
           categoryName = "Insurance";
-          banner_heading = "insurance heading";
-          banner_background = "https://cdn.pixabay.com/photo/2017/08/04/10/36/background-2579719_960_720.jpg"
+          banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif"
         }
 
         homepage_toggle();
