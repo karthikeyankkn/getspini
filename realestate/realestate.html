@@ -293,32 +293,136 @@
 
   <div class="container spini-services-card">
     <!-- chennai cards -->
-    <h2>
+    <!-- <h2>
       <b>Chennai</b>
-    </h2>
-    <ul class="slider-parent realestate-chennai">
+    </h2> -->
+    <div class="realestate-location-filter">
+      <i></i>
+      <div class="filter-arrow_box">Select location</div>
+      <ul>
+        <li location="chennai">Chennai</li>
+        <li location="bangalore">Banglore</li>
+        <li location="coimbatore">Coimbatore</li>
+      </ul>
+    </div>
+    <ul class="slider-parent realestate-chennai display-cards">
       
     </ul>
+    <div class="realestate-pagination"></div>
+    <button class="see-more-pagination">See More</button>
     <!-- coimbatore cards -->
-    <h2>
+    <!-- <h2>
       <b>Coimbatore</b>
     </h2>
     <ul class="slider-parent realestate-coimbatore">
       
-    </ul>
+    </ul> -->
     <!-- bangalore cards -->
-    <h2>
+    <!-- <h2>
       <b>Bangalore</b>
     </h2>
     <ul class="slider-parent realestate-bangalore">
      
-    </ul> 
+    </ul>  -->
   </div>
   <!-- listing cards ends -->
 
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
+<style>
+
+  .see-more-pagination{
+    padding: 10px 30px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    border-radius: 25px;
+    margin: auto;
+  }
+  .realestate-location-filter{
+    position: sticky;
+    cursor: pointer;
+    z-index: 100;
+    left: 0px;
+    top: 70px;
+    margin-bottom: 60px;
+  }
+  .realestate-location-filter i{
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    background: url(http://cdn.getspini.com/png/filter.png) red no-repeat center;
+    left: 5px;
+    background-size: 60%;
+    position: absolute;
+  }
+  .realestate-location-filter ul{
+    position: absolute;
+    background: #fff;
+    padding: 17px;
+    border-radius: 3px;
+    margin-left: 60px;
+    display: none;
+    max-width: 250px;
+  }
+  .realestate-location-filter ul li:nth-child(1){
+    background: url(http://cdn.getspini.com/png/Chennai.png)no-repeat;
+  }
+  .realestate-location-filter ul li:nth-child(2){
+    background: url(http://cdn.getspini.com/png/Bangalore.png)no-repeat;
+  }
+  .realestate-location-filter ul li:nth-child(3){
+    background: url(http://cdn.getspini.com/png/Coimbatore.png)no-repeat;
+  }
+  .realestate-location-filter ul li{
+    cursor: pointer;
+    height: 50px;
+    background-size: contain !important;
+    line-height: 60px;
+    padding-left: 70px;
+    margin-bottom: 15px;
+  }
+  .filter-arrow_box {
+    position: relative;
+    background: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin-left: 70px;
+    padding:10px;
+  }
+  .filter-arrow_box:after, .filter-arrow_box:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .filter-arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  .filter-arrow_box:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 13px;
+    margin-top: -13px;
+  }
+</style>
+
+
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
@@ -330,17 +434,60 @@
     // }
     
 
-    var cards;   
+    var cards, show_cards, card_limit_start, card_limit_end, card_location;
+
+    card_limit_start = 1;
+    card_limit_end = 20;   
     
     // multi cards repeat
       get_json();
       function get_json(index){
         $.get("../assets/js/v1.30.7/cards.json", function(data, status){
           cards = data.cards;
-          for( var i = 0; i < cards.length; i++ ){
-            $(".realestate-"+cards[i].card_city+"").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+          
+          // show_cards = Math.round(cards.length/card_limit_end);
+          // for(var i = 1; i < show_cards; i++ ){
+          //   $(".realestate-pagination").append("<span pagination_num="+i+">"+i+"</span>");
+          // }
+          $(".see-more-pagination").click(function(){
+            
+            card_limit_start = card_limit_end + 1;
+            card_limit_end = card_limit_end + 20;
+            load_card();
+          });
+
+          load_card();
+          function load_card(){
+            
+            if(cards.length > card_limit_end){
+              for( var i = card_limit_start; i <= card_limit_end; i++ ){
+                $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+              }
+            } else{
+              $(".see-more-pagination").attr("disabled", "disabled");
+            }
           }
+
+          $(".realestate-location-filter ul li").click(function(){
+            $(".display-cards li, .see-more-pagination").hide();
+            card_location = $(this).attr("location");
+            $(".filter-arrow_box").text(card_location);
+            for( var i = 0; i < cards.length; i++ ){
+              debugger
+              if(cards[i].card_city == card_location){
+                $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+              } 
+            }
+            toggle_filter();
+          });
        });
+      }
+      $(".realestate-location-filter i").click(function(){
+        toggle_filter();
+      });
+      function toggle_filter(){
+        $(".bg-overlay, .filter-arrow_box").toggle();
+        $(".realestate-location-filter ul").slideToggle();
       }
   </script>
 </body>
