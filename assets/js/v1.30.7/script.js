@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -632,5 +632,53 @@ $(document).ready(function(){
       $('.home-page-categories li:first').click();
       // script files for banner page ends
 
-	 
+
+    // multi cards repeat starts
+    card_limit_start = 1;
+    card_limit_end = 20; 
+    get_json();
+    function get_json(index){
+      $.get("../assets/js/v1.30.7/cards.json", function(data, status){
+        cards = data.cards;
+        
+        $(".see-more-pagination").click(function(){
+          
+          card_limit_start = card_limit_end + 1;
+          card_limit_end = card_limit_end + 20;
+          load_card();
+        });
+
+        load_card();
+        function load_card(){
+          
+          if(cards.length > card_limit_end){
+            for( var i = card_limit_start; i <= card_limit_end; i++ ){
+              $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+            }
+          } else{
+            $(".see-more-pagination").attr("disabled", "disabled");
+          }
+        }
+
+        $(".realestate-location-filter ul li").click(function(){
+          $(".display-cards li, .see-more-pagination").hide();
+          card_location = $(this).attr("location");
+          $(".filter-arrow_box").text(card_location);
+          for( var i = 0; i < cards.length; i++ ){
+            debugger
+            if(cards[i].card_city == card_location){
+              $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+            } 
+          }
+        });
+     });
+    }
+    $(".realestate-location-filter").click(function(){
+      toggle_filter();
+    });
+    function toggle_filter(){
+      $(".bg-overlay, .filter-arrow_box").toggle();
+      $(".realestate-location-filter ul").slideToggle();
+    }
+       // multi cards repeat ends
 });
