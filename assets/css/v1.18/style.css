@@ -1584,6 +1584,31 @@ header{
     }
   /*loan emi style end*/
 
+  /*features add style starts*/
+  .features-add{
+    background: #ff0000a1;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+  }
+  .features-add h1{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 100;
+    vertical-align: text-top;
+  }
+  .features-add a{
+    color: #fff;
+    float: right;
+    padding: 4px 20px;
+    background: red;
+    border-radius: 25px;
+
+  }
+  /*features add style end*/
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
