@@ -25,7 +25,7 @@ canvas{
   max-height: 600px;
 }
 .mt-20{
-  margin-top: 20px;
+  margin-top: 2px;
 }
 /*style for banner video container starts*/
 .banner-video-container{
@@ -372,7 +372,7 @@ header{
   border: 0;
 }
 .spini-customers ul li a img{
-  max-width: 100px;
+  max-width: 100%;
 }
     /*spini-sep-services style starts*/
 .spini-sep-services{
