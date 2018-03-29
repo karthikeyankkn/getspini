@@ -189,7 +189,7 @@ $(document).ready(function(){
     $(".submit_innerpage").click(function(){
       // debugger
       name = $("input[type='text']").val();
-      ph_number = $("input[type='number']").val();
+      ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
       cityName = $("select[name='city']").val();
       budgetAmount = $("input[name='budgetAmount']").val();
@@ -321,7 +321,14 @@ $(document).ready(function(){
           success: function(response) {
               // alert("Api working successfully..!");
               // console.log(response);
-              succsess_alert();
+              // debugger
+              var check_emi = $("input[name='emi-calculater']").val();
+              if (check_emi == "true") {
+                calculate_emi();
+              }else{
+                succsess_alert();
+              }
+              
           },
           error: function(response) {
             // alert("Api WAS not working :( ");
@@ -665,7 +672,7 @@ $(document).ready(function(){
           card_location = $(this).attr("location");
           $(".filter-arrow_box").text(card_location);
           for( var i = 0; i < cards.length; i++ ){
-            debugger
+            // debugger
             if(cards[i].card_city == card_location){
               $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
             } 
@@ -681,4 +688,161 @@ $(document).ready(function(){
       $(".realestate-location-filter ul").slideToggle();
     }
        // multi cards repeat ends
+
+       $(".calculate-emi").click(function(){
+          
+          principal_amt = $("input[name='emi-principal']").val();
+          no_of_year = $("input[name='emi-no-of-years']").val(); 
+          percent_per_anum = $("input[name='emi-precentage']").val();
+          principal_amt = parseInt(principal_amt);
+          no_of_year = parseInt(no_of_year);
+          percent_per_anum = parseInt(percent_per_anum);
+          $('#emi-model').modal('show');
+       });
+
+       // emi script starts
+       var principal_amt, rate_of_interest, no_of_months, emi, interest_amt, actual_amt, no_of_year, percent_per_anum;
+      function calculate_emi(){
+        // debugger
+        no_of_months= no_of_year * 12;
+        rate_of_interest = percent_per_anum/12/100;
+        // formula for emi
+        emi = Math.round(principal_amt * rate_of_interest * Math.pow(1 + rate_of_interest, no_of_months)/(Math.pow(1 + rate_of_interest, no_of_months) - 1));
+        // formula for actual amount
+        actual_amt = Math.round(principal_amt / no_of_months);
+        // formula for interate amount
+        interest_amt = Math.round(Math.round(emi) - actual_amt) * no_of_months;
+
+        $('#emi-model').modal('hide');
+        $('.emi-output').fadeIn();
+          // chart for total amount starts
+            Highcharts.setOptions({
+              colors: ['#55BF3B', '#DF5353', '#DDDF0D']
+            });
+            // debugger
+            Highcharts.chart('emi_total_amount', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,
+                plotShadow: false
+            },
+            title: {
+                text: 'Total Amount',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: 40
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        distance: -50,
+                        style: {
+                            fontWeight: 'bold',
+                            color: 'white'
+                        }
+                    },
+                    startAngle: -90,
+                    endAngle: 90,
+                    center: ['50%']
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                innerSize: '58%',
+                data: [
+                    ['Principal', principal_amt],
+                    ['Interest', interest_amt],
+                ]
+            }]
+        });
+             // chart for total amount end
+
+             // chart for emi starts
+                var gaugeOptions = {
+
+                    chart: {
+                        type: 'solidgauge'
+                    },
+
+                    title: null,
+
+                    pane: {
+                        center: ['50%', '85%'],
+                        size: '140%',
+                        startAngle: -90,
+                        endAngle: 90,
+                        background: {
+                            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+                            innerRadius: '60%',
+                            outerRadius: '100%',
+                            shape: 'arc'
+                        }
+                    },
+
+                    tooltip: {
+                        enabled: false
+                    },
+
+                    // the value axis
+                    yAxis: {
+                        stops: [
+                            [0.1, '#55BF3B'], // green
+                            [0.5, '#DDDF0D'], // yellow
+                            [0.9, '#DF5353'] // red
+                        ],
+                        lineWidth: 0,
+                        minorTickInterval: null,
+                        tickAmount: 2,
+                        title: {
+                            y: -70
+                        },
+                        labels: {
+                            y: 16
+                        }
+                    },
+
+                    plotOptions: {
+                        solidgauge: {
+                            dataLabels: {
+                                y: 5,
+                                borderWidth: 0,
+                                useHTML: true
+                            }
+                        }
+                    }
+                };
+
+                // The emi gauge
+                var chartRpm = Highcharts.chart('container-emi', Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: 100,
+                        max: 200000,
+                        title: {
+                            text: 'EMI'
+                        }
+                    },
+
+                    series: [{
+                        name: 'EMI',
+                        data: [emi],
+                        dataLabels: {
+                            format: '<div style="text-align:center"><span style="font-size:18px;color:silver; font-weight:100; padding-right: 5px;">&#8377</span><span style="font-size:18px;color:' +
+                                ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
+                                   '<span style="font-size:12px;color:silver">/Month</span></div>'
+                        },
+                        tooltip: {
+                            valueSuffix: ' revolutions/min'
+                        }
+                    }]
+
+                }));
+                // chart for emi end
+
+      }
+       // emi script end
 });

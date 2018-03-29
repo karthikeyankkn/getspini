@@ -1028,6 +1028,7 @@ header{
       padding: 10px 30px;
       border: none;
       margin: auto;
+      display: block;
     }
     /*additional pages style ends*/
 
@@ -1534,6 +1535,54 @@ header{
   }
   /*realestate paggination and filter style end*/
 
+  /*loan emi style starts*/
+  .emi-container{
+    padding-top: 60px;
+    }
+    .emi-input{
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      background: #fff;
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 3px;
+    }
+    .emi-input label{
+      display: block;
+      color: #666;
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+    .emi-input input{
+      margin: 10px 0;
+      border: 0;
+      width: 100%;
+      background: #f7f7f7;
+      padding: 15px;
+      font-size: 18px;
+      color: #292929;
+      font-weight: 100;
+    }
+    .emi-input button{
+      background: #ed3833;
+      color: #fff;
+      border: 0;
+      padding: 10px 30px;
+      margin: 10px auto;
+      display: block;
+    }
+    .emi-output{
+      display: none;
+    }
+    #container-emi{
+      width: 300px; 
+      height: 200px; 
+      margin: auto;
+    }
+    #emi_total_amount{
+      height: 320px;
+    }
+  /*loan emi style end*/
 
     /* mobile view css */
     @media only screen and (max-width: 500px) {
