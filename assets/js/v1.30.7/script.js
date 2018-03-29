@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location, feature_add_title, feature_add_href, feature_add_href_title;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -612,26 +612,38 @@ $(document).ready(function(){
         // debugger
         function homepage_toggle(){
           $(".homepage-lead-container h1").text(banner_heading);
-          
           $(".banner-video-container").css('background-image', 'url(' + banner_background + ')');
-
+          $(".features-add h1").text(feature_add_title);
+          $(".features-add a").attr("href", feature_add_href).text(feature_add_href_title);
         } 
         if (homepage_category == 'realestate') {
           categoryName = "Real Estate(Buying)";
           banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif"
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
+          feature_add_title = "List your property for free Ad listing on our website";
+          feature_add_href = "https://spini.typeform.com/to/lNAjvb";
+          feature_add_href_title = "Post Ad";
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
           banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif"
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          feature_add_title = "Estimate the price of your modular kitchen in few minutes";
+          feature_add_href = "/interiors/interior-estimation.html";
+          feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
           categoryName = "Loans";
           banner_heading = "Don't go for Common Floor, When you can get your private space";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif"
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          feature_add_title = "Need a loan immediately with lower EMI's, Know more";
+          feature_add_href = "/loans/loan-emi-calculator.html";
+          feature_add_href_title = "Calculate EMI";
         }else if(homepage_category == 'insurance'){
           categoryName = "Insurance";
           banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif"
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
+          feature_add_title = "Life time benificial insurance are available";
+          feature_add_href = "/insurance/insurance.html";
+          feature_add_href_title = "Get insurance";
         }
 
         homepage_toggle();
@@ -690,14 +702,20 @@ $(document).ready(function(){
        // multi cards repeat ends
 
        $(".calculate-emi").click(function(){
-          
+          debugger
           principal_amt = $("input[name='emi-principal']").val();
           no_of_year = $("input[name='emi-no-of-years']").val(); 
           percent_per_anum = $("input[name='emi-precentage']").val();
           principal_amt = parseInt(principal_amt);
           no_of_year = parseInt(no_of_year);
           percent_per_anum = parseInt(percent_per_anum);
-          $('#emi-model').modal('show');
+
+          if (isNaN(principal_amt) || isNaN(no_of_year) || isNaN(percent_per_anum)){
+            alert("Please fill all fields");
+          }else{
+            $('#emi-model').modal('show');
+          }
+          
        });
 
        // emi script starts
