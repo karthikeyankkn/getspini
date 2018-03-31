@@ -71,7 +71,7 @@ canvas{
   transition: 0.5s ease;
 }
 .selected-category {
-    background: red !important;
+    background: #CC0000 !important;
     border-color: #fff !important;
 }
 .arrow-down {
@@ -104,7 +104,7 @@ canvas{
   color: #000;
 }
 .home-page-leads li button{
-  background: red;
+  background: #CC0000;
   color: #fff;
   padding: 15px;
   width: 90%;
@@ -113,7 +113,7 @@ canvas{
 /*style for banner video container ends*/
 .banner-header{
   padding: 10px 100px;
-  background: #ff0002;
+  background: #CC0000;
   position: fixed;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@ canvas{
   display: inline-block;
 }
 .banner-header li a span{
-  font-size: 30px;
+  font-size: 25px;
   vertical-align: middle;
 }
 .banner-header li a i{
@@ -349,7 +349,7 @@ header{
     color: #000;
 }
 .home-page-leads li button {
-    background: red;
+    background: #CC0000;
     color: #fff;
     padding: 9px;
     width: 50%;
@@ -1586,7 +1586,7 @@ header{
 
   /*features add style starts*/
   .features-add{
-    background: #ff0000a1;
+    background: #CC0000;
     color: #fff;
     display: inline-block;
     width: 100%;
@@ -1601,10 +1601,10 @@ header{
     vertical-align: text-top;
   }
   .features-add a{
-    color: #fff;
+    color: #CC0000;
     float: right;
     padding: 4px 20px;
-    background: red;
+    background: #fff;
     border-radius: 25px;
 
   }
