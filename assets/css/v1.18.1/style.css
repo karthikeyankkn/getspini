@@ -1692,5 +1692,9 @@ header{
           bottom: 0;
           border-radius: 0 !important;*/
         }
+        .seo-links{
+          height: 300px;
+          overflow: scroll;
+        }
       }
      
