@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location, feature_add_title, feature_add_href, feature_add_href_title;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -107,11 +107,11 @@ $(document).ready(function(){
 	}
 	// load header and footer
 	if (index_page == true) {
-		$("header").load("header1.1.html"); 
-  		$("footer").load("footer1.2.html");
+		$("header").load("header1.2.html"); 
+  		$("footer").load("footer1.3.html");
 	}else{
-		$("header").load("../header1.1.html"); 
-  	$("footer").load("../footer1.2.html");
+		$("header").load("../header1.2.html"); 
+  	$("footer").load("../footer1.3.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -189,7 +189,7 @@ $(document).ready(function(){
     $(".submit_innerpage").click(function(){
       // debugger
       name = $("input[type='text']").val();
-      ph_number = $("input[type='number']").val();
+      ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
       cityName = $("select[name='city']").val();
       budgetAmount = $("input[name='budgetAmount']").val();
@@ -199,7 +199,7 @@ $(document).ready(function(){
       }
 
       // validation script
-      if(name == "" && ph_number == "" && email == "" || cityName == "") {
+      if([name,ph_number,email,cityName,budgetAmount].includes('')) {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn()
@@ -226,10 +226,10 @@ $(document).ready(function(){
       cityName = short_traverse.find("select[name='city']").val();
       budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
 
-
+      debugger
 
       // validation script
-      if(name == "" && ph_number == "" && email == "" || cityName == "") {
+      if([name,ph_number,email,cityName,budgetAmount].includes('')) {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn();
@@ -297,7 +297,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
-      
+      // debugger
       var success;
       var data;
       data = {
@@ -321,7 +321,14 @@ $(document).ready(function(){
           success: function(response) {
               // alert("Api working successfully..!");
               // console.log(response);
-              succsess_alert();
+              // debugger
+              var check_emi = $("input[name='emi-calculater']").val();
+              if (check_emi == "true") {
+                calculate_emi();
+              }else{
+                succsess_alert();
+              }
+              
           },
           error: function(response) {
             // alert("Api WAS not working :( ");
@@ -511,7 +518,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.6/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.9/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -589,8 +596,271 @@ $(document).ready(function(){
       // on click li go to corresponding page
       $(document).on('click', '.list-card', function(e){
         url = $(this).children(".list-card a").attr("href");
-        debugger
+        // debugger
         window.location.href = url;
       });
-	 
+
+      // script files for banner page starts
+      $(".home-page-categories li").click(function(){
+        homepage_category = $(this).attr("category");
+        $(this).addClass("selected-category");
+        $(this).siblings().removeClass("selected-category");
+
+        $(this).children("span").show();
+        $(this).siblings().children("span").hide();
+        
+        // debugger
+        function homepage_toggle(){
+          $(".homepage-lead-container h1").text(banner_heading);
+          $(".banner-video-container").css('background-image', 'url(' + banner_background + ')');
+          $(".features-add h1").text(feature_add_title);
+          $(".features-add a").attr("href", feature_add_href).text(feature_add_href_title);
+        } 
+        if (homepage_category == 'realestate') {
+          categoryName = "Real Estate(Buying)";
+          // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
+          feature_add_title = "List your property for free Ad listing on our website";
+          feature_add_href = "https://spini.typeform.com/to/lNAjvb";
+          feature_add_href_title = "Post Ad";
+        }else if(homepage_category == 'interior'){
+          categoryName = "Interior/Renovation/Modular Kitchen";
+          // banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          feature_add_title = "Estimate the price of your modular kitchen in few minutes";
+          feature_add_href = "/interiors/interior-estimation.html";
+          feature_add_href_title = "Get Estimate";
+        }else if(homepage_category == 'loans'){
+          categoryName = "Loans";
+          // banner_heading = "Don't go for Common Floor, When you can get your private space";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          feature_add_title = "Need a loan immediately with lower EMI's, Know more";
+          feature_add_href = "/loans/loan-emi-calculator.html";
+          feature_add_href_title = "Calculate EMI";
+        }else if(homepage_category == 'insurance'){
+          categoryName = "Insurance";
+          // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
+          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
+          feature_add_title = "Life time benificial insurance are available";
+          feature_add_href = "/insurances/insurances.html";
+          feature_add_href_title = "Get insurance";
+        }
+
+        homepage_toggle();
+      });
+      $('.home-page-categories li:first').click();
+      // script files for banner page ends
+
+
+    // multi cards repeat starts
+    card_limit_start = 1;
+    card_limit_end = 20; 
+    get_json();
+    function get_json(index){
+      $.get("../assets/js/v1.30.9/cards.json", function(data, status){
+        cards = data.cards;
+        
+        $(".see-more-pagination").click(function(){
+          
+          card_limit_start = card_limit_end + 1;
+          card_limit_end = card_limit_end + 20;
+          load_card();
+        });
+
+        load_card();
+        function load_card(){
+          
+          if(cards.length > card_limit_end){
+            for( var i = card_limit_start; i <= card_limit_end; i++ ){
+              $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+            }
+          } else{
+            $(".see-more-pagination").attr("disabled", "disabled");
+          }
+        }
+
+        $(".realestate-location-filter ul li").click(function(){
+          $(".display-cards li, .see-more-pagination").hide();
+          card_location = $(this).attr("location");
+          $(".filter-arrow_box").text(card_location);
+          for( var i = 0; i < cards.length; i++ ){
+            // debugger
+            if(cards[i].card_city == card_location){
+              $(".display-cards").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
+            } 
+          }
+        });
+     });
+    }
+    $(".realestate-location-filter").click(function(){
+      toggle_filter();
+    });
+    function toggle_filter(){
+      $(".bg-overlay, .filter-arrow_box").toggle();
+      $(".realestate-location-filter ul").slideToggle();
+    }
+       // multi cards repeat ends
+
+       $(".calculate-emi").click(function(){
+          // debugger
+          principal_amt = $("input[name='emi-principal']").val();
+          no_of_year = $("input[name='emi-no-of-years']").val(); 
+          percent_per_anum = $("input[name='emi-precentage']").val();
+          principal_amt = parseInt(principal_amt);
+          no_of_year = parseInt(no_of_year);
+          percent_per_anum = parseInt(percent_per_anum);
+
+          if (isNaN(principal_amt) || isNaN(no_of_year) || isNaN(percent_per_anum)){
+            alert("Please fill all fields");
+          }else{
+            $('#emi-model').modal('show');
+          }
+          
+       });
+
+       // emi script starts
+       var principal_amt, rate_of_interest, no_of_months, emi, interest_amt, actual_amt, no_of_year, percent_per_anum;
+      function calculate_emi(){
+        // debugger
+        no_of_months= no_of_year * 12;
+        rate_of_interest = percent_per_anum/12/100;
+        // formula for emi
+        emi = Math.round(principal_amt * rate_of_interest * Math.pow(1 + rate_of_interest, no_of_months)/(Math.pow(1 + rate_of_interest, no_of_months) - 1));
+        // formula for actual amount
+        actual_amt = Math.round(principal_amt / no_of_months);
+        // formula for interate amount
+        interest_amt = Math.round(Math.round(emi) - actual_amt) * no_of_months;
+
+        $('#emi-model').modal('hide');
+        $('.emi-output').fadeIn();
+          // chart for total amount starts
+            Highcharts.setOptions({
+              colors: ['#55BF3B', '#DF5353', '#DDDF0D']
+            });
+            // debugger
+            Highcharts.chart('emi_total_amount', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,
+                plotShadow: false
+            },
+            title: {
+                text: 'Total Amount',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: 40
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        distance: -50,
+                        style: {
+                            fontWeight: 'bold',
+                            color: 'white'
+                        }
+                    },
+                    startAngle: -90,
+                    endAngle: 90,
+                    center: ['50%']
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                innerSize: '58%',
+                data: [
+                    ['Principal', principal_amt],
+                    ['Interest', interest_amt],
+                ]
+            }]
+        });
+             // chart for total amount end
+
+             // chart for emi starts
+                var gaugeOptions = {
+
+                    chart: {
+                        type: 'solidgauge'
+                    },
+
+                    title: null,
+
+                    pane: {
+                        center: ['50%', '85%'],
+                        size: '140%',
+                        startAngle: -90,
+                        endAngle: 90,
+                        background: {
+                            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || '#EEE',
+                            innerRadius: '60%',
+                            outerRadius: '100%',
+                            shape: 'arc'
+                        }
+                    },
+
+                    tooltip: {
+                        enabled: false
+                    },
+
+                    // the value axis
+                    yAxis: {
+                        stops: [
+                            [0.1, '#55BF3B'], // green
+                            [0.5, '#DDDF0D'], // yellow
+                            [0.9, '#DF5353'] // red
+                        ],
+                        lineWidth: 0,
+                        minorTickInterval: null,
+                        tickAmount: 2,
+                        title: {
+                            y: -70
+                        },
+                        labels: {
+                            y: 16
+                        }
+                    },
+
+                    plotOptions: {
+                        solidgauge: {
+                            dataLabels: {
+                                y: 5,
+                                borderWidth: 0,
+                                useHTML: true
+                            }
+                        }
+                    }
+                };
+
+                // The emi gauge
+                var chartRpm = Highcharts.chart('container-emi', Highcharts.merge(gaugeOptions, {
+                    yAxis: {
+                        min: 100,
+                        max: 200000,
+                        title: {
+                            text: 'EMI'
+                        }
+                    },
+
+                    series: [{
+                        name: 'EMI',
+                        data: [emi],
+                        dataLabels: {
+                            format: '<div style="text-align:center"><span style="font-size:18px;color:silver; font-weight:100; padding-right: 5px;">&#8377</span><span style="font-size:18px;color:' +
+                                ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y:.1f}</span><br/>' +
+                                   '<span style="font-size:12px;color:silver">/Month</span></div>'
+                        },
+                        tooltip: {
+                            valueSuffix: ' revolutions/min'
+                        }
+                    }]
+
+                }));
+                // chart for emi end
+
+      }
+       // emi script end
 });

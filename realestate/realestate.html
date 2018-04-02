@@ -19,7 +19,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.17/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.2/style.css">
    <!-- css files ends -->
    <script>
      var index_page = false;
@@ -293,26 +293,37 @@
 
   <div class="container spini-services-card">
     <!-- chennai cards -->
-    <h2>
+    <!-- <h2>
       <b>Chennai</b>
-    </h2>
-    <ul class="slider-parent realestate-chennai">
+    </h2> -->
+    <div class="realestate-location-filter">
+      <i></i>
+      <div class="filter-arrow_box">Select location</div>
+      <ul>
+        <li location="chennai">Chennai</li>
+        <li location="bangalore">Bangalore</li>
+        <li location="coimbatore">Coimbatore</li>
+      </ul>
+    </div>
+    <ul class="slider-parent realestate-chennai display-cards">
       
     </ul>
+    <div class="realestate-pagination"></div>
+    <button class="see-more-pagination">See More</button>
     <!-- coimbatore cards -->
-    <h2>
+    <!-- <h2>
       <b>Coimbatore</b>
     </h2>
     <ul class="slider-parent realestate-coimbatore">
       
-    </ul>
+    </ul> -->
     <!-- bangalore cards -->
-    <h2>
+    <!-- <h2>
       <b>Bangalore</b>
     </h2>
     <ul class="slider-parent realestate-bangalore">
      
-    </ul> 
+    </ul>  -->
   </div>
   <!-- listing cards ends -->
 
@@ -322,7 +333,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.6/script.js"></script>
+  <script src="../assets/js/v1.30.9/script.js"></script>
   <script>
     // function show_page(index){
     //   document.cookie = "index="+index;
@@ -330,18 +341,7 @@
     // }
     
 
-    var cards;   
     
-    // multi cards repeat
-      get_json();
-      function get_json(index){
-        $.get("../assets/js/v1.30.6/cards.json", function(data, status){
-          cards = data.cards;
-          for( var i = 0; i < cards.length; i++ ){
-            $(".realestate-"+cards[i].card_city+"").append("<li class='col-md-3 col-xs-6 card'><div class='list-card'><a href='"+cards[i].a_href+"'><img src="+cards[i].card_img+"></a><article><p>"+cards[i].card_title+"</p><i></i><span>"+cards[i].card_area+"</span></div></li>");
-          }
-       });
-      }
   </script>
 </body>
 </html>

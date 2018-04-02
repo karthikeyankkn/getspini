@@ -25,11 +25,95 @@ canvas{
   max-height: 600px;
 }
 .mt-20{
-  margin-top: 20px;
+  margin-top: 2px;
 }
+/*style for banner video container starts*/
+.banner-video-container{
+  text-align: center;
+  margin-top: 60px;
+  /*background: url(https://cdn.getspini.com/hd-gif.gif);*/
+  /*background: url(https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036);*/
+  /*background: url(https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg);*/
+  height: 450px;
+  color: #fff;
+  /*background-repeat: no-repeat;*/
+}
+.banner-video-layer{
+  background: #00000050;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: inherit;
+  z-index: 1;
+}
+.homepage-lead-container{
+  position: relative;
+  z-index: 2
+}
+.homepage-lead-container h1{
+  padding-top: 40px;
+}
+.home-page-categories{
+  padding-top: 50px;
+}
+.home-page-categories li{
+  display: inline-block;
+  background: transparent;
+  padding: 15px 10px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: 0 5px;
+  min-width: 130px;
+  position: relative;
+  transition: 0.5s ease;
+}
+.selected-category {
+    background: #CC0000 !important;
+    border-color: #fff !important;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #cd2f2b;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  display: none;
+}
+.home-page-categories li a{
+  color: #fff;
+}
+.home-page-leads{
+  padding-top: 35px;
+}
+.home-page-leads li{
+  min-width: 200px;
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 10px;
+}
+.home-page-leads li input{
+  width: 90%;
+  padding: 13px;
+  color: #000;
+}
+.home-page-leads li button{
+  background: #CC0000;
+  color: #fff;
+  padding: 15px;
+  width: 90%;
+  border: 0; 
+}
+/*style for banner video container ends*/
 .banner-header{
   padding: 10px 100px;
-  background: #1d2531;
+  background: #CC0000;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,10 +127,15 @@ canvas{
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 1px;
+  margin-right: 10px;
 }
 .banner-header li a{
   color: #fff;
   display: inline-block;
+}
+.banner-header li a span{
+  font-size: 25px;
+  vertical-align: middle;
 }
 .banner-header li a i{
   font-size: 30px;
@@ -74,8 +163,8 @@ header{
 }
 .toggle-menu{
   position: fixed;
-  background: #1d2531;
-  color: #fff;
+  background: #fff;
+  color: #CC0000;
   width: 100%;
   height: 100%;
   z-index: 100;
@@ -97,7 +186,7 @@ header{
   margin:50px 0;
 }
 .header-menu ul li a{
-  color: #fff;
+  color: #CC0000;
   padding: 20px;
   font-size: 26px;
   font-weight: 300;
@@ -136,7 +225,7 @@ header{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #ee5243;
+  background: #fff;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -226,6 +315,48 @@ header{
   line-height: 50px;
   font-size: 40px;
 }
+@media only screen and (max-width: 500px) {
+.home-page-categories li {
+    display: inline-block;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin: 0 0px;
+    min-width: 50px;
+    position: relative;
+    transition: 0.5s ease;
+    font-size: 12px;
+}
+.home-page-leads li{
+  min-width: 200px;
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 15px;
+}
+.home-page-leads{
+  padding-top: 15px;
+}
+.banner-video-container{
+  height: 500px;
+}
+.home-page-leads li select{
+  margin-bottom: 1px;
+  height: 40px !important;
+}
+.home-page-leads li input {
+    width: 100%;
+    padding: 5px;
+    color: #000;
+}
+.home-page-leads li button {
+    background: #CC0000;
+    color: #fff;
+    padding: 9px;
+    width: 50%;
+    border: 0;
+    border-radius: 20px;
+}
+}
 /*slider-banner styles ends*/
 
 .spini-services, .spini-customers, .spini-sep-services, .how-spini-works{
@@ -241,7 +372,7 @@ header{
   border: 0;
 }
 .spini-customers ul li a img{
-  max-width: 100px;
+  max-width: 100%;
 }
     /*spini-sep-services style starts*/
 .spini-sep-services{
@@ -580,10 +711,11 @@ header{
     /*footer style*/
     footer{
     	background: #1c2430;
-    	padding: 20px 0
+    	padding: 20px 0;
+      margin-top: 20px;
     }
     footer ul{
-    	text-align: center;
+    	/*text-align: center;*/
     	margin-bottom: 10px;
     }
     footer ul li{
@@ -593,7 +725,7 @@ header{
     footer ul li a{
     	color: #d7d7d7;
 	    font-weight: 300;
-	    font-size: 13px;
+	    font-size: 11px;
 	    letter-spacing: 1px;
       /*text-transform: capitalize;*/
     }
@@ -896,6 +1028,7 @@ header{
       padding: 10px 30px;
       border: none;
       margin: auto;
+      display: block;
     }
     /*additional pages style ends*/
 
@@ -1158,7 +1291,11 @@ header{
       width: 100%;
     }
     .spini-press li img{
-      width: 100%;
+      width: 200px;
+    height: 100px;
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto 30px;
     }
     .seo-links ul li{
       display: block;
@@ -1193,6 +1330,7 @@ header{
       padding: 11px;
       font-size: 1.7rem;
       letter-spacing: 1px;
+      display: none;
     }
     .download-ebook{
       width: 100%;
@@ -1247,7 +1385,7 @@ header{
       /*border: 1px solid #77a32c;*/
       box-sizing: border-box !important;
       margin-right: 10px !important;
-      background-color: #77a32c !important;
+      background-color: #fff !important;
       /*background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important;*/
       /*background-size: 400% 400%;*/
       /*-webkit-animation: Gradient 15s ease infinite;*/
@@ -1292,6 +1430,8 @@ header{
       }
     }
     /*post your add animation ends*/
+
+    
     .ebook-popup{
       text-align: center;
     }
@@ -1307,6 +1447,172 @@ header{
       margin-top: 10px;
       display: inline-block;
     }
+
+    /*realestate paggination and filter style starts*/
+      .see-more-pagination{
+    padding: 10px 30px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    border: 0;
+    border-radius: 25px;
+    margin: auto;
+  }
+  .realestate-location-filter{
+    position: sticky;
+    cursor: pointer;
+    z-index: 100;
+    left: 0px;
+    top: 70px;
+    margin-bottom: 60px;
+  }
+  .realestate-location-filter i{
+    color: #fff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    background: url(http://cdn.getspini.com/png/filter.png) red no-repeat center;
+    left: 5px;
+    background-size: 60%;
+    position: absolute;
+  }
+  .realestate-location-filter ul{
+    position: absolute;
+    background: #fff;
+    padding: 17px;
+    border-radius: 3px;
+    margin-left: 60px;
+    display: none;
+    max-width: 250px;
+  }
+  .realestate-location-filter ul li:nth-child(1){
+    background: url(http://cdn.getspini.com/png/Chennai.png)no-repeat;
+  }
+  .realestate-location-filter ul li:nth-child(2){
+    background: url(http://cdn.getspini.com/png/Bangalore.png)no-repeat;
+  }
+  .realestate-location-filter ul li:nth-child(3){
+    background: url(http://cdn.getspini.com/png/Coimbatore.png)no-repeat;
+  }
+  .realestate-location-filter ul li{
+    cursor: pointer;
+    height: 50px;
+    background-size: contain !important;
+    line-height: 60px;
+    padding-left: 70px;
+    margin-bottom: 15px;
+  }
+  .filter-arrow_box {
+    position: relative;
+    background: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    margin-left: 70px;
+    padding:10px;
+  }
+  .filter-arrow_box:after, .filter-arrow_box:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .filter-arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  .filter-arrow_box:before {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: #fff;
+    border-width: 13px;
+    margin-top: -13px;
+  }
+  /*realestate paggination and filter style end*/
+
+  /*loan emi style starts*/
+  .emi-container{
+    padding-top: 60px;
+    }
+    .emi-input{
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+      background: #fff;
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      border-radius: 3px;
+    }
+    .emi-input label{
+      display: block;
+      color: #666;
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+    .emi-input input{
+      margin: 10px 0;
+      border: 0;
+      width: 100%;
+      background: #f7f7f7;
+      padding: 15px;
+      font-size: 18px;
+      color: #292929;
+      font-weight: 100;
+    }
+    .emi-input button{
+      background: #ed3833;
+      color: #fff;
+      border: 0;
+      padding: 10px 30px;
+      margin: 10px auto;
+      display: block;
+    }
+    .emi-output{
+      display: none;
+    }
+    #container-emi{
+      width: 300px; 
+      height: 200px; 
+      margin: auto;
+    }
+    #emi_total_amount{
+      height: 320px;
+    }
+  /*loan emi style end*/
+
+  /*features add style starts*/
+  .features-add{
+    background: #CC0000;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    padding: 8px 0;
+  }
+  .features-add h1{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 100;
+    vertical-align: text-top;
+  }
+  .features-add a{
+    color: #CC0000;
+    float: right;
+    padding: 4px 20px;
+    background: #fff;
+    border-radius: 25px;
+
+  }
+  /*features add style end*/
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
@@ -1322,7 +1628,7 @@ header{
         	font-size: 12px;
         }
         .hamburger-menu{
-          background: #ed4053;
+          /*background: #ed4053;*/
           padding: 5px;
           /*padding-bottom: 0;*/
         }
@@ -1389,6 +1695,10 @@ header{
           right: 0;
           bottom: 0;
           border-radius: 0 !important;*/
+        }
+        .seo-links{
+          height: 300px;
+          overflow: scroll;
         }
       }
      
