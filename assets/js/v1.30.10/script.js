@@ -2,7 +2,7 @@ $(document).ready(function(){
 	// variable declarations
   var name, ph_number, email, budgetAmount;
   var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
-  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location, feature_add_title, feature_add_href, feature_add_href_title;
+  var short_traverse, data, check_inner_page = false, selected_package, ApiEndPoint, url,homepage_category,banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location, feature_add_title, feature_add_href, feature_add_href_title, url_hash;
 	// preload funcitons
 	windowHight();
     // script for common device image starts
@@ -518,7 +518,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.9/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.10/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -648,7 +648,18 @@ $(document).ready(function(){
 
         homepage_toggle();
       });
-      $('.home-page-categories li:first').click();
+
+      url_hash = location.hash;
+      if (url_hash == "#interior-lead") {
+        $('.home-page-categories li:nth-child(2)').click();
+      }else if(url_hash == "#loan-lead"){
+        $('.home-page-categories li:nth-child(3)').click();
+      }else if(url_hash == "#insurance-lead"){
+        $('.home-page-categories li:nth-child(4)').click();
+      }else{
+        $('.home-page-categories li:first').click();
+      }
+      
       // script files for banner page ends
 
 
@@ -657,7 +668,7 @@ $(document).ready(function(){
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.9/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.10/cards.json", function(data, status){
         cards = data.cards;
         
         $(".see-more-pagination").click(function(){
