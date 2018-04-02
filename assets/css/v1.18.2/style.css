@@ -1291,7 +1291,11 @@ header{
       width: 100%;
     }
     .spini-press li img{
-      width: 100%;
+      width: 200px;
+    height: 100px;
+    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto 30px;
     }
     .seo-links ul li{
       display: block;
