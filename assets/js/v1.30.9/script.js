@@ -642,7 +642,7 @@ $(document).ready(function(){
           // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
           banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
           feature_add_title = "Life time benificial insurance are available";
-          feature_add_href = "/insurance/insurance.html";
+          feature_add_href = "/insurances/insurances.html";
           feature_add_href_title = "Get insurance";
         }
 
