@@ -199,7 +199,7 @@ $(document).ready(function(){
       }
 
       // validation script
-      if(name == "" && ph_number == "" && email == "" || cityName == "") {
+      if([name,ph_number,email,cityName,budgetAmount].includes('')) {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn()
@@ -226,10 +226,10 @@ $(document).ready(function(){
       cityName = short_traverse.find("select[name='city']").val();
       budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
 
-
+      debugger
 
       // validation script
-      if(name == "" && ph_number == "" && email == "" || cityName == "") {
+      if([name,ph_number,email,cityName,budgetAmount].includes('')) {
         $(".error-mandatory").fadeIn();
       }else if(ph_number.length != 10){
         $(".error-contact-ph_number").fadeIn();
@@ -618,28 +618,28 @@ $(document).ready(function(){
         } 
         if (homepage_category == 'realestate') {
           categoryName = "Real Estate(Buying)";
-          banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
+          // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
           banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
           feature_add_title = "List your property for free Ad listing on our website";
           feature_add_href = "https://spini.typeform.com/to/lNAjvb";
           feature_add_href_title = "Post Ad";
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
-          banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
+          // banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
           banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
           feature_add_title = "Estimate the price of your modular kitchen in few minutes";
           feature_add_href = "/interiors/interior-estimation.html";
           feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
           categoryName = "Loans";
-          banner_heading = "Don't go for Common Floor, When you can get your private space";
+          // banner_heading = "Don't go for Common Floor, When you can get your private space";
           banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
           feature_add_title = "Need a loan immediately with lower EMI's, Know more";
           feature_add_href = "/loans/loan-emi-calculator.html";
           feature_add_href_title = "Calculate EMI";
         }else if(homepage_category == 'insurance'){
           categoryName = "Insurance";
-          banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
+          // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
           banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
           feature_add_title = "Life time benificial insurance are available";
           feature_add_href = "/insurance/insurance.html";
@@ -702,7 +702,7 @@ $(document).ready(function(){
        // multi cards repeat ends
 
        $(".calculate-emi").click(function(){
-          debugger
+          // debugger
           principal_amt = $("input[name='emi-principal']").val();
           no_of_year = $("input[name='emi-no-of-years']").val(); 
           percent_per_anum = $("input[name='emi-precentage']").val();
