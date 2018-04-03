@@ -650,9 +650,9 @@ $(document).ready(function(){
       });
 
       url_hash = location.hash;
-      if (url_hash == "#interior-lead") {
+      if (url_hash == "#chennai-interiors.html") {
         $('.home-page-categories li:nth-child(2)').click();
-      }else if(url_hash == "#loan-lead"){
+      }else if(url_hash == "#chennai-loans.html"){
         $('.home-page-categories li:nth-child(3)').click();
       }else if(url_hash == "#insurance-lead"){
         $('.home-page-categories li:nth-child(4)').click();
