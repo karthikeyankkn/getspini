@@ -649,12 +649,12 @@ $(document).ready(function(){
         homepage_toggle();
       });
       debugger
-      url_hash = location.pathname;
-      if (url_hash == "/chennai-interiors.html") {
+      url_hash = location.hash;
+      if (url_hash == "#chennai-interiors.html") {
         $('.home-page-categories li:nth-child(2)').click();
-      }else if(url_hash == "/chennai-loans.html"){
+      }else if(url_hash == "#chennai-loans.html"){
         $('.home-page-categories li:nth-child(3)').click();
-      }else if(url_hash == "/chennai-insurance.html"){
+      }else if(url_hash == "#chennai-insurance.html"){
         $('.home-page-categories li:nth-child(4)').click();
       }else{
         $('.home-page-categories li:first').click();
