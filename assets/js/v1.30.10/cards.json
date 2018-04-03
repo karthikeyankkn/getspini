@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"110",
+		"a_href":"Luxuria-boutique-apartments.html",
+		"card_title":"LUXURIA BOUTIQUE APARTMENTS",
+		"card_img": "http://cdn.getspini.com/landing/Luxuria-Card.jpg",
+		"card_description":"CMDA APPROVED FULLY FURNISHED WITH CCP LIFT LED LIGHTS FALSE CEILINGS WALL ELEVATIONS MODULAR KITCHENS COMPLETE.",
+		"card_area":"Mudichur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"109",
+		"a_href":"Subhiksha-flats.html",
+		"card_title":"SUBHIKSHA FLATS",
+		"card_img": "http://cdn.getspini.com/landing/subhiksha.jpg",
+		"card_description":"3bhk 5yrs old GF flat with total interiors in Thoraippakkam very very close to OMR.",
+		"card_area":"OMR, Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"108",
 		"a_href":"sukanya-homes.html",
 		"card_title":"SUKANYA HOMES",
