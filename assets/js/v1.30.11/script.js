@@ -654,7 +654,7 @@ $(document).ready(function(){
         $('.home-page-categories li:nth-child(2)').click();
       }else if(url_hash == "/chennai-loans.html"){
         $('.home-page-categories li:nth-child(3)').click();
-      }else if(url_hash == "/insurance-lead"){
+      }else if(url_hash == "/chennai-insurance.html"){
         $('.home-page-categories li:nth-child(4)').click();
       }else{
         $('.home-page-categories li:first').click();
