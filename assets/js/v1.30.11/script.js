@@ -461,8 +461,23 @@ $(document).ready(function(){
 
         estimatedcost = type_of_kitchenvalue * type_of_materialvalue + quality_of_accessoriesvalue;
         var rangecost = (estimatedcost * 0.3) + estimatedcost;
-        document.getElementById("estimatedcost").innerHTML = estimatedcost;
-        document.getElementById("rangecost").innerHTML = rangecost;
+
+        // commma for budjet starts
+        function addCommas(nStr){
+           nStr += '';
+           var x = nStr.split('.');
+           var x1 = x[0];
+           var x2 = x.length > 1 ? '.' + x[1] : '';
+           var rgx = /(\d+)(\d{3})/;
+           while (rgx.test(x1)) {
+            x1 = x1.replace(rgx, '$1' + ',' + '$2');
+           }
+           return x1 + x2;
+        }
+        // commma for budjet ends
+
+        document.getElementById("estimatedcost").innerHTML = addCommas(estimatedcost);
+        document.getElementById("rangecost").innerHTML = addCommas(rangecost);
         document.getElementById("uname").innerHTML = uname;
 
          // validation script
@@ -649,12 +664,12 @@ $(document).ready(function(){
         homepage_toggle();
       });
       debugger
-      url_hash = location.hash;
-      if (url_hash == "#chennai-interiors.html") {
+      url_hash = location.pathname;
+      if (url_hash == "/chennai-interiors.html") {
         $('.home-page-categories li:nth-child(2)').click();
-      }else if(url_hash == "#chennai-loans.html"){
+      }else if(url_hash == "/chennai-loans.html"){
         $('.home-page-categories li:nth-child(3)').click();
-      }else if(url_hash == "#chennai-insurance.html"){
+      }else if(url_hash == "/chennai-insurance.html"){
         $('.home-page-categories li:nth-child(4)').click();
       }else{
         $('.home-page-categories li:first').click();
