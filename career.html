@@ -15,7 +15,7 @@
         <meta name="keywords" content="apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan, packers and movers, catering service, homes for rent, property for sale">
         <meta name="author" content="">
         <link rel="canonical" href="http://getspini.com/"/>
-        
+        <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
         <!-- Mobile Specific Metas ================================================== -->
 
   <!-- css files starts -->
@@ -285,6 +285,121 @@
     </div>
   </div>
 </div>
+<style>
+  /*body {
+    padding: 30px 0px;
+}*/
+
+#lightbox .modal-content {
+    display: inline-block;
+    /*text-align: center; */  
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
+.thumbnail img{
+  height: 191px;
+  width: 340px;
+}
+.spinions-images p {
+  text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+}
+</style>
+<section>
+  <div class="footer-page-title container">
+  <h2>SPINIONS GALLERY</h2>
+</div>
+  <div class="container spinions-images">
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion3.png" alt="getspini">
+        </a>
+        <p>Yoga Class</p>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion6.png" alt="getspini">
+        </a>
+        <p>Pongal Celebration</p>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion8.jpg" alt="getspini">
+        </a>
+        <p>Spinions In Traditional</p>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion9.png" alt="getspini">
+        </a>
+        <p>Spinions Groupie</p>
+    </div>
+     <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion10.jpg" alt="getspini">
+        </a>
+        <p>Cricket Tournament</p>
+    </div>
+     <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion11.png" alt="getspini">
+        </a>
+        <p>Christmas Party</p>
+    </div>
+     <!-- <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion12.png" alt="getspini">
+        </a>
+        <p>Spinions In Yoga Mat</p>
+    </div> -->
+     <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion13.png" alt="getspini">
+        </a>
+        <p>Badminton Tournament</p>
+    </div>
+     <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion14.jpg" alt="getspini">
+        </a>
+        <p>Dinner With Co-Founders </p>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion15.jpg" alt="getspini">
+        </a>
+        <p>Womensday Celebration </p>
+    </div>
+    <div class="col-md-4">
+        <a href="#" class="thumbnail" data-toggle="modal" data-target="#lightbox"> 
+            <img src="https://cdn.getspini.com/spinions/spinion16.jpg" alt="getspini">
+        </a>
+        <p>Pondicherry Trip </p>
+    </div>
+</div>
+<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
@@ -292,5 +407,32 @@
   <script src="assets/js/lib/jquery.min.js"></script>
   <script src="assets/js/lib/bootstrap.min.js"></script>
   <script src="assets/js/v1.30.12/script.js"></script>
+  <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+  <script>
+    $(document).ready(function() {
+    var $lightbox = $('#lightbox');
+    
+    $('[data-target="#lightbox"]').on('click', function(event) {
+        var $img = $(this).find('img'), 
+            src = $img.attr('src'),
+            alt = $img.attr('alt'),
+            css = {
+                'maxWidth': $(window).width() - 100,
+                'maxHeight': $(window).height() - 100
+            };
+    
+        $lightbox.find('img').attr('src', src);
+        $lightbox.find('img').attr('alt', alt);
+        $lightbox.find('img').css(css);
+    });
+    
+    $lightbox.on('shown.bs.modal', function (e) {
+        var $img = $lightbox.find('img');
+            
+        $lightbox.find('.modal-dialog').css({'width': $img.width()});
+    });
+});
+  </script>
 </body>
 </html>
