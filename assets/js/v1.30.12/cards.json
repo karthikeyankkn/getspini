@@ -10,9 +10,36 @@
 		"card_city": ""
 		},
 		{
+		"id":"113",
+		"a_href":"uniidus-acropolis.html",
+		"card_title":"uniidus acropolis",
+		"card_img": "http://cdn.getspini.com/landing/acropolis1.png",
+		"card_description":"TUniidus Acropolis is a Spacious Apartment in Budget Prices, totally 64 flats of G+3 Apartment, 16 Flats in Each floor.",
+		"card_area":"Garudacharpalya, Bangalore",
+		"card_city": "bangalore"
+		},
+		{
+		"id":"112",
+		"a_href":"aliens-space-station.html",
+		"card_title":"aliens space station",
+		"card_img": "http://cdn.getspini.com/landing/alien-space1.jpeg",
+		"card_description":"This is the first project which came with different in hyderabad.Each and every room covered with 3 side wall and one side glass wall.Our project is constructed in 20 acres.Out of 100% open area is 80% and construction area is 20%.We came with s structure for ventilation purpose only.",
+		"card_area":"gachibowli, Hyderabad",
+		"card_city": "hyderabad"
+		},
+		{
+		"id":"111",
+		"a_href":"happy-homes-signature-town.html",
+		"card_title":"Happy Homes signature Town",
+		"card_img": "http://cdn.getspini.com/landing/happy-homes1.jpg",
+		"card_description":"Happy Home Signature Towers comes up with luxurious apartments with covered car parking, lift, excellent interiors, spacious rooms and with world class fittings.",
+		"card_area":"Vijaya Dairya, Hyderabad",
+		"card_city": "hyderabad"
+		},
+		{
 		"id":"110",
 		"a_href":"Luxuria-boutique-apartments.html",
-		"card_title":"LUXURIA BOUTIQUE APARTMENTS",
+		"card_title":"Luxuria Apartments",
 		"card_img": "http://cdn.getspini.com/landing/Luxuria-Card.jpg",
 		"card_description":"CMDA APPROVED FULLY FURNISHED WITH CCP LIFT LED LIGHTS FALSE CEILINGS WALL ELEVATIONS MODULAR KITCHENS COMPLETE.",
 		"card_area":"Mudichur, Chennai",

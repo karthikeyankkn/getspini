@@ -636,25 +636,25 @@ header{
     }
     .spini-interior-gallery{
     }
-    .spini-interior-gallery ul{
+    .spini-interior-gallery ul, .spini-spinion-gallery ul{
       list-style: none;
       margin: 0;
       padding: 0;
     }
 
-    .spini-interior-gallery ul li{
+    .spini-interior-gallery ul li, .spini-spinion-gallery ul li{
       margin: 30px 0;
       text-align: center;
     }
-    .spini-interior-gallery ul li a{
+    .spini-interior-gallery ul li a, .spini-spinion-gallery ul li a{
       display: inline-block;
     }
-    .spini-interior-gallery ul li img{
+    .spini-interior-gallery ul li img, .spini-spinion-gallery ul li img{
       width: 100%;
       opacity: 0.7;
       transition: 0.2s ease;
     }
-    .spini-interior-gallery ul li img:hover{
+    .spini-interior-gallery ul li img:hover, .spini-spinion-gallery ul li img:hover{
       opacity: 1;
     }
     .view-gallery{
@@ -1497,6 +1497,9 @@ header{
   }
   .realestate-location-filter ul li:nth-child(3){
     background: url(http://cdn.getspini.com/png/Coimbatore.png)no-repeat;
+  }
+  .realestate-location-filter ul li:nth-child(4){
+    background: url(http://cdn.getspini.com/png/Hyderabad.png)no-repeat;
   }
   .realestate-location-filter ul li{
     cursor: pointer;
