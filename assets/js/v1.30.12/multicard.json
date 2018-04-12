@@ -18,21 +18,21 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/img/nest_amaze/02.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/03.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/04.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/05.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/06.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/07.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/08.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/09.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/10.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/11.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/12.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/13.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/14.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/15.jpg",
-						 "https://cdn.getspini.com/img/nest_amaze/16.jpg"
+						 "http://cdn.getspini.com/img/nest_amaze/02.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/03.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/04.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/05.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/06.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/07.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/08.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/09.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/10.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/11.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/12.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/13.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/14.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/15.jpg",
+						 "http://cdn.getspini.com/img/nest_amaze/16.jpg"
 					]
 					
 		},
@@ -55,7 +55,7 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/property/todaybanner.jpg"
+						 "http://cdn.getspini.com/property/todaybanner.jpg"
 						
 					]
 		},
@@ -78,17 +78,17 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/img/nest/1.jpg",
-						 "https://cdn.getspini.com/img/nest/2.jpg",
-						 "https://cdn.getspini.com/img/nest/3.jpg",
-						 "https://cdn.getspini.com/img/nest/4.jpg",
-						 "https://cdn.getspini.com/img/nest/5.jpg",
-						 "https://cdn.getspini.com/img/nest/6.jpg",
-						 "https://cdn.getspini.com/img/nest/7.jpg",
-						 "https://cdn.getspini.com/img/nest/8.jpg",
-						 "https://cdn.getspini.com/img/nest/9.jpg",
-						 "https://cdn.getspini.com/img/nest/10.jpg",
-						 "https://cdn.getspini.com/img/nest/11.jpg"
+						 "http://cdn.getspini.com/img/nest/1.jpg",
+						 "http://cdn.getspini.com/img/nest/2.jpg",
+						 "http://cdn.getspini.com/img/nest/3.jpg",
+						 "http://cdn.getspini.com/img/nest/4.jpg",
+						 "http://cdn.getspini.com/img/nest/5.jpg",
+						 "http://cdn.getspini.com/img/nest/6.jpg",
+						 "http://cdn.getspini.com/img/nest/7.jpg",
+						 "http://cdn.getspini.com/img/nest/8.jpg",
+						 "http://cdn.getspini.com/img/nest/9.jpg",
+						 "http://cdn.getspini.com/img/nest/10.jpg",
+						 "http://cdn.getspini.com/img/nest/11.jpg"
 						
 					]
 		},
@@ -111,7 +111,7 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/property/republicbanner.jpg"
+						 "http://cdn.getspini.com/property/republicbanner.jpg"
 					]
 		},
 		{
@@ -133,7 +133,7 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/property/njoybanner.jpg"
+						 "http://cdn.getspini.com/property/njoybanner.jpg"
 					]
 		},
 		{
@@ -155,14 +155,14 @@
 		"page_built_up_area":"-",
 		"page_age_of_the_property":"-",
 		"page_slider":[
-						 "https://cdn.getspini.com/property/glorybanner.jpg"
+						 "http://cdn.getspini.com/property/glorybanner.jpg"
 					]
 		},
 		{
 		"id":"7",
 		"a_href":"",
 		"card_title":"Shanthi Colony",
-		"img_src": "https://cdn.getspini.com/property/anna/14.jpg",
+		"img_src": "http://cdn.getspini.com/property/anna/14.jpg",
 		"card_description":"Shanthi Colony Apartment located in Anna nagar offers premium 2 & 3 BHK apartment starting from 2 crore designed for comfortable lifestyle. This Apartment off shanthi colony and has easy access to several renown educational institutions and Located in major part of the city.",
 		"card_area":"Anna Nagar, Chennai",
 		"card_idname":"realestate-cards",
@@ -177,15 +177,15 @@
 		"page_built_up_area":"1400 sq ft approx",
 		"page_age_of_the_property":"3 Years old",
 		"page_slider":[
-						"https://cdn.getspini.com/property/anna/14.jpg",
-						"https://cdn.getspini.com/property/anna/2.jpg",
-						"https://cdn.getspini.com/property/anna/3.jpg",
-						"https://cdn.getspini.com/property/anna/4.jpg",
-						"https://cdn.getspini.com/property/anna/6.jpg",
-						"https://cdn.getspini.com/property/anna/8.jpg",
-						"https://cdn.getspini.com/property/anna/13.jpg",
-						"https://cdn.getspini.com/property/anna/1.jpg",
-						"https://cdn.getspini.com/property/anna/15.jpg"
+						"http://cdn.getspini.com/property/anna/14.jpg",
+						"http://cdn.getspini.com/property/anna/2.jpg",
+						"http://cdn.getspini.com/property/anna/3.jpg",
+						"http://cdn.getspini.com/property/anna/4.jpg",
+						"http://cdn.getspini.com/property/anna/6.jpg",
+						"http://cdn.getspini.com/property/anna/8.jpg",
+						"http://cdn.getspini.com/property/anna/13.jpg",
+						"http://cdn.getspini.com/property/anna/1.jpg",
+						"http://cdn.getspini.com/property/anna/15.jpg"
 					]
 		}
 		]
