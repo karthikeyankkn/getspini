@@ -778,7 +778,7 @@
 		"id":"28",
 		"a_href":"tata-santorini.html",
 		"card_title":"tata santorini",
-		"card_img": "https://cdn.getspini.com/landing/tata-sant-card.jpg",
+		"card_img": "http://cdn.getspini.com/landing/tata-sant-card.jpg",
 		"card_description":"Tata Santorini by Tata Value Homes offers an unbeatable lifestyle at Santorini.The Spanish themed project spread over 18 acres in Poonamallee, Chennai.",
 		"card_area":"Poonamallee",
 		"card_city": "chennai"
@@ -787,7 +787,7 @@
 		"id":"27",
 		"a_href":"tata-new-haven-ribbon-walk-mambakkam.html",
 		"card_title":"TATA NEW HAVEN",
-		"card_img": "https://cdn.getspini.com/landing/tata-nh-card.jpg",
+		"card_img": "http://cdn.getspini.com/landing/tata-nh-card.jpg",
 		"card_description":"New Haven Ribbon Walk at Mambakkam comprises of multi-level courtyards and green spaces connected by a ribbon landscape.",
 		"card_area":"mambakkam",
 		"card_city": "chennai"
@@ -814,7 +814,7 @@
 		"id":"24",
 		"a_href":"Globuse-Gardens-coimbatore.html",
 		"card_title":"GLOBUSE GARDENS",
-		"card_img": "https://cdn.getspini.com/hn-card.jpg",
+		"card_img": "http://cdn.getspini.com/hn-card.jpg",
 		"card_description":"Our project remains as a pollution free environment with green surroundings.",
 		"card_area":"Kalapatti, Coimbatore",
 		"card_city": "coimbatore"
@@ -823,7 +823,7 @@
 		"id":"23",
 		"a_href":"sathish-ventures-coimbatore.html",
 		"card_title":"SATHISH VENTURES",
-		"card_img": "https://cdn.getspini.com/property/SV-Card.jpg",
+		"card_img": "http://cdn.getspini.com/property/SV-Card.jpg",
 		"card_description":"Santhish ventures has been the leading consultants in real estate industry. They expertise in residential apartments and plots in Coimbatore.",
 		"card_area":"Coimbatore",
 		"card_city": "coimbatore"
@@ -859,7 +859,7 @@
 		"id":"19",
 		"a_href":"nest-fortune-choolaimedu.html",
 		"card_title":"NEST ELEGANT & FORTUNE",
-		"card_img": "https://cdn.getspini.com/landing/Nest-Fortune-Card.jpg",
+		"card_img": "http://cdn.getspini.com/landing/Nest-Fortune-Card.jpg",
 		"card_description":"Nest Elegant and Fortune at Choolaimedu by Nest Builders is yet another addition to luxurious and marvelous residential apartments.",
 		"card_area":"Choolaimedu, Chennai",
 		"card_city": "chennai"
@@ -904,7 +904,7 @@
 		"id":"14",
 		"a_href":"hiranandani-parks-orgadam.html",
 		"card_title":"HIRANANDANI PARKS",
-		"card_img": "https://cdn.getspini.com/hira-img/carousel/opt/07.jpg",
+		"card_img": "http://cdn.getspini.com/hira-img/carousel/opt/07.jpg",
 		"card_description":"Hiranandani Parks, Living in Hiranandani Parks is an exceptional experience. This mega township is planned with amenities nestled within open green spaces.",
 		"card_area":"Orgadam, Chennai",
 		"card_city": "chennai"
@@ -940,7 +940,7 @@
 		"id":"10",
 		"a_href":"stepstone-prasanas-apartments-Sholinganallur.html",
 		"card_title":"STEPSTONE PRASANNA",
-		"card_img": "https://cdn.getspini.com/get-opt/steps_stone_prasanas_sholanganallur-chennai-steps_.jpg",
+		"card_img": "http://cdn.getspini.com/get-opt/steps_stone_prasanas_sholanganallur-chennai-steps_.jpg",
 		"card_description":"Prasanas by Stepsstone located at Sholinganallur offers premium 2 & 3 BHK apartment at rock bottom price. ",
 		"card_area":"Ottiyambakkam, Chennai",
 		"card_city": "chennai"
@@ -949,7 +949,7 @@
 		"id":"9",
 		"a_href":"stepstone-ananthaya-Urapakkam.html",
 		"card_title":"STEPSTONE ANANTHAYA",
-		"card_img": "https://cdn.getspini.com/get-opt/stepsstone_ananthaya.jpg",
+		"card_img": "http://cdn.getspini.com/get-opt/stepsstone_ananthaya.jpg",
 		"card_description":"Stepsstone Urapakkam flats are your very own kingdom of happiness.",
 		"card_area":"Urapakkam, Chennai",
 		"card_city": "chennai"
@@ -958,7 +958,7 @@
 		"id":"8",
 		"a_href":"stepstone-viktaa-in-maduravoyal.html",
 		"card_title":"STEPSTONE VIKTAA",
-		"card_img": "https://cdn.getspini.com/get-opt/viktaacard.jpg",
+		"card_img": "http://cdn.getspini.com/get-opt/viktaacard.jpg",
 		"card_description":"Stunning Viktaa apartments designed to international standards",
 		"card_area":"Maduravoyal, Chennai",
 		"card_city": "chennai"
@@ -967,7 +967,7 @@
 		"id":"7",
 		"a_href":"Apartments-in-annanagar.html",
 		"card_title":"SHANTHI COLONY",
-		"card_img": "https://cdn.getspini.com/get-opt/14.jpg",
+		"card_img": "http://cdn.getspini.com/get-opt/14.jpg",
 		"card_description":"Awesome anna nagar apartment equipped for comfortable lifestyle.",
 		"card_area":"Anna Nagar, Chennai",
 		"card_city": "chennai"
