@@ -7,27 +7,27 @@ $(document).ready(function(){
 	windowHight();
     // script for common device image starts
      // images for desktop
-      var desktop_img = [ "https://cdn.getspini.com/banner/Nest-Fortune1.jpg",
-                          "https://cdn.getspini.com/optimized/nest-bn.jpg",
-                          "https://cdn.getspini.com/optimized/hiranandani-bn.jpg",
-                          "https://cdn.getspini.com/optimized/stepsstone-bn.jpg",
+      var desktop_img = [ "http://cdn.getspini.com/banner/Nest-Fortune1.jpg",
+                          "http://cdn.getspini.com/optimized/nest-bn.jpg",
+                          "http://cdn.getspini.com/optimized/hiranandani-bn.jpg",
+                          "http://cdn.getspini.com/optimized/stepsstone-bn.jpg",
                           "../assets/images/banner/Nest_20Kanathur.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna.jpg",
                           "../assets/images/gvspl/GVSPl_20banner.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Suraj1.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Life1.jpg"
+                          "http://cdn.getspini.com/banner/Nest-Suraj1.jpg",
+                          "http://cdn.getspini.com/banner/Nest-Life1.jpg"
                         ];
 
       // images for mobile
-      var mobile_img = [  "https://cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
-                          "https://cdn.getspini.com/nest-mob-v2-1.jpg",
-                          "https://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
-                          "https://cdn.getspini.com/stepstone-mob-v2-1.jpg",
+      var mobile_img = [  "http://cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
+                          "http://cdn.getspini.com/nest-mob-v2-1.jpg",
+                          "http://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+                          "http://cdn.getspini.com/stepstone-mob-v2-1.jpg",
                           "../assets/images/banner/Nest_20Mob.jpg",
                           "../assets/images/banner/Stepstone_20Prasanna_20Mob.jpg",
                           "../assets/images/gvspl/GVSPL_20Mob.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
-                          "https://cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
+                          "http://cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
+                          "http://cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
                         ];
       // links for slider
       var slider_link = ["../realestate/nest-fortune-choolaimedu.html",
@@ -634,28 +634,28 @@ $(document).ready(function(){
         if (homepage_category == 'realestate') {
           categoryName = "Real Estate(Buying)";
           // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
           feature_add_title = "List your property for free Ad listing on our website";
           feature_add_href = "https://spini.typeform.com/to/lNAjvb";
           feature_add_href_title = "Post Ad";
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
           // banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
           feature_add_title = "Estimate the price of your modular kitchen in few minutes";
           feature_add_href = "/interiors/interior-estimation.html";
           feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
           categoryName = "Loans";
           // banner_heading = "Don't go for Common Floor, When you can get your private space";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
           feature_add_title = "Need a loan immediately with lower EMI's, Know more";
           feature_add_href = "/loans/loan-emi-calculator.html";
           feature_add_href_title = "Calculate EMI";
         }else if(homepage_category == 'insurance'){
           categoryName = "Insurance";
           // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
-          banner_background = "https://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
           feature_add_title = "Life time benificial insurance are available";
           feature_add_href = "/insurances/insurances.html";
           feature_add_href_title = "Get insurance";
