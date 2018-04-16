@@ -5,7 +5,7 @@
     var rand_num, dynamic_id, scratchOffer;
     $(".multiple-scratch-cards-container ul li").click(function(){
       debugger
-      dynamic_id = $(this).children("p").attr("scratch_id");
+      dynamic_id = $(this).attr("scratch_id");
       
       // offers image array starts
       // var card1 = ["http://localhost:8080/assets/images/ipl_collection/csk-logo.png",
