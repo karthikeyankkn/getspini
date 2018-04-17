@@ -24,7 +24,7 @@
    <!-- css files ends -->
    <script>
      var index_page = false;
-     var categoryName = "Real Estate(Buying)";
+     var categoryName = "realestate-scratch-card";
      var page = "scratch_card_page";
    </script>   
    <style>
@@ -174,23 +174,5 @@
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <script src="../assets/js/v1.30.14/script.js"></script>
   <script src="../assets/js/v1.30.14/scratchcard.js"></script>
-   <script>
-    $(document).ready(function(){
-
-      var cars = ["../assets/images/ipl_collection/csk-logo.png",
-            "../assets/images/ipl_collection/dd-logo.png",
-            "../assets/images/ipl_collection/k11-logo.png",
-            "../assets/images/ipl_collection/kkr-logo.png",
-            "../assets/images/ipl_collection/mi-logo.png",
-            "../assets/images/ipl_collection/rcb-logo.png",
-            "../assets/images/ipl_collection/rr-logo.png",
-            "../assets/images/ipl_collection/srh-logo.png"
-            ];
-            
-      var rand_num = Math.floor(Math.random() * 7);
-      $(".winner-box").css({"background": "url("+cars[rand_num]+") center #fff no-repeat", "background-size": "80%"});
-            
-    });
-  </script>
 </body>
 </html>
