@@ -7,17 +7,6 @@
       debugger
       dynamic_id = $(this).attr("scratch_id");
       
-      // offers image array starts
-      // var card1 = ["http://localhost:8080/assets/images/ipl_collection/csk-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/dd-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/k11-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/kkr-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/mi-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/rcb-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/rr-logo.png",
-      //   "http://localhost:8080/assets/images/ipl_collection/srh-logo.png"
-      // ];
-
       var card1 = {
                     "scratch_card":[
                     {
@@ -33,6 +22,7 @@
                     "offer": "kkr"
                     }]
                   }
+
       var card2 = {
                     "scratch_card":[
                     {
@@ -48,6 +38,7 @@
                     "offer": "kkr"
                     }]
                   }
+
       var card3 = {
                     "scratch_card":[
                     {
@@ -63,6 +54,7 @@
                     "offer": "kkr"
                     }]
                   }
+                  
       var card4 = {
                     "scratch_card":[
                     {

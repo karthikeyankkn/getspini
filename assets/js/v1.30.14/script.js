@@ -334,10 +334,10 @@ $(document).ready(function(){
           error: function(response) {
             // alert("Api WAS not working :( ");
             $(".error-contact").fadeIn();
-            if(page == "scratch_card_page"){
-                $(".scratch-card-data-collection").hide();
-                $(".scratch-card-container").fadeIn();
-              }
+            // if(page == "scratch_card_page"){
+            //     $(".scratch-card-data-collection").hide();
+            //     $(".scratch-card-container").fadeIn();
+            //   }
           },
           complete: function() {
               // alert("Api Request WAS completed :D ");
