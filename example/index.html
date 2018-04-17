@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>HTML5 Canvas - Scratch Card</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+		
+		<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+		<link rel="stylesheet" href="css/scratchcard.css">
+
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src="js/scratchcard.js"></script>
+
+	</head>
+
+	<body>
+	<h1 style="text-align: center;">Scratch to check your team</h1>
+	<div class="scratch-container" id="scratch-container">
+		<canvas class="canvas" id="scratch-canvas"></canvas>
+		<div class="winner-box">
+			<!-- <h2 class="blinker">WINNER!!</h2>
+			<h3>Your code is:</h3>
+			<h1>AbC12dEf</h1> -->
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+
+			var cars = ["img/ipl_collection/csk-logo.png",
+						"img/ipl_collection/dd-logo.png",
+						"img/ipl_collection/k11-logo.png",
+						"img/ipl_collection/kkr-logo.png",
+						"img/ipl_collection/mi-logo.png",
+						"img/ipl_collection/rcb-logo.png",
+						"img/ipl_collection/rr-logo.png",
+						"img/ipl_collection/srh-logo.png"
+						];
+						
+			var rand_num = Math.floor(Math.random() * 7);
+			$(".winner-box").css({"background": "url("+cars[rand_num]+") center #fff no-repeat", "background-size": "80%"});
+						
+		});
+	</script>
+	</body>
+</html>
