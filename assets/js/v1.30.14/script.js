@@ -187,7 +187,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      // debugger
+      debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
@@ -294,7 +294,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
-      debugger
+      
       var success;
       var data;
       data = {
@@ -303,10 +303,10 @@ $(document).ready(function(){
         "cityName" : cityName,
         "categoryName" : categoryName,
         "emailOfProspectiveBuyer" : email,
-        "budgetAmount" : budgetAmount,
-        "scratchOffer" : scratchOffer
+        "budgetAmount" : budgetAmount
+        // "scratchOffer" : scratchOffer
       };
-
+      localStorage.setItem("ph_number", ph_number);
       
       $.ajax({
           url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",

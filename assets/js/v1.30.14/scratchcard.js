@@ -54,7 +54,7 @@
                     "offer": "kkr"
                     }]
                   }
-                  
+
       var card4 = {
                     "scratch_card":[
                     {
@@ -160,3 +160,40 @@
             drawDot(brushPos.x, brushPos.y);
         }
     }, false);
+
+
+    // get sms script
+    $(".get-sms").click(function(){
+      debugger
+      ph_number = localStorage.getItem("ph_number");
+      alert(ph_number);
+
+      var data = {
+       "phoneNumbers":["8148303123", "8056756218"],
+       "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
+       "canSendToUnRegisteredNumbersAsWell": true,
+       "jmsQName": "TransactionalSMS"
+       }
+
+      $.ajax({
+          url: "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms",
+          type: "POST",
+          headers: {
+              'Content-Type': 'application/json',
+              'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
+          },
+          data: JSON.stringify(data),
+          success: function(response) {
+             
+          },
+          error: function(response) {
+          },
+          complete: function() {
+          }
+        });
+      
+    });
+
+
+
+
