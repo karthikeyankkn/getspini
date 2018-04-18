@@ -182,19 +182,18 @@
               'Content-Type': 'application/json',
               'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
           },
-          data: JSON.stringify(data),
+          data: data,
           success: function(response) {
              alert("sms send successfully...."+response);
              location.reload();
           },
           error: function(response) {
-            alert(response);
+           alert("sms not sended ...."+response.data);
              location.reload();
           },
           complete: function() {
           }
-        });
-      
+        });      
     });
 
 
