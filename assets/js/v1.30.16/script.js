@@ -88,7 +88,7 @@ $(document).ready(function(){
   // }else{
   //   ApiEndPoint = 'https://sapi.getspini.com:8443';
   // }
-   ApiEndPoint = 'https://api.getspini.com:8443';
+   ApiEndPoint = 'https://sapi.getspini.com:8443';
   
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
@@ -187,7 +187,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      // debugger
+      debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
@@ -225,9 +225,6 @@ $(document).ready(function(){
       email = short_traverse.find("input[type='email']").val();
       cityName = short_traverse.find("select[name='city']").val();
       budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
-
-      debugger
-
       // validation script
       if([name,ph_number,email,cityName,budgetAmount].includes('')) {
         $(".error-mandatory").fadeIn();
@@ -297,7 +294,7 @@ $(document).ready(function(){
 
     // send data using API script starts
     function senddata(){
-      // debugger
+      
       var success;
       var data;
       data = {
@@ -307,8 +304,9 @@ $(document).ready(function(){
         "categoryName" : categoryName,
         "emailOfProspectiveBuyer" : email,
         "budgetAmount" : budgetAmount
+        // "scratchOffer" : scratchOffer
       };
-
+      localStorage.setItem("ph_number", ph_number);
       
       $.ajax({
           url: ApiEndPoint + "/SpinGrailsApp/web/site/leads/website/create/for/self/requirement",
@@ -325,6 +323,9 @@ $(document).ready(function(){
               var check_emi = $("input[name='emi-calculater']").val();
               if (check_emi == "true") {
                 calculate_emi();
+              }else if(index_page == "scratch_card_page"){
+                $(".scratch-card-data-collection").hide();
+                $(".scratch-card-container").fadeIn();
               }else{
                 succsess_alert();
               }
@@ -333,6 +334,10 @@ $(document).ready(function(){
           error: function(response) {
             // alert("Api WAS not working :( ");
             $(".error-contact").fadeIn();
+            // if(page == "scratch_card_page"){
+            //     $(".scratch-card-data-collection").hide();
+            //     $(".scratch-card-container").fadeIn();
+            //   }
           },
           complete: function() {
               // alert("Api Request WAS completed :D ");
@@ -533,7 +538,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.14/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.16/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -663,7 +668,6 @@ $(document).ready(function(){
 
         homepage_toggle();
       });
-      debugger
       url_hash = location.pathname;
       if (url_hash == "/chennai-interiors.html") {
         $('.home-page-categories li:nth-child(2)').click();
@@ -683,7 +687,7 @@ $(document).ready(function(){
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.14/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.16/cards.json", function(data, status){
         cards = data.cards;
         
         $(".see-more-pagination").click(function(){

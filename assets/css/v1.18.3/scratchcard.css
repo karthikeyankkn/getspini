@@ -1,0 +1,37 @@
+<style>
+		body { margin: 0; }
+		.multiple-scratch-cards-container{
+			margin: 50px 0;
+			display: inline-block;
+		}
+		.multiple-scratch-cards-container ul{
+
+		}
+		.multiple-scratch-cards-container ul li{
+			background: transparent;
+			/*border-right: 2px solid #fff;*/
+		}
+		.multiple-scratch-cards-container ul li p{
+
+		}
+		#bridge {
+			display: block;
+			margin: 0 auto;
+		  /*background-image: url('http://localhost:8080/assets/images/ipl_collection/mi-logo.png');*/
+		  background-size: contain;
+		  background-repeat: no-repeat;
+		  background-position: center;
+			width: 100%;
+			max-width: 300px;
+			height: 300px;
+		  /*cursor:  crosshair;*/
+		  /*cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;*/
+		}
+		.scratch-card-container { 
+		  text-align: center;
+		  display: none;
+		}
+		.scratch-card-container figcaption {   
+		  margin-top: 2rem; 
+		}
+	</style>
