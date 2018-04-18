@@ -323,7 +323,7 @@ $(document).ready(function(){
               var check_emi = $("input[name='emi-calculater']").val();
               if (check_emi == "true") {
                 calculate_emi();
-              }else if(page == "scratch_card_page"){
+              }else if(index_page == "scratch_card_page"){
                 $(".scratch-card-data-collection").hide();
                 $(".scratch-card-container").fadeIn();
               }else{
