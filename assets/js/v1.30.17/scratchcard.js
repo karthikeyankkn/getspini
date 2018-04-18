@@ -10,15 +10,15 @@
       var card1 = {
                     "scratch_card":[
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/dd-logo.png",
+                    "src":"../assets/images/ipl_collection/dd-logo.png",
                     "offer": "dd"
                     }, 
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/k11-logo.png",
+                    "src":"../assets/images/ipl_collection/k11-logo.png",
                     "offer": "k11p"
                     },      
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/kkr-logo.png",
+                    "src":"../assets/images/ipl_collection/kkr-logo.png",
                     "offer": "kkr"
                     }]
                   }
@@ -26,15 +26,15 @@
       var card2 = {
                     "scratch_card":[
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/dd-logo.png",
+                    "src":"../assets/images/ipl_collection/dd-logo.png",
                     "offer": "dd"
                     }, 
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/k11-logo.png",
+                    "src":"../assets/images/ipl_collection/k11-logo.png",
                     "offer": "k11p"
                     },      
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/kkr-logo.png",
+                    "src":"../assets/images/ipl_collection/kkr-logo.png",
                     "offer": "kkr"
                     }]
                   }
@@ -42,15 +42,15 @@
       var card3 = {
                     "scratch_card":[
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/dd-logo.png",
+                    "src":"../assets/images/ipl_collection/dd-logo.png",
                     "offer": "dd"
                     }, 
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/k11-logo.png",
+                    "src":"../assets/images/ipl_collection/k11-logo.png",
                     "offer": "k11p"
                     },      
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/kkr-logo.png",
+                    "src":"../assets/images/ipl_collection/kkr-logo.png",
                     "offer": "kkr"
                     }]
                   }
@@ -58,15 +58,15 @@
       var card4 = {
                     "scratch_card":[
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/dd-logo.png",
+                    "src":"../assets/images/ipl_collection/dd-logo.png",
                     "offer": "dd"
                     }, 
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/k11-logo.png",
+                    "src":"../assets/images/ipl_collection/k11-logo.png",
                     "offer": "k11p"
                     },      
                     {
-                    "src":"http://localhost:8080/assets/images/ipl_collection/kkr-logo.png",
+                    "src":"../assets/images/ipl_collection/kkr-logo.png",
                     "offer": "kkr"
                     }]
                   }
@@ -109,7 +109,7 @@
     img.onload = function(){  
       bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
     }
-    img.loc = 'http://localhost:8080/assets/images/ipl_collection/';
+    img.loc = '../../assets/images/ipl_collection/';
     img.filename = 'scratch-layout.png';
     if (window.devicePixelRatio >= 2) {
       var nameParts = img.filename.split('.');
@@ -194,7 +194,7 @@
       //     complete: function() {
       //     }
       //   });  
-      var url = "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
+      var url = "https://sapi.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
       var data = {
         "phoneNumbers":["8148303123"],
          "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
@@ -203,24 +203,19 @@
       }
       var headers = {
         'Content-Type': 'application/json',
-        'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
+        'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb',
+        'Access-Control-Allow-Origin': '*'
       }
-      var success, error;
+      // var success, error;
       $.ajax({
         type: "POST",
         url: url,
         headers: headers,
-        data: data,
-        success: function(response){
-          alert("sms sent successfully..");
-        },
-        error: function(response){
-          alert("sms not sent..");
-        }
+        dataType: 'json',
+        data: JSON.stringify(data)
       }); 
 
 
-      // $http({method: 'POST', url: url, headers: headers, data: data}); 
 
 
     });
