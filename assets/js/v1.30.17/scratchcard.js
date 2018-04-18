@@ -165,35 +165,64 @@
     // get sms script
     $(".get-sms").click(function(){
       debugger
-      ph_number = localStorage.getItem("ph_number");
-      alert(ph_number);
+      // ph_number = localStorage.getItem("ph_number");
+      // alert(ph_number);
 
+      // var data = {
+      //  "phoneNumbers":["8148303123"],
+      //  "messageToSend": "Hi congratulation.  You phone number"+ph_number+" have Won 10% on realestate.",
+      //  "canSendToUnRegisteredNumbersAsWell": true,
+      //  "jmsQName": "TransactionalSMS"
+      //  }
+
+      // $.ajax({
+      //     url: "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms",
+      //     type: "POST",
+      //     headers: {
+      //         'Content-Type': 'application/json',
+      //         'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
+      //     },
+      //     data: data,
+      //     success: function(response) {
+      //        alert("sms send successfully...."+response);
+      //        location.reload();
+      //     },
+      //     error: function(response) {
+      //      alert("sms not sended ...."+response.data);
+      //        location.reload();
+      //     },
+      //     complete: function() {
+      //     }
+      //   });  
+      var url = "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
       var data = {
-       "phoneNumbers":["8148303123"],
-       "messageToSend": "Hi congratulation.  You phone number"+ph_number+" have Won 10% on realestate.",
-       "canSendToUnRegisteredNumbersAsWell": true,
-       "jmsQName": "TransactionalSMS"
-       }
-
+        "phoneNumbers":["8148303123"],
+         "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
+         "canSendToUnRegisteredNumbersAsWell": true,
+         "jmsQName": "TransactionalSMS"
+      }
+      var headers = {
+        'Content-Type': 'application/json',
+        'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
+      }
+      var success, error;
       $.ajax({
-          url: "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms",
-          type: "POST",
-          headers: {
-              'Content-Type': 'application/json',
-              'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
-          },
-          data: data,
-          success: function(response) {
-             alert("sms send successfully...."+response);
-             location.reload();
-          },
-          error: function(response) {
-           alert("sms not sended ...."+response.data);
-             location.reload();
-          },
-          complete: function() {
-          }
-        });      
+        type: "POST",
+        url: url,
+        headers: headers,
+        data: data,
+        success: function(response){
+          alert("sms sent successfully..");
+        },
+        error: function(response){
+          alert("sms not sent..");
+        }
+      }); 
+
+
+      // $http({method: 'POST', url: url, headers: headers, data: data}); 
+
+
     });
 
 
