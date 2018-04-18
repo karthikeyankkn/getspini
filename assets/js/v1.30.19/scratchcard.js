@@ -1,8 +1,5 @@
-    // if ($('#show_scratch_model').modal('hide')) {
-    //   alert("page refresh");
-    // }
-
-    var rand_num, dynamic_id, scratchOffer;
+    // offers image array starts
+    var rand_num, dynamic_id, scratchOffer, coupon_img_download;
     $(".multiple-scratch-cards-container ul li").click(function(){
       debugger
       dynamic_id = $(this).attr("scratch_id");
@@ -71,14 +68,15 @@
                     }]
                   }
       // offers image array end
-
       function random_card(card){
-        rand_num = Math.floor(Math.random() * 2);
-        $("#bridge").css({"background": "url("+card1.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "80%"});
-          scratchOffer = card1.scratch_card[rand_num].offer;
+        rand_num = Math.floor(Math.random() * 3);
+
+        $("#bridge").css({"background": "url("+card.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "80%"});
+          scratchOffer = card.scratch_card[rand_num].offer;
+          localStorage.setItem("coupon_image",card.scratch_card[rand_num].src);
           alert(scratchOffer)
       }
-      debugger
+
       if (dynamic_id == "bridge1") {
           random_card(card1)
       }else if (dynamic_id == "bridge2") {
@@ -90,7 +88,7 @@
         random_card(card4)
       }
       else{
-        alert("System error..")
+        alert("System error..");
       }
 
       // model for scratch card
@@ -167,57 +165,39 @@
       debugger
       // ph_number = localStorage.getItem("ph_number");
       // alert(ph_number);
-
+      // var url = "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
       // var data = {
-      //  "phoneNumbers":["8148303123"],
-      //  "messageToSend": "Hi congratulation.  You phone number"+ph_number+" have Won 10% on realestate.",
-      //  "canSendToUnRegisteredNumbersAsWell": true,
-      //  "jmsQName": "TransactionalSMS"
-      //  }
-
+      //   "phoneNumbers":["8148303123"],
+      //    "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
+      //    "canSendToUnRegisteredNumbersAsWell": true,
+      //    "jmsQName": "TransactionalSMS"
+      // }
+      // var headers = {
+      //   'Content-Type': 'application/json',
+      //   'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb',
+      //   'Access-Control-Allow-Origin': '*'
+      // }
+      // // var success, error;
       // $.ajax({
-      //     url: "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms",
-      //     type: "POST",
-      //     headers: {
-      //         'Content-Type': 'application/json',
-      //         'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb'
-      //     },
-      //     data: data,
-      //     success: function(response) {
-      //        alert("sms send successfully...."+response);
-      //        location.reload();
-      //     },
-      //     error: function(response) {
-      //      alert("sms not sended ...."+response.data);
-      //        location.reload();
-      //     },
-      //     complete: function() {
-      //     }
-      //   });  
-      var url = "https://sapi.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
-      var data = {
-        "phoneNumbers":["8148303123"],
-         "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
-         "canSendToUnRegisteredNumbersAsWell": true,
-         "jmsQName": "TransactionalSMS"
+      //   type: "POST",
+      //   url: url,
+      //   headers: headers,
+      //   dataType: 'json',
+      //   data: JSON.stringify(data)
+      // }); 
+
+      alert("coupon will download ....");
+      coupon_img_download = localStorage.getItem("coupon_image");
+
+      function download_coupon(){
+        var link = document.createElement('a');
+        link.href = coupon_img_download;
+        link.download = scratchOffer;
+        link.dispatchEvent(new MouseEvent('click'));
       }
-      var headers = {
-        'Content-Type': 'application/json',
-        'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb',
-        'Access-Control-Allow-Origin': '*'
-      }
-      // var success, error;
-      $.ajax({
-        type: "POST",
-        url: url,
-        headers: headers,
-        dataType: 'json',
-        data: JSON.stringify(data)
-      }); 
-
-
-
-
+      download_coupon();
+       setTimeout(function(){location.reload();}, 3000);
+        
     });
 
 
