@@ -169,8 +169,8 @@
       alert(ph_number);
 
       var data = {
-       "phoneNumbers":["8148303123", "8056756218"],
-       "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
+       "phoneNumbers":["8148303123"],
+       "messageToSend": "Hi congratulation.  You phone number"+ph_number+" have Won 10% on realestate.",
        "canSendToUnRegisteredNumbersAsWell": true,
        "jmsQName": "TransactionalSMS"
        }
@@ -184,9 +184,12 @@
           },
           data: JSON.stringify(data),
           success: function(response) {
-             
+             alert("sms send successfully...."+response);
+             location.reload();
           },
           error: function(response) {
+            alert(response);
+             location.reload();
           },
           complete: function() {
           }
