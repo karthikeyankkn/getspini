@@ -92,7 +92,8 @@
       }
 
       // model for scratch card
-      $('#show_scratch_model').modal('show');
+      // $('#show_scratch_model').modal('show');
+      $(".toggle-page-container, .bg-overlay").fadeIn();
     });
 
   // <!-- built in script for scratch card -->
