@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"115",
+		"a_href":"narures-vally.html",
+		"card_title":"nature's vally",
+		"card_img": "http://cdn.getspini.com/landing/nature-valley.jpg",
+		"card_description":"A plot is available for sale in Ibrahimpatnam, Hyderabad. It has an area of 2700 sqft.",
+		"card_area":"Aghapally Village , Ibrahimpatnam, Hyderabad",
+		"card_city": "hyderabad"
+		},
+		{
+		"id":"114",
+		"a_href":"legend-square.html",
+		"card_title":"legend square",
+		"card_img": "http://cdn.getspini.com/landing/legend-card.jpg",
+		"card_description":"Somus Legend Square by somus properties at Gandhipuram Coimbatore has been making headlines in the new project launches updates for Coimbatore for the various meticulously residential options it provides.",
+		"card_area":"Gandhipuram, Coimbatore",
+		"card_city": "coimbatore"
+		},
+		{
 		"id":"113",
 		"a_href":"uniidus-acropolis.html",
 		"card_title":"uniidus acropolis",
