@@ -30,6 +30,7 @@
 		.scratch-card-container { 
 		  text-align: center;
 		  display: none;
+		  margin-top: 70px;
 		}
 		.scratch-card-container figcaption {   
 		  margin-top: 2rem; 

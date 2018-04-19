@@ -36,9 +36,9 @@
      .toggle-page-container-close{
       display: none;
      }
-     .toggle-page-container{
+     /*.toggle-page-container{
       position: static;
-     }
+     }*/
      .heading{
       margin-top: 70px;
       text-align: center;
@@ -110,68 +110,51 @@
   </div>
   <p class="terms">*Terms and Conditions Apply</p>
 </section>
-  <!-- Modal -->
-  <div class="modal fade" id="show_scratch_model" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <!-- <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div> -->
-          <div class="modal-body">
-            <!-- scratch card code starts-->
-            <figure class="scratch-card-container">
-              <canvas id="bridge"></canvas>
-              <figcaption>Scratch and get 10% to 50% discount</figcaption>
-              <button class="get-sms btn-success"">Download Coupon</button>
-            </figure>
-             <!-- scratch card code end --> 
 
-            <!-- scratch card user data collection starts -->
-            <div class="scratch-card-data-collection">
-              <!-- popup for interiors starts -->
-              <div class="toggle-page-container" style="display: block;">
-                <ul>
-                  <li>
-                    <h2>You are almost done</h2>
-                    <div class="spini-contact-form">
-                      <p>
-                        <input type="text" name="name" placeholder="Enter Your Name" class="input_name">
-                        <input type="number" name="ph_number" placeholder="Enter Your Phone Number" class="input_ph_number">
-                        <input type="email" name="email" placeholder="Enter Your Email" class="input_email">
-                        <!-- <input type="hidden" name="budgetAmount" placeholder="Enter Budget Amount" class="" value="1000"> -->
-                        <select name="city">
-                          <option value="">City</option>
-                                              <option value="Chennai">Chennai</option>
-                          <option value="Coimbatore">Coimbatore</option>
-                          <option value="Bangalore">Bangalore</option>
-                          <option value="Hyderabad">Hyderabad</option>
-                        </select>
-                      </p>
-                    </div>
-                    <div class="spini-poup-nav">
-                      <!-- <button class="back">Back</button> -->
-                      <button class="submit">Submit</button>
-                    </div>  
-                  </li>
-                </ul>
-                <!-- load alert page -->
-                <div class="alerts_page"></div>
-              </div>
-              <!-- popup for interiors ends -->
-            </div>
-            <!-- scratch card user data collection end -->
+
+  <!-- popup for interiors starts -->
+    <div class="toggle-page-container">
+      <ul>
+        <li>
+          <h2>You are almost done</h2>
+          <div class="spini-contact-form">
+            <p>
+              <input type="text" name="name" placeholder="Enter Your Name" class="input_name">
+              <input type="number" name="ph_number" placeholder="Enter Your Phone Number" class="input_ph_number">
+              <input type="email" name="email" placeholder="Enter Your Email" class="input_email">
+              <!-- <input type="hidden" name="budgetAmount" placeholder="Enter Budget Amount" class="" value="1000"> -->
+              <select name="city">
+                <option value="">City</option>
+                                    <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+              </select>
+            </p>
           </div>
-        <!-- <div class="modal-footer text-center">
-          <button type="button" class="btn btn-success" data-disiss="show_scratch_model">Get Coupon</button>
-        </div> -->
+          <div class="spini-poup-nav">
+            <!-- <button class="back">Back</button> -->
+            <button class="submit">Submit</button>
+          </div>  
+        </li>
+      </ul>
+      <!-- load alert page -->
+      <div class="alerts_page"></div>
+       <!-- scratch card code starts-->
+          <figure class="scratch-card-container">
+            <canvas id="bridge"></canvas>
+            <figcaption>Scratch and get 10% to 50% discount</figcaption>
+            <button class="get-sms btn-success"">Download Coupon</button>
+          </figure>
+        <!-- scratch card code end --> 
       </div>
-      
-    </div>
-  </div>
+    <!-- popup for interiors ends -->
+
+    <!-- scratch card user data collection starts -->
+      <div class="scratch-card-data-collection"></div>
+    <!-- scratch card user data collection end -->
   
+  <div class="bg-overlay"></div>
 <!-- footer content -->
 <footer></footer>
 <!-- script files starts -->

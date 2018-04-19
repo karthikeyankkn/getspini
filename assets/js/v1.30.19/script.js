@@ -325,6 +325,7 @@ $(document).ready(function(){
                 calculate_emi();
               }else if(index_page == "scratch_card_page"){
                 $(".scratch-card-data-collection").hide();
+                $(".toggle-page-container ul, .alerts_page").hide();
                 $(".scratch-card-container").fadeIn();
               }else{
                 succsess_alert();
