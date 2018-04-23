@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic Page Needs ================================================== -->
+        
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>Spini - RAJKHAM SILVER CREST Medavakkam, Chennai</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <meta name="description" content="Silver Crest is a truly an attractive, one-of-a-kind residential development in Chennai at Madurapakkam.....">
+        <meta name="keywords" content="spini , real estate buyers , stepstones apartments , Stepstone akshara, duplex flats, flats in chennai ,life insurance ,health insurance, mortgage loans , business loans, home loans,personal loans, interior,interior designer in chennai, building construction in chennai ,real estate in bangalore, buyer and seller, nest glory, luxurious apartments , 1bhk in chennai ,2bhk apartment in chennai, loans at low interest,RAJKHAM SILVER CREST Medavakkam, Chennai">
+        <link rel="canonical" href="http://getspini.com/"/>
+        <meta name="" content="">
+        <!-- Mobile Specific Metas ================================================== -->
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.4/style.css">
+  <script type="text/javascript" src="../assets/js/v1.30.22/Winwheel.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+   <!-- css files ends -->
+   <script>
+     var index_page = false;
+     var categoryName = "Real Estate(Buying)";
+   </script> 
+        
+</head>
+<body>
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+<!-- body content starts -->
+
+<div align="center">
+  <h1>Winwheel.js example wheel - basic image wheel</h1>
+  <p>Here is an example of a basic image drawn wheel, where the entire face of the wheel has been created out of a graphically rich image.</p>
+  <br />
+  <p>Choose a power setting then press the Spin button. You will be alerted to the prize won when the spinning stops.</p>
+  <br />
+  <table cellpadding="0" cellspacing="0" border="0">
+      <tr>
+          <td>
+              <div class="power_controls">
+                  <br />
+                  <br />
+                  <table class="power" cellpadding="10" cellspacing="0">
+                      <tr>
+                          <th align="center">Power</th>
+                      </tr>
+                      <tr>
+                          <td width="78" align="center" id="pw3" onClick="powerSelected(3);">High</td>
+                      </tr>
+                      <tr>
+                          <td align="center" id="pw2" onClick="powerSelected(2);">Med</td>
+                      </tr>
+                      <tr>
+                          <td align="center" id="pw1" onClick="powerSelected(1);">Low</td>
+                      </tr>
+                  </table>
+                  <br />
+                  <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" />
+                  <br /><br />
+                  &nbsp;&nbsp;<a href="#" onClick="resetWheel(); return false;">Play Again</a><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reset)
+              </div>
+          </td>
+          <td width="318" height="418" class="the_wheel" align="center" valign="center">
+              <canvas id="canvas" width="315" height="418">
+                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+              </canvas>
+          </td>
+      </tr>
+  </table>
+</div>
+<script>
+  // Create new wheel object specifying the parameters at creation time.
+  var theWheel = new Winwheel({
+      'numSegments'       : 4,         // Specify number of segments.
+      'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
+      'drawMode'          : 'image',   // drawMode must be set to image.
+      'drawText'          : true,      // Need to set this true if want code-drawn text on image wheels.
+      'textFontSize'      : 12,        // Set text options as desired.
+      'textOrientation'   : 'curved',
+      'textDirection'     : 'reversed',
+      'textAlignment'     : 'outer',
+      'textMargin'        : 5,
+      'textFontFamily'    : 'monospace',
+      'textStrokeStyle'   : 'black',
+      'textLineWidth'     : 2,
+      'textFillStyle'     : 'white',
+      'segments'     :                // Define segments.
+      [
+         {'text' : 'T-55 Vampire'},
+         {'text' : 'P-40 Kittyhawk'},
+         {'text' : 'North American Harvard'},
+         {'text' : 'L-39C Albatross'}
+      ],
+      'animation' :                   // Specify the animation to use.
+      {
+          'type'     : 'spinToStop',
+          'duration' : 5,     // Duration in seconds.
+          'spins'    : 8,     // Number of complete spins.
+          'callbackFinished' : alertPrize
+      }
+  });
+
+  // Create new image object in memory.
+  var loadedImg = new Image();
+
+  // Create callback to execute once the image has finished loading.
+  loadedImg.onload = function()
+  {
+      theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
+      theWheel.draw();                    // Also call draw function to render the wheel.
+  }
+
+  // Set the image source, once complete this will trigger the onLoad callback (above).
+  loadedImg.src = "http://jasonhavey.com/wp-content/uploads/2015/09/SPINNING3-300x300.png";
+
+
+
+  // Vars used by the code in this page to do power controls.
+  var wheelPower    = 0;
+  var wheelSpinning = false;
+
+  // -------------------------------------------------------
+  // Function to handle the onClick on the power buttons.
+  // -------------------------------------------------------
+  function powerSelected(powerLevel)
+  {
+      // Ensure that power can't be changed while wheel is spinning.
+      if (wheelSpinning == false)
+      {
+          // Reset all to grey incase this is not the first time the user has selected the power.
+          document.getElementById('pw1').className = "";
+          document.getElementById('pw2').className = "";
+          document.getElementById('pw3').className = "";
+
+          // Now light up all cells below-and-including the one selected by changing the class.
+          if (powerLevel >= 1)
+          {
+              document.getElementById('pw1').className = "pw1";
+          }
+
+          if (powerLevel >= 2)
+          {
+              document.getElementById('pw2').className = "pw2";
+          }
+
+          if (powerLevel >= 3)
+          {
+              document.getElementById('pw3').className = "pw3";
+          }
+
+          // Set wheelPower var used when spin button is clicked.
+          wheelPower = powerLevel;
+
+          // Light up the spin button by changing it's source image and adding a clickable class to it.
+          document.getElementById('spin_button').src = "spin_on.png";
+          document.getElementById('spin_button').className = "clickable";
+      }
+  }
+
+  // -------------------------------------------------------
+  // Click handler for spin button.
+  // -------------------------------------------------------
+  function startSpin()
+  {
+      // Ensure that spinning can't be clicked again while already running.
+      if (wheelSpinning == false)
+      {
+          // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+          // to rotate with the duration of the animation the quicker the wheel spins.
+          if (wheelPower == 1)
+          {
+              theWheel.animation.spins = 2;
+          }
+          else if (wheelPower == 2)
+          {
+              theWheel.animation.spins = 5;
+          }
+          else if (wheelPower == 3)
+          {
+              theWheel.animation.spins = 8;
+          }
+
+          // Disable the spin button so can't click again while wheel is spinning.
+          document.getElementById('spin_button').src       = "spin_off.png";
+          document.getElementById('spin_button').className = "";
+
+          // Begin the spin animation by calling startAnimation on the wheel object.
+          theWheel.startAnimation();
+
+          // Set to true so that power can't be changed and spin button re-enabled during
+          // the current animation. The user will have to reset before spinning again.
+          wheelSpinning = true;
+      }
+  }
+
+  // -------------------------------------------------------
+  // Function for reset button.
+  // -------------------------------------------------------
+  function resetWheel()
+  {
+      theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+      theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
+      theWheel.draw();                // Call draw to render changes to the wheel.
+
+      document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
+      document.getElementById('pw2').className = "";
+      document.getElementById('pw3').className = "";
+
+      wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+  }
+
+  // -------------------------------------------------------
+  // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
+  // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+  // -------------------------------------------------------
+  function alertPrize(indicatedSegment)
+  {
+      // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
+      alert("The wheel stopped on " + indicatedSegment.text);
+  }
+</script>
+
+<!-- body content ends -->
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script src="../assets/js/lib/jquery.min.js"></script>
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <script src="../assets/js/v1.30.22/script.js"></script>
+
+  <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
+      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_email"></a>
+      <a class="a2a_button_linkedin"></a>
+      <a class="a2a_button_whatsapp"></a>
+    </div>
+<script async data-rocketsrc="https://static.addtoany.com/menu/page.js" type="text/rocketscript"></script>
+  <!-- AddToAny END -->
+
+
+  <style>
+    /*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+    font-family: arial;
+}
+
+/* Sets the background image for the wheel */
+td.the_wheel
+{
+    background-image: url();
+    background-position: center;
+    background-repeat: none;
+}
+
+/* Do some css reset on selected elements */
+h1, p
+{
+    margin: 0;
+}
+
+div.power_controls
+{
+    margin-right:70px;
+}
+
+div.html5_logo
+{
+    margin-left:70px;
+}
+
+/* Styles for the power selection controls */
+table.power
+{
+    background-color: #cccccc;
+    cursor: pointer;
+    border:1px solid #333333;
+}
+
+table.power th
+{
+    background-color: white;
+    cursor: default;
+}
+
+td.pw1
+{
+    background-color: #6fe8f0;
+}
+
+td.pw2
+{
+    background-color: #86ef6f;
+}
+
+td.pw3
+{
+    background-color: #ef6f6f;
+}
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+  </style>
+</body>
+</html>
