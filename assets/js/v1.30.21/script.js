@@ -264,7 +264,7 @@ $(document).ready(function(){
                 "category": categoryName,
                 "Selected_Package" : selected_package,
                 "_subject" : "Get spini partner-with-us!",
-                "_cc" : "karthikeyan@spinircle.com, prathap@spinircle.com, gowrishankar@spinircle.com, anuradha.v@spinircle.com"
+                "_cc" : "karthikeyan@spinircle.com, arun.kumar@spinircle.com, gowrishankar@spinircle.com, anuradha.v@spinircle.com"
               },
               dataType: "json"
           });
