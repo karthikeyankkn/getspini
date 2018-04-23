@@ -610,9 +610,9 @@ $(document).ready(function(){
       // script for gallery-slider ends 
 
       // show ebook popup script
-      // setTimeout(function(){ 
-      //   $("#ebook-popup").modal('show');
-      // }, 5000);
+      setTimeout(function(){ 
+        $("#ebook-popup").modal('show');
+      }, 5000);
 
       // on click li go to corresponding page
       $(document).on('click', '.list-card', function(e){
