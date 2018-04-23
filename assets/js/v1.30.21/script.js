@@ -611,7 +611,7 @@ $(document).ready(function(){
 
       // show ebook popup script
       setTimeout(function(){ 
-        $("#ebook-popup").modal('show');
+        // $("#ebook-popup").modal('show');
       }, 5000);
 
       // on click li go to corresponding page
