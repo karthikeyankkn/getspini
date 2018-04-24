@@ -1,5 +1,5 @@
     // offers image array starts
-    var rand_num, dynamic_id, scratchOffer, coupon_img_download;
+    var rand_num, dynamic_id, scratchOffer, coupon_img_download, sc_date, sc_time, sc_noon, sc_selected_alt;
     $(".multiple-scratch-cards-container ul li").click(function(){
       debugger
       dynamic_id = $(this).attr("scratch_id");
@@ -108,8 +108,8 @@
     img.onload = function(){  
       bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
     }
-    img.loc = '../../assets/images/ipl_collection/';
-    img.filename = 'scratch-layout.png';
+    img.loc = 'http://cdn.getspini.com/';
+    img.filename = 'scratches.jpg';
     if (window.devicePixelRatio >= 2) {
       var nameParts = img.filename.split('.');
       img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
@@ -187,7 +187,8 @@
       //   data: JSON.stringify(data)
       // }); 
 
-      alert("coupon will download ....");
+      $(".scratch-card-container").hide();
+      $(".confirm-visiting-container").fadeIn();
       coupon_img_download = localStorage.getItem("coupon_image");
 
       function download_coupon(){
@@ -196,9 +197,27 @@
         link.download = scratchOffer;
         link.dispatchEvent(new MouseEvent('click'));
       }
-      download_coupon();
-       setTimeout(function(){location.reload();}, 3000);
+      // download_coupon();
+      // setTimeout(function(){location.reload();}, 3000);
+
+     
         
+    });
+
+    $(".select-sc-plots span img").click(function(){
+      //  sc_selected_alt = $(this).attr("alt");
+      // console.log(sc_selected_alt);
+      $(this).toggleClass('selected_sc_img');
+      $(this).parent("span").siblings().children("img").removeClass('selected_sc_img');
+    })
+
+    $(".download-sc-coupon").click(function(){
+      sc_selected_alt = $(".selected_sc_img").attr("alt");
+      console.log(sc_selected_alt);
+      sc_date = $("input[name='sc-date']").val();
+      sc_time = $("select[name='sc-time']").val();
+      sc_noon = $("select[name='sc-noon']").val();
+      alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
     });
 
 

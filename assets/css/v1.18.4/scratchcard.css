@@ -1,8 +1,32 @@
-<style>
-		body { margin: 0; }
+
 		.multiple-scratch-cards-container{
 			margin: 50px 0;
 			display: inline-block;
+			text-align: center;
+		}
+		.confirm-visiting-container{
+			/*display: none;*/
+		}
+		.confirm-visiting-container ul{
+			display: block !important;
+		}
+		.confirm-visiting-container ul li{
+			display: block;
+		}
+		.confirm-visiting-container ul li label{
+			font-size: 24px;
+    	font-weight: 100;
+    	display: block;
+		}
+		.confirm-visiting-container ul li input, select{
+			display: inline-block;
+			width: unset;
+			padding: 12px 15px;
+    	margin-right: 10px;
+		}
+		.confirm-visiting-container ul li button{
+			margin: auto;
+    	display: block;
 		}
 		.multiple-scratch-cards-container ul{
 
@@ -13,6 +37,11 @@
 		}
 		.multiple-scratch-cards-container ul li p{
 
+		}
+		.multiple-scratch-cards-container ul li h3 img{
+			width: 200px;
+			margin: auto;
+    	display: block;
 		}
 		#bridge {
 			display: block;
@@ -35,4 +64,20 @@
 		.scratch-card-container figcaption {   
 		  margin-top: 2rem; 
 		}
-	</style>
+
+		.select-sc-plots{
+
+		}
+		.select-sc-plots span{
+			margin-bottom: 10px;
+		}
+		.select-sc-plots span img{
+			width: 250px;
+			margin: auto;
+			cursor: pointer;
+    	display: block;
+			border: 5px solid transparent;
+		}
+		.selected_sc_img{
+			border-color: #cd2f2b !important;
+		}
