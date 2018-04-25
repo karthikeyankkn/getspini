@@ -1,70 +1,81 @@
     // offers image array starts
-    var rand_num, dynamic_id, scratchOffer, coupon_img_download;
+    var rand_num, dynamic_id, scratchOffer, coupon_img_download, sc_date, sc_time, sc_noon, sc_selected_alt;
     $(".multiple-scratch-cards-container ul li").click(function(){
-      debugger
       dynamic_id = $(this).attr("scratch_id");
       
-      var card1 = {
+      var plot = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/ipl_collection/dd-logo.png",
-                    "offer": "dd"
+                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
+                    "offer": "wall_coupon"
                     }, 
                     {
-                    "src":"../assets/images/ipl_collection/k11-logo.png",
-                    "offer": "k11p"
+                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     },      
                     {
-                    "src":"../assets/images/ipl_collection/kkr-logo.png",
-                    "offer": "kkr"
+                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
+                    "offer": "free_registration_coupon"
+                    },
+                    {
+                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     }]
                   }
 
-      var card2 = {
+      var apartment = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/ipl_collection/dd-logo.png",
-                    "offer": "dd"
+                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
+                    "offer": "wall_coupon"
                     }, 
                     {
-                    "src":"../assets/images/ipl_collection/k11-logo.png",
-                    "offer": "k11p"
+                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     },      
                     {
-                    "src":"../assets/images/ipl_collection/kkr-logo.png",
-                    "offer": "kkr"
+                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
+                    "offer": "free_registration_coupon"
+                    },
+                    {
+                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     }]
                   }
 
-      var card3 = {
+      var villa = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/ipl_collection/dd-logo.png",
-                    "offer": "dd"
+                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
+                    "offer": "wall_coupon"
                     }, 
                     {
-                    "src":"../assets/images/ipl_collection/k11-logo.png",
-                    "offer": "k11p"
+                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     },      
                     {
-                    "src":"../assets/images/ipl_collection/kkr-logo.png",
-                    "offer": "kkr"
+                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
+                    "offer": "free_registration_coupon"
+                    },
+                    {
+                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     }]
                   }
 
-      var card4 = {
+      var construction = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/ipl_collection/dd-logo.png",
-                    "offer": "dd"
+                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
+                    "offer": "wall_coupon"
                     }, 
                     {
-                    "src":"../assets/images/ipl_collection/k11-logo.png",
-                    "offer": "k11p"
-                    },      
+                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
+                    },
                     {
-                    "src":"../assets/images/ipl_collection/kkr-logo.png",
-                    "offer": "kkr"
+                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
+                    "offer": "modular_kitchen_coupon"
                     }]
                   }
       // offers image array end
@@ -74,18 +85,18 @@
         $("#bridge").css({"background": "url("+card.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "80%"});
           scratchOffer = card.scratch_card[rand_num].offer;
           localStorage.setItem("coupon_image",card.scratch_card[rand_num].src);
-          alert(scratchOffer)
+          // alert(scratchOffer)
       }
 
-      if (dynamic_id == "bridge1") {
-          random_card(card1)
-      }else if (dynamic_id == "bridge2") {
-        random_card(card2)
-      }else if (dynamic_id == "bridge3") {
-        random_card(card3)
+      if (dynamic_id == "plot") {
+          random_card(plot);
+      }else if (dynamic_id == "apartment") {
+        random_card(apartment)
+      }else if (dynamic_id == "villa") {
+        random_card(villa);
       }
-      else if (dynamic_id == "bridge4") {
-        random_card(card4)
+      else if (dynamic_id == "construction") {
+        random_card(construction);
       }
       else{
         alert("System error..");
@@ -108,8 +119,8 @@
     img.onload = function(){  
       bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
     }
-    img.loc = '../../assets/images/ipl_collection/';
-    img.filename = 'scratch-layout.png';
+    img.loc = 'http://cdn.getspini.com/';
+    img.filename = 'scratches.jpg';
     if (window.devicePixelRatio >= 2) {
       var nameParts = img.filename.split('.');
       img.src = img.loc + nameParts[0]+"-2x"+"."+nameParts[1];
@@ -187,18 +198,51 @@
       //   data: JSON.stringify(data)
       // }); 
 
-      alert("coupon will download ....");
+      $(".scratch-card-container").hide();
+      $(".confirm-visiting-container").fadeIn();
       coupon_img_download = localStorage.getItem("coupon_image");
 
-      function download_coupon(){
-        var link = document.createElement('a');
-        link.href = coupon_img_download;
-        link.download = scratchOffer;
-        link.dispatchEvent(new MouseEvent('click'));
-      }
-      download_coupon();
-       setTimeout(function(){location.reload();}, 3000);
+      // download_coupon();
+      // setTimeout(function(){location.reload();}, 3000);
+
+     
         
+    });
+
+    $(".select-sc-plots span img").click(function(){
+      //  sc_selected_alt = $(this).attr("alt");
+      // console.log(sc_selected_alt);
+      $(this).toggleClass('selected_sc_img');
+      $(this).parent("span").siblings().children("img").removeClass('selected_sc_img');
+    });
+
+    $(".download-sc-coupon").click(function(){
+      name = localStorage.getItem("name");
+      ph_number = localStorage.getItem("ph_number");
+
+      sc_selected_alt = $(".selected_sc_img").attr("alt");
+      sc_date = $("input[name='sc-date']").val();
+      sc_date = new Date(sc_date);
+      sc_time = $("select[name='sc-time']").val();
+      sc_noon = $("select[name='sc-noon']").val();
+      sc_time = sc_time.concat(sc_noon);
+
+
+      $('input[name="name"]').val(name);
+      $('input[name="ph_number"]').val(ph_number);
+      $('input[name="selected_site"]').val(sc_selected_alt);
+      $('input[name="selected_date"]').val(sc_date);
+      $('input[name="selected_time"]').val(sc_time);
+      
+      // function download_coupon(){
+      //   var link = document.createElement('a');
+      //   link.href = coupon_img_download;
+      //   link.download = scratchOffer;
+      //   link.dispatchEvent(new MouseEvent('click'));
+      // }
+      // download_coupon();
+      $("#site_visit_mail").submit();
+      // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
     });
 
 

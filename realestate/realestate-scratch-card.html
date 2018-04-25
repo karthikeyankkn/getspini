@@ -33,19 +33,31 @@
      var categoryName = "realestate-scratch-card";
    </script>   
    <style>
-     .toggle-page-container-close{
+    .toggle-page-container{
+      /*display: block;*/
+    }
+    /*.toggle-page-container ul{
       display: none;
+    }*/
+     .toggle-page-container-close{
+      /*display: none;*/
      }
-     /*.toggle-page-container{
-      position: static;
-     }*/
-     .heading{
-      margin-top: 70px;
-      text-align: center;
+     .sc-page-heading{
       color: #fff;
+      text-align: center;
+      padding-top: 50px;
+     }
+     .sc-page-heading h2{
+     }
+     .sc-page-heading h3{
+
      }
      .grass{
-      background-image: url(http://cdn.getspini.com/bg.jpg);
+      /*background-image: url(http://cdn.getspini.com/bg.jpg);*/
+      background-image: url(http://professionalfinishing.net/attachments/Header/image_1.jpg?template=generic);
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 60px;
      }
      .terms{
       color: #fff;
@@ -62,53 +74,29 @@
 <section class="grass">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-
-        <h1 class="heading">heading</h1>
+      <div class="col-md-12 sc-page-heading">
+        <h1>Mystery Scratch & Win!</h1>
+        <h2>Scratch any ticket to reveal your lucky prize!</h2>
       </div>
   </div>
 
-  <div class="multiple-scratch-cards-container">
+  <div class="multiple-scratch-cards-container col-md-12">
     <ul>
-      <li class="col-md-3" scratch_id='bridge1'>
-        <h3> <img src="../assets/images/ipl_collection/mi-logo.png"> </h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li class="col-md-3 col-xs-6" scratch_id='plot'>
+        <img src="../assets/images/scratch-card/Plots.jpg"> 
       </li>
-      <li class="col-md-3" scratch_id='bridge2'>
-        <h3 ><img src="../assets/images/ipl_collection/mi-logo.png"></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li class="col-md-3 col-xs-6" scratch_id='apartment'>
+        <img src="../assets/images/scratch-card/Apartment.jpg">
       </li>
-      <li class="col-md-3" scratch_id='bridge3'>
-        <h3 ><img src="../assets/images/ipl_collection/mi-logo.png"></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li class="col-md-3 col-xs-6" scratch_id='villa'>
+        <img src="../assets/images/scratch-card/Villa.jpg">
       </li>
-      <li class="col-md-3" scratch_id='bridge4'>
-        <h3 ><img src="../assets/images/ipl_collection/mi-logo.png"></h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <li class="col-md-3 col-xs-6" scratch_id='construction'>
+        <img src="../assets/images/scratch-card/building_construction.jpg">
       </li>
     </ul>
   </div>
-  <p class="terms">*Terms and Conditions Apply</p>
+  <!-- <p class="terms">*Terms and Conditions Apply</p> -->
 </section>
 
 
@@ -142,11 +130,69 @@
       <div class="alerts_page"></div>
        <!-- scratch card code starts-->
           <figure class="scratch-card-container">
+            <h4>Simply click on any of the card below and scratch it digitally to see your lucky prize</h4>
             <canvas id="bridge"></canvas>
-            <figcaption>Scratch and get 10% to 50% discount</figcaption>
-            <button class="get-sms btn-success"">Download Coupon</button>
+            <button class="get-sms btn-success">Avil prize</button>
           </figure>
         <!-- scratch card code end --> 
+
+        <!-- confirm visiting code starts -->
+        <div method="POST" action="https://formspree.io/karthikeyan@spinircle.com" class="confirm-visiting-container">
+          <ul>
+            <li>
+              <label>1) Select venue for visit</label>
+              <div class="select-sc-plots">
+                <span class="col-md-6 col-xs-6">
+                  <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika1">
+                </span>
+                <span class="col-md-6 col-xs-6">
+                  <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika2">
+                </span>
+                <span class="col-md-6 col-xs-6">
+                  <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika3">
+                </span>
+                <span class="col-md-6 col-xs-6">
+                  <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika4">
+                </span>
+              </div>
+            </li>
+            <li>
+              <label>2) Select date and time for visiting</label>
+              <input type="date" name="sc-date">
+              <select name="sc-time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="sc-noon">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </li>
+            <li>
+              <button class="download-sc-coupon">Submit</button>
+            </li>
+          </ul>
+        </div>
+
+        <form id="site_visit_mail" method="POST" action="https://formspree.io/karthikeyan@spinircle.com">
+          <input type="hidden" name="name">
+          <input type="hidden" name="ph_number">
+          <input type="hidden" name="selected_site">
+          <input type="hidden" name="selected_date">
+          <input type="hidden" name="selected_time">
+          <input type="hidden" name="_cc" value="anuradha.v@spinircle.com" />
+        </form>
+        <!-- confirm visiting code end -->
       </div>
     <!-- popup for interiors ends -->
 
