@@ -5,7 +5,7 @@
 			text-align: center;
 		}
 		.confirm-visiting-container{
-			/*display: none;*/
+			display: none;
 		}
 		.confirm-visiting-container ul{
 			display: block !important;
@@ -18,11 +18,11 @@
     	font-weight: 100;
     	display: block;
 		}
-		.confirm-visiting-container ul li input, select{
+		.confirm-visiting-container ul li input, .confirm-visiting-container ul li select{
 			display: inline-block;
 			width: unset;
 			padding: 12px 15px;
-    	margin-right: 10px;
+    		margin-right: 10px;
 		}
 		.confirm-visiting-container ul li button{
 			margin: auto;
@@ -33,15 +33,31 @@
 		}
 		.multiple-scratch-cards-container ul li{
 			background: transparent;
-			/*border-right: 2px solid #fff;*/
+			margin-top: 10px;
+			position: relative;
+		}
+		.multiple-scratch-cards-container ul li::before{
+			content: 'Scratch to win';
+	    background: silver;
+	    position: absolute;
+	    left: 17px;
+	    top: 0;
+	    font-size: 20px;
+	    z-index: 1;
+	    padding: 0 5px;
+	    /*border-bottom-right-radius: 100%;*/
+
 		}
 		.multiple-scratch-cards-container ul li p{
 
 		}
-		.multiple-scratch-cards-container ul li h3 img{
-			width: 200px;
+		.multiple-scratch-cards-container ul li img{
+			width: 100%;
 			margin: auto;
     	display: block;
+    	border: 3px solid #fff;
+    	cursor: pointer;
+    	opacity: 0.7;
 		}
 		#bridge {
 			display: block;
@@ -61,8 +77,9 @@
 		  display: none;
 		  margin-top: 70px;
 		}
-		.scratch-card-container figcaption {   
+		.scratch-card-container h4 {   
 		  margin-top: 2rem; 
+		  line-height: 26px;
 		}
 
 		.select-sc-plots{
@@ -72,7 +89,7 @@
 			margin-bottom: 10px;
 		}
 		.select-sc-plots span img{
-			width: 250px;
+			width: 100%;
 			margin: auto;
 			cursor: pointer;
     	display: block;
@@ -80,4 +97,7 @@
 		}
 		.selected_sc_img{
 			border-color: #cd2f2b !important;
+		}
+		.get-sms{
+			margin-top: 15px;
 		}

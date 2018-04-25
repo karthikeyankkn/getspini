@@ -82,13 +82,13 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-    
-  // if (location.origin == "http://getspini.com") {
-  //   ApiEndPoint = 'https://api.getspini.com:8443';
-  // }else{
-  //   ApiEndPoint = 'https://sapi.getspini.com:8443';
-  // }
-   ApiEndPoint = 'https://sapi.getspini.com:8443';
+    debugger
+  if (location.origin == "http://staging.getspini.com" || location.origin == "http://localhost:8080") {
+    ApiEndPoint = 'https://sapi.getspini.com:8443';
+  }else{
+    ApiEndPoint = 'https://api.getspini.com:8443';
+  }
+   // ApiEndPoint = 'https://sapi.getspini.com:8443';
   
   $(".error-page").click(function(){
     $(this).attr("href", window.location.origin);
@@ -306,6 +306,7 @@ $(document).ready(function(){
         "budgetAmount" : budgetAmount
         // "scratchOffer" : scratchOffer
       };
+      localStorage.setItem("name", name);
       localStorage.setItem("ph_number", ph_number);
       
       $.ajax({
@@ -539,7 +540,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.22/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.23/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -688,7 +689,7 @@ $(document).ready(function(){
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.22/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.23/cards.json", function(data, status){
         cards = data.cards;
         
         $(".see-more-pagination").click(function(){

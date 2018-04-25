@@ -34,11 +34,11 @@
    </script>   
    <style>
     .toggle-page-container{
-      display: block;
+      /*display: block;*/
     }
-    .toggle-page-container ul{
+    /*.toggle-page-container ul{
       display: none;
-    }
+    }*/
      .toggle-page-container-close{
       /*display: none;*/
      }
@@ -75,33 +75,28 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 sc-page-heading">
-        <!-- <h1 class="heading">Mystery Scratch & Win!</h1> -->
+        <h1>Mystery Scratch & Win!</h1>
         <h2>Scratch any ticket to reveal your lucky prize!</h2>
-        <h3>Simply click on any of the card below and scratch it digitally to see your lucky prize</h3>
       </div>
   </div>
 
   <div class="multiple-scratch-cards-container col-md-12">
     <ul>
-      <li class="col-md-3" scratch_id='bridge1'>
-        <h3> <img src="http://cdn.getspini.com/scratches.jpg"> </h3>
-        <p>PLOT</p>
+      <li class="col-md-3 col-xs-6" scratch_id='plot'>
+        <img src="../assets/images/scratch-card/Plots.jpg"> 
       </li>
-      <li class="col-md-3" scratch_id='bridge2'>
-        <h3 ><img src="http://cdn.getspini.com/scratches.jpg"></h3>
-        <p>APARTMENTS</p>
+      <li class="col-md-3 col-xs-6" scratch_id='apartment'>
+        <img src="../assets/images/scratch-card/Apartment.jpg">
       </li>
-      <li class="col-md-3" scratch_id='bridge3'>
-        <h3 ><img src="http://cdn.getspini.com/scratches.jpg"></h3>
-        <p>VILLA</p>
+      <li class="col-md-3 col-xs-6" scratch_id='villa'>
+        <img src="../assets/images/scratch-card/Villa.jpg">
       </li>
-      <li class="col-md-3" scratch_id='bridge4'>
-        <h3 ><img src="http://cdn.getspini.com/scratches.jpg"></h3>
-        <p>CONSTRUCTION</p>
+      <li class="col-md-3 col-xs-6" scratch_id='construction'>
+        <img src="../assets/images/scratch-card/building_construction.jpg">
       </li>
     </ul>
   </div>
-  <p class="terms">*Terms and Conditions Apply</p>
+  <!-- <p class="terms">*Terms and Conditions Apply</p> -->
 </section>
 
 
@@ -135,28 +130,28 @@
       <div class="alerts_page"></div>
        <!-- scratch card code starts-->
           <figure class="scratch-card-container">
+            <h4>Simply click on any of the card below and scratch it digitally to see your lucky prize</h4>
             <canvas id="bridge"></canvas>
-            <figcaption>Confirm your appearance date for plot visiting to download the coupon.</figcaption>
-            <button class="get-sms btn-success"">Download Coupon</button>
+            <button class="get-sms btn-success">Avil prize</button>
           </figure>
         <!-- scratch card code end --> 
 
         <!-- confirm visiting code starts -->
-        <div class="confirm-visiting-container">
+        <div method="POST" action="https://formspree.io/karthikeyan@spinircle.com" class="confirm-visiting-container">
           <ul>
             <li>
-              <label>1) Select plots for visit</label>
+              <label>1) Select venue for visit</label>
               <div class="select-sc-plots">
-                <span class="col-md-6">
+                <span class="col-md-6 col-xs-6">
                   <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika1">
                 </span>
-                <span class="col-md-6">
+                <span class="col-md-6 col-xs-6">
                   <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika2">
                 </span>
-                <span class="col-md-6">
+                <span class="col-md-6 col-xs-6">
                   <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika3">
                 </span>
-                <span class="col-md-6">
+                <span class="col-md-6 col-xs-6">
                   <img src="http://cdn.getspini.com/landing/opt/Aashika.jpg" alt="aashika4">
                 </span>
               </div>
@@ -188,6 +183,15 @@
             </li>
           </ul>
         </div>
+
+        <form id="site_visit_mail" method="POST" action="https://formspree.io/karthikeyan@spinircle.com">
+          <input type="hidden" name="name">
+          <input type="hidden" name="ph_number">
+          <input type="hidden" name="selected_site">
+          <input type="hidden" name="selected_date">
+          <input type="hidden" name="selected_time">
+          <input type="hidden" name="_cc" value="anuradha.v@spinircle.com" />
+        </form>
         <!-- confirm visiting code end -->
       </div>
     <!-- popup for interiors ends -->
