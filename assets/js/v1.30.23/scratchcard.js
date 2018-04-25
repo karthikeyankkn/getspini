@@ -119,7 +119,7 @@
     img.onload = function(){  
       bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);
     }
-    img.loc = 'http://cdn.getspini.com/';
+    img.loc = '../assets/images/scratch-card/';
     img.filename = 'scratches.jpg';
     if (window.devicePixelRatio >= 2) {
       var nameParts = img.filename.split('.');
