@@ -4,22 +4,10 @@
       dynamic_id = $(this).attr("scratch_id");
       
       var plot = {
-                    "scratch_card":[
-                    {
-                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
-                    "offer": "wall_coupon"
-                    }, 
-                    {
-                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
-                    },      
+                    "scratch_card":[ 
                     {
                     "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
                     "offer": "free_registration_coupon"
-                    },
-                    {
-                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
                     }]
                   }
 
@@ -28,37 +16,13 @@
                     {
                     "src":"../assets/images/scratch-card/wall_coupon.jpg",
                     "offer": "wall_coupon"
-                    }, 
-                    {
-                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
-                    },      
-                    {
-                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
-                    "offer": "free_registration_coupon"
-                    },
-                    {
-                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
                     }]
                   }
 
       var villa = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
-                    "offer": "wall_coupon"
-                    }, 
-                    {
                     "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
-                    },      
-                    {
-                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
-                    "offer": "free_registration_coupon"
-                    },
-                    {
-                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
                     "offer": "modular_kitchen_coupon"
                     }]
                   }
@@ -66,21 +30,13 @@
       var construction = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
-                    "offer": "wall_coupon"
-                    }, 
-                    {
-                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
-                    },
-                    {
                     "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
-                    "offer": "modular_kitchen_coupon"
+                    "offer": "bathtub_coupon"
                     }]
                   }
       // offers image array end
       function random_card(card){
-        rand_num = Math.floor(Math.random() * 3);
+        rand_num = Math.floor(Math.random() * 1);
 
         $("#bridge").css({"background": "url("+card.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "80%"});
           scratchOffer = card.scratch_card[rand_num].offer;
@@ -227,7 +183,9 @@
       sc_noon = $("select[name='sc-noon']").val();
       sc_time = sc_time.concat(sc_noon);
 
-
+      if([sc_selected_alt,sc_date,sc_time].includes('')) {
+        alert("Please fill all fields.");
+      }
       $('input[name="name"]').val(name);
       $('input[name="ph_number"]').val(ph_number);
       $('input[name="selected_site"]').val(sc_selected_alt);
