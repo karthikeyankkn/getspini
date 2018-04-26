@@ -165,6 +165,11 @@
         
     });
 
+    $(".confirm-visiting-back").click(function(){
+      $(".scratch-card-container").fadeIn();
+      $(".confirm-visiting-container").hide();
+    });
+
     $(".select-sc-plots span img").click(function(){
       //  sc_selected_alt = $(this).attr("alt");
       // console.log(sc_selected_alt);
@@ -188,6 +193,7 @@
       }
       $('input[name="name"]').val(name);
       $('input[name="ph_number"]').val(ph_number);
+      $('input[name="scratched_offer"]').val(scratchOffer);
       $('input[name="selected_site"]').val(sc_selected_alt);
       $('input[name="selected_date"]').val(sc_date);
       $('input[name="selected_time"]').val(sc_time);
