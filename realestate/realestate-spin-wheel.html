@@ -43,180 +43,198 @@
   <br />
   <p>Choose a power setting then press the Spin button. You will be alerted to the prize won when the spinning stops.</p>
   <br />
-  <table cellpadding="0" cellspacing="0" border="0">
-      <tr>
-          <td>
-              <div class="power_controls">
-                  <br/>
-                  <br/>
-                  <br/>
-                  <!-- <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" /> -->
-                  <button id="spin_button" onClick="startSpin();">Spin</button>
-              </div>
-          </td>
-          <td width="318" height="418" class="the_wheel" align="center" valign="center">
-              <canvas id="canvas" width="315" height="418">
-                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-              </canvas>
-          </td>
-      </tr>
-  </table>
+  <div class="row" style="margin:0;">
+    <!-- <div class="col-md-12 hidden-md hidden-lg hidden-sm">
+      <div class="col-md-12" style="height:40px;">
+          <img src="down_arrow.png" height="48" width="38" style="margin-left: -13px;">
+      </div>
+    </div> -->
+    <div class="col-md-6 for-mobile">
+        <div width="438" height="582" class="the_wheel" align="center" valign="center">
+            <canvas id="canvas" width="434" height="434">
+                <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
+            </canvas>
+        </div>
+    </div>
+    <div class="col-md-12">
+      <button class="btn btn-sucess" onclick="startSpin()">Submit</button>
+    </div>
+  </div>
 </div>
 <script>
-  // Create new wheel object specifying the parameters at creation time.
-  var theWheel = new Winwheel({
-      'numSegments'       : 8,         // Specify number of segments.
-      'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
-      'drawMode'          : 'image',   // drawMode must be set to image.
-      'drawText'          : false,      // Need to set this true if want code-drawn text on image wheels.
-      'textFontSize'      : 12,        // Set text options as desired.
-      'textOrientation'   : 'curved',
-      'textDirection'     : 'reversed',
-      'textAlignment'     : 'outer',
-      'textMargin'        : 5,
-      'textFontFamily'    : 'monospace',
-      'textStrokeStyle'   : 'black',
-      'textLineWidth'     : 2,
-      'textFillStyle'     : 'white',
-      'segments'     :                // Define segments.
-      [
-         {'text' : '1'},
-         {'text' : '2'},
-         {'text' : '3'},
-         {'text' : '4'},
-         {'text' : '5'},
-         {'text' : '6'},
-         {'text' : '7'},
-         {'text' : '8'}
-         
-      ],
-      'animation' :                   // Specify the animation to use.
-      {
-          'type'     : 'spinToStop',
-          'duration' : 5,     // Duration in seconds.
-          'spins'    : 8,     // Number of complete spins.
-          'callbackFinished' : alertPrize
-      }
-  });
-
-  // Create new image object in memory.
-  var loadedImg = new Image();
-
-  // Create callback to execute once the image has finished loading.
-  loadedImg.onload = function()
-  {
-      theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
-      theWheel.draw();                    // Also call draw function to render the wheel.
-  }
-
-  // Set the image source, once complete this will trigger the onLoad callback (above).
-  loadedImg.src = "../assets/images/referyogi-spin.png";
+             // Create new wheel object specifying the parameters at creation time.
+            // debugger
+            var theWheel = new Winwheel({
+                'numSegments'       : 8,         // Specify number of segments.
+                'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
+                'drawMode'          : 'image',   // drawMode must be set to image.
+                'drawText'          : true,      // Need to set this true if want code-drawn text on image wheels.
+                'textFontSize'      : 10,        // Set text options as desired.
+                'textOrientation'   : 'curved',
+                'textDirection'     : 'reversed',
+                'textAlignment'     : 'outer',
+                'textMargin'        : 5,
+                'textFontFamily'    : 'monospace',
+                'textStrokeStyle'   : 'black',
+                'textLineWidth'     : 2,
+                'textFillStyle'     : 'white',
+                'segments'     :                // Define segments.
+                [
+                   {'text' : 'Free Samosa'},
+                   {'text' : 'Free Wrapper'},
+                   {'text' : 'Free Cake'},
+                   {'text' : 'Free Coffee'},
+                   {'text' : 'Free Biscuit'},
+                   {'text' : 'Free Tea'},
+                   {'text' : 'Free Bun'},
+                   {'text' : 'Free Cream Cake'}
+                ],
+                'animation' :                   // Specify the animation to use.
+                {
+                    'type'     : 'spinToStop',
+                    'duration' : 5,     // Duration in seconds.
+                    'spins'    : 15,     // Number of complete spins.
+                    'callbackFinished' : alertPrize,
+                    // 'callbackSound'    : playSound,
+                    'soundTrigger'     : 'pin'
+                },
+                'pins' :
+                {
+                    'number' : 8   // Number of pins. They space evenly around the wheel.
+                }
+            });
 
 
+            // -----------------------------------------------------------------
+            // This function is called when the segment under the prize pointer changes
+            // we can play a small tick sound here like you would expect on real prizewheels.
+            // -----------------------------------------------------------------
+            var audio = new Audio('tick.mp3');  // Create audio object and load tick.mp3 file.
+            // debugger
+            function playSound()
+            {
+                // Stop and rewind the sound if it already happens to be playing.
+                audio.pause();
+                audio.currentTime = 0;
 
-  // Vars used by the code in this page to do power controls.
-  var wheelPower    = 0;
-  var wheelSpinning = false;
+                // Play the sound.
+                audio.play();
+            }
+            // Create new image object in memory.
+            var loadedImg = new Image();
 
-  // -------------------------------------------------------
-  // Function to handle the onClick on the power buttons.
-  // -------------------------------------------------------
-  function powerSelected(powerLevel)
-  {
-      // Ensure that power can't be changed while wheel is spinning.
-      if (wheelSpinning == false)
-      {
-          // Reset all to grey incase this is not the first time the user has selected the power.
-          document.getElementById('pw1').className = "";
-          document.getElementById('pw2').className = "";
-          document.getElementById('pw3').className = "";
+            // Create callback to execute once the image has finished loading.
+            loadedImg.onload = function()
+            {
+                theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
+                theWheel.draw();                    // Also call draw function to render the wheel.
+            }
 
-          // Now light up all cells below-and-including the one selected by changing the class.
-          if (powerLevel >= 1)
-          {
-              document.getElementById('pw1').className = "pw1";
-          }
+            // Set the image source, once complete this will trigger the onLoad callback (above).
+            loadedImg.src = "../assets/images/referyogi-spin.png";
+            // -------------------------------------------------------
+            // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters
+            // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+            // -------------------------------------------------------
+            function alertPrize(indicatedSegment)
+            {
+                // debugger
+                // Do basic alert of the segment text.
+                // You would probably want to do something more interesting with this information.
+                // $(document).ready(function(){
+                //     var alertValue = `You have won ${indicatedSegment.text}.`;
+                //     $(".pop-outer").fadeIn("slow");
+                //     $("#inside-popup").text(alertValue);
+                // })
+                alert("You have won " + indicatedSegment.text);
+            }
+// debugger
+            // =======================================================================================================================
+            // Code below for the power controls etc which is entirely optional. You can spin the wheel simply by
+            // calling theWheel.startAnimation();
+            // =======================================================================================================================
+            var wheelPower    = 3;
+            var wheelSpinning = false;
 
-          if (powerLevel >= 2)
-          {
-              document.getElementById('pw2').className = "pw2";
-          }
+            // -------------------------------------------------------
+            // Function to handle the onClick on the power buttons.
+            // -------------------------------------------------------
 
-          if (powerLevel >= 3)
-          {
-              document.getElementById('pw3').className = "pw3";
-          }
+            // -------------------------------------------------------
+            // Click handler for spin button.
+            // -------------------------------------------------------
+            function startSpin()
+            {
+              debugger
+                // Ensure that spinning can't be clicked again while already running.
+                if (wheelSpinning == false)
+                {
+                    // debugger
+                    // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+                    // to rotate with the duration of the animation the quicker the wheel spins.
+                    
+                    // var stopAt = (91 + Math.floor((Math.random() * 43))) // prize 3
+                    // var stopAt = (1000 + Math.floor((Math.random() * 50)))  // prize 7 or 8
+                    // var stopAt = (900 + Math.floor((Math.random() * 50)))  // prize 5
+                    // var stopAt = (800 + Math.floor((Math.random() * 50)))  // prize 3
+                    // var stopAt = (750 + Math.floor((Math.random() * 60)))  // prize 2
+                    // var stopAt = (500 + Math.floor((Math.random() * 43)))  // prize 4
+                    // var stopAt = (200 + Math.floor((Math.random() * 43)))  // prize 4
+                    // theWheel.animation.stopAngle = stopAt;
+                    // Disable the spin button so can't click again while wheel is spinning.
+                    // document.getElementById('spin_button').src       = "spin_off.png";
+                    // document.getElementById('spin_button').className = "";
 
-          // Set wheelPower var used when spin button is clicked.
-          wheelPower = powerLevel;
+                    // Begin the spin animation by calling startAnimation on the wheel object.
+                    theWheel.startAnimation();
 
-          // Light up the spin button by changing it's source image and adding a clickable class to it.
-          document.getElementById('spin_button').src = "spin_on.png";
-          document.getElementById('spin_button').className = "clickable";
-      }
-  }
+                    // Set to true so that power can't be changed and spin button re-enabled during
+                    // the current animation. The user will have to reset before spinning again.
+                    wheelSpinning = true;
+                }
+            }
 
-  // -------------------------------------------------------
-  // Click handler for spin button.
-  // -------------------------------------------------------
-  function startSpin()
-  {
-      // Ensure that spinning can't be clicked again while already running.
-      if (wheelSpinning == false)
-      {
-          // Based on the power level selected adjust the number of spins for the wheel, the more times is has
-          // to rotate with the duration of the animation the quicker the wheel spins.
-          if (wheelPower == 1)
-          {
-              theWheel.animation.spins = 2;
-          }
-          else if (wheelPower == 2)
-          {
-              theWheel.animation.spins = 5;
-          }
-          else if (wheelPower == 3)
-          {
-              theWheel.animation.spins = 8;
-          }
-
-          // Disable the spin button so can't click again while wheel is spinning.
-          document.getElementById('spin_button').src       = "spin_off.png";
-          document.getElementById('spin_button').className = "";
-
-          // Begin the spin animation by calling startAnimation on the wheel object.
-          theWheel.startAnimation();
-
-          // Set to true so that power can't be changed and spin button re-enabled during
-          // the current animation. The user will have to reset before spinning again.
-          wheelSpinning = true;
-      }
-  }
-
-  // -------------------------------------------------------
-  // Function for reset button.
-  // -------------------------------------------------------
-  function resetWheel()
-  {
-      theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-      theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
-      theWheel.draw();                // Call draw to render changes to the wheel.
-
-      document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
-      document.getElementById('pw2').className = "";
-      document.getElementById('pw3').className = "";
-
-      wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
-  }
-
-  // -------------------------------------------------------
-  // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
-  // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
-  // -------------------------------------------------------
-  function alertPrize(indicatedSegment)
-  {
-      // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-      alert("The wheel stopped on " + indicatedSegment.text);
-  }
+            function off(){
+                $(".pop-outer").fadeOut("slow");
+                $("#submit-button").removeAttr("disabled","true");
+                document.getElementById('usr1').value = "";
+                document.getElementById('usr2').value = "";
+                document.getElementById('usr3').value = "";
+                window.location.reload();
+                window.open("https://www.referyogi.com","_blank");
+            };
+            // function startfun(){
+                
+            //     $.ajax({
+            //             url: 'https://stagingapi.spini.co/spinning_wheels',
+            //             dataType: 'json',
+            //             type: 'post',
+            //             contentType: 'application/json',
+                        
+            //             data: JSON.stringify( {"spinning_wheel": {
+            //              "email":$("#usr2").val(),"mobile":$("#usr3").val(),"bill":$("#usr1").val().toUpperCase()}}),
+            //             processData: false,
+            //             success: function( data, textStatus, jQxhr ){
+            //                 debugger
+            //                 if(textStatus === "success"){
+            //                     wheelPower = 3;
+            //                     startSpin();
+            //                     $("#submit-button").attr("disabled","true");
+            //                       var scroll = $("html, body");
+            //                       scroll.stop().animate({scrollTop:0}, 500, 'swing', function() {
+            //                       });
+            //                 }
+            //             },
+            //             error: function( jqXhr, textStatus, errorThrown ){
+            //                 debugger
+            //                 alert("Bill " + jqXhr.responseJSON.bill[0]+ " .");
+            //                window.location.reload();
+            //             }
+            //         });
+            //       return false;
+                    
+                    
+            // }
 </script>
 
 <!-- body content ends -->
@@ -241,14 +259,102 @@
 
 
 <style>
-  /* Sets the background image for the wheel */
-  td.the_wheel
-  {
-      background-image: url(../assets/images/wheel_back.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-  }
+  /*
+Description:
+    Contains all the styles for the winning wheel page.
+    
+Verison History:
+    2012-01-28, Douglas McKechie
+    - Created based off earlier version.
+    
+    2015-09-26, Douglas McKechie
+    - Minor updates for the 2.0 winwheel example.
+*/
+
+body
+{
+    font-family: arial;
+}
+
+/* Sets the background image for the wheel */
+.the_wheel
+{
+    background-image: url(../assets/images/wheel_back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: none;
+    width: 434px;
+    height: 612px;
+}
+
+/* Do some css reset on selected elements */
+canvas{
+       width: 614px;
+    margin-left: -90px;
+    margin-top: -32px;
+    max-height: 612px !important;
+}
+.pop-outer{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0,0,0,0.5);
+                z-index: 3;
+            }
+            .pop-inner{
+                background: #fff;
+                margin: 10% auto;
+                padding: 15px;
+                width: 75%;
+                height: auto;
+                overflow-y: scroll;
+
+            }
+
+
+/* Styles for the power selection controls */
+
+
+
+/* Style applied to the spin button once a power has been selected */
+.clickable
+{
+    cursor: pointer;
+}
+
+/* Other misc styles */
+.margin_bottom
+{
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 500px) {
+   .the_wheel
+    {
+        /*display: none;*/
+        background-image: url();
+        background-position: center;
+        background-repeat: none;
+              width: 300px;
+              /*  margin: -88px;*/
+            height:  300px;
+    }
+    .for-mobile{
+        margin-top: 68px;
+    }
+    canvas{
+        width: 386px; 
+        /*margin-left: -8px;*/
+        display: inline;
+    }
+    .pop-inner{
+               /* background: #fff;*/
+                margin: 70% auto;
+            }
+    
+}
 
 </style>
 </body>
