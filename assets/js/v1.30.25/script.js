@@ -71,7 +71,7 @@ $(document).ready(function(){
     // script for common device image load end
   
 	$( window ).resize(function() {
-		// windowHight();
+		windowHight();
 	});
 	// window height
 	function windowHight(){
@@ -156,6 +156,9 @@ $(document).ready(function(){
     $(".toggle-page-container").append("<i class='toggle-page-container-close'>X<i/>");
     $(".toggle-page-container-close").click(function(){
       $(".toggle-page-container, .bg-overlay").fadeOut();
+      if (index_page == "scratch_card_page") {
+        location.reload();
+      }
     });
 
     $(".submit").click(function(){

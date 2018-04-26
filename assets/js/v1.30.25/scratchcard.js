@@ -1,6 +1,7 @@
     // offers image array starts
     var rand_num, dynamic_id, scratchOffer, coupon_img_download, sc_date, sc_time, sc_noon, sc_selected_alt;
     $(".multiple-scratch-cards-container ul li").click(function(){
+      $("body").addClass("stop-scrolling");
       dynamic_id = $(this).attr("scratch_id");
       
       var plot = {
@@ -131,29 +132,6 @@
     // get sms script
     $(".get-sms").click(function(){
       debugger
-      // ph_number = localStorage.getItem("ph_number");
-      // alert(ph_number);
-      // var url = "https://api.getspini.com:8443/SpinGrailsApp/notifications/utilities/generic/sms";
-      // var data = {
-      //   "phoneNumbers":["8148303123"],
-      //    "messageToSend": "Hi congratulation.  You have Won 10% on realestate.",
-      //    "canSendToUnRegisteredNumbersAsWell": true,
-      //    "jmsQName": "TransactionalSMS"
-      // }
-      // var headers = {
-      //   'Content-Type': 'application/json',
-      //   'X-SPIN-API-ACCESS-TOKEN': '7JLD9KKKKjy20aaslalk#ikl@3443#87%4ks9328ndhdb',
-      //   'Access-Control-Allow-Origin': '*'
-      // }
-      // // var success, error;
-      // $.ajax({
-      //   type: "POST",
-      //   url: url,
-      //   headers: headers,
-      //   dataType: 'json',
-      //   data: JSON.stringify(data)
-      // }); 
-
       $(".scratch-card-container").hide();
       $(".confirm-visiting-container").fadeIn();
       coupon_img_download = localStorage.getItem("coupon_image");
@@ -208,6 +186,8 @@
       $("#site_visit_mail").submit();
       // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
     });
+
+    
 
 
 
