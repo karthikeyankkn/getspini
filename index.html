@@ -838,7 +838,17 @@
     /*position: relative;*/
     display:inline;
   }
-  .imageClassForSpin{
+  .centerImage{
+    position: absolute;
+    top: 44%;
+    left: 47%;
+  }
+  .fingerImage{
+    position: absolute;
+    top: 26%;
+    left: 78%;
+  }
+  .standImage{
     position: absolute;
     top: 26%;
     left: 78%;
@@ -855,15 +865,35 @@
   }
 }*/
 @media only screen and (max-width: 800px) {
-  
+    .centerImage{
+      top: 44%;
+      left: 45%;
+    }
 
 }
 @media only screen and (max-width: 500px) {
-  
+  canvas{
+    display: block;
+    margin-left: -60px;
+  }
+  .centerImage{
+      top: 44%;
+      left: 45%;
+    }
 
 }
 @media only screen and (max-width: 400px) {
-  
+  canvas{
+    display: block;
+    margin-left: -60px;
+  }
+  .centerImage{
+      top: 44%;
+      left: 45%;
+    }
+    .cont{
+      height: 600px;
+    }
 
 }
 
@@ -873,7 +903,7 @@
 <div id="overlay" class="winningPopUpForRef" style="background-color: rgba(236, 236, 236, .90);" ng-controller="winWheel as vm">
   <div class="inner-popup">
     <button class="popup-button" style="float: right;" onclick="offBtn()">X</button>
-    <div class="container-fluid" style="background:rgb(0,0,0,0.5);">
+    <div class="container-fluid cont" style="background:rgb(0,0,0,0.5);">
       <h1>qweqew</h1>
       <div class="row">
         <div class="col-md-12 text-center">
@@ -882,9 +912,9 @@
                 <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.
                 </p>
             </canvas>
-            <!-- <img class="imageClassForSpin" src="assets/images/11.png" height="100" width="100"/> -->
-            <!-- <img class="imageClassForSpin" src="assets/images/finger-arrow2.png" height="100" width="100"/> -->
-            <img class="imageClassForSpin" src="assets/images/13.png" height="100" width="100"/>
+            <img class="centerImage" src="assets/images/11.png" height="60" width="60"/>
+            <img class="fingerImage" src="assets/images/finger-arrow2.png" height="100" width="100"/>
+            <img class="standImage" src="assets/images/13.png" height="100" width="100"/>
           </div>
         </div>
         
