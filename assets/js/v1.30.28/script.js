@@ -190,14 +190,11 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
+      debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
-      if (index_page == 'scratch_card_page') {
-        cityName = "Chennai";
-      }else{
-        cityName = $("select[name='city']").val();
-      }
+      cityName = $("select[name='city']").val();
       
       budgetAmount = $("input[name='budgetAmount']").val();
       if (categoryName == undefined) {
@@ -230,7 +227,11 @@ $(document).ready(function(){
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
-      cityName = short_traverse.find("select[name='city']").val();
+      if (index_page == 'scratch_card_page') {
+        cityName = "Chennai";
+      }else{
+       cityName = short_traverse.find("select[name='city']").val(); 
+      }
       budgetAmount = short_traverse.find("input[name='budgetAmount']").val();
       // validation script
       if([name,ph_number,email,cityName,budgetAmount].includes('')) {
