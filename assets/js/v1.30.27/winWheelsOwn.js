@@ -75,7 +75,7 @@
                 $('.winningPopUpForRef').show('slow');
                 $('#overlay').show('slow');
               
-            }, 5000);
+            }, 2000);
             // function getCoupon(offer){
                 
             //     vm.mobile_no = offer.userNo.toString();
