@@ -37,37 +37,6 @@
       cursor: pointer;
       margin-top: 10px;
     }
-    .multiple-scratch-cards-container ul{
-
-    }
-    .multiple-scratch-cards-container ul li{
-      background: transparent;
-      margin-top: 10px;
-      position: relative;
-    }
-    /*.multiple-scratch-cards-container ul li::before{
-      content: 'Scratch to win';
-      background: silver;
-      position: absolute;
-      left: 17px;
-      top: 0;
-      font-size: 20px;
-      z-index: 1;
-      padding: 0 5px;
-      /*border-bottom-right-radius: 100%;*/
-
-    /*}*/
-    .multiple-scratch-cards-container ul li p{
-      margin-top: 15px;
-    }
-    .multiple-scratch-cards-container ul li img{
-      width: 100%;
-      margin: auto;
-      display: block;
-      border: 3px solid #fff;
-      cursor: pointer;
-      /*opacity: 0.7;*/
-    }
     #bridge {
       display: block;
       margin: 0 auto;
@@ -110,4 +79,50 @@
     .get-sms{
       margin-top: 15px;
       padding: 10px 20px;
+    }
+
+    .multiple-scratch-cards-container ul li span{
+        background: #fff;
+        display: block;
+        box-shadow: 0px 0px 10px #07181f;
+        padding: 10px;
+        border-radius: 5px;
+        color: #215a70;
+      }
+      .multiple-scratch-cards-container ul li span h4{
+        font-family: cursive;
+        font-size: 28px;
+        padding-top: 10px;
+      }
+      .multiple-scratch-cards-container ul li span h5{
+        font-size: 22px;
+      }
+      .multiple-scratch-cards-container ul li span img{
+        max-width: 150px;
+        margin: auto;
+        display: block;
+        border: 3px solid #fff;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .multiple-scratch-cards-container ul li p{
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    @media only screen and (max-width: 500px) {
+      .multiple-scratch-cards-container ul li span{
+        padding: 0 0 5px 0;
+      }
+      .multiple-scratch-cards-container ul li span h4{
+        font-size: 16px;
+      }
+      .multiple-scratch-cards-container ul li span h5{
+        font-size: 14px;
+      }
+      .multiple-scratch-cards-container ul li p{
+        font-size: 12px;
+      }
+      .multiple-scratch-cards-container ul li span img{
+        max-width: 100px;
+      }
     }
