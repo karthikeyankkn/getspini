@@ -1,7 +1,6 @@
     // offers image array starts
     var rand_num, dynamic_id, scratchOffer, coupon_img_download, sc_date, sc_time, sc_noon, sc_selected_alt;
     $(".multiple-scratch-cards-container ul li").click(function(){
-      $("body").addClass("stop-scrolling");
       dynamic_id = $(this).attr("scratch_id");
       
       var plot = {
@@ -61,17 +60,19 @@
 
       // model for scratch card
       // $('#show_scratch_model').modal('show');
+      window.scrollTo(0, 0);
+      $("body").addClass("stop-scrolling");
       $(".toggle-page-container, .bg-overlay").fadeIn();
     });
 
   // <!-- built in script for scratch card -->
     var bridge = document.getElementById("bridge"),
     bridgeCanvas = bridge.getContext('2d'),
-    // brushRadius = (bridge.width / 100) * 5,
+    brushRadius = (bridge.width / 100) * 5,
     brushRadius = 20,
     img = new Image();
 
-    // if (brushRadius < 50) { brushRadius = 50 }
+    if (brushRadius < 50) { brushRadius = 50 }
 
     img.onload = function(){  
       bridgeCanvas.drawImage(img, 0, 0, bridge.width, bridge.height);

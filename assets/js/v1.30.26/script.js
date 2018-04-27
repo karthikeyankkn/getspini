@@ -190,11 +190,15 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
-      cityName = $("select[name='city']").val();
+      if (index_page == 'scratch_card_page') {
+        cityName = "Chennai";
+      }else{
+        cityName = $("select[name='city']").val();
+      }
+      
       budgetAmount = $("input[name='budgetAmount']").val();
       if (categoryName == undefined) {
         categoryName = $("select[name='catagoryName']").val();
