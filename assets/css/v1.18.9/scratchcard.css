@@ -109,6 +109,26 @@
         font-size: 14px;
         margin-top: 10px;
       }
+      .sc-page-heading{
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+     }
+     .sc-page-heading h2{
+     }
+     .sc-page-heading h3{
+
+     }
+     .grass{
+      background-image: url(http://www.bleum.com/wp-content/uploads/2016/06/gift_retail-1420830_1280-1280x630.jpg);
+      /*background-image: url(http://professionalfinishing.net/attachments/Header/image_1.jpg?template=generic);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 60px;
+     }
+     .terms{
+      color: #fff;
+     }
     @media only screen and (max-width: 500px) {
       .multiple-scratch-cards-container ul li span{
         padding: 0 0 5px 0;
