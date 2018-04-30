@@ -20,7 +20,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.9/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.10/style.css">
    <!-- css files ends -->
    <script>
      var index_page = false;
@@ -84,7 +84,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.29/script.js"></script>
+  <script src="../assets/js/v1.30.30/script.js"></script>
 
   <!-- download coupon script -->
   <script type="text/javascript">
@@ -101,10 +101,10 @@
 
     $(".download-coupon-in-whatsup").click(function(){
       
-      if (confirm("Given number is connected with whatsapp..?")) {
-          
-      } else {
+      if (confirm("Do you want to change this number :"+whatsapp_number)) {
           whatsapp_number = prompt("Please enter your whatsapp number:");
+      } else {
+          
       }
 
       location.href = "https://api.whatsapp.com/send?phone=91"+whatsapp_number+"&text=Congratulations..!  You have won following coupon. "+download_image+" Further details contact us."

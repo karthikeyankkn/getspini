@@ -132,7 +132,7 @@
 
     // get sms script
     $(".get-sms").click(function(){
-      debugger
+      // debugger
       $(".scratch-card-container").hide();
       $(".confirm-visiting-container").fadeIn();
       coupon_img_download = localStorage.getItem("coupon_image");

@@ -82,12 +82,13 @@
     }
 
     .multiple-scratch-cards-container ul li span{
-        background: #fff;
+        background: #ea3734;
         display: block;
         box-shadow: 0px 0px 10px #07181f;
         padding: 10px;
         border-radius: 5px;
-        color: #215a70;
+        color: #fff;
+        border: 2px dashed;
       }
       .multiple-scratch-cards-container ul li span h4{
         font-family: cursive;
@@ -103,7 +104,7 @@
         display: block;
         border: 3px solid #fff;
         cursor: pointer;
-        border-radius: 50%;
+        /*border-radius: 50%;*/
       }
       .multiple-scratch-cards-container ul li p{
         font-size: 14px;
