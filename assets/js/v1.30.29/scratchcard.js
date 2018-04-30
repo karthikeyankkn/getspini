@@ -6,7 +6,7 @@
       var plot = {
                     "scratch_card":[ 
                     {
-                    "src":"../assets/images/scratch-card/free_registration_coupon.jpg",
+                    "src":"http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg",
                     "offer": "free_registration_coupon"
                     }]
                   }
@@ -14,7 +14,7 @@
       var apartment = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/scratch-card/wall_coupon.jpg",
+                    "src":"http://getspini.com/assets/images/scratch-card/wall_coupon.jpg",
                     "offer": "wall_coupon"
                     }]
                   }
@@ -22,7 +22,7 @@
       var villa = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "src":"http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg",
                     "offer": "modular_kitchen_coupon"
                     }]
                   }
@@ -30,7 +30,7 @@
       var construction = {
                     "scratch_card":[
                     {
-                    "src":"../assets/images/scratch-card/bathtub_coupon.jpg",
+                    "src":"http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg",
                     "offer": "bathtub_coupon"
                     }]
                   }
@@ -167,9 +167,9 @@
       sc_noon = $("select[name='sc-noon']").val();
       sc_time = sc_time.concat(sc_noon);
 
-      if([sc_selected_alt,sc_date,sc_time].includes('')) {
-        alert("Please fill all fields.");
-      }
+      // if([sc_selected_alt,sc_date,sc_time].includes('')) {
+      //   alert("Please fill all fields.");
+      // }
       $('input[name="name"]').val(name);
       $('input[name="ph_number"]').val(ph_number);
       $('input[name="scratched_offer"]').val(scratchOffer);
@@ -177,16 +177,11 @@
       $('input[name="selected_date"]').val(sc_date);
       $('input[name="selected_time"]').val(sc_time);
       
-      // function download_coupon(){
-      //   var link = document.createElement('a');
-      //   link.href = coupon_img_download;
-      //   link.download = scratchOffer;
-      //   link.dispatchEvent(new MouseEvent('click'));
-      // }
-      // download_coupon();
       $("#site_visit_mail").submit();
       // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
     });
+
+    
 
     
 

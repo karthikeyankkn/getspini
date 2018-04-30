@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-    debugger
+    // debugger
   if (location.origin == "http://staging.getspini.com" || location.origin == "http://localhost:8080") {
     ApiEndPoint = 'https://sapi.getspini.com:8443';
   }else{
@@ -190,7 +190,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      debugger
+      // debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
