@@ -315,6 +315,9 @@ header{
   line-height: 50px;
   font-size: 40px;
 }
+.confirm-visiting-container{
+  display: none;
+}
 @media only screen and (max-width: 500px) {
 .home-page-categories li {
     display: inline-block;
@@ -1616,6 +1619,151 @@ header{
 
   }
   /*features add style end*/
+  /*Styles for scratch card*/
+  .multiple-scratch-cards-container{
+      margin: 50px 0;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+    }
+    .confirm-visiting-container ul{
+      display: block !important;
+    }
+    .confirm-visiting-container ul li{
+      display: block;
+    }
+    .confirm-visiting-container ul li label{
+      font-size: 24px;
+      font-weight: 100;
+      display: block;
+    }
+    .confirm-visiting-container ul li input, .confirm-visiting-container ul li select{
+      display: inline-block;
+      width: unset;
+      padding: 12px 15px;
+      margin-right: 10px;
+    }
+    .confirm-visiting-container ul li button{
+      margin: auto;
+      display: block;
+    }
+    .confirm-visiting-back{
+      font-size: 20px;
+      border: 2px solid #555555;
+      border-radius: 50%;
+      padding: 3px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    #bridge {
+      display: block;
+      margin: 0 auto;
+      /*background-image: url('http://localhost:8080/assets/images/ipl_collection/mi-logo.png');*/
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: 300px;
+      height: 300px;
+      /*cursor:  crosshair;*/
+      /*cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/circular-cursor.png) 53 53, crosshair;*/
+    }
+    .scratch-card-container { 
+      text-align: center;
+      display: none;
+      margin-top: 70px;
+    }
+    .scratch-card-container h4 {   
+      margin-top: 2rem; 
+      line-height: 26px;
+    }
+
+    .select-sc-plots{
+
+    }
+    .select-sc-plots span{
+      margin-bottom: 10px;
+    }
+    .select-sc-plots span img{
+      width: 100%;
+      margin: auto;
+      cursor: pointer;
+      display: block;
+      border: 5px solid transparent;
+    }
+    .selected_sc_img{
+      border-color: #cd2f2b !important;
+    }
+    .get-sms{
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+
+    .multiple-scratch-cards-container ul li span{
+        background: #ea3734;
+        display: block;
+        box-shadow: 0px 0px 10px #07181f;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        border: 2px dashed;
+      }
+      .multiple-scratch-cards-container ul li span h4{
+        font-family: cursive;
+        font-size: 28px;
+        padding-top: 10px;
+      }
+      .multiple-scratch-cards-container ul li span h5{
+        font-size: 22px;
+      }
+      .multiple-scratch-cards-container ul li span img{
+        max-width: 150px;
+        margin: auto;
+        display: block;
+        border: 3px solid #fff;
+        cursor: pointer;
+        /*border-radius: 50%;*/
+      }
+      .multiple-scratch-cards-container ul li p{
+        font-size: 14px;
+        margin-top: 10px;
+      }
+      .sc-page-heading{
+      color: #fff;
+      text-align: center;
+      padding-top: 50px;
+     }
+     .sc-page-heading h2{
+     }
+     .sc-page-heading h3{
+
+     }
+     .grass{
+      background-image: url(http://www.bleum.com/wp-content/uploads/2016/06/gift_retail-1420830_1280-1280x630.jpg);
+      /*background-image: url(http://professionalfinishing.net/attachments/Header/image_1.jpg?template=generic);*/
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin-top: 60px;
+     }
+     .terms{
+      color: #fff;
+     }
+
+   /* Sets the background image for the wheel */
+  td.the_wheel
+  {
+      background-image: url(../../images/wheel_back.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+  .sw-cliam-prize button{
+    background-color: #cd362c;
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border: 0;
+  }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
@@ -1654,7 +1802,13 @@ header{
           margin-top: 20px;
         }
         canvas{
-          display: none;
+          /*display: none;*/
+        }
+        #canvas{
+          height: 280px;
+        }
+        td.the_wheel{
+          background-size: 210px;
         }
         .banner-header {
             padding: 16px 80px 5px 25px;
@@ -1702,6 +1856,21 @@ header{
         .seo-links{
           height: 300px;
           overflow: scroll;
+        }
+        .multiple-scratch-cards-container ul li span{
+        padding: 0 0 5px 0;
+        }
+        .multiple-scratch-cards-container ul li span h4{
+          font-size: 16px;
+        }
+        .multiple-scratch-cards-container ul li span h5{
+          font-size: 14px;
+        }
+        .multiple-scratch-cards-container ul li p{
+          font-size: 12px;
+        }
+        .multiple-scratch-cards-container ul li span img{
+          max-width: 100px;
         }
       }
      

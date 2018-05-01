@@ -227,7 +227,8 @@ $(document).ready(function(){
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
-      if (index_page == 'scratch_card_page') {
+      debugger
+      if (index_page == 'scratch_card_page' || index_page == "spin_wheel_page") {
         cityName = "Chennai";
       }else{
        cityName = short_traverse.find("select[name='city']").val(); 
@@ -336,6 +337,11 @@ $(document).ready(function(){
                 $(".scratch-card-data-collection").hide();
                 $(".toggle-page-container ul, .alerts_page").hide();
                 $(".scratch-card-container").fadeIn();
+              }
+                else if(index_page == "spin_wheel_page"){
+                  startSpin();
+                  $(".toggle-page-container, #spin_button").hide();
+                  $(".sw-cliam-prize button").show();
               }else{
                 succsess_alert();
               }
