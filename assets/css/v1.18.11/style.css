@@ -23,6 +23,7 @@ canvas{
   display:block;
   vertical-align:bottom;
   max-height: 600px;
+  margin: auto;
 }
 .mt-20{
   margin-top: 2px;
@@ -1750,7 +1751,7 @@ header{
      }
 
    /* Sets the background image for the wheel */
-  td.the_wheel
+  .the_wheel
   {
       background-image: url(../../images/wheel_back.png);
       background-position: center;
@@ -1763,6 +1764,19 @@ header{
     padding: 10px;
     display: none;
     border: 0;
+    margin: 10px auto;
+  }
+  .sw-container{
+    margin-top: 50px;
+  }
+  .sw-open-popup{
+    background-color: #cd362c;
+    color: #fff;
+    padding: 5px 30px;
+    border: 0;
+    margin: 10px auto;
+    display: block;
+    border-radius: 25px;
   }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
@@ -1807,7 +1821,7 @@ header{
         #canvas{
           height: 280px;
         }
-        td.the_wheel{
+        .the_wheel{
           background-size: 210px;
         }
         .banner-header {

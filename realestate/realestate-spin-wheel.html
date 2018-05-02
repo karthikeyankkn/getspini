@@ -38,30 +38,19 @@
 <header></header>
 <!-- haader ends -->
 <!-- body content starts -->
+  <div class="sw-container sw-cliam-prize">
+    <div class="row the_wheel">
+      <canvas id="canvas" width="315" height="418"></canvas>
+    </div>
+    <button>Book site vist to claim prize</button>
+  </div>
+  <button id="spin_button" class="sw-open-popup">Spin</button>
 
-<div align="center" style="margin-top: 60px;">
-  <br />
-  <table cellpadding="0" cellspacing="0" border="0">
-      <tr>
-          <td>
-              <div class="power_controls">
-                  <br/>
-                  <br/>
-                  <br/>
-                  <!-- <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" /> -->
-                  
-              </div>
+           <!--  <td width="318" height="418" class="" align="center" valign="center">
+              <canvas id="canvas" width="315" height="418"></canvas>
           </td>
-          <td width="318" height="418" class="the_wheel" align="center" valign="center">
-              <canvas id="canvas" width="315" height="418">
-                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-              </canvas>
-          </td>
-      </tr>
-      <tr><td><button id="spin_button" class="sw-open-popup">Spin</button></td></tr>
-      <tr class="sw-cliam-prize"><td><button>Book site vist to claim prize</button></td></tr>
-  </table>
-</div>
+          <tr><td></td></tr>
+      <tr class=""><td></td></tr> -->
 
   <!-- popup for interiors starts -->
     <div class="toggle-page-container">
@@ -150,11 +139,11 @@
         <form class="site_visit_mail" method="POST" action="https://formspree.io/karthikeyan@spinircle.com">
           <input type="hidden" name="name">
           <input type="hidden" name="ph_number">
-          <input type="hidden" name="scratched_offer">
+          <input type="hidden" name="spin_wheel_offer">
           <input type="hidden" name="selected_site">
           <input type="hidden" name="selected_date">
           <input type="hidden" name="selected_time">
-          <input type="hidden" name="_next" value="http://localhost:8080/thankyou-pages/thankyou-scratch-card.html" />
+          <input type="hidden" name="_next"/>
           <input type="hidden" name="_cc" value="" />
           <input type="hidden" name="_subject" value="Spin wheel lead" />
           <input type="text" name="_gotcha" style="display:none" />
@@ -187,7 +176,7 @@
     // Create new wheel object specifying the parameters at creation time.
     var theWheel = new Winwheel({
         'numSegments'       : 8,         // Specify number of segments.
-        'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
+        'outerRadius'       : 217,       // Set outer radius so wheel fits inside the background.
         'drawMode'          : 'image',   // drawMode must be set to image.
         'drawText'          : false,      // Need to set this true if want code-drawn text on image wheels.
         'textFontSize'      : 12,        // Set text options as desired.
@@ -201,14 +190,14 @@
         'textFillStyle'     : 'white',
         'segments'     :                // Define segments.
         [
-           {'text' : '1'},
-           {'text' : '2'},
-           {'text' : '3'},
-           {'text' : '4'},
-           {'text' : '5'},
-           {'text' : '6'},
-           {'text' : '7'},
-           {'text' : '8'}
+           {'text' : '1'},//One More Spin
+           {'text' : 'free_registration_coupon'},//Free Registration
+           {'text' : '3'},//Better Luck Next Time
+           {'text' : '4'},//Free Naturals Voucher
+           {'text' : 'bathtub_coupon'},//Jacuzzi Bathtub Free
+           {'text' : 'modular_kitchen_coupon'},//Free Modular Kitchen
+           {'text' : '7'},//Free Pickup & Drop
+           {'text' : 'wall_coupon'} //Free Textured Wall
            
         ],
         'animation' :                   // Specify the animation to use.
@@ -322,9 +311,9 @@
         theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
         theWheel.draw();                // Call draw to render changes to the wheel.
 
-        document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
-        document.getElementById('pw2').className = "";
-        document.getElementById('pw3').className = "";
+        // document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
+        // document.getElementById('pw2').className = "";
+        // document.getElementById('pw3').className = "";
 
         wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
     }
@@ -337,10 +326,37 @@
     {
         // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
         alert("The wheel stopped on " + indicatedSegment.text);
-
+        debugger
         sw_price = indicatedSegment.text;
+        var sw_coupon_image;
+        if (sw_price == "1") {
+          resetWheel();
+          alert("Do One more spin");
+          startSpin();
+        }else if(sw_price == "3"){
+          alert("Sorry better luck next time");
+          location.reload();
+        }else if(sw_price == "free_registration_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg";
+        }else if(sw_price == "4"){
+          sw_coupon_image = "http://discount-coupon-codes.upto75.com/uploadimages/coupons/11283-Naturals_Beauty_Services_Coupon.jpg";
+        }
+        else if(sw_price == "bathtub_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg";
+        }
+        else if(sw_price == "modular_kitchen_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg";
+        }
+        else if(sw_price == "7"){
+          sw_coupon_image = "https://i.ytimg.com/vi/is3coAI2Kdk/hqdefault.jpg";
+        }else if (sw_price == "wall_coupon") {
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/wall_coupon.jpg";
+        }
+        localStorage.setItem("coupon_image", sw_coupon_image);
     }
+    
 
+    
 
     $(".sw-open-popup").click(function(){
       $(".toggle-page-container").fadeIn();
@@ -389,14 +405,16 @@
       // }
       $('input[name="name"]').val(name);
       $('input[name="ph_number"]').val(ph_number);
-      $('input[name="scratched_offer"]').val(sw_price);
+      $('input[name="spin_wheel_offer"]').val(sw_price);
       $('input[name="selected_site"]').val(sc_selected_alt);
       $('input[name="selected_date"]').val(sc_date);
       $('input[name="selected_time"]').val(sc_time);
-      
+      $('input[name="_next"]').val(location.origin+"/thankyou-pages/thankyou-scratch-card.html")
       $(".site_visit_mail").submit();
       // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
     });
+
+
   </script>
 </body>
 </html>

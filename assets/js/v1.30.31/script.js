@@ -341,7 +341,7 @@ $(document).ready(function(){
                 else if(index_page == "spin_wheel_page"){
                   startSpin();
                   $(".toggle-page-container, #spin_button").hide();
-                  $(".sw-cliam-prize button").show();
+                  $(".sw-cliam-prize button").css("display","block");
               }else{
                 succsess_alert();
               }

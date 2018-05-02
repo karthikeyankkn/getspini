@@ -176,8 +176,7 @@
       $('input[name="selected_site"]').val(sc_selected_alt);
       $('input[name="selected_date"]').val(sc_date);
       $('input[name="selected_time"]').val(sc_time);
-      debugger
-      $('input[name="_next"]').val(location.origin+"/thankyou-pages/thankyou-scratch-card.html")
+      $('input[name="_next"]').val(location.origin+"/thankyou-pages/thankyou-scratch-card.html");
       
       $("#site_visit_mail").submit();
       // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
