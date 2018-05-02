@@ -38,7 +38,7 @@
       function random_card(card){
         rand_num = Math.floor(Math.random() * 1);
 
-        $("#bridge").css({"background": "url("+card.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "80%"});
+        $("#bridge").css({"background": "url("+card.scratch_card[rand_num].src+") center #fff no-repeat", "background-size": "98%"});
           scratchOffer = card.scratch_card[rand_num].offer;
           localStorage.setItem("coupon_image",card.scratch_card[rand_num].src);
           // alert(scratchOffer)
