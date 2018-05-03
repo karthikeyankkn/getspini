@@ -49,7 +49,7 @@
     }
     .sc-download-container button{
       display: block;
-      margin: auto;
+      margin: 10px auto 0;
       background: #53bfa5;
       color: #fff;
       padding: 10px;
@@ -71,12 +71,13 @@
     <!-- <h2>Are you looking for loans?</h2> -->
     <label style="text-align: center;">Congratulations You have won the following coupon</label>
     <img src="" class="download-img" alt="coupon_image" />
+
+    <div class="sc-download-container">
+      <!-- <a class="download-coupon" href="" download><i class="fa fa-download"></i>Download coupon</a> -->
+      <button class="download-coupon-in-whatsup"><i class="fa fa-whatsapp"></i>Whatsapp to Claim Prize</button>
+    </div>
   </div>
   <!-- our sep-services ends -->
-  <div class="sc-download-container">
-    <a class="download-coupon" href="" download><i class="fa fa-download"></i>Download coupon</a>
-    <button class="download-coupon-in-whatsup"><i class="fa fa-whatsapp"></i>Send coupon to whatsup</button>
-  </div>
   
 <!-- body content ends -->
 <!-- footer content -->
@@ -101,13 +102,13 @@
 
     $(".download-coupon-in-whatsup").click(function(){
       
-      if (confirm("Do you want to change this number :"+whatsapp_number)) {
+      if (confirm("To do whatsapp, Are you want to change this number : "+whatsapp_number)) {
           whatsapp_number = prompt("Please enter your whatsapp number:");
       } else {
           
       }
 
-      location.href = "https://api.whatsapp.com/send?phone=91"+whatsapp_number+"&text=Congratulations..!  You have won following coupon. "+download_image+" Further details contact us."
+      location.href = "https://api.whatsapp.com/send?phone=918682800800&text=I wish to claim my prize.  Please get in touch. "+download_image+""
     });
   </script>
 </body>

@@ -176,7 +176,7 @@
     // Create new wheel object specifying the parameters at creation time.
     var theWheel = new Winwheel({
         'numSegments'       : 8,         // Specify number of segments.
-        'outerRadius'       : 217,       // Set outer radius so wheel fits inside the background.
+        'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
         'drawMode'          : 'image',   // drawMode must be set to image.
         'drawText'          : false,      // Need to set this true if want code-drawn text on image wheels.
         'textFontSize'      : 12,        // Set text options as desired.
@@ -190,13 +190,13 @@
         'textFillStyle'     : 'white',
         'segments'     :                // Define segments.
         [
-           {'text' : '1'},//One More Spin
+           {'text' : 'one_more_spin'},//One More Spin
            {'text' : 'free_registration_coupon'},//Free Registration
-           {'text' : '3'},//Better Luck Next Time
-           {'text' : '4'},//Free Naturals Voucher
+           {'text' : 'better_luck_next_time'},//Better Luck Next Time
+           {'text' : 'free_naturals_vouchers'},//Free Naturals Voucher
            {'text' : 'bathtub_coupon'},//Jacuzzi Bathtub Free
            {'text' : 'modular_kitchen_coupon'},//Free Modular Kitchen
-           {'text' : '7'},//Free Pickup & Drop
+           {'text' : 'free_pickup_and_drop'},//Free Pickup & Drop
            {'text' : 'wall_coupon'} //Free Textured Wall
            
         ],
@@ -220,7 +220,7 @@
     }
 
     // Set the image source, once complete this will trigger the onLoad callback (above).
-    loadedImg.src = "../assets/images/referyogi-spin.png";
+    loadedImg.src = "../assets/images/spin-wheel/sw.png";
 
 
 
@@ -325,31 +325,36 @@
     function alertPrize(indicatedSegment)
     {
         // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-        alert("The wheel stopped on " + indicatedSegment.text);
         debugger
         sw_price = indicatedSegment.text;
         var sw_coupon_image;
-        if (sw_price == "1") {
-          resetWheel();
+        if (sw_price == "one_more_spin") {
           alert("Do One more spin");
+          resetWheel();
           startSpin();
-        }else if(sw_price == "3"){
+        }else if(sw_price == "better_luck_next_time"){
           alert("Sorry better luck next time");
           location.reload();
         }else if(sw_price == "free_registration_coupon"){
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg";
-        }else if(sw_price == "4"){
+        }else if(sw_price == "free_naturals_vouchers"){
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "http://discount-coupon-codes.upto75.com/uploadimages/coupons/11283-Naturals_Beauty_Services_Coupon.jpg";
         }
         else if(sw_price == "bathtub_coupon"){
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg";
         }
         else if(sw_price == "modular_kitchen_coupon"){
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg";
         }
-        else if(sw_price == "7"){
+        else if(sw_price == "free_pickup_and_drop"){
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "https://i.ytimg.com/vi/is3coAI2Kdk/hqdefault.jpg";
         }else if (sw_price == "wall_coupon") {
+          // alert("Congratz.. You Have won" + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/wall_coupon.jpg";
         }
         localStorage.setItem("coupon_image", sw_coupon_image);
