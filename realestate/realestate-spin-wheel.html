@@ -23,12 +23,12 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.9/style.css">
-  <script type="text/javascript" src="../assets/js/v1.30.29/Winwheel.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.12/style.css">
+  <script type="text/javascript" src="../assets/js/v1.30.32/Winwheel.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
    <!-- css files ends -->
    <script>
-     var index_page = false;
+     var index_page = "spin_wheel_page";
      var categoryName = "Real Estate(Buying)";
    </script> 
         
@@ -38,196 +38,126 @@
 <header></header>
 <!-- haader ends -->
 <!-- body content starts -->
+  <div class="sw-container sw-cliam-prize">
+    <div class="row the_wheel">
+      <canvas id="canvas" width="315" height="418"></canvas>
+    </div>
+    <button>Book site vist to claim prize</button>
+  </div>
+  <button id="spin_button" class="sw-open-popup">Spin</button>
 
-<div align="center" style="margin-top: 100px;">
-  <h1>Winwheel.js example wheel - basic image wheel</h1>
-  <p>Here is an example of a basic image drawn wheel, where the entire face of the wheel has been created out of a graphically rich image.</p>
-  <br />
-  <p>Choose a power setting then press the Spin button. You will be alerted to the prize won when the spinning stops.</p>
-  <br />
-  <table cellpadding="0" cellspacing="0" border="0">
-      <tr>
-          <td>
-              <div class="power_controls">
-                  <br/>
-                  <br/>
-                  <br/>
-                  <!-- <img id="spin_button" src="spin_off.png" alt="Spin" onClick="startSpin();" /> -->
-                  <button id="spin_button" onClick="startSpin();">Spin</button>
+           <!--  <td width="318" height="418" class="" align="center" valign="center">
+              <canvas id="canvas" width="315" height="418"></canvas>
+          </td>
+          <tr><td></td></tr>
+      <tr class=""><td></td></tr> -->
+
+  <!-- popup for interiors starts -->
+    <div class="toggle-page-container">
+      <ul>
+        <li>
+          <h2>You are just a step away</h2>
+          <div class="spini-contact-form">
+            <p>
+              <input type="text" name="name" placeholder="Enter Your Name" class="input_name">
+              <input type="number" name="ph_number" placeholder="Enter Your Phone Number" class="input_ph_number">
+              <input type="email" name="email" placeholder="Enter Your Email" class="input_email">
+            </p>
+          </div>
+          <div class="spini-poup-nav">
+            <!-- <button class="back">Back</button> -->
+            <button class="submit">Submit</button>
+          </div>  
+        </li>
+      </ul>
+      <!-- load alert page -->
+      <div class="alerts_page"></div>
+        <!-- confirm visiting code starts -->
+        <div class="confirm-visiting-container">
+          <!-- <i class="glyphicon glyphicon-arrow-left confirm-visiting-back"></i> -->
+          <h2 class="text-center">Book free site visit</h2>
+          <ul>
+            <li>
+              <label>1) Select site for visit</label>
+              <div class="select-sc-plots">
+                <div class="row">
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Amaze.jpg" alt="Nest Amaze">
+                  </span>
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Arpana.jpg" alt="Nest Arpana">
+                  </span>
+                  <!-- <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Elegant.jpg" alt="Nest Elegant">
+                  </span> -->
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Fortune.jpg" alt="Nest Fortune">
+                  </span>
+                  <!-- <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Glory.jpg" alt="Nest Glory">
+                  </span> -->
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Life.jpg" alt="Nest Life">
+                  </span>
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Njoy.jpg" alt="Nest Njoy">
+                  </span>
+                  <span class="col-md-4 col-xs-6">
+                    <img src="../assets/images/scratch-card/Nest Suraj.jpg" alt="Nest Suraj">
+                  </span>
+                </div>
               </div>
-          </td>
-          <td width="318" height="418" class="the_wheel" align="center" valign="center">
-              <canvas id="canvas" width="315" height="418">
-                  <p style="{color: white}" align="center">Sorry, your browser doesn't support canvas. Please try another.</p>
-              </canvas>
-          </td>
-      </tr>
-  </table>
-</div>
-<script>
-  // Create new wheel object specifying the parameters at creation time.
-  var theWheel = new Winwheel({
-      'numSegments'       : 8,         // Specify number of segments.
-      'outerRadius'       : 150,       // Set outer radius so wheel fits inside the background.
-      'drawMode'          : 'image',   // drawMode must be set to image.
-      'drawText'          : false,      // Need to set this true if want code-drawn text on image wheels.
-      'textFontSize'      : 12,        // Set text options as desired.
-      'textOrientation'   : 'curved',
-      'textDirection'     : 'reversed',
-      'textAlignment'     : 'outer',
-      'textMargin'        : 5,
-      'textFontFamily'    : 'monospace',
-      'textStrokeStyle'   : 'black',
-      'textLineWidth'     : 2,
-      'textFillStyle'     : 'white',
-      'segments'     :                // Define segments.
-      [
-         {'text' : '1'},
-         {'text' : '2'},
-         {'text' : '3'},
-         {'text' : '4'},
-         {'text' : '5'},
-         {'text' : '6'},
-         {'text' : '7'},
-         {'text' : '8'}
-         
-      ],
-      'animation' :                   // Specify the animation to use.
-      {
-          'type'     : 'spinToStop',
-          'duration' : 5,     // Duration in seconds.
-          'spins'    : 8,     // Number of complete spins.
-          'callbackFinished' : alertPrize
-      }
-  });
+            </li>
+            <li>
+              <label>2) Select approximate date and time for visiting</label>
+              <input type="date" name="sc-date">
+              <select name="sc-time">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11" selected>11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="sc-noon">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+              </select>
+            </li>
+            <li>
+              <button class="download-sc-coupon">Submit</button>
+            </li>
+          </ul>
+        </div>
 
-  // Create new image object in memory.
-  var loadedImg = new Image();
-
-  // Create callback to execute once the image has finished loading.
-  loadedImg.onload = function()
-  {
-      theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
-      theWheel.draw();                    // Also call draw function to render the wheel.
-  }
-
-  // Set the image source, once complete this will trigger the onLoad callback (above).
-  loadedImg.src = "../assets/images/referyogi-spin.png";
-
-
-
-  // Vars used by the code in this page to do power controls.
-  var wheelPower    = 0;
-  var wheelSpinning = false;
-
-  // -------------------------------------------------------
-  // Function to handle the onClick on the power buttons.
-  // -------------------------------------------------------
-  function powerSelected(powerLevel)
-  {
-      // Ensure that power can't be changed while wheel is spinning.
-      if (wheelSpinning == false)
-      {
-          // Reset all to grey incase this is not the first time the user has selected the power.
-          document.getElementById('pw1').className = "";
-          document.getElementById('pw2').className = "";
-          document.getElementById('pw3').className = "";
-
-          // Now light up all cells below-and-including the one selected by changing the class.
-          if (powerLevel >= 1)
-          {
-              document.getElementById('pw1').className = "pw1";
-          }
-
-          if (powerLevel >= 2)
-          {
-              document.getElementById('pw2').className = "pw2";
-          }
-
-          if (powerLevel >= 3)
-          {
-              document.getElementById('pw3').className = "pw3";
-          }
-
-          // Set wheelPower var used when spin button is clicked.
-          wheelPower = powerLevel;
-
-          // Light up the spin button by changing it's source image and adding a clickable class to it.
-          document.getElementById('spin_button').src = "spin_on.png";
-          document.getElementById('spin_button').className = "clickable";
-      }
-  }
-
-  // -------------------------------------------------------
-  // Click handler for spin button.
-  // -------------------------------------------------------
-  function startSpin()
-  {
-      // Ensure that spinning can't be clicked again while already running.
-      if (wheelSpinning == false)
-      {
-          // Based on the power level selected adjust the number of spins for the wheel, the more times is has
-          // to rotate with the duration of the animation the quicker the wheel spins.
-          if (wheelPower == 1)
-          {
-              theWheel.animation.spins = 2;
-          }
-          else if (wheelPower == 2)
-          {
-              theWheel.animation.spins = 5;
-          }
-          else if (wheelPower == 3)
-          {
-              theWheel.animation.spins = 8;
-          }
-
-          // Disable the spin button so can't click again while wheel is spinning.
-          document.getElementById('spin_button').src       = "spin_off.png";
-          document.getElementById('spin_button').className = "";
-
-          // Begin the spin animation by calling startAnimation on the wheel object.
-          theWheel.startAnimation();
-
-          // Set to true so that power can't be changed and spin button re-enabled during
-          // the current animation. The user will have to reset before spinning again.
-          wheelSpinning = true;
-      }
-  }
-
-  // -------------------------------------------------------
-  // Function for reset button.
-  // -------------------------------------------------------
-  function resetWheel()
-  {
-      theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-      theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
-      theWheel.draw();                // Call draw to render changes to the wheel.
-
-      document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
-      document.getElementById('pw2').className = "";
-      document.getElementById('pw3').className = "";
-
-      wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
-  }
-
-  // -------------------------------------------------------
-  // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
-  // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
-  // -------------------------------------------------------
-  function alertPrize(indicatedSegment)
-  {
-      // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-      alert("The wheel stopped on " + indicatedSegment.text);
-  }
-</script>
-
+        <form class="site_visit_mail" method="POST" action="https://formspree.io/karthikeyan@spinircle.com">
+          <input type="hidden" name="name">
+          <input type="hidden" name="ph_number">
+          <input type="hidden" name="spin_wheel_offer">
+          <input type="hidden" name="selected_site">
+          <input type="hidden" name="selected_date">
+          <input type="hidden" name="selected_time">
+          <input type="hidden" name="_next"/>
+          <input type="hidden" name="_cc" value="" />
+          <input type="hidden" name="_subject" value="Spin wheel lead" />
+          <input type="text" name="_gotcha" style="display:none" />
+        </form>
+        <!-- confirm visiting code end -->
+      </div>
+    <!-- popup for interiors ends -->
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.29/script.js"></script>
+  <script src="../assets/js/v1.30.32/script.js"></script>
 
   <!-- AddToAny BEGIN -->
     <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
@@ -241,17 +171,250 @@
 <script async data-rocketsrc="https://static.addtoany.com/menu/page.js" type="text/rocketscript"></script>
   <!-- AddToAny END -->
 
+  <script>
+    var sw_price;
+    // Create new wheel object specifying the parameters at creation time.
+    var theWheel = new Winwheel({
+        'numSegments'       : 8,         // Specify number of segments.
+        'outerRadius'       : 217,       // Set outer radius so wheel fits inside the background.
+        'drawMode'          : 'image',   // drawMode must be set to image.
+        'drawText'          : false,      // Need to set this true if want code-drawn text on image wheels.
+        'textFontSize'      : 12,        // Set text options as desired.
+        'textOrientation'   : 'curved',
+        'textDirection'     : 'reversed',
+        'textAlignment'     : 'outer',
+        'textMargin'        : 5,
+        'textFontFamily'    : 'monospace',
+        'textStrokeStyle'   : 'black',
+        'textLineWidth'     : 2,
+        'textFillStyle'     : 'white',
+        'segments'     :                // Define segments.
+        [
+           {'text' : '1'},//One More Spin
+           {'text' : 'free_registration_coupon'},//Free Registration
+           {'text' : '3'},//Better Luck Next Time
+           {'text' : '4'},//Free Naturals Voucher
+           {'text' : 'bathtub_coupon'},//Jacuzzi Bathtub Free
+           {'text' : 'modular_kitchen_coupon'},//Free Modular Kitchen
+           {'text' : '7'},//Free Pickup & Drop
+           {'text' : 'wall_coupon'} //Free Textured Wall
+           
+        ],
+        'animation' :                   // Specify the animation to use.
+        {
+            'type'     : 'spinToStop',
+            'duration' : 5,     // Duration in seconds.
+            'spins'    : 8,     // Number of complete spins.
+            'callbackFinished' : alertPrize
+        }
+    });
 
-<style>
-  /* Sets the background image for the wheel */
-  td.the_wheel
-  {
-      background-image: url(../assets/images/wheel_back.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-  }
+    // Create new image object in memory.
+    var loadedImg = new Image();
 
-</style>
+    // Create callback to execute once the image has finished loading.
+    loadedImg.onload = function()
+    {
+        theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
+        theWheel.draw();                    // Also call draw function to render the wheel.
+    }
+
+    // Set the image source, once complete this will trigger the onLoad callback (above).
+    loadedImg.src = "../assets/images/referyogi-spin.png";
+
+
+
+    // Vars used by the code in this page to do power controls.
+    var wheelPower    = 0;
+    var wheelSpinning = false;
+
+    // -------------------------------------------------------
+    // Function to handle the onClick on the power buttons.
+    // -------------------------------------------------------
+    function powerSelected(powerLevel)
+    {
+        // Ensure that power can't be changed while wheel is spinning.
+        if (wheelSpinning == false)
+        {
+            // Reset all to grey incase this is not the first time the user has selected the power.
+            document.getElementById('pw1').className = "";
+            document.getElementById('pw2').className = "";
+            document.getElementById('pw3').className = "";
+
+            // Now light up all cells below-and-including the one selected by changing the class.
+            if (powerLevel >= 1)
+            {
+                document.getElementById('pw1').className = "pw1";
+            }
+
+            if (powerLevel >= 2)
+            {
+                document.getElementById('pw2').className = "pw2";
+            }
+
+            if (powerLevel >= 3)
+            {
+                document.getElementById('pw3').className = "pw3";
+            }
+
+            // Set wheelPower var used when spin button is clicked.
+            wheelPower = powerLevel;
+
+            // Light up the spin button by changing it's source image and adding a clickable class to it.
+            document.getElementById('spin_button').src = "spin_on.png";
+            document.getElementById('spin_button').className = "clickable";
+        }
+    }
+
+    // -------------------------------------------------------
+    // Click handler for spin button.
+    // -------------------------------------------------------
+    function startSpin()
+    {
+        // Ensure that spinning can't be clicked again while already running.
+        if (wheelSpinning == false)
+        {
+            // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+            // to rotate with the duration of the animation the quicker the wheel spins.
+            if (wheelPower == 1)
+            {
+                theWheel.animation.spins = 2;
+            }
+            else if (wheelPower == 2)
+            {
+                theWheel.animation.spins = 5;
+            }
+            else if (wheelPower == 3)
+            {
+                theWheel.animation.spins = 8;
+            }
+
+            // Disable the spin button so can't click again while wheel is spinning.
+            document.getElementById('spin_button').src       = "spin_off.png";
+            document.getElementById('spin_button').className = "";
+
+            // Begin the spin animation by calling startAnimation on the wheel object.
+            theWheel.startAnimation();
+
+            // Set to true so that power can't be changed and spin button re-enabled during
+            // the current animation. The user will have to reset before spinning again.
+            wheelSpinning = true;
+        }
+    }
+
+    // -------------------------------------------------------
+    // Function for reset button.
+    // -------------------------------------------------------
+    function resetWheel()
+    {
+        theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+        theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
+        theWheel.draw();                // Call draw to render changes to the wheel.
+
+        // document.getElementById('pw1').className = "";  // Remove all colours from the power level indicators.
+        // document.getElementById('pw2').className = "";
+        // document.getElementById('pw3').className = "";
+
+        wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+    }
+
+    // -------------------------------------------------------
+    // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
+    // note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+    // -------------------------------------------------------
+    function alertPrize(indicatedSegment)
+    {
+        // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
+        alert("The wheel stopped on " + indicatedSegment.text);
+        debugger
+        sw_price = indicatedSegment.text;
+        var sw_coupon_image;
+        if (sw_price == "1") {
+          resetWheel();
+          alert("Do One more spin");
+          startSpin();
+        }else if(sw_price == "3"){
+          alert("Sorry better luck next time");
+          location.reload();
+        }else if(sw_price == "free_registration_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg";
+        }else if(sw_price == "4"){
+          sw_coupon_image = "http://discount-coupon-codes.upto75.com/uploadimages/coupons/11283-Naturals_Beauty_Services_Coupon.jpg";
+        }
+        else if(sw_price == "bathtub_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg";
+        }
+        else if(sw_price == "modular_kitchen_coupon"){
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg";
+        }
+        else if(sw_price == "7"){
+          sw_coupon_image = "https://i.ytimg.com/vi/is3coAI2Kdk/hqdefault.jpg";
+        }else if (sw_price == "wall_coupon") {
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/wall_coupon.jpg";
+        }
+        localStorage.setItem("coupon_image", sw_coupon_image);
+    }
+    
+
+    
+
+    $(".sw-open-popup").click(function(){
+      $(".toggle-page-container").fadeIn();
+    });
+
+    $(".sw-cliam-prize button").click(function(){
+      $(".confirm-visiting-container").show();
+      $(".toggle-page-container").fadeIn();
+      $(".toggle-page-container ul").hide();
+    });
+     // get sms script
+    $(".get-sms").click(function(){
+      // debugger
+      $(".scratch-card-container").hide();
+      $(".confirm-visiting-container").fadeIn();
+     var coupon_img_download = localStorage.getItem("coupon_image");
+
+        
+    });
+
+    // $(".confirm-visiting-back").click(function(){
+    //   // $(".scratch-card-container").fadeIn();
+    //   // $(".confirm-visiting-container").hide();
+    // });
+
+    $(".select-sc-plots span img").click(function(){
+      //  sc_selected_alt = $(this).attr("alt");
+      // console.log(sc_selected_alt);
+      $(this).toggleClass('selected_sc_img');
+      $(this).parent("span").siblings().children("img").removeClass('selected_sc_img');
+    });
+
+    $(".download-sc-coupon").click(function(){
+      name = localStorage.getItem("name");
+      ph_number = localStorage.getItem("ph_number");
+
+      sc_selected_alt = $(".selected_sc_img").attr("alt");
+      sc_date = $("input[name='sc-date']").val();
+      sc_date = new Date(sc_date);
+      sc_time = $("select[name='sc-time']").val();
+      sc_noon = $("select[name='sc-noon']").val();
+      sc_time = sc_time.concat(sc_noon);
+
+      // if([sc_selected_alt,sc_date,sc_time].includes('')) {
+      //   alert("Please fill all fields.");
+      // }
+      $('input[name="name"]').val(name);
+      $('input[name="ph_number"]').val(ph_number);
+      $('input[name="spin_wheel_offer"]').val(sw_price);
+      $('input[name="selected_site"]').val(sc_selected_alt);
+      $('input[name="selected_date"]').val(sc_date);
+      $('input[name="selected_time"]').val(sc_time);
+      $('input[name="_next"]').val(location.origin+"/thankyou-pages/thankyou-scratch-card.html")
+      $(".site_visit_mail").submit();
+      // alert(sc_date+"<br>"+sc_time+"<br>"+sc_noon);
+    });
+
+
+  </script>
 </body>
 </html>

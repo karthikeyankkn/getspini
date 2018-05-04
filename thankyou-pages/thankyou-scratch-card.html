@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic Page Needs ================================================== -->
+        
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>Spini - Best Buyer & Sellers| Verified Leads | Experts Advice</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <meta name="description" content="Spini India's No 1 Leads generation company provides Best Verified leads for real estate, loans, Insurance, Interiors.Talk with our Sale Experts & Get your job done.">
+        <meta name="keywords" content="spini , real estate buyers , stepstones apartments , Stepstone akshara, duplex flats, flats in chennai ,life insurance ,health insurance, mortgage loans , business loans, home loans,personal loans, interior,interior designer in chennai, building construction in chennai ,real estate in bangalore, buyer and seller, nest glory, luxurious apartments , 1bhk in chennai ,2bhk apartment in chennai, loans at low interest,">
+        <link rel="canonical" href="http://getspini.com/"/>
+        <meta name="" content="">
+        <!-- Mobile Specific Metas ================================================== -->
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.12/style.css">
+   <!-- css files ends -->
+   <script>
+     var index_page = false;
+     var categoryName = "";
+   </script> 
+        
+</head>
+<body>
+
+  <style type="text/css">
+    .sc-download-container{
+      text-align: center;
+    }
+    .sc-download-container a{
+      display: inline-block;
+      background: #53bfa5;
+      color: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .sc-download-container i{
+      padding-right: 5px;
+      font-size: 22px;
+      vertical-align: middle;
+
+    }
+    .sc-download-container button{
+      display: block;
+      margin: auto;
+      background: #53bfa5;
+      color: #fff;
+      padding: 10px;
+      border: 0;
+    }
+    .download-img{
+      max-width: 250px;
+      margin: auto;
+      display: block;
+    }
+  </style>
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+<!-- body content starts -->
+
+<!-- our sep-services starts -->
+  <div class="container-fluid spini-sep-services spini-thankyou">
+    <!-- <h2>Are you looking for loans?</h2> -->
+    <label style="text-align: center;">Congratulations You have won the following coupon</label>
+    <img src="" class="download-img" alt="coupon_image" />
+  </div>
+  <!-- our sep-services ends -->
+  <div class="sc-download-container">
+    <a class="download-coupon" href="" download><i class="fa fa-download"></i>Download coupon</a>
+    <button class="download-coupon-in-whatsup"><i class="fa fa-whatsapp"></i>Send coupon to whatsup</button>
+  </div>
+  
+<!-- body content ends -->
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script src="../assets/js/lib/jquery.min.js"></script>
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <script src="../assets/js/v1.30.32/script.js"></script>
+
+  <!-- download coupon script -->
+  <script type="text/javascript">
+    var whatsapp_number = localStorage.getItem("ph_number");
+    var download_image = localStorage.getItem("coupon_image");
+    $(".download-coupon").attr("href", download_image);
+    $(".download-img").attr("src", download_image);
+    // $(".download-coupon").click(function(){
+    //     var link = document.createElement('a');
+    //     link.href = download_image;
+    //     link.download = "scratch-card";
+    //     link.dispatchEvent(new MouseEvent('click'));
+    // });
+
+    $(".download-coupon-in-whatsup").click(function(){
+      
+      if (confirm("Do you want to change this number :"+whatsapp_number)) {
+          whatsapp_number = prompt("Please enter your whatsapp number:");
+      } else {
+          
+      }
+
+      location.href = "https://api.whatsapp.com/send?phone=91"+whatsapp_number+"&text=Congratulations..!  You have won following coupon. "+download_image+" Further details contact us."
+    });
+  </script>
+</body>
+</html>
