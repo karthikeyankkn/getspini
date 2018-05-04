@@ -82,7 +82,7 @@ $(document).ready(function(){
     $(".error-page").css("height", window_height);
 	}
 
-    debugger
+    // debugger
   if (location.origin == "http://staging.getspini.com" || location.origin == "http://localhost:8080") {
     ApiEndPoint = 'https://sapi.getspini.com:8443';
   }else{
@@ -190,7 +190,7 @@ $(document).ready(function(){
     });
 
     $(".submit_innerpage").click(function(){
-      debugger
+      // debugger
       name = $("input[type='text']").val();
       ph_number = $("input[name='ph_number']").val();
       email = $("input[type='email']").val();
@@ -227,7 +227,8 @@ $(document).ready(function(){
       name = short_traverse.find("input[type='text']").val();
       ph_number = short_traverse.find("input[type='number']").val();
       email = short_traverse.find("input[type='email']").val();
-      if (index_page == 'scratch_card_page') {
+      debugger
+      if (index_page == 'scratch_card_page' || index_page == "spin_wheel_page") {
         cityName = "Chennai";
       }else{
        cityName = short_traverse.find("select[name='city']").val(); 
@@ -336,6 +337,11 @@ $(document).ready(function(){
                 $(".scratch-card-data-collection").hide();
                 $(".toggle-page-container ul, .alerts_page").hide();
                 $(".scratch-card-container").fadeIn();
+              }
+                else if(index_page == "spin_wheel_page"){
+                  startSpin();
+                  $(".toggle-page-container, #spin_button").hide();
+                  $(".sw-cliam-prize button").css("display","block");
               }else{
                 succsess_alert();
               }
@@ -548,7 +554,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.29/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.32/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -697,7 +703,7 @@ $(document).ready(function(){
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.29/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.32/cards.json", function(data, status){
         cards = data.cards;
         
         $(".see-more-pagination").click(function(){
