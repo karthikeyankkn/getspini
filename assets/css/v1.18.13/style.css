@@ -1767,7 +1767,11 @@ header{
     margin: 10px auto;
   }
   .sw-container{
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+  .sw-container h1{
+    text-align: center;
+    padding-top: 20px;
   }
   .sw-open-popup{
     background-color: #cd362c;

@@ -23,13 +23,13 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.12/style.css">
-  <script type="text/javascript" src="../assets/js/v1.30.32/Winwheel.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.13/style.css">
+  <script type="text/javascript" src="../assets/js/v1.30.33/Winwheel.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
    <!-- css files ends -->
    <script>
      var index_page = "spin_wheel_page";
-     var categoryName = "Real Estate(Buying)";
+     var categoryName = "realestate-spin-wheel";
    </script> 
         
 </head>
@@ -39,6 +39,7 @@
 <!-- haader ends -->
 <!-- body content starts -->
   <div class="sw-container sw-cliam-prize">
+    <h1>Spini Spin</h1>
     <div class="row the_wheel">
       <canvas id="canvas" width="315" height="418"></canvas>
     </div>
@@ -59,9 +60,9 @@
           <h2>You are just a step away</h2>
           <div class="spini-contact-form">
             <p>
-              <input type="text" name="name" placeholder="Enter Your Name" class="input_name">
-              <input type="number" name="ph_number" placeholder="Enter Your Phone Number" class="input_ph_number">
-              <input type="email" name="email" placeholder="Enter Your Email" class="input_email">
+              <input type="text" name="name" placeholder="Enter Your Name" class="input_name" value="">
+              <input type="number" name="ph_number" placeholder="Enter Your Phone Number" class="input_ph_number" value="">
+              <input type="email" name="email" placeholder="Enter Your Email" class="input_email" value="">
             </p>
           </div>
           <div class="spini-poup-nav">
@@ -144,7 +145,7 @@
           <input type="hidden" name="selected_date">
           <input type="hidden" name="selected_time">
           <input type="hidden" name="_next"/>
-          <input type="hidden" name="_cc" value="" />
+          <input type="hidden" name="_cc" value="anuradha.v@spinircle.com,shabuddeen@spinircle.com" />
           <input type="hidden" name="_subject" value="Spin wheel lead" />
           <input type="text" name="_gotcha" style="display:none" />
         </form>
@@ -157,7 +158,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.32/script.js"></script>
+  <script src="../assets/js/v1.30.33/script.js"></script>
 
   <!-- AddToAny BEGIN -->
     <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:150px;">
@@ -336,25 +337,25 @@
           alert("Sorry better luck next time");
           location.reload();
         }else if(sw_price == "free_registration_coupon"){
-          // alert("Congratz.. You Have won" + sw_price);
+          alert("Congratz.. You Have won " + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg";
         }else if(sw_price == "free_naturals_vouchers"){
-          // alert("Congratz.. You Have won" + sw_price);
-          sw_coupon_image = "http://discount-coupon-codes.upto75.com/uploadimages/coupons/11283-Naturals_Beauty_Services_Coupon.jpg";
+          alert("Congratz.. You Have won " + sw_price);
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/naturals_coupon.jpg";
         }
         else if(sw_price == "bathtub_coupon"){
-          // alert("Congratz.. You Have won" + sw_price);
+          alert("Congratz.. You Have won " + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg";
         }
         else if(sw_price == "modular_kitchen_coupon"){
-          // alert("Congratz.. You Have won" + sw_price);
+          alert("Congratz.. You Have won " + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg";
         }
         else if(sw_price == "free_pickup_and_drop"){
-          // alert("Congratz.. You Have won" + sw_price);
-          sw_coupon_image = "https://i.ytimg.com/vi/is3coAI2Kdk/hqdefault.jpg";
+          alert("Congratz.. You Have won " + sw_price);
+          sw_coupon_image = "http://getspini.com/assets/images/scratch-card/pickup_drop_coupon.jpg";
         }else if (sw_price == "wall_coupon") {
-          // alert("Congratz.. You Have won" + sw_price);
+          alert("Congratz.. You Have won " + sw_price);
           sw_coupon_image = "http://getspini.com/assets/images/scratch-card/wall_coupon.jpg";
         }
         localStorage.setItem("coupon_image", sw_coupon_image);
