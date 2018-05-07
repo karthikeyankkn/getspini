@@ -10,6 +10,33 @@
 		"card_city": ""
 		},
 		{
+		"id":"119",
+		"a_href":"vivant-eleganz.html",
+		"card_title":"VIVANT ELEGANZ",
+		"card_img": "http://cdn.getspini.com/landing/vivant-eleganz.jpg",
+		"card_description":"This is a individual villa community with 30 units of 2 and 3 BHK.",
+		"card_area":"Coimbatore",
+		"card_city": "Coimbatore"
+		},
+		{
+		"id":"118",
+		"a_href":"sri-krishna-avenue.html",
+		"card_title":"SRI KRISHNA AVENUE",
+		"card_img": "http://cdn.getspini.com/landing/sri-krishna-avenue2.jpg",
+		"card_description":"SRI KRISHNA AVEUNUE DTCP approved plots.",
+		"card_area":"Sriperumbudur, Kanchipuram",
+		"card_city": "chennai"
+		},
+		{
+		"id":"117",
+		"a_href":"sri-akshaya-garden.html",
+		"card_title":"SRI AKSHAYA GARDEN",
+		"card_img": "http://cdn.getspini.com/landing/akshaya-garden2.jpg",
+		"card_description":"SRI AKSHAYA GARDEN – Walajabad (DTCP Approved plots)Individual villas ",
+		"card_area":"Sriperumbudur, Kanchipuram",
+		"card_city": "chennai"
+		},
+		{
 		"id":"116",
 		"a_href":"eta-star-saar-city.html",
 		"card_title":"ETA STAR SAAR CITY",
@@ -24,7 +51,7 @@
 		"card_title":"nature's vally",
 		"card_img": "http://cdn.getspini.com/landing/nature-valley.jpg",
 		"card_description":"A plot is available for sale in Ibrahimpatnam, Hyderabad. It has an area of 2700 sqft.",
-		"card_area":"Aghapally Village , Ibrahimpatnam, Hyderabad",
+		"card_area":"Aghapally Village ,  Hyderabad",
 		"card_city": "hyderabad"
 		},
 		{
