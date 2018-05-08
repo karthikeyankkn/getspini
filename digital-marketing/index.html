@@ -130,7 +130,8 @@
         </section>
         <!-- end parallax section -->
         <!-- start parallax section -->
-        <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/02.jpg');" id="why_spini">
+        <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('http://cdn.getspini.com/DM2.gif');background-color: rgb(234, 79, 78);
+    background-size: 70% !important;" id="why_spini">
             <div class="container-fluid one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="slider-typography">
                     <div class="slider-text-middle-main">
@@ -370,25 +371,25 @@
       }
 
       
-        $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
-        $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
-        // alert("This came");
-        j+=1;
-        if (j==3) {
-          j=0;
-        }
+        // $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
+        // $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
+        // // alert("This came");
+        // j+=1;
+        // if (j==3) {
+        //   j=0;
+        // }
 
-      setInterval(
         function banner_animation(){
-        $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
-        $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
-        // alert("This came");
-        j+=1;
-        if (j==3) {
-          j=0;
+          $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
+          $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
+          // alert("This came");
+          j+=1;
+          if (j==3) {
+            j=0;
+          }
         }
-      }
-      , 3000);
+        banner_animation();
+      setInterval(banner_animation , 3000);
 
     </script>
 
