@@ -134,9 +134,13 @@
     $(".get-sms").click(function(){
       // debugger
       $(".scratch-card-container").hide();
-      $(".confirm-visiting-container").fadeIn();
       coupon_img_download = localStorage.getItem("coupon_image");
 
+      if (dynamic_id == "plot" || dynamic_id == "construction") {
+        location.href = "/thankyou-pages/thankyou-scratch-card.html"
+      }
+
+      $(".confirm-visiting-container").fadeIn();
       // download_coupon();
       // setTimeout(function(){location.reload();}, 3000);
 
