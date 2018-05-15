@@ -714,6 +714,29 @@
         </section>
 
 <!-- tab images -->
+
+<!-- model popup for tab images -->
+
+  <div class="modal fade" id="tab_images" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body">
+         <img src="" class="interior-tab-image" width="100%" />
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
@@ -747,6 +770,13 @@
         var picID = $(this).attr('id');
          $(this).find('picID');
         $('picID').modal('toggle');      
+    });
+
+
+    $(".tile img").click(function(){
+      var current_img = $(this).attr("src");
+      $('#tab_images').modal('toggle');
+      $('.interior-tab-image').attr("src", current_img);
     });
 });
 </script>
