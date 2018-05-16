@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"121",
+		"a_href":"divya-nagar.html",
+		"card_title":"Divya Nagar",
+		"card_img": "http://cdn.getspini.com/landing/divya-nagar-1.jpg",
+		"card_description":"AG Foundation proudly presents, “Divya Nagar” Kanchipuram. DTCP approved plots.",
+		"card_area":" Kanchipuram",
+		"card_city": "chennai"
+		},
+		{
+		"id":"120",
+		"a_href":"sri-raja-garuda-avenue.html",
+		"card_title":"SRI RAJA GARUDA AVENUE",
+		"card_img": "http://cdn.getspini.com/landing/garuda-2.jpg",
+		"card_description":"AG Foundation proudly presents, 'SRI RAJA GARUDA AVENUE' walajabad plots and villas.",
+		"card_area":"Walajabad, Kanchipuram",
+		"card_city": "chennai"
+		},
+		{
 		"id":"119",
 		"a_href":"vivant-eleganz.html",
 		"card_title":"VIVANT ELEGANZ",
