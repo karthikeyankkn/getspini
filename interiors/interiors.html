@@ -224,6 +224,10 @@
   display: block;
   margin-bottom: 5px;
 }
+.interior-popup-content p{
+  padding: 10px;
+  text-align: justify;
+}
 /*Portfolio===============================*/
 #portfolio {  
     margin: 1rem 0;
@@ -362,7 +366,7 @@
               <div id="result"></div>
             </div> -->
             <div class="tile scale-anm  lroom">
-            <img src="../assets/images/interior/living-room/01.jpg" alt="livingroom-interior" img-title="Living room" img-content="Living room is one of the interior aspect.  Room should have peasefull look and atmosphere.  Choosing of color will set the mindset.  However design living room that much peace will reflect."/>
+            <img src="../assets/images/interior/living-room/01.jpg" alt="livingroom-interior" img-content="Living room is one of the interior aspect.  Room should have peasefull look and atmosphere.  Choosing of color will set the mindset.  However design living room that much peace will reflect."/>
             </div>
             <div class="tile scale-anm  lroom">
             <img src="http://cdn.getspini.com/interior/LivingRoom/02.jpg" alt="livingroom-interior" />
@@ -740,7 +744,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title text-center">Modal Header</h4> -->
+          <h4 class="modal-title text-center">Modal Header</h4>
         </div>
         <div class="modal-body">
          <div class="row">
@@ -809,7 +813,7 @@
     $(".tile img").click(function(){
       //get content
       current_img = $(this).attr("src");
-      current_h1 = $(this).attr("img-title");
+      current_h1 = $(this).attr("alt");
       current_p = $(this).attr("img-content");
       $('#tab_images').modal('toggle');
 
