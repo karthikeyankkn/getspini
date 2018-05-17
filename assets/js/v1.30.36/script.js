@@ -554,7 +554,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.35/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.36/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -703,7 +703,7 @@ $(document).ready(function(){
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.35/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.36/cards.json", function(data, status){
         cards = data.cards;
         
         $(".see-more-pagination").click(function(){
@@ -909,4 +909,12 @@ $(document).ready(function(){
 
       }
        // emi script end
+
+
+       // temporary typeform for realestate
+       var append_form = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/yxPRFr" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>'
+       if (categoryName == "Real Estate(Buying)") {
+        $('.contact-us ul').hide();
+        $('.contact-us').append(append_form);
+       }
 });

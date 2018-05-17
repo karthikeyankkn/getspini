@@ -211,6 +211,23 @@
 .toggle-page-container{
   display: none !important;
 }
+.interior-popup-footer{
+
+}
+.interior-popup-footer a{
+  color: #cd2f2b;
+  font-size: 14px;
+}
+.interior-popup-footer i{
+  font-size: xx-large;
+  color: #53bfa5;
+  display: block;
+  margin-bottom: 5px;
+}
+.interior-popup-content p{
+  padding: 10px;
+  text-align: justify;
+}
 /*Portfolio===============================*/
 #portfolio {  
     margin: 1rem 0;
@@ -326,7 +343,7 @@
               <div class="toolbar mb2 mt2 padding-b-25">
                 <div id="myDIV">
 
-              <button class="btn fil-cat change active" href="" data-rel="all">All</button>
+              <button class="btn fil-cat change active" href="" data-rel="all" onclick="location.reload();">All</button>
               <button class="btn fil-cat change" data-rel="web">Modular Kitchen</button>
               <button class="btn fil-cat change" data-rel="lroom">Living Room</button>
               <button class="btn fil-cat change" data-rel="flyers">Pooja Room</button>
@@ -349,7 +366,7 @@
               <div id="result"></div>
             </div> -->
             <div class="tile scale-anm  lroom">
-            <img src="../assets/images/interior/living-room/01.jpg" alt="livingroom-interior" img-title="Living room" img-content="Living room is one of the interior aspect.  Room should have peasefull look and atmosphere.  Choosing of color will set the mindset.  However design living room that much peace will reflect."/>
+            <img src="../assets/images/interior/living-room/01.jpg" alt="livingroom-interior" img-content="Living room is one of the interior aspect.  Room should have peasefull look and atmosphere.  Choosing of color will set the mindset.  However design living room that much peace will reflect."/>
             </div>
             <div class="tile scale-anm  lroom">
             <img src="http://cdn.getspini.com/interior/LivingRoom/02.jpg" alt="livingroom-interior" />
@@ -716,7 +733,6 @@
           </div>
          </div>
         </section>
-
 <!-- tab images -->
 
 <!-- model popup for tab images -->
@@ -727,25 +743,28 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <!-- <h4 class="modal-title text-center">Modal Header</h4> -->
+          <h4 class="modal-title text-center">Modal Header</h4>
         </div>
         <div class="modal-body">
          <div class="row">
             <div class="interior-popup-img">
               <img src=""  width="100%" />
             </div>
-            <!-- <div class="interior-popup-content col-xs-6">
+            <div class="interior-popup-content">
               <p></p>
-            </div> -->
+            </div>
          </div>
         </div>
-        <div class="modal-footer">
-          <div class="col-md-6 text-center">
-            <a href="" download class="download-interior-img"> <i class="fa fa-download"></i> </a>
+        <div class="modal-footer interior-popup-footer">
+          <div class="col-xs-3 col-md-4 text-center">
+            <a href="" download class="download-interior-img"> <i class="fa fa-download"></i>Download</a>
           </div>
-          <!-- <div class="col-md-6 text-center">
-            <i class="fa fa-share"></i>
-          </div> -->
+          <div class="col-xs-2 col-md-4 text-center">
+            <a href=""  class="wshare-interior-img"> <i class="fa fa-whatsapp"></i>Share</a>
+          </div>
+          <div class="col-xs-7 col-md-4 text-center">
+            <a href="https://spini.typeform.com/to/C8uVzq"  class="interior-get-quote"><i class="fa fa-file-text-o"></i>Get quote for this design</a>
+          </div>
         </div>
       </div>
       
@@ -760,7 +779,7 @@
 
   <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="../assets/js/lib/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/js/v1.30.35/script.js"></script>
+  <script type="text/javascript" src="../assets/js/v1.30.36/script.js"></script>
   <script type="text/javascript">
                
 //<!--    portfolio  JS  =================    -->
@@ -788,12 +807,12 @@
         $('picID').modal('toggle');      
     });
 
-    var current_img, current_h1, current_p;
+    var current_img, current_h1, current_p, share_img;
 
     $(".tile img").click(function(){
       //get content
       current_img = $(this).attr("src");
-      current_h1 = $(this).attr("img-title");
+      current_h1 = $(this).attr("alt");
       current_p = $(this).attr("img-content");
       $('#tab_images').modal('toggle');
 
@@ -804,9 +823,13 @@
       $('.download-interior-img').attr("href", current_img);
     });
 
-    // $(".download-interior-img").click(function(){
-
-    // });
+    //whatsapp share image
+    $('.wshare-interior-img').click(function(){
+      // var pathname = current_img.substr(2);
+      // share_img = "https://api.whatsapp.com/send?text="+location.origin+""+pathname+"";
+      share_img = "https://api.whatsapp.com/send?text="+current_img+"";
+      $(this).attr("href", share_img);
+    });
 });
 </script>
 <!-- <script>
@@ -847,5 +870,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 </script>
+<script src="https://my.hellobar.com/4cc7dd2caaa889ae3a4f2beb3ff6717a20db0af3.js" type="text/javascript" charset="utf-8" async="async"></script>
 </body>
 </html>
