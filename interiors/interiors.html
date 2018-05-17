@@ -339,7 +339,7 @@
               <div class="toolbar mb2 mt2 padding-b-25">
                 <div id="myDIV">
 
-              <button class="btn fil-cat change active" href="" data-rel="all">All</button>
+              <button class="btn fil-cat change active" href="" data-rel="all" onclick="location.reload();">All</button>
               <button class="btn fil-cat change" data-rel="web">Modular Kitchen</button>
               <button class="btn fil-cat change" data-rel="lroom">Living Room</button>
               <button class="btn fil-cat change" data-rel="flyers">Pooja Room</button>
@@ -820,23 +820,11 @@
       $('.download-interior-img').attr("href", current_img);
     });
 
-    $(".download-interior-img").click(function(){
-      // debugger
-      // var link = document.createElement('a');
-      // link.href = current_img;
-      // link.download = 'interior.jpg';
-      // link.dispatchEvent(new MouseEvent('click'));
-      var a = $("<a>")
-      .attr("href", current_img)
-      .attr("download", "interior.jpg")
-      .appendTo("body");
-      a[0].click();
-      a.remove();
-    });
-
     //whatsapp share image
     $('.wshare-interior-img').click(function(){
-      share_img = "https://api.whatsapp.com/send?text= "+current_img+"";
+      debugger
+      var pathname = current_img.substr(2);
+      share_img = "https://api.whatsapp.com/send?text="+location.origin+""+pathname+"";
       $(this).attr("href", share_img);
     });
 });
