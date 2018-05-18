@@ -825,9 +825,9 @@
 
     //whatsapp share image
     $('.wshare-interior-img').click(function(){
-      // var pathname = current_img.substr(2);
-      // share_img = "https://api.whatsapp.com/send?text="+location.origin+""+pathname+"";
-      share_img = "https://api.whatsapp.com/send?text="+current_img+"";
+      var pathname = current_img.substr(2);
+      share_img = "https://api.whatsapp.com/send?text="+location.origin+""+pathname+"";
+      // share_img = "https://api.whatsapp.com/send?text="+current_img+"";
       $(this).attr("href", share_img);
     });
 });
