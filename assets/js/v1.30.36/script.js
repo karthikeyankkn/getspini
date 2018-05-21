@@ -655,7 +655,7 @@ $(document).ready(function(){
         if (homepage_category == 'realestate') {
           // categoryName = "Real Estate(Buying)";
           // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
+          banner_background = "http://cdn.getspini.com/bg-index.jpg";
           feature_add_title = "List your property for free Ad listing on our website";
           feature_add_href = "https://spini.typeform.com/to/lNAjvb";
           feature_add_href_title = "Post Ad";

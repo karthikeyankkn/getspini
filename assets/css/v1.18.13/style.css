@@ -32,12 +32,10 @@ canvas{
 .banner-video-container{
   text-align: center;
   margin-top: 60px;
-  /*background: url(http://cdn.getspini.com/hd-gif.gif);*/
-  /*background: url(https://s.tmimgcdn.com/blog/wp-content/uploads/2017/06/books.jpg?x80036);*/
-  /*background: url(https://d352ltojookjzf.cloudfront.net/wp-content/uploads/2014/04/3-wooden-backgrounds.jpg);*/
   height: 450px;
   color: #fff;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .banner-video-layer{
   background: #00000050;
@@ -324,7 +322,7 @@ header{
 @media only screen and (max-width: 500px) {
 .home-page-categories li {
     display: inline-block;
-    padding: 10px 10px;
+    /*padding: 10px 10px;*/
     cursor: pointer;
     border: 1px solid #fff;
     margin: 0 0px;
@@ -332,6 +330,9 @@ header{
     position: relative;
     transition: 0.5s ease;
     font-size: 12px;
+}
+.home-page-categories li a{
+  padding: 8px 5px;
 }
 .home-page-leads li{
   min-width: 200px;
