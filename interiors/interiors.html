@@ -287,7 +287,7 @@
               <div class="toolbar mb2 mt2 padding-b-25">
                 <div id="myDIV">
 
-              <button class="btn fil-cat change active" href="" data-rel="all" onclick="location.reload();">All</button>
+              <button class="btn fil-cat change g-active" href="" data-rel="all" onclick="location.reload();">All</button>
               <button class="btn fil-cat change" data-rel="web">Modular Kitchen</button>
               <button class="btn fil-cat change" data-rel="lroom">Living Room</button>
               <button class="btn fil-cat change" data-rel="flyers">Pooja Room</button>
@@ -808,9 +808,9 @@ var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("g-active");
+    current[0].className = current[0].className.replace(" g-active", "");
+    this.className += " g-active";
   });
 }
 </script>

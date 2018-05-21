@@ -1676,13 +1676,13 @@ header{
 /*Portfolio===============================*/
 
 
-#portfolio-container .active {
+#portfolio-container .g-active {
    background-color:#cd0000;color:#fff;
     outline: 0;
     box-shadow: none; 
 }
 
-#portfolio-container .active:active{
+#portfolio-container .g-active:active{
    background-color:#FF1351;color:#fff;
     outline: 0;
     box-shadow: none; 
