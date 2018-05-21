@@ -639,11 +639,11 @@ $(document).ready(function(){
       // script files for banner page starts
       $(".home-page-categories li").click(function(){
         homepage_category = $(this).attr("category");
-        $(this).addClass("selected-category");
-        $(this).siblings().removeClass("selected-category");
+        // $(this).addClass("selected-category");
+        // $(this).siblings().removeClass("selected-category");
 
-        $(this).children("span").show();
-        $(this).siblings().children("span").hide();
+        // $(this).children("span").show();
+        // $(this).siblings().children("span").hide();
         
         // debugger
         function homepage_toggle(){
@@ -653,33 +653,33 @@ $(document).ready(function(){
           $(".features-add a").attr("href", feature_add_href).text(feature_add_href_title);
         } 
         if (homepage_category == 'realestate') {
-          categoryName = "Real Estate(Buying)";
+          // categoryName = "Real Estate(Buying)";
           // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
           banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg13.gif";
           feature_add_title = "List your property for free Ad listing on our website";
           feature_add_href = "https://spini.typeform.com/to/lNAjvb";
           feature_add_href_title = "Post Ad";
         }else if(homepage_category == 'interior'){
-          categoryName = "Interior/Renovation/Modular Kitchen";
+          // categoryName = "Interior/Renovation/Modular Kitchen";
           // banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
-          feature_add_title = "Estimate the price of your modular kitchen in few minutes";
-          feature_add_href = "/interiors/interior-estimation.html";
-          feature_add_href_title = "Get Estimate";
+          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          // feature_add_title = "Estimate the price of your modular kitchen in few minutes";
+          // feature_add_href = "/interiors/interior-estimation.html";
+          // feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
-          categoryName = "Loans";
+          // categoryName = "Loans";
           // banner_heading = "Don't go for Common Floor, When you can get your private space";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
-          feature_add_title = "Need a loan immediately with lower EMI's, Know more";
-          feature_add_href = "/loans/loan-emi-calculator.html";
-          feature_add_href_title = "Calculate EMI";
+          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          // feature_add_title = "Need a loan immediately with lower EMI's, Know more";
+          // feature_add_href = "/loans/loan-emi-calculator.html";
+          // feature_add_href_title = "Calculate EMI";
         }else if(homepage_category == 'insurance'){
-          categoryName = "Insurance";
+          // categoryName = "Insurance";
           // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
-          feature_add_title = "Life time benificial insurance are available";
-          feature_add_href = "/insurances/insurances.html";
-          feature_add_href_title = "Get insurance";
+          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
+          // feature_add_title = "Life time benificial insurance are available";
+          // feature_add_href = "/insurances/insurances.html";
+          // feature_add_href_title = "Get insurance";
         }
 
         homepage_toggle();
