@@ -317,8 +317,8 @@ header{
   box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
 }
 .carousel-control.left span, .carousel-control.right span{
-  line-height: 20px;
-  font-size: 25px;
+  line-height: 50px;
+  font-size: 45px;
 }
 .confirm-visiting-container{
   display: none;
