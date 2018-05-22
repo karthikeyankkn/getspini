@@ -89,6 +89,10 @@ canvas{
   color: #fff;
   display: block;
   padding: 15px 10px;
+  transition: 0.5s ease;
+}
+.home-page-categories li a:hover{
+  background: #cd2f2b;
 }
 .home-page-leads{
   padding-top: 35px;
@@ -332,7 +336,7 @@ header{
     font-size: 12px;
 }
 .home-page-categories li a{
-  padding: 8px 5px;
+  padding: 8px;
 }
 .home-page-leads li{
   min-width: 200px;
