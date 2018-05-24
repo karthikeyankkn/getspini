@@ -4,15 +4,15 @@
 <!-- Mirrored from www.themezaa.com/html/pofo/home-portfolio-parallax.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 May 2018 06:42:07 GMT -->
 <head>
         <!-- title -->
-        <title>POFO – Creative Agency, Corporate and Portfolio Multi-purpose Template</title>
+        <title>GETSPINI - Digital Marketing</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <meta name="author" content="ThemeZaa">
         <!-- description -->
-        <meta name="description" content="POFO is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose agency and portfolio HTML5 template with 25 ready home page demos.">
+        <meta name="description" content="">
         <!-- keywords -->
-        <meta name="keywords" content="creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, agency, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, personal, masonry, grid, coming soon, faq">
+        <meta name="keywords" content="">
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.png">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
@@ -57,7 +57,7 @@
                     <div class="row">
                         <!-- start logo -->
                         <div class="col-md-2 col-xs-5">
-                            <a href="/digital-marketing/" title="Pofo" class="logo"><img src="https://p13.zdassets.com/hc/settings_assets/741537/200107758/xYNq61NOtwJzQrUTsT180w-Spini-Logo-Text.png" data-rjs="images/logo@2x.png" class="default logo-dark" alt="Pofo"><!-- <img src="images/logo-white.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light"> --></a>
+                            <a href="/digital-marketing/" title="Pofo" class="logo"><img src="https://p13.zdassets.com/hc/settings_assets/741537/200107758/xYNq61NOtwJzQrUTsT180w-Spini-Logo-Text.png" data-rjs="images/logo@2x.png" class="default logo-dark" alt=""><!-- <img src="images/logo-white.png" data-rjs="images/logo-white@2x.png" alt="Pofo" class="logo-light"> --></a>
                         </div>
                         <!-- end logo -->
                         <div class="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
@@ -111,7 +111,13 @@
         </header>
         <!-- end header -->
         <!-- start parallax section -->
-        <section class="banner-image-container"></section>
+        <div class="container-fluidt">
+            <a href="../digital-marketing-grader.htm"><button class="button-ani"><span>Digital Marketing </span></button></a>
+        </div>
+        <section class="banner-image-container">
+            
+            
+        </section>
 
 
         <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/01A.jpg');" id="home">
@@ -253,7 +259,7 @@
                     <!-- start logo -->
                     <div class="col-md-3 col-sm-3 col-xs-12 display-table sm-text-center xs-margin-20px-bottom">
                         <div class="display-table-cell vertical-align-middle">
-                            <a href="/digital-marketing/"><img class="footer-logo" src="https://p13.zdassets.com/hc/settings_assets/741537/200107758/xYNq61NOtwJzQrUTsT180w-Spini-Logo-Text.png" data-rjs="images/logo@2x.png" alt="Pofo"></a>
+                            <a href="/digital-marketing/"><img class="footer-logo" src="https://p13.zdassets.com/hc/settings_assets/741537/200107758/xYNq61NOtwJzQrUTsT180w-Spini-Logo-Text.png" data-rjs="images/logo@2x.png" alt=""></a>
                         </div>
                     </div> 
                     <!-- end logo -->
@@ -362,9 +368,9 @@
 
       // scale animation image
       var banner_images = [
-                            "images/portfolio-item58.jpg",
-                            "images/portfolio-item59.jpg",
-                            "images/portfolio-item60.jpg"
+                            "images/banner/01.jpg",
+                            "images/banner/02.jpg",
+                            "images/banner/03.jpg"
                           ];
       for (var i = 0; i < banner_images.length; i++) {
         $(".banner-image-container").append("<img src="+banner_images[i]+" />");
@@ -399,9 +405,9 @@
       overflow: hidden;
     }
     .scale-animation{
-      -ms-transform: scale(1.2,1.2); /* IE 9 */
-      -webkit-transform: scale(1.2,1.2); /* Safari */
-      transform: scale(1.2,1.2); /* Standard syntax */
+      -ms-transform: scale(1.1,1.1); /* IE 9 */
+      -webkit-transform: scale(1.1,1.1); /* Safari */
+      transform: scale(1.1,1.1); /* Standard syntax */
       transition: 6s ease;
     }
     .contact-us-container{
@@ -434,6 +440,45 @@
     .grid-gallery-container img{
       margin-bottom: 10px;
     }
+    .button-ani {
+  border-radius: 4px;
+  background-color: #ea3635;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 2px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+
+}
+
+.button-ani span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-ani span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-ani:hover span {
+  padding-right: 25px;
+}
+
+.button-ani:hover span:after {
+  opacity: 1;
+  right: 0;
+}
     </style>
 <!-- Mirrored from www.themezaa.com/html/pofo/home-portfolio-parallax.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 04 May 2018 06:45:07 GMT -->
 </html>
