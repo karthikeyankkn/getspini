@@ -323,6 +323,19 @@ header{
 .confirm-visiting-container{
   display: none;
 }
+.table-bordered {
+    margin-top: 35px !important;
+    margin: auto;
+    width: 75%;
+  }
+  .table-bordered thead{
+    background-color: #cd0000;
+    color: #fff;
+  }
+  .table-bordered tbody tr td{
+    padding: 12px !important;
+  }
+
 @media only screen and (max-width: 500px) {
 .home-page-categories li {
     display: inline-block;
