@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"122",
+		"a_href":"Skyline-Apartments.html",
+		"card_title":"Skyline Apartments",
+		"card_img": "http://cdn.getspini.com/landing/skyline-apartments-1.jpg",
+		"card_description":"It is a beautiful 2bhk which is situated in Kodungaiyur and has various retail stores and Hospitals and theaters nearby and is available at a affordable rate of 43lakhs.",
+		"card_area":" Kodungaiyur",
+		"card_city": "chennai"
+		},
+		{
 		"id":"121",
 		"a_href":"divya-nagar.html",
 		"card_title":"Divya Nagar",
