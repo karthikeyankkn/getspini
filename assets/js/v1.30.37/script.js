@@ -705,7 +705,7 @@ $(document).ready(function(){
     function get_json(index){
       $.get("../assets/js/v1.30.37/cards.json", function(data, status){
         cards = data.cards;
-        
+        cards = cards.reverse();
         $(".see-more-pagination").click(function(){
           
           card_limit_start = card_limit_end + 1;

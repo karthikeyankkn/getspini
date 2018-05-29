@@ -930,7 +930,7 @@
 		{
 		"id":"20",
 		"a_href":"gvspl-coimbatore.html",
-		"card_title":"GREEN VALLEYS SHELTERS PVT LTD",
+		"card_title":"GREEN VALLEYS SHELTERS",
 		"card_img": "../assets/images/gvspl/GVSPL_20Card.jpg",
 		"card_description":"Green Valleys Shelters Pvt Ltd continues its legacy by rendering sophisticated residential and commercial living experience.",
 		"card_area":"Vilankuruchi, Coimbatore",
@@ -1106,5 +1106,16 @@
 		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
 		"card_area":"Sholinganallur, Chennai",
 		"card_city": "chennai"
-		}	
+		},
+		{
+		"id":"0",
+		"a_href":"test",
+		"card_title":"test",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
+		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		}
+
+
 ]}
