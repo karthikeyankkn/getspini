@@ -188,7 +188,7 @@ header{
   margin-top: 10%;
 }
 .header-menu ul li{
-  margin:50px 0;
+  margin:20px 0;
 }
 .header-menu ul li a{
   color: #CC0000;
@@ -1965,7 +1965,7 @@ header{
           /*padding-bottom: 0;*/
         }
         .header-menu ul li{
-        margin:30px 0;
+        margin:15px 0;
         }
         #hamburger{
         width: 35px;
