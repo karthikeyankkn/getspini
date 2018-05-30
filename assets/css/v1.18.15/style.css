@@ -401,7 +401,7 @@ header{
     /*spini-sep-services style starts*/
 .spini-sep-services{
   margin-top: 0px;
-  padding: 60px 0px;
+  padding: 45px 0px;
 }
 .spini-sep-services h2{
   text-align: center;
@@ -413,7 +413,7 @@ header{
 }
 .button-ani {
   border-radius: 4px;
-  background-color: #1d2531;
+  background-color: #cd0000;
   border: none;
   color: #FFFFFF;
   text-align: center;
