@@ -651,14 +651,14 @@ $(document).ready(function(){
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
           banner_heading = "Get interior designer at best price";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          banner_background = "http://cdn.getspini.com/Int-banner.jpg";
           feature_add_title = "Estimate the price of your modular kitchen in few minutes";
           feature_add_href = "/interiors/interior-estimation.html";
           feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
           categoryName = "Loans";
           banner_heading = "Loans available @ lowest interest rate";
-          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          banner_background = "http://cdn.getspini.com/loan-banner.jpg";
           feature_add_title = "Need a loan immediately with lower EMI's, Know more";
           feature_add_href = "/loans/loan-emi-calculator.html";
           feature_add_href_title = "Calculate EMI";
