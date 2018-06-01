@@ -2064,5 +2064,12 @@ header{
         .fb-posts iframe{
           height: auto !important;
         }
+        .about-us-galery ul li img{
+      width: 150px;
+      height: 100px;
+      margin-bottom: 30px;
+      display: block;
+      margin:0 auto 30px;
+    }
       }
      
