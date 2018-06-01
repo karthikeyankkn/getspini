@@ -107,10 +107,10 @@ $(document).ready(function(){
 	}
 	// load header and footer
 	if (index_page == true) {
-		$("header").load("header1.3.html"); 
+		$("header").load("header1.4.html"); 
   		$("footer").load("footer1.4.html");
 	}else{
-		$("header").load("../header1.3.html"); 
+		$("header").load("../header1.4.html"); 
   	$("footer").load("../footer1.4.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");

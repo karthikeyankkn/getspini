@@ -1945,6 +1945,14 @@ header{
     display: block;
     border-radius: 25px;
   }
+  /*fb post styles*/
+    .fb-posts{
+      /*background: #fff;*/
+      padding: 20px 0;
+    }
+    .fb-posts iframe{
+      background: #fff;
+    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
@@ -2052,6 +2060,9 @@ header{
         }
         .multiple-scratch-cards-container ul li span img{
           max-width: 100px;
+        }
+        .fb-posts iframe{
+          height: auto !important;
         }
       }
      
