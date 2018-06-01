@@ -107,11 +107,11 @@ $(document).ready(function(){
 	}
 	// load header and footer
 	if (index_page == true) {
-		$("header").load("header1.2.html"); 
-  		$("footer").load("footer1.3.html");
+		$("header").load("header1.4.html"); 
+  		$("footer").load("footer1.4.html");
 	}else{
-		$("header").load("../header1.2.html"); 
-  	$("footer").load("../footer1.3.html");
+		$("header").load("../header1.4.html"); 
+  	$("footer").load("../footer1.4.html");
     $(".alerts_page").load("../alerts.html");
     // $(".contact-us").load("../contactus.html");
 	}
@@ -554,7 +554,7 @@ $(document).ready(function(){
       get_json();
       // debugger
       function get_json(index){
-        $.get("../assets/js/v1.30.37/multicard.json", function(data, status){
+        $.get("../assets/js/v1.30.41/multicard.json", function(data, status){
           multicard = data.multicard;
           for( var i = 0; i < multicard.length; i++ ){
             $("#"+multicard[i].card_idname+"").append("<li class='col-md-3 col-xs-6' onclick='show_page("+i+")'><div class='list-card'><a><img src="+multicard[i].img_src+"></a><article><p>"+multicard[i].card_description+"</p><i></i><span>"+multicard[i].card_area+"</span><a class='btn btn-primary'>See more</a></article></div></li>");
@@ -629,23 +629,12 @@ $(document).ready(function(){
         // $("#ebook-popup").modal('show');
       }, 5000);
 
-      // on click li go to corresponding page
-      $(document).on('click', '.list-card', function(e){
-        url = $(this).children(".list-card a").attr("href");
-        // debugger
-        window.location.href = url;
-      });
-
       // script files for banner page starts
       $(".home-page-categories li").click(function(){
         homepage_category = $(this).attr("category");
-        // $(this).addClass("selected-category");
-        // $(this).siblings().removeClass("selected-category");
+        $(this).addClass("selected-category");
+        $(this).siblings().removeClass("selected-category");
 
-        // $(this).children("span").show();
-        // $(this).siblings().children("span").hide();
-        
-        // debugger
         function homepage_toggle(){
           $(".homepage-lead-container h1").text(banner_heading);
           $(".banner-video-container").css('background-image', 'url(' + banner_background + ')');
@@ -653,59 +642,57 @@ $(document).ready(function(){
           $(".features-add a").attr("href", feature_add_href).text(feature_add_href_title);
         } 
         if (homepage_category == 'realestate') {
-          // categoryName = "Real Estate(Buying)";
-          // banner_heading = "You don't need 99 acres... you can build it in 1 ground.";
+          categoryName = "Real Estate(Buying)";
+          banner_heading = "Your dream home is now here";
           banner_background = "http://cdn.getspini.com/bg-index.jpg";
           feature_add_title = "List your property for free Ad listing on our website";
           feature_add_href = "https://spini.typeform.com/to/lNAjvb";
           feature_add_href_title = "Post Ad";
         }else if(homepage_category == 'interior'){
-          // categoryName = "Interior/Renovation/Modular Kitchen";
-          // banner_heading = "Only Magicians use Magic Bricks! People use Real ones";
-          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
-          // feature_add_title = "Estimate the price of your modular kitchen in few minutes";
-          // feature_add_href = "/interiors/interior-estimation.html";
-          // feature_add_href_title = "Get Estimate";
+          categoryName = "Interior/Renovation/Modular Kitchen";
+          banner_heading = "Get interior designer at best price";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg7.gif";
+          feature_add_title = "Estimate the price of your modular kitchen in few minutes";
+          feature_add_href = "/interiors/interior-estimation.html";
+          feature_add_href_title = "Get Estimate";
         }else if(homepage_category == 'loans'){
-          // categoryName = "Loans";
-          // banner_heading = "Don't go for Common Floor, When you can get your private space";
-          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
-          // feature_add_title = "Need a loan immediately with lower EMI's, Know more";
-          // feature_add_href = "/loans/loan-emi-calculator.html";
-          // feature_add_href_title = "Calculate EMI";
-        }else if(homepage_category == 'insurance'){
-          // categoryName = "Insurance";
-          // banner_heading = "Don't be limited by Roof & Floor, Because Sky is the limit";
-          // banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg8.gif";
-          // feature_add_title = "Life time benificial insurance are available";
-          // feature_add_href = "/insurances/insurances.html";
-          // feature_add_href_title = "Get insurance";
+          categoryName = "Loans";
+          banner_heading = "Loans available @ lowest interest rate";
+          banner_background = "http://cdn.getspini.com/banner/gif/getspini-gif-bg19.gif";
+          feature_add_title = "Need a loan immediately with lower EMI's, Know more";
+          feature_add_href = "/loans/loan-emi-calculator.html";
+          feature_add_href_title = "Calculate EMI";
         }
-
         homepage_toggle();
       });
-      url_hash = location.pathname;
-      if (url_hash == "/chennai-interiors.html") {
-        $('.home-page-categories li:nth-child(2)').click();
-      }else if(url_hash == "/chennai-loans.html"){
-        $('.home-page-categories li:nth-child(3)').click();
-      }else if(url_hash == "/chennai-insurance.html"){
-        $('.home-page-categories li:nth-child(4)').click();
-      }else{
-        $('.home-page-categories li:first').click();
-      }
+      $('.home-page-categories li:nth-child(1)').click();
+      var i=2;
+      var interval = setInterval(function(){
+          $('.home-page-categories li:nth-child('+i+')').click();
+          i++;
+          if (i>3) {
+            i=1;
+          }
+      }, 5000);
+       
       
       // script files for banner page ends
 
+      // on click li go to corresponding page
+      $(document).on('click', '.list-card', function(e){
+        url = $(this).children(".list-card a").attr("href");
+        // debugger
+        window.location.href = url;
+      });
 
     // multi cards repeat starts
     card_limit_start = 1;
     card_limit_end = 20; 
     get_json();
     function get_json(index){
-      $.get("../assets/js/v1.30.37/cards.json", function(data, status){
+      $.get("../assets/js/v1.30.41/cards.json", function(data, status){
         cards = data.cards;
-        
+        cards = cards.reverse();
         $(".see-more-pagination").click(function(){
           
           card_limit_start = card_limit_end + 1;

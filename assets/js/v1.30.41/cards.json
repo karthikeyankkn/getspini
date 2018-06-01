@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"122",
+		"a_href":"Skyline-Apartments.html",
+		"card_title":"Skyline Apartments",
+		"card_img": "http://cdn.getspini.com/landing/skyline-apartments-1.jpg",
+		"card_description":"It is a beautiful 2bhk which is situated in Kodungaiyur and has various retail stores and Hospitals and theaters nearby and is available at a affordable rate of 43lakhs.",
+		"card_area":" Kodungaiyur",
+		"card_city": "chennai"
+		},
+		{
 		"id":"121",
 		"a_href":"divya-nagar.html",
 		"card_title":"Divya Nagar",
@@ -921,7 +930,7 @@
 		{
 		"id":"20",
 		"a_href":"gvspl-coimbatore.html",
-		"card_title":"GREEN VALLEYS SHELTERS PVT LTD",
+		"card_title":"GREEN VALLEYS SHELTERS",
 		"card_img": "../assets/images/gvspl/GVSPL_20Card.jpg",
 		"card_description":"Green Valleys Shelters Pvt Ltd continues its legacy by rendering sophisticated residential and commercial living experience.",
 		"card_area":"Vilankuruchi, Coimbatore",
@@ -1097,5 +1106,16 @@
 		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
 		"card_area":"Sholinganallur, Chennai",
 		"card_city": "chennai"
-		}	
+		},
+		{
+		"id":"0",
+		"a_href":"test",
+		"card_title":"test",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
+		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		}
+
+
 ]}
