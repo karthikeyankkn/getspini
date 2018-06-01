@@ -651,7 +651,7 @@ $(document).ready(function(){
         }else if(homepage_category == 'interior'){
           categoryName = "Interior/Renovation/Modular Kitchen";
           banner_heading = "Get interior designer at best price";
-          banner_background = "http://cdn.getspini.com/interior-banner.jpg";
+          banner_background = "http://cdn.getspini.com/Int-banner.jpg";
           feature_add_title = "Estimate the price of your modular kitchen in few minutes";
           feature_add_href = "/interiors/interior-estimation.html";
           feature_add_href_title = "Get Estimate";
