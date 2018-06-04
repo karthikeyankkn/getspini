@@ -904,4 +904,13 @@ $(document).ready(function(){
         $('.contact-us ul').hide();
         $('.contact-us').append(append_form);
        }
+
+        // scirpt for spini video popup
+        var video_url;
+        $(".fb-posts img").click(function(){
+          $(".video_player").empty();
+          video_url = $(this).attr("video_script");
+          $(".video_player").append(video_url);
+          $("#video_popup").modal('toggle');
+        });
 });
