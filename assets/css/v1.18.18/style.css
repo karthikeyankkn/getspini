@@ -1950,6 +1950,9 @@ header{
       /*background: #fff;*/
       padding: 20px 0;
     }
+    .fb-posts img{
+      width: 100%;
+    }
     .fb-posts iframe{
       background: #fff;
     }
