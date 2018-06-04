@@ -1980,74 +1980,6 @@ header{
       cursor: pointer;
       transform: translate(0px, -3px);
     }
-    .Spini-Projects,.spini-provides {
-      text-align: center;
-      font-size: 30px;
-      font-weight: 900;
-    }
-    .slider-container1, .slider-container2, .slider-container3{
-      position: relative;
-    }
-    .slider-container3{
-      padding-bottom: 30px;
-    }
-    .slider-parent{
-      list-style: none;
-      overflow-x: scroll;
-      display: flex;
-      padding: 0;
-      transition: 1s ease;
-    }
-    .slider-parent li{
-      list-style: none;
-      min-width: 271px;
-      display: -webkit-inline-box;
-      margin:0 15px 0 0;
-      position: relative;
-      transition: 1s ease;
-    }
-    .list-card{
-      /*border: 1px solid #888;*/
-      height: unset;
-    }
-    .list-card img{
-      width: 100%;
-    }
-    .list-card article{
-      padding: 10px;
-    }
-    .list-cart article span{
-      padding: 5px 10px;
-      display: block;
-    }
-    .list-card article a{
-      text-align: center;
-      display: block;
-      width: 100px;
-      margin:10px auto;
-    }
-    ::-webkit-scrollbar { 
-      display: none; 
-    }
-     .view {
-    font-weight: 800;
-    font-size: 15px;
-    color: #fff;
-    background-color: red;
-    border:none;
-    margin-bottom: 10px;
-    }
-    .view a{
-        color: #fff; 
-       padding: 10px 10px;
-    display: block;
-    }
-    .view a:hover{
-        color: #fff;
-    }
-    .Spini-Projects{
-        text-align: center;
-    }
     /* mobile view css */
     @media only screen and (max-width: 500px) {
          .slider-parent li, .thankyou-slider-parent li {
@@ -2165,24 +2097,6 @@ header{
           margin-bottom: 30px;
           display: block;
           margin:0 auto 30px;
-        }
-        .slider-parent li {
-            min-width: 200px;
-        }
-        .card-title{
-            font-size: 11px;
-            font-weight: 800;
-            line-height: 20px;
-        }
-        .card-text{
-           font-size: 11px;
-            font-weight: 800; 
-        }
-        .view a{
-            padding: 10px 10px;
-        }
-        .list-card article{
-            padding:5px !important;
         }
       }
      
