@@ -83,7 +83,7 @@ $(document).ready(function(){
 	}
 
     // debugger
-  if (location.origin == "http://staging.getspini.com" || location.origin == "http://localhost:8080") {
+  if (location.host == "https://staging.getspini.com" || location.host == "http://localhost:8080") {
     ApiEndPoint = 'https://sapi.getspini.com:8443';
   }else{
     ApiEndPoint = 'https://api.getspini.com:8443';
