@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"123",
+		"a_href":"Lifestyle-Lakshya.html",
+		"card_title":"Lifestyle Lakshya",
+		"card_img": "http://cdn.getspini.com/landing/lakshaya2.jpg",
+		"card_description":"Lifestyle Lakshya is the signature project of Kovai lifestyle.",
+		"card_area":" Koundampalayam",
+		"card_city": "coimbatore"
+		},
+		{
 		"id":"122",
 		"a_href":"Skyline-Apartments.html",
 		"card_title":"Skyline Apartments",
