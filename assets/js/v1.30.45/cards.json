@@ -10,6 +10,33 @@
 		"card_city": ""
 		},
 		{
+		"id":"126",
+		"a_href":"Jasmine-Springs.html",
+		"card_title":"Jasmine Springs",
+		"card_img": "http://cdn.getspini.com/landing/jasmine1.jpg",
+		"card_description":"A home in the IT Capital of Chennai is a possession you can feel .",
+		"card_area":" Kelambakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"125",
+		"a_href":"Lancor-Altura.html",
+		"card_title":"LANCOR ALTURA",
+		"card_img": "http://cdn.getspini.com/landing/altura1.jpg",
+		"card_description":"LANCOR TCP Altura an Luxury Apartment Community.",
+		"card_area":" Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"124",
+		"a_href":"Nashville-Duplex-row-house.html",
+		"card_title":"Nashville Duplex row house",
+		"card_img": "http://cdn.getspini.com/landing/nashville1.jpg",
+		"card_description":"Nashville 66 elegantly designed duplex row houses with premium amenities designed for all generation of people.",
+		"card_area":" Chandapura",
+		"card_city": "bangalore"
+		},
+		{
 		"id":"123",
 		"a_href":"Lifestyle-Lakshya.html",
 		"card_title":"Lifestyle Lakshya",
