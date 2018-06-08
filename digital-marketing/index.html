@@ -77,12 +77,14 @@
                                     <li class="dropdown simple-dropdown"><a class="scroll" href="#why_spini">Why Spini</a>
                                     </li>
                                     <li class="dropdown megamenu-fw">
-                                        <a class="scroll" href="#services"">Services</a>
+                                        <a class="scroll" href="#services">Services</a>
                                     </li>
-                                    <li class="dropdown simple-dropdown"><a class="scroll" href="#happy_customers"" title="Blog">Happy Customers</a>
+                                    <li class="dropdown simple-dropdown"><a class="scroll" href="#happy_customers"" title="Happy customer">Happy Customers</a>
                                     </li>
                                     <li class="dropdown megamenu-fw">
                                         <a class="scroll" href="#contact"">Contact Us</a>
+                                    </li>
+                                    <li class="dropdown simple-dropdown"><a href="../digital-marketing-grader.htm" title="Digital marketing grader" style="color: red; font-weight: bold;">Digital Marketing Grader</a>
                                     </li>
                                 </ul>
                             </div>
@@ -99,9 +101,9 @@
                                 </form>
                             </div> -->
                             <div class="header-social-icon xs-display-none">
-                                <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                                <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i class="fab fa-dribbble"></i></a>                          
+                                <a href="https://www.facebook.com/spiniapp" title="Facebook" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/channel/UCCZ6CoywrazfMhvAlAALtJw" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://api.whatsapp.com/send?phone=918682800800" title="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>                          
                             </div>
                         </div>
                     </div>
@@ -111,9 +113,9 @@
         </header>
         <!-- end header -->
         <!-- start parallax section -->
-        <div class="container-fluidt">
+       <!--  <div class="container-fluid">
             <a href="../digital-marketing-grader.htm"><button class="button-ani"><span>Digital Marketing </span></button></a>
-        </div>
+        </div> -->
         <section class="banner-image-container">
             
             
@@ -266,7 +268,7 @@
                     <!-- start copyright -->
                     <div class="col-md-6 col-sm-6 col-xs-12 text-center text-small alt-font display-table xs-margin-10px-bottom sm-text-center">
                         <div class="display-table-cell vertical-align-middle">
-                            &copy; 2018 Spinarcle india Pvt lmt<!--  <a href="http://www.themezaa.com/" target="_blank" title="ThemeZaa">ThemeZaa</a>. -->
+                            &copy; 2018 Spinircle india Pvt lmt<!--  <a href="http://www.themezaa.com/" target="_blank" title="ThemeZaa">ThemeZaa</a>. -->
                         </div>
                     </div>
                     <!-- end copyright -->
@@ -275,11 +277,9 @@
                         <div class="display-table-cell vertical-align-middle">
                             <div class="social-icon-style-8 display-inline-block vertical-align-middle">
                                 <ul class="small-icon no-margin-bottom">
-                                    <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a class="google" href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
-                                    <li><a class="dribbble" href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble no-margin-right" aria-hidden="true"></i></a></li>
-                                    <li><a class="linkedin" href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-inno-margin-right" aria-hidden="true"></i></a></li>
+                                    <li><a class="facebook" href="https://www.facebook.com/spiniapp/" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter" href="https://www.youtube.com/channel/UCCZ6CoywrazfMhvAlAALtJw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a class="google" href="https://api.whatsapp.com/send?phone=918682800800" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -357,7 +357,7 @@
 
     <!-- on click scroll to div -->
     <script type="text/javascript">
-      var j=0;
+      
       $(".scroll").on('click', function(e) {
          e.preventDefault();
          var target = $(this).attr('href');
@@ -366,14 +366,25 @@
          }, 500);
       });
 
+      var j=0;
       // scale animation image
       var banner_images = [
                             "images/banner/01.jpg",
                             "images/banner/02.jpg",
-                            "images/banner/03.jpg"
+                            "images/banner/03.jpg",
+                            "images/banner/04.jpg"
                           ];
+
+      var banner_headings = [
+                              "Loream Ipsum Heading 1",
+                              "Loream Ipsum Heading 2",
+                              "Loream Ipsum Heading 3",
+                              "Loream Ipsum Heading 4"
+                            ];
+
       for (var i = 0; i < banner_images.length; i++) {
-        $(".banner-image-container").append("<img src="+banner_images[i]+" />");
+        $(".banner-image-container").append("<img src="+banner_images[i]+" /><h1>"+banner_headings[i]+"</h1>");
+        // $(".banner-image-container h1:eq("+i+")").siblings("h1").hide();
       }
 
       
@@ -386,23 +397,34 @@
         // }
 
         function banner_animation(){
+          console.log(j)
           $(".banner-image-container img:eq("+j+")").fadeIn().addClass("scale-animation");
-          $(".banner-image-container img:eq("+j+")").siblings().hide().removeClass("scale-animation");
+          $(".banner-image-container h1:eq("+j+")").show();
+          $(".banner-image-container img:eq("+j+")").siblings("img").hide().removeClass("scale-animation");
+          $(".banner-image-container h1:eq("+j+")").siblings("h1").hide();
           // alert("This came");
           j+=1;
-          if (j==3) {
+          if (j == banner_images.length) {
             j=0;
           }
         }
         banner_animation();
-      setInterval(banner_animation , 3000);
-
+        setInterval(banner_animation , 3000);
     </script>
 
     <style type="text/css">
     .banner-image-container{
       padding: 0;
       overflow: hidden;
+      position: relative;
+    }
+    .banner-image-container h1{
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      left: 0;
+      right: 0;
+      color: #fff;
     }
     .scale-animation{
       -ms-transform: scale(1.1,1.1); /* IE 9 */
