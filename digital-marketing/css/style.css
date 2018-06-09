@@ -2848,7 +2848,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
     Slider and parallax typography
 ====================================== */
 
-.slider-text-middle-main {display: none; height: 100%; width: 100% }
+.slider-text-middle-main { height: 100%; width: 100% }
 .slider-text-middle {display: table-cell; vertical-align: middle; }
 .slider-typography {width: 100%; height: 100%; position: absolute; right: 0; left: 0; }
 .slider-text-bottom {display: table-cell; vertical-align: bottom;}
