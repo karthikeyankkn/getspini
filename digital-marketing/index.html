@@ -139,11 +139,10 @@
         <!-- home section ends-->
 
         <!-- why spini section start -->
-        <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/02.jpg');background-color: rgb(234, 79, 78);
-    background-size: 70% !important;" id="why_spini">
+        <section class="no-padding why_spini_bg" data-stellar-background-ratio="0.5" style="background-image:url('images/why-spini-works.gif');background-color: rgb(237, 72, 70); background-size: 50%; background-position: top !important; background-repeat: no-repeat;" id="why_spini">
             <div class="container one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="slider-typography">
-                    <div class="col-md-6 why_spini_container col-md-offset-6">
+                    <div class="col-md-6 why_spini_container col-md-offset-3">
                       <h1>We have been there, done that!</h1>
                       <p>We have driven digital interaction of more than 10 Million touch points.  Multi-platform expertise that we have can come only from experience. <i>"Google only loves you when everyone else loves you first! Spini does not discriminate!"</i></p>
                     </div>
@@ -156,7 +155,7 @@
         <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/03 A.jpg');" id="services">
             <div class="container one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="slider-typography">
-                    <div class="col-md-6 our_services_container col-md-offset-3">
+                    <div class="col-md-6 our_services_container">
                       <div class="row">
                         <div class="collapse-words text-center col-md-8 col-md-offset-2">
                           <span style="font-size: 24px;">Reputation Management</span>
@@ -184,6 +183,7 @@
 
               <!-- grid gallery -->
               <div class="happy_customers">
+                <h1 class="text-center">We let our work speak for ourselves</h1>
                 <span style="width: 25%;">
                   <img src="images/happy_customers/01.jpg">
                 </span>
@@ -194,7 +194,7 @@
                 </span>
                 <span style="width: 75%;">
                   <img src="images/happy_customers/07.gif" style="width: 50%;">
-                  <img src="images/happy_customers/03.jpg" style="width: 40%;">
+                  <img src="images/happy_customers/03.gif" style="width: 40%;">
                 </span>
               </div>
             </div>
@@ -502,13 +502,18 @@
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
-.home_container, .why_spini_container, .our_services_container, .collapse-words, .contact-us{
+.home_container, .our_services_container, .collapse-words, .contact-us{
   top: 30%;
   color: #fff;
 }
-.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1{
+.why_spini_container{
+    top: 56%;
+    color: #fff;
+}
+.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{
   font-size: 42px;
   line-height: 1;
+  color: #fff;
 }
 .home_container p, .why_spini_container p, .our_services_container p{
   font-size: 18px;
@@ -553,6 +558,18 @@
       }
       .scroll-downs{
         display: none;
+      }
+      .why_spini_bg{
+        background-size: 100% !important;
+      }
+      .home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{
+          font-size: 24px;
+      }
+      .home_container p, .why_spini_container p, .our_services_container p{
+        font-size: 14px;
+      }
+      .why_spini_container{
+        top: 48%;
       }
     }
     </style>
