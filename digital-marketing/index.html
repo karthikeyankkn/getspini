@@ -131,18 +131,22 @@
             <div class="container one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="col-md-6 home_container">
                   <h1>Your Customer is Online! Are you?</h1>
-                  <p>Reach your customers 24 hours a day, 7 days a week, 356 days a week with effective website & social media marketing.</p>
+                  <p>Reach your customers 24 hours a day, 7 days a week, 356 days a week with effective website & social media marketing. <i>"Be where the world is going"</i></p>
+
                 </div>
             </div>
         </section>
         <!-- home section ends-->
 
         <!-- why spini section start -->
-        <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('http://cdn.getspini.com/DM2.gif');background-color: rgb(234, 79, 78);
+        <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/02.jpg');background-color: rgb(234, 79, 78);
     background-size: 70% !important;" id="why_spini">
-            <div class="container-fluid one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
+            <div class="container one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="slider-typography">
-                
+                    <div class="col-md-6 why_spini_container col-md-offset-6">
+                      <h1>We have been there, done that!</h1>
+                      <p>We have driven digital interaction of more than 10 Million touch points.  Multi-platform expertise that we have can come only from experience. <i>"Google only loves you when everyone else loves you first! Spini does not discriminate!"</i></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,9 +154,25 @@
         
         <!-- services section starts parallax -->
         <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/03 A.jpg');" id="services">
-            <div class="container-fluid one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
+            <div class="container one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
                 <div class="slider-typography">
-                    
+                    <div class="col-md-6 our_services_container col-md-offset-3">
+                      <div class="row">
+                        <div class="collapse-words text-center col-md-8 col-md-offset-2">
+                          <span style="font-size: 24px;">Reputation Management</span>
+                          <span style="font-size: 20px;">Influencer marketing</span>
+                          <span style="font-size: 24px;">SEO</span>
+                          <span style="font-size: 30px;">Social Media Marketing</span>
+                          <span style="font-size: 24px;">Content Marketing</span>
+                          <span style="font-size: 20px;">SEM</span>
+                          <span style="font-size: 30px;">Website</span>
+                          <span style="font-size: 24px">Growth Hacking </span>
+                          <span style="font-size: 20px;">Content Amplification</span>
+                        </div>
+                      </div>
+                      <p>Well, just talk to us – we make more sense!<i>"The best marketing doesn’t feel like marketing."</i></p>
+                    </div>
+                     
                 </div>
             </div>
         </section>
@@ -185,9 +205,10 @@
         <section class="no-padding parallax xs-background-image-center cover-background" data-stellar-background-ratio="0.5" style="background-image:url('images/05.jpg');" id="contact">
             <div class="container-fluid one-third-screen position-relative md-height-600px sm-height-700px xs-height-450px">
               <!-- contact form -->
+
               <div class="col-md-6">
                 <form action="https://formspree.io/karthikeyan@spinircle.com" method="POST" class="contact-us-container">
-                  <h2>Contact Us</h2>
+                  <h2>To Make the customer the hero of your story</h2>
                   <input type="text" name="name" placeholder="Your name">
                   <input type="number" name="ph_number" placeholder="Your phone number">
                   <input type="email" name="email" placeholder="Your email">
@@ -481,19 +502,23 @@
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
   animation-iteration-count: infinite;
 }
-.home_container{
+.home_container, .why_spini_container, .our_services_container, .collapse-words, .contact-us{
   top: 30%;
   color: #fff;
 }
-.home_container h1{
+.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1{
   font-size: 42px;
   line-height: 1;
 }
-.home_container p{
+.home_container p, .why_spini_container p, .our_services_container p{
   font-size: 18px;
   line-height: 30px;
   background: #00000091;
   padding: 10px;
+}
+.home_container p i, .why_spini_container p i, .our_services_container p i{
+    display: block;
+    margin-top: 15px;
 }
 .happy-customer-container{
   position: relative;
@@ -514,6 +539,10 @@
 .happy_customers img{
   margin-left: 1%;
   margin-top: 1%;
+}
+.collapse-words{
+  margin-bottom: 10px;
+  padding: 10px;
 }
 /*mobile css*/
 @media only screen and (max-width:500px){
