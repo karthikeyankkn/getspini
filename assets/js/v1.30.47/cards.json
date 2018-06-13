@@ -397,15 +397,6 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"83",
-		"a_href":"Sai-Niketan.html",
-		"card_title":"SAI NIKETAN",
-		"card_img": "http://cdn.getspini.com/landing/Sri_Visthara_Sai_Niketan_1.jpg",
-		"card_description":"Sai Niketan a project from Sri Visthara located in an Eco friendly environment with 36 designer dwellings near 300 acres of lake. Great work life balance: live near lake, in ECO friendly environment, at 5 KM from OMR,unique designer dwellings - maximum exposed walls, ensures maximum ventilation and lighting.",
-		"card_area":"Sithalapakkam, Chennai",
-		"card_city": "chennai"
-		},
-		{
 		"id":"82",
 		"a_href":"Adroit-House-of-Ambal.html",
 		"card_title":"ADROIT HOUSE OF AMBAL",
@@ -559,15 +550,6 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"65",
-		"a_href":"L&T-Eden-Park-Phase-II.html",
-		"card_title":"L&T EDEN PARK PHASE II",
-		"card_img": "http://cdn.getspini.com/landing/Eden.jpg",
-		"card_description":"Residential development by the renowned L&T Realty, L and T Eden Park Phase II in Siruseri, Chennai is a lavish project comprising of 1288 units of 1BHK, 2BHK & 3BHK apartments spread across 5 towers.",
-		"card_area":"Siruseri, Chennai",
-		"card_city": "chennai"
-		},
-		{
 		"id":"64",
 		"a_href":"RS-Luminous.html",
 		"card_title":"RS LUMINOUS",
@@ -619,15 +601,6 @@
 		"card_img": "http://cdn.getspini.com/landing/Adroit.jpg",
 		"card_description":"Adroit Artistica is a project by Adroit Urban Developers Pvt. Ltd., located in Sholinganallur, Chennai, offering elegantly designed currently under construction 3 BHK and 4 BHK apartments and penthouses.",
 		"card_area":"Sholinganallur, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"58",
-		"a_href":"BSR-Balaji-Enclave.html",
-		"card_title":"BSR BALAJI ENCLAVE",
-		"card_img": "http://cdn.getspini.com/landing/Balaji-Enclave.jpg",
-		"card_description":"BSR Balaji Enclave is a project by BSR Builders being developed in Mogappair West, Chennai offering aesthetically designed and spacious 2 BHK and 3 BHK apartments.",
-		"card_area":"Mogappair West, Chennai",
 		"card_city": "chennai"
 		},
 		{
@@ -892,24 +865,6 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"28",
-		"a_href":"tata-santorini.html",
-		"card_title":"tata santorini",
-		"card_img": "http://cdn.getspini.com/landing/tata-sant-card.jpg",
-		"card_description":"Tata Santorini by Tata Value Homes offers an unbeatable lifestyle at Santorini.The Spanish themed project spread over 18 acres in Poonamallee, Chennai.",
-		"card_area":"Poonamallee",
-		"card_city": "chennai"
-		},
-		{
-		"id":"27",
-		"a_href":"tata-new-haven-ribbon-walk-mambakkam.html",
-		"card_title":"TATA NEW HAVEN",
-		"card_img": "http://cdn.getspini.com/landing/tata-nh-card.jpg",
-		"card_description":"New Haven Ribbon Walk at Mambakkam comprises of multi-level courtyards and green spaces connected by a ribbon landscape.",
-		"card_area":"mambakkam",
-		"card_city": "chennai"
-		},
-		{
 		"id":"26",
 		"a_href":"Nexus-Sobha-Pristine-bangalore.html",
 		"card_title":"NEXUS SHOBA PRISTINE",
@@ -964,42 +919,6 @@
 		"card_city": "coimbatore"
 		},
 		{
-		"id":"20",
-		"a_href":"gvspl-coimbatore.html",
-		"card_title":"GREEN VALLEYS SHELTERS",
-		"card_img": "../assets/images/gvspl/GVSPL_20Card.jpg",
-		"card_description":"Green Valleys Shelters Pvt Ltd continues its legacy by rendering sophisticated residential and commercial living experience.",
-		"card_area":"Vilankuruchi, Coimbatore",
-		"card_city": "coimbatore"
-		},
-		{
-		"id":"19",
-		"a_href":"nest-fortune-choolaimedu.html",
-		"card_title":"NEST ELEGANT & FORTUNE",
-		"card_img": "http://cdn.getspini.com/landing/Nest-Fortune-Card.jpg",
-		"card_description":"Nest Elegant and Fortune at Choolaimedu by Nest Builders is yet another addition to luxurious and marvelous residential apartments.",
-		"card_area":"Choolaimedu, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"18",
-		"a_href":"nest-life-thiruvanmiyur.html",
-		"card_title":"NEST LIFE",
-		"card_img": "http://cdn.getspini.com/landing/Life-Card.jpg",
-		"card_description":"Nest life by Nest Builders at Thiruvanmiyur is designed specially for those who wish to live and have independent feeling in a flat system.",
-		"card_area":"Thiruvanmiyur, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"17",
-		"a_href":"nest-suraj-mahalingapuram.html",
-		"card_title":"NEST SURAJ",
-		"card_img": "http://cdn.getspini.com/landing/Suraj-Card.jpg",
-		"card_description":"Nest builders next successful apartment edition is Nest Suraj located at the heart of Chennai city Mahalingapuram.",
-		"card_area":"Mahalingapuram, Chennai",
-		"card_city": "chennai"
-		},
-		{
 		"id":"16",
 		"a_href":"CENTRAL-SQUARE-JANAKIPURAM.html",
 		"card_title":"CENTRAL SQUARE",
@@ -1018,39 +937,12 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"14",
-		"a_href":"hiranandani-parks-orgadam.html",
-		"card_title":"HIRANANDANI PARKS",
-		"card_img": "http://cdn.getspini.com/hira-img/carousel/opt/07.jpg",
-		"card_description":"Hiranandani Parks, Living in Hiranandani Parks is an exceptional experience. This mega township is planned with amenities nestled within open green spaces.",
-		"card_area":"Orgadam, Chennai",
-		"card_city": "chennai"
-		},
-		{
 		"id":"13",
 		"a_href":"Saraswathy-homes-Kattupakkam.html",
 		"card_title":"SARASWATHY HOMES",
 		"card_img": "../assets/images/free-listing/saraswathi-homes-optimized.jpg",
 		"card_description":"Saraswathy homes, Total 1200 sqft,build up 850 sqft",
 		"card_area":"Kattupakkam, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"12",
-		"a_href":"nest-arpana-sholinganallur.html",
-		"card_title":"NEST ARPANA",
-		"card_img": "../assets/images/aparna/Aparna_2001%202.jpg",
-		"card_description":"The Nest Builders offers Nest Arpana at Sholinganallur a uniquely designed apartment with top class amenities and specifications.",
-		"card_area":"Sholinganallur, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"11",
-		"a_href":"l-and-t-eden-park-siruseri.html",
-		"card_title":"L&T EDEN PARK",
-		"card_img": "../assets/images/l-and-t/1-optimized.jpg",
-		"card_description":"Eden park is a modern integrated township and gated community apartment by L&T. L&T is a top class builder backed with 75+ years expertise in construction industry.",
-		"card_area":"Siruseri, Chennai",
 		"card_city": "chennai"
 		},
 		{
@@ -1090,30 +982,12 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"6",
-		"a_href":"nest-glory-Sholinganallur-apartments.html",
-		"card_title":"NEST GLORY",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Glory.jpg",
-		"card_description":"Stunning Nest-Glory flats equipped with world class facilities.",
-		"card_area":"Sholinganallur, Chennai",
-		"card_city": "chennai"
-		},
-		{
 		"id":"5",
 		"a_href":"akshaya-republic-kovur.html",
 		"card_title":"AKSHAYA REPUBLIC",
 		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Akshaya-Republic.jpg",
 		"card_description":"Fantastic apartments with world class facilities & comfort.",
 		"card_area":"Kovur, Chennai",
-		"card_city": "chennai"
-		},
-		{
-		"id":"4",
-		"a_href":"nest-njoy-villa-kanathur.html",
-		"card_title":"NEST NJOY VILLAS",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
-		"card_description":"The Nest njoy a landmark project in the world of affordable homes.",
-		"card_area":"Kanathur, Chennai",
 		"card_city": "chennai"
 		},
 		{
@@ -1135,6 +1009,114 @@
 		"card_city": "chennai"
 		},
 		{
+		"id":"83",
+		"a_href":"Sai-Niketan.html",
+		"card_title":"SAI NIKETAN",
+		"card_img": "http://cdn.getspini.com/landing/Sri_Visthara_Sai_Niketan_1.jpg",
+		"card_description":"Sai Niketan a project from Sri Visthara located in an Eco friendly environment with 36 designer dwellings near 300 acres of lake. Great work life balance: live near lake, in ECO friendly environment, at 5 KM from OMR,unique designer dwellings - maximum exposed walls, ensures maximum ventilation and lighting.",
+		"card_area":"Sithalapakkam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"14",
+		"a_href":"hiranandani-parks-orgadam.html",
+		"card_title":"HIRANANDANI PARKS",
+		"card_img": "http://cdn.getspini.com/hira-img/carousel/opt/07.jpg",
+		"card_description":"Hiranandani Parks, Living in Hiranandani Parks is an exceptional experience. This mega township is planned with amenities nestled within open green spaces.",
+		"card_area":"Orgadam, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"28",
+		"a_href":"tata-santorini.html",
+		"card_title":"tata santorini",
+		"card_img": "http://cdn.getspini.com/landing/tata-sant-card.jpg",
+		"card_description":"Tata Santorini by Tata Value Homes offers an unbeatable lifestyle at Santorini.The Spanish themed project spread over 18 acres in Poonamallee, Chennai.",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"27",
+		"a_href":"tata-new-haven-ribbon-walk-mambakkam.html",
+		"card_title":"TATA NEW HAVEN",
+		"card_img": "http://cdn.getspini.com/landing/tata-nh-card.jpg",
+		"card_description":"New Haven Ribbon Walk at Mambakkam comprises of multi-level courtyards and green spaces connected by a ribbon landscape.",
+		"card_area":"mambakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"58",
+		"a_href":"BSR-Balaji-Enclave.html",
+		"card_title":"BSR BALAJI ENCLAVE",
+		"card_img": "http://cdn.getspini.com/landing/Balaji-Enclave.jpg",
+		"card_description":"BSR Balaji Enclave is a project by BSR Builders being developed in Mogappair West, Chennai offering aesthetically designed and spacious 2 BHK and 3 BHK apartments.",
+		"card_area":"Mogappair West, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"20",
+		"a_href":"gvspl-coimbatore.html",
+		"card_title":"GREEN VALLEYS SHELTERS",
+		"card_img": "../assets/images/gvspl/GVSPL_20Card.jpg",
+		"card_description":"Green Valleys Shelters Pvt Ltd continues its legacy by rendering sophisticated residential and commercial living experience.",
+		"card_area":"Vilankuruchi, Coimbatore",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"65",
+		"a_href":"L&T-Eden-Park-Phase-II.html",
+		"card_title":"L&T EDEN PARK PHASE II",
+		"card_img": "http://cdn.getspini.com/landing/Eden.jpg",
+		"card_description":"Residential development by the renowned L&T Realty, L and T Eden Park Phase II in Siruseri, Chennai is a lavish project comprising of 1288 units of 1BHK, 2BHK & 3BHK apartments spread across 5 towers.",
+		"card_area":"Siruseri, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"11",
+		"a_href":"l-and-t-eden-park-siruseri.html",
+		"card_title":"L&T EDEN PARK",
+		"card_img": "../assets/images/l-and-t/1-optimized.jpg",
+		"card_description":"Eden park is a modern integrated township and gated community apartment by L&T. L&T is a top class builder backed with 75+ years expertise in construction industry.",
+		"card_area":"Siruseri, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"19",
+		"a_href":"nest-fortune-choolaimedu.html",
+		"card_title":"NEST ELEGANT & FORTUNE",
+		"card_img": "http://cdn.getspini.com/landing/Nest-Fortune-Card.jpg",
+		"card_description":"Nest Elegant and Fortune at Choolaimedu by Nest Builders is yet another addition to luxurious and marvelous residential apartments.",
+		"card_area":"Choolaimedu, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"18",
+		"a_href":"nest-life-thiruvanmiyur.html",
+		"card_title":"NEST LIFE",
+		"card_img": "http://cdn.getspini.com/landing/Life-Card.jpg",
+		"card_description":"Nest life by Nest Builders at Thiruvanmiyur is designed specially for those who wish to live and have independent feeling in a flat system.",
+		"card_area":"Thiruvanmiyur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"17",
+		"a_href":"nest-suraj-mahalingapuram.html",
+		"card_title":"NEST SURAJ",
+		"card_img": "http://cdn.getspini.com/landing/Suraj-Card.jpg",
+		"card_description":"Nest builders next successful apartment edition is Nest Suraj located at the heart of Chennai city Mahalingapuram.",
+		"card_area":"Mahalingapuram, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"6",
+		"a_href":"nest-glory-Sholinganallur-apartments.html",
+		"card_title":"NEST GLORY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Glory.jpg",
+		"card_description":"Stunning Nest-Glory flats equipped with world class facilities.",
+		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"1",
 		"a_href":"nest-amaze-Sholinganallur.html",
 		"card_title":"nest amaze",
@@ -1144,12 +1126,21 @@
 		"card_city": "chennai"
 		},
 		{
-		"id":"0",
-		"a_href":"test",
-		"card_title":"test",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Amaze.jpg",
-		"card_description":"Nest Amaze by The Nest Builders located in Sholinganallur offers premium 1, 2 & 3 BHK apartments.",
+		"id":"12",
+		"a_href":"nest-arpana-sholinganallur.html",
+		"card_title":"NEST ARPANA",
+		"card_img": "../assets/images/aparna/Aparna_2001%202.jpg",
+		"card_description":"The Nest Builders offers Nest Arpana at Sholinganallur a uniquely designed apartment with top class amenities and specifications.",
 		"card_area":"Sholinganallur, Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"4",
+		"a_href":"nest-njoy-villa-kanathur.html",
+		"card_title":"NEST NJOY VILLAS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/getspiniprod/Nest-Njoy.jpg",
+		"card_description":"The Nest njoy a landmark project in the world of affordable homes.",
+		"card_area":"Kanathur, Chennai",
 		"card_city": "chennai"
 		}
 
