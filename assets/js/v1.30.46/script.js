@@ -898,10 +898,16 @@ $(document).ready(function() {
 
 
  // temporary typeform for realestate
- var append_form = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/yxPRFr" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>'
+ var append_form_realestate = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/yxPRFr" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>'
+
+ var append_form_loan = ' <div class="typeform-widget" data-url="https://spini.typeform.com/to/ygLYob" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
+
  if (categoryName == "Real Estate(Buying)") {
   $('.contact-us ul').hide();
-  $('.contact-us').append(append_form);
+  $('.contact-us').append(append_form_realestate);
+ }else if (categoryName == "Loans") {
+  $('.contact-us ul').hide();
+  $('.contact-us').append(append_form_loan);
  }
 
  // scirpt for spini video popup
