@@ -1,199 +1,37 @@
-  .banner-image-container{
-      padding: 0;
-      overflow: hidden;
-      position: relative;
-    }
-    .banner-image-container h1{
-      position: absolute;
-      top: 50%;
-      text-align: center;
-      left: 0;
-      right: 0;
-      color: #fff;
-      font-weight: 400;
-      padding: 0 100px;
-      font-size: 64px;
-    }
-    .banner-image-container h1 b{
-        font-size: 100px;
-    }
-    .scale-animation{
-      -ms-transform: scale(1.1,1.1); /* IE 9 */
-      -webkit-transform: scale(1.1,1.1); /* Safari */
-      transform: scale(1.1,1.1); /* Standard syntax */
-      transition: 6s ease;
-    }
-    .contact-us-container{
-      position: relative;
-      z-index: 1;
-      background: red;
-      padding: 15px;
-      margin-top: 100px;
-      background-color: #ffffff42;
-    }
-    .contact-us-container h2{
-      margin-bottom: 10px;
-      color: #fff;
-      font-size: 28px;
-      text-align: center;
-    }
-    .contact-us-container button{
-      background: #f18d3c;
-      color: #fff;
-      border: 0;
-      padding: 5px 20px;
-      margin: auto;
-      display: block;
-      font-size: 16px;
-      font-weight: bold;
-    }
-    .button-ani {
-  border-radius: 4px;
-  background-color: #ea3635;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 20px;
-  padding: 2px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-
+.banner-image-container{padding:0;overflow:hidden;position:relative;}
+.banner-image-container h1{position:absolute;top:50%;text-align:center;left:0;right:0;color:#fff;font-weight:400;padding:0 100px;font-size:64px;}
+.banner-image-container h1 b{font-size:100px;}
+.scale-animation{-ms-transform:scale(1.1,1.1);-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);transition:6s ease;}
+.contact-us-container{position:relative;z-index:1;background:red;padding:15px;margin-top:100px;background-color:#ffffff42;}
+.contact-us-container h2{margin-bottom:10px;color:#fff;font-size:28px;text-align:center;}
+.contact-us-container button{background:#f18d3c;color:#fff;border:0;padding:5px 20px;margin:auto;display:block;font-size:16px;font-weight:bold;}
+.button-ani{border-radius:4px;background-color:#ea3635;border:none;color:#FFFFFF;text-align:center;font-size:20px;padding:2px;width:150px;transition:all 0.5s;cursor:pointer;margin:15px;}
+.button-ani span{cursor:pointer;display:inline-block;position:relative;transition:0.5s;}
+.button-ani span:after{content:'\00bb';position:absolute;opacity:0;top:0;right:-20px;transition:0.5s;}
+.button-ani:hover span{padding-right:25px;}
+.button-ani:hover span:after{opacity:1;right:0;}
+.scroll-downs{position:absolute;top:75%;right:0;bottom:0;left:0;margin:auto;z-index:1;width:34px;height:55px;}
+.mousey{width:3px;padding:10px 15px;height:35px;border:2px solid #fff;border-radius:25px;opacity:0.75;box-sizing:content-box;}
+.scrollers{width:3px;height:10px !important;border-radius:25%;background-color:#fff;animation-name:scroll;animation-duration:2.2s;animation-timing-function:cubic-bezier(.15,.41,.69,.94);animation-iteration-count:infinite;}
+.home_container, .our_services_container, .collapse-words, .contact-us{top:15%;color:#fff;}
+.why_spini_container{top:15%;color:#fff;}
+.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{font-size:52px;line-height:1;color:#fff;font-weight:bold;}
+.home_container p, .why_spini_container p, .our_services_container p{font-size:30px;line-height:40px;background:#00000047;padding:10px;}
+.home_container p i, .why_spini_container p i, .our_services_container p i{display:block;margin-top:15px;font-size:24px;}
+.happy-customer-container{position:relative;top:10%;}
+@keyframes scroll{0%{opacity:0;}
+10%{transform:translateY(0);opacity:1;}
+100%{transform:translateY(15px);opacity:0;}
 }
-
-.button-ani span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.happy_customers{margin:0 20px;display:inline-block;}
+.happy_customers span{display:inline-block;float:left;}
+.happy_customers img{margin-left:1%;}
+.collapse-words{margin-bottom:10px;padding:10px;}
+@media only screen and (max-width:500px){.banner-image-container h1{padding:0 10px;font-size:20px;line-height:26px;}
+.scroll-downs{display:none;}
+.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{font-size:24px;}
+.home_container p, .why_spini_container p, .our_services_container p{font-size:14px;}
+.why_spini_container{}
+.services-mob{margin-top:35px !important;}
+.contact-us-container{margin-top:50px;}
 }
-
-.button-ani span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button-ani:hover span {
-  padding-right: 25px;
-}
-
-.button-ani:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-/*scroll down animation*/
-.scroll-downs {
-  position: absolute;
-  top: 75%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  z-index: 1;
-  width :34px;
-  height: 55px;
-}
-.mousey {
-  width: 3px;
-  padding: 10px 15px;
-  height: 35px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scrollers {
-  width: 3px;
-  height: 10px !important;
-  border-radius: 25%;
-  background-color: #fff;
-  animation-name: scroll;
-  animation-duration: 2.2s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-.home_container, .our_services_container, .collapse-words, .contact-us{
-  top: 15%;
-  color: #fff;
-}
-.why_spini_container{
-    top: 15%;
-    color: #fff;
-}
-.home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{
-  font-size: 52px;
-  line-height: 1;
-  color: #fff;
-  font-weight: bold;
-}
-.home_container p, .why_spini_container p, .our_services_container p{
-  font-size: 30px;
-  line-height: 40px;
-  background: #00000047;
-  padding: 10px;
-}
-.home_container p i, .why_spini_container p i, .our_services_container p i{
-    display: block;
-    margin-top: 15px;
-    font-size: 24px;
-}
-.happy-customer-container{
-  position: relative;
-  top: 10%;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
-}
-.happy_customers{
-    margin: 0 20px;
-    display: inline-block;
-}
-.happy_customers span{
-  display: inline-block;
-  float: left;
-}
-.happy_customers img{
-  margin-left: 1%;
-  /*margin-top: 1%;*/
-}
-.collapse-words{
-  margin-bottom: 10px;
-  padding: 10px;
-}
-/*mobile css*/
-@media only screen and (max-width:500px){
-      .banner-image-container h1{
-        padding: 0 10px;
-        font-size: 20px;
-        line-height: 26px;
-      }
-      .scroll-downs{
-        display: none;
-      }
-      /*.why_spini_bg{
-        background-size: 100% !important;
-      }*/
-      .home_container h1, .why_spini_container h1, .our_services_container h1, .contact-us h1, .happy_customers h1{
-          font-size: 24px;
-      }
-      .home_container p, .why_spini_container p, .our_services_container p{
-        font-size: 14px;
-      }
-      .why_spini_container{
-        /*top: 15%;*/
-      }
-      .services-mob{
-        margin-top: 35px !important;
-      }
-      .contact-us-container{
-        margin-top: 50px;
-      }
-    }
