@@ -648,7 +648,7 @@ $(document).ready(function() {
   } else if (homepage_category == 'interior') {
    categoryName = "Interior/Renovation/Modular Kitchen";
    banner_heading = "Get interior designer at best price";
-   banner_background = "http://blog.getspini.com/wp-content/uploads/2018/06/Home-2.jpg";
+   banner_background = "http://cdn.getspini.com/Bigg-boss-2-Tamil-Yashika-Oviya.jpg";
    feature_add_title = "Estimate the price of your modular kitchen in few minutes";
    feature_add_href = "/interiors/interior-estimation.html";
    feature_add_href_title = "Get Estimate";
@@ -688,7 +688,7 @@ $(document).ready(function() {
  get_json();
 
  function get_json(index) {
-  $.get("../assets/js/v1.30.47/cards.json", function(data, status) {
+  $.get("../assets/js/v1.30.48/cards.json", function(data, status) {
    cards = data.cards;
    cards = cards.reverse();
    $(".see-more-pagination").click(function() {
