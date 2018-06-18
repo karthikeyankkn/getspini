@@ -688,7 +688,7 @@ $(document).ready(function() {
  get_json();
 
  function get_json(index) {
-  $.get("../assets/js/v1.30.47/cards.json", function(data, status) {
+  $.get("../assets/js/v1.30.48/cards.json", function(data, status) {
    cards = data.cards;
    cards = cards.reverse();
    $(".see-more-pagination").click(function() {
