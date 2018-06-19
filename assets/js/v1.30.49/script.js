@@ -273,7 +273,7 @@ $(document).ready(function() {
      "category": categoryName,
      "Selected_Package": selected_package,
      "_subject": "Get spini partner-with-us!",
-     "_cc": "karthikeyan@spinircle.com, arun.kumar@spinircle.com, gowrishankar@spinircle.com, anuradha.v@spinircle.com"
+     "_cc": "karthikeyan@spinircle.com, anand.kumar@spinircle.com, gowrishankar@spinircle.com, anuradha.v@spinircle.com"
     },
     dataType: "json"
    });
@@ -539,7 +539,7 @@ $(document).ready(function() {
      "Estimatedcost": estimatedcost,
      "Rangecost": rangecost,
      "_subject": "Lead from Interior Estimation Page !",
-     "_cc": "karthikeyan@spinircle.com, sharat.n@spinircle.com, anuradha.v@spinircle.com"
+     "_cc": "karthikeyan@spinircle.com, anand.kumar@spinircle.com, anuradha.v@spinircle.com, joshua.simon@spinircle.com"
     },
     dataType: "json"
    });
@@ -688,7 +688,7 @@ $(document).ready(function() {
  get_json();
 
  function get_json(index) {
-  $.get("../assets/js/v1.30.48/cards.json", function(data, status) {
+  $.get("../assets/js/v1.30.49/cards.json", function(data, status) {
    cards = data.cards;
    cards = cards.reverse();
    $(".see-more-pagination").click(function() {

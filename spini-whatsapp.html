@@ -25,24 +25,78 @@
 
   <script>
      var index_page = false;
-     setTimeout(function(){ 
-        // location.reload();
-        window.location.href="/"
-      }, 3000);
+     var categoryName = null;
+
    </script>    
 </head>
 <body>
 <!-- haader starts -->
 <header></header>
 <!-- haader ends -->
-<!-- body content starts -->
-<a href="" class="error-page"></a>
-<!-- body content ends -->
+
+<div class="spini-whatsapp-container">
+  <div class="send-whatsapp-msg">
+    <h1>Send WhatsApp message..!</h1>
+    <input type="number" name="whatsapp_number" placeholder="Enter Whatsapp Number">
+    <button>SEND</button>
+  </div>
+</div>
+
 <!-- footer content -->
 <footer></footer>
 <!-- script files starts -->
   <script src="assets/js/lib/jquery.min.js"></script>
   <script src="assets/js/lib/bootstrap.min.js"></script>
   <script src="assets/js/v1.30.49/script.js"></script>
+
+  <style type="text/css">
+    .spini-whatsapp-container{
+      background: #fff;
+      margin: 200px auto 40px;
+      max-width: 700px;
+      text-align: center;
+      box-shadow: 0px 0px 11px #d4d8df;
+    }
+    .send-whatsapp-msg{
+      padding: 30px;
+    }
+    .send-whatsapp-msg h1{
+      color: #1cb39b;
+      font-weight: 100;
+      margin-bottom: 24px;
+      font-size: 20px;
+
+    }
+    .send-whatsapp-msg input{
+      padding: 15px 0 15px 15px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+      width: 215px;
+      background: #edf8f5;
+      border: none;
+      color: #5b5f62;
+    }
+    .send-whatsapp-msg button{
+      display: block;
+      margin: auto;
+      background: #1cb39b;
+      color: #fff;
+      padding: 5px 20px;
+      border-radius: 25px;
+    }
+  </style>
+  <script type="text/javascript">
+    $('.send-whatsapp-msg button').click(function(){
+      debugger
+      var whatsapp_number = $(".send-whatsapp-msg input").val();
+      if (whatsapp_number.length != 10) {
+        alert("Please Check the number");
+        }else{
+          // window.location = "https://api.whatsapp.com/send?phone=918682800800&text=Hello, This is my WhatsApp number: "+whatsapp_number;
+
+          window.location = "https://api.whatsapp.com/send?phone=91"+whatsapp_number+"&text=Hello";
+        }
+    });
+  </script>
 </body>
 </html>
