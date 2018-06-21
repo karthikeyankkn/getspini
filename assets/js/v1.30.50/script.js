@@ -8,26 +8,26 @@ $(document).ready(function() {
  windowHight();
  // script for common device image starts
  // images for desktop
- var desktop_img = ["http://cdn.getspini.com/banner/Nest-Fortune1.jpg",
-  "http://cdn.getspini.com/optimized/nest-bn.jpg",
-  "http://cdn.getspini.com/optimized/hiranandani-bn.jpg",
-  "http://cdn.getspini.com/optimized/stepsstone-bn.jpg",
+ var desktop_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/nest-bn.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/hiranandani-bn.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/stepsstone-bn.jpg",
   "../assets/images/banner/Nest_20Kanathur.jpg",
   "../assets/images/banner/Stepstone_20Prasanna.jpg",
   "../assets/images/gvspl/GVSPl_20banner.jpg",
-  "http://cdn.getspini.com/banner/Nest-Suraj1.jpg",
-  "http://cdn.getspini.com/banner/Nest-Life1.jpg"
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Suraj1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Life1.jpg"
  ];
  // images for mobile
- var mobile_img = ["http://cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
-  "http://cdn.getspini.com/nest-mob-v2-1.jpg",
-  "http://cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
-  "http://cdn.getspini.com/stepstone-mob-v2-1.jpg",
+ var mobile_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/nest-mob-v2-1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/stepstone-mob-v2-1.jpg",
   "../assets/images/banner/Nest_20Mob.jpg",
   "../assets/images/banner/Stepstone_20Prasanna_20Mob.jpg",
   "../assets/images/gvspl/GVSPL_20Mob.jpg",
-  "http://cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
-  "http://cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
  ];
  // links for slider
  var slider_link = ["../realestate/nest-fortune-choolaimedu.html",
@@ -641,21 +641,21 @@ $(document).ready(function() {
   if (homepage_category == 'realestate') {
    categoryName = "Real Estate(Buying)";
    banner_heading = "Your dream home is now here";
-   banner_background = "http://cdn.getspini.com/bg-index.jpg";
+   banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/bg-index.jpg";
    feature_add_title = "List your property for free Ad listing on our website";
    feature_add_href = "https://spini.typeform.com/to/lNAjvb";
    feature_add_href_title = "Post Ad";
   } else if (homepage_category == 'interior') {
    categoryName = "Interior/Renovation/Modular Kitchen";
    banner_heading = "Get interior designer at best price";
-   banner_background = "http://cdn.getspini.com/Bigg-boss-2-Tamil-Yashika-Oviya.jpg";
+   banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Bigg-boss-2-Tamil-Yashika-Oviya.jpg";
    feature_add_title = "Estimate the price of your modular kitchen in few minutes";
    feature_add_href = "/interiors/interior-estimation.html";
    feature_add_href_title = "Get Estimate";
   } else if (homepage_category == 'loans') {
    categoryName = "Loans";
    banner_heading = "Loans available @ lowest interest rate";
-   banner_background = "http://cdn.getspini.com/loan-banner.jpg";
+   banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/loan-banner.jpg";
    feature_add_title = "Need a loan immediately with lower EMI's, Know more";
    feature_add_href = "/loans/loan-emi-calculator.html";
    feature_add_href_title = "Calculate EMI";
