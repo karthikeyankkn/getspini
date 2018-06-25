@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic Page Needs ================================================== -->
+        
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>Spini - MARUTHAM PRESTIGE Tambaram West, Chennai</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <meta property="og:url" content="http://getspini.com/realestate/Marutham-Prestige.html" />
+        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/marutham-prestige.jpg" />
+        <meta name="description" content="The Marutham Prestige is a luxurious residential property that is equipped with many spacious and well- ventilated flats, which are constructed to complement or update your modern lifestyle....">
+        <meta name="keywords" content="spini , real estate buyers , stepstones apartments , Stepstone akshara, duplex flats, flats in chennai ,life insurance ,health insurance, mortgage loans , business loans, home loans,personal loans, interior,interior designer in chennai, building construction in chennai ,real estate in bangalore, buyer and seller, nest glory, luxurious apartments , 1bhk in chennai ,2bhk apartment in chennai, loans at low interest,MARUTHAM PRESTIGE Tambaram West, Chennai">
+        <link rel="canonical" href="http://getspini.com/"/>
+        <meta name="" content="">
+        <!-- Mobile Specific Metas ================================================== -->
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.21/style.css">
+   <!-- css files ends -->
+   <script>
+     var index_page = false;
+     var categoryName = "Real Estate(Buying)"; var propertyName = '';
+   </script> 
+    <style type="text/css">
+      .material-estimator-output{
+        display: none;
+      }
+    </style>    
+</head>
+<body>
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+<!-- body content starts -->
+<div class="container" style="margin-top: 100px;">
+  <h1>Material estimator</h1>
+
+  <div>
+     <select class="location-for-me">
+      <option value="1">Chennai</option>
+      <option value="2">Coimbatore</option>
+      <option value="3">Banglore</option>
+      <option value="4">Hyderabad</option>
+    </select>
+
+    <select class="build_up_area_per_floor">
+      <option value="1">700</option>
+      <option value="2">1000</option>
+      <option value="3">1250</option>
+      <option value="4">1500</option>
+    </select>
+
+    <select class="no-of-floors">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+
+    <button class="material-calculate">Submit</button>
+
+    <div class="material-estimator-output">
+      <div class="col-md-6">
+        <table class="table table-bordered rebar-requierment">
+          <thead>
+            <tr>
+              <th>Rebar Size</th>
+              <th>Quantity</th>
+              <th>Price per piece</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="table table-bordered other-building-materials">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Units</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div id="materialEstimatorModel" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+           <form action="https://formspree.io/karthikeyan@spinircle.com"
+                method="POST">
+              <input type="text" name="name" placeholder="Enter Name">
+              <input type="email" name="email" placeholder="Enter Email">
+              <input type="number" name="mobile_number" placeholder="Enter Phone Number">
+
+              <input type="hidden" name="_next" value="http://localhost:8080/realestate/material-estimator.html" />
+              <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
+              <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+              <input type="submit" value="Send" class="submit_material_form" onclick="material_calculator()">
+          </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+<!-- body content ends -->
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script src="../assets/js/lib/jquery.min.js"></script>
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <script src="../assets/js/v1.30.50/script.js"></script>
+
+ <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; left:0px; top:150px;">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+<script type="text/javascript">
+      var other_building_materials, rebar_requierment, product, show_material_estimate;
+
+      function material_calculator(){
+        var no_of_floors = $(".no-of-floors").val();
+        var build_up_area_per_floor = $(".build_up_area_per_floor").val();
+          debugger                       
+        // first floor
+        if (no_of_floors == 1) {
+          if (build_up_area_per_floor == 1) {
+            show_material_estimate = 1;
+          }else if (build_up_area_per_floor == 2) {
+            show_material_estimate = 2;
+          }else if (build_up_area_per_floor == 3) {
+            show_material_estimate = 3;
+          }else{
+            show_material_estimate = 4;
+          }
+        // second floor
+        }else if (no_of_floors == 2) {
+          if (build_up_area_per_floor == 1) {
+            show_material_estimate = 5;
+          }else if (build_up_area_per_floor == 2) {
+            show_material_estimate = 6;
+          }else if (build_up_area_per_floor == 3) {
+            show_material_estimate = 7;
+          }else{
+            show_material_estimate = 8;
+          }
+        //third floor
+        }else {
+          if (build_up_area_per_floor == 1) {
+            show_material_estimate = 9;
+          }else if (build_up_area_per_floor == 2) {
+            show_material_estimate = 10;
+          }else if (build_up_area_per_floor == 3) {
+            show_material_estimate = 11;
+          }else{
+            show_material_estimate = 12;
+          }
+        }
+        
+
+        show_material_estimate = show_material_estimate - 1;
+        
+        
+        window.sessionStorage.setItem("show_material_estimate", show_material_estimate);
+      }
+      $('.material-calculate').click(function(){
+          $(this).prop('disabled', true);
+          // material_calculator();
+        $('#materialEstimatorModel').modal('show');
+      });
+
+      
+      show_material_estimate = window.sessionStorage.getItem("show_material_estimate");
+      
+      if (show_material_estimate) {
+        $.get("../assets/js/v1.30.50/material-estimation.json", function( data ) {
+          debugger
+          rebar_requierment = data.rebar_requierment;
+          other_building_materials = data.other_building_materials;
+          
+          for(var i=0; i< rebar_requierment[show_material_estimate].rebar_requierement_data.length; i++){
+            
+            $('.rebar-requierment tbody').append("<tr><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].rebar_size+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].quantity+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].price_per_piece+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].total_cost+"</td></tr>");
+          }
+
+          for(var j=0; j< other_building_materials[show_material_estimate].other_building_materials_data.length; j++){
+            $('.other-building-materials tbody').append("<tr><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].product+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].quantity+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].units+"</td></tr>");
+          }
+        });
+        $('.material-estimator-output').fadeIn();
+      }
+    </script>
+</body>
+</html>

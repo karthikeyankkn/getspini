@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"127",
+		"a_href":"N-R-pearl.html",
+		"card_title":"N R PEARL",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/nrpearl1.jpg",
+		"card_description":"NR Pearl is one of the residential projects of NR Builders, located in Bangalore. .",
+		"card_area":" JP Nagar",
+		"card_city": "bangalore"
+		},
+		{
 		"id":"126",
 		"a_href":"Jasmine-Springs.html",
 		"card_title":"Jasmine Springs",

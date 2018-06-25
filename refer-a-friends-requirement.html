@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic Page Needs ================================================== -->
+        
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>Refer a friend | GetSpini</title>
+        <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <meta name="description" content="Getspini provides apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan,packers and movers, catering service, homes for rent, property for sale in chennai, coimbatore, mumbai, pune, bangalore, hyderabad, delhi, noida, gurgaon">
+        <meta name="keywords" content="apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan, packers and movers, catering service, homes for rent, property for sale">
+        <meta name="author" content="">
+        <link rel="canonical" href="http://getspini.com/"/>
+        
+        <!-- Mobile Specific Metas ================================================== -->
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/v1.18.21/style.css">
+   <!-- css files ends -->
+
+  <script type="text/javascript">
+     var index_page = false;
+     var categoryName = undefined;
+   </script>    
+</head>
+<body>
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+<!-- body content starts -->
+<style type="text/css">
+  input[disabled] {
+    cursor: no-drop !important;
+  }
+  
+  .form-type input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 50px;
+    padding-left: 20px;
+  }
+  .form-control{
+    width: 40%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .form-type input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90% !important;
+    height: 50px;
+    padding-left: 20px;
+  }
+  .form-control{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  }
+  @media screen and (max-width: 768px) {
+    .form-type input{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 60% !important;
+    height: 50px;
+    padding-left: 20px;
+  }
+  .form-control{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  }
+</style>
+<section>
+  <div class="container">
+    <div class="col-md-12" style="margin-top: 50px;text-align: center;">
+      <div class="form-type">
+          <h3 style="color: #cd0000;;text-align: center;padding: 10px 0px;"> REFER A FRIEND</h3>
+          <form  onsubmit ="fb_camp()" validate>
+
+            <select class="form-control"   name="city" id="city" required >
+              <option  value="" selected>Select City</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Coimbatore">Coimbatore</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Hyderabad">Hyderabad</option>                   
+            </select>
+
+            <select class="form-control"   name="requirement" id="requirement" required >
+              <option  value="" selected>Friend's Requirement</option>
+              <option value="Real Estate">Real Estate</option>
+              <option value="Loan">Loan</option>
+              <option value="Interior/Renovation/Modular Kitchen">Interior/Renovation/Modular Kitchen</option>
+              <option value="Building Construction">Building Construction</option>                   
+            </select>
+
+            <input type="text" placeholder="Your Name*" name="name" required>
+            <input type="tel" placeholder="Your Number*" name="phonenum" pattern="[6789][0-9]{9}" required>
+            <input type="text" placeholder="Friend's Name*" name="name" required>
+            <input type="tel" placeholder="Friend's Number*" name="phonenum" pattern="[6789][0-9]{9}" required>
+            <input type="email" placeholder="Email" name="email" required>
+            
+            
+            
+            <!-- <input style="padding-bottom: 70px;" type="text" placeholder="Queries" name="queries"  > -->
+
+            <input style="background-color: #cd0000;color: #fff;width: 15%;" type="submit" id="MySubmit"  class="form-submit" />
+          </form>
+        </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  function fb_camp() {
+    event.preventDefault();
+         document.getElementById("MySubmit").disabled = true;
+    debugger
+    var data = {"camp_lead": {
+                    "from": "spini-campaign-1",
+                    "name": $("input[name=name]").val(),
+                    "email": $("input[name=email]").val(),
+                    "phone_number" : $("input[name=phonenum]").val(),
+                    "queries" : $("input[name=queries]").val(),
+                    "city": $('#city').find(":selected").text()
+                    "requirement": $('#requirement').find(":selected").text()
+                  }
+      };
+
+    $.ajax({
+      type: "POST",
+      url: "https://www.hiranandaniparks.com/Plot-booking/camp_lead/new",
+      header:{"content-type": "application/json"},
+      data: data,
+      success: function(data){
+            window.location="";
+             
+          },
+
+          error: function(data){
+             alert("Please Try Again Later");
+          }
+    });         
+    // window.location="thankyou.html";
+  }
+  // $(".form-submit").click(function(){
+  //  var data = {"camp_lead": {
+ //                    "from": $("input[name=name]").val(),
+ //                    "name": $("input[name=name]").val(),
+ //                    "email": $("input[name=email]").val(),
+ //                    "phone_number" : $("input[name=phonenum]").val(),
+ //                    "queries" : $("input[name=queries]").val(),
+ //                    "plot_size": $('#plotsize').find(":selected").text()
+ //                }
+  //            }
+
+  //            debugger
+    // $.ajax({
+    //   type: "POST",
+    //   url: "https://hparks.getspini.in/Plot-booking/camp_lead/new",
+    //   header:{"content-type": "application/json"},
+    //   data: data,
+    //   success: alert("Hi "+data.camp_lead.name+" We will contact you soon..")
+    // });
+  // });
+</script>
+<!-- body content ends -->
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script type="text/javascript" src="assets/js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/v1.30.50/script.js"></script>
+</body>
+</html>
