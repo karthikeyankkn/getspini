@@ -29,7 +29,11 @@
      var index_page = false;
      var categoryName = "Real Estate(Buying)"; var propertyName = '';
    </script> 
-        
+    <style type="text/css">
+      .material-estimator-output{
+        display: none;
+      }
+    </style>    
 </head>
 <body>
 <!-- haader starts -->
@@ -62,8 +66,66 @@
 
     <button class="material-calculate">Submit</button>
 
-
+    <div class="material-estimator-output">
+      <div class="col-md-6">
+        <table class="table table-bordered rebar-requierment">
+          <thead>
+            <tr>
+              <th>Rebar Size</th>
+              <th>Quantity</th>
+              <th>Price per piece</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="table table-bordered other-building-materials">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Units</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
+
+    <!-- Modal -->
+    <div id="materialEstimatorModel" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Header</h4>
+          </div>
+          <div class="modal-body">
+           <form action="https://formspree.io/karthikeyan@spinircle.com"
+                method="POST">
+              <input type="text" name="name" placeholder="Enter Name">
+              <input type="email" name="email" placeholder="Enter Email">
+              <input type="number" name="mobile_number" placeholder="Enter Phone Number">
+
+              <input type="hidden" name="_next" value="http://localhost:8080/realestate/material-estimator.html" />
+              <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
+              <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
+              <input type="submit" value="Send" class="submit_material_form" onclick="material_calculator()">
+          </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
 </div>
 <!-- body content ends -->
 <!-- footer content -->
@@ -85,82 +147,12 @@
 <!-- AddToAny END -->
 
 <script type="text/javascript">
-      $('.material-calculate').click(function(){
+      var other_building_materials, rebar_requierment, product, show_material_estimate;
+
+      function material_calculator(){
         var no_of_floors = $(".no-of-floors").val();
         var build_up_area_per_floor = $(".build_up_area_per_floor").val();
-        
-        material_estimation_list = [
-                                    {
-                                      "rebar_requierment":{
-                                        "rebar_requierement_data":[{
-                                          "size": 6,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                          {
-                                          "size": 8,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                          {
-                                          "size": 10,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                          {
-                                          "size": 12,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                          {
-                                          "size": 16,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                          {
-                                          "size": 20,
-                                          "quantity": 89,
-                                          "price_per_piece": 185,
-                                          "total_cost": 16465
-                                          },
-                                        ],
-                                        "total": 109393
-                                      },
-                                      "other_building_materials":[
-                                          {
-                                            "product":"cement",
-                                            "quantity": 450,
-                                            "units": "bags"
-                                          },
-                                          {
-                                            "product":"cement",
-                                            "quantity": 450,
-                                            "units": "bags"
-                                          },
-                                          {
-                                            "product":"cement",
-                                            "quantity": 450,
-                                            "units": "bags"
-                                          },
-                                          {
-                                            "product":"cement",
-                                            "quantity": 450,
-                                            "units": "bags"
-                                          },
-                                          {
-                                            "product":"cement",
-                                            "quantity": 450,
-                                            "units": "bags"
-                                          }
-                                      ]
-                                    },
-                                   ];
-                                   debugger
+          debugger                       
         // first floor
         if (no_of_floors == 1) {
           if (build_up_area_per_floor == 1) {
@@ -195,8 +187,39 @@
             show_material_estimate = 12;
           }
         }
-        alert(show_material_estimate);
+        
+
+        show_material_estimate = show_material_estimate - 1;
+        
+        
+        window.sessionStorage.setItem("show_material_estimate", show_material_estimate);
+      }
+      $('.material-calculate').click(function(){
+          $(this).prop('disabled', true);
+          // material_calculator();
+        $('#materialEstimatorModel').modal('show');
       });
+
+      
+      show_material_estimate = window.sessionStorage.getItem("show_material_estimate");
+      
+      if (show_material_estimate) {
+        $.get("../assets/js/v1.30.50/material-estimation.json", function( data ) {
+          debugger
+          rebar_requierment = data.rebar_requierment;
+          other_building_materials = data.other_building_materials;
+          
+          for(var i=0; i< rebar_requierment[show_material_estimate].rebar_requierement_data.length; i++){
+            
+            $('.rebar-requierment tbody').append("<tr><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].rebar_size+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].quantity+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].price_per_piece+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].total_cost+"</td></tr>");
+          }
+
+          for(var j=0; j< other_building_materials[show_material_estimate].other_building_materials_data.length; j++){
+            $('.other-building-materials tbody').append("<tr><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].product+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].quantity+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].units+"</td></tr>");
+          }
+        });
+        $('.material-estimator-output').fadeIn();
+      }
     </script>
 </body>
 </html>
