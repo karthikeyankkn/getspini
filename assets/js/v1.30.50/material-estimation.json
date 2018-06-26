@@ -2,83 +2,471 @@
   "rebar_requierment": [{
     "rebar_requierement_data": [{
         "rebar_size": 6,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 88,
+        "price_per_piece": 183,
+        "total_cost": 16104
       },
       {
         "rebar_size": 8,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 83,
+        "price_per_piece": 311,
+        "total_cost": 25813
       },
       {
         "rebar_size": 10,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 37,
+        "price_per_piece": 473,
+        "total_cost": 17501
       },
       {
         "rebar_size": 12,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 42,
+        "price_per_piece": 678,
+        "total_cost": 28476
       },
       {
         "rebar_size": 16,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 20,
+        "price_per_piece": 1207,
+        "total_cost": 24140
       },
       {
         "rebar_size": 20,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 7,
+        "price_per_piece": 1887,
+        "total_cost": 13209
       }
     ]
   },
   {
     "rebar_requierement_data": [{
         "rebar_size": 6,
-        "quantity": 189,
-        "price_per_piece": 1185,
-        "total_cost": 116465
+        "quantity": 177,
+        "price_per_piece": 183,
+        "total_cost": 32391
       },
       {
         "rebar_size": 8,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 216,
+        "price_per_piece": 311,
+        "total_cost": 67176
       },
       {
         "rebar_size": 10,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 50,
+        "price_per_piece": 473,
+        "total_cost": 23650
       },
       {
         "rebar_size": 12,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 132,
+        "price_per_piece": 678,
+        "total_cost": 89496
       },
       {
         "rebar_size": 16,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 23,
+        "price_per_piece": 1207,
+        "total_cost": 27761
       },
       {
         "rebar_size": 20,
-        "quantity": 89,
-        "price_per_piece": 185,
-        "total_cost": 16465
+        "quantity": 28,
+        "price_per_piece": 1887,
+        "total_cost": 52836
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 267,
+        "price_per_piece": 183,
+        "total_cost": 48861
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 357,
+        "price_per_piece": 311,
+        "total_cost": 111027
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 114,
+        "price_per_piece": 473,
+        "total_cost": 53922
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 179,
+        "price_per_piece": 678,
+        "total_cost": 121362
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 43,
+        "price_per_piece": 1207,
+        "total_cost": 51901
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 35,
+        "price_per_piece": 1887,
+        "total_cost": 66045
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 108,
+        "price_per_piece": 183,
+        "total_cost": 19764
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 142,
+        "price_per_piece": 311,
+        "total_cost": 44162
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 45,
+        "price_per_piece": 473,
+        "total_cost": 21285
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 65,
+        "price_per_piece": 678,
+        "total_cost": 44070
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 23,
+        "price_per_piece": 1207,
+        "total_cost": 27761
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 12,
+        "price_per_piece": 1887,
+        "total_cost": 22644
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 182,
+        "price_per_piece": 183,
+        "total_cost": 33306
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 310,
+        "price_per_piece": 311,
+        "total_cost": 96410
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 65,
+        "price_per_piece": 473,
+        "total_cost": 30745
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 117,
+        "price_per_piece": 678,
+        "total_cost": 79326
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 100,
+        "price_per_piece": 1207,
+        "total_cost": 120700
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 15,
+        "price_per_piece": 1887,
+        "total_cost": 28305
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 274,
+        "price_per_piece": 183,
+        "total_cost": 50142
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 540,
+        "price_per_piece": 311,
+        "total_cost": 167940
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 72,
+        "price_per_piece": 473,
+        "total_cost": 34056
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 321,
+        "price_per_piece": 678,
+        "total_cost": 217638
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 72,
+        "price_per_piece": 1207,
+        "total_cost": 86904
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 15,
+        "price_per_piece": 1887,
+        "total_cost": 28305
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 160,
+        "price_per_piece": 183,
+        "total_cost": 29280
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 167,
+        "price_per_piece": 311,
+        "total_cost": 51937
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 96,
+        "price_per_piece": 473,
+        "total_cost": 45408
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 56,
+        "price_per_piece": 678,
+        "total_cost": 37968
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 16,
+        "price_per_piece": 1207,
+        "total_cost": 19312
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 24,
+        "price_per_piece": 1887,
+        "total_cost": 45288
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 286,
+        "price_per_piece": 183,
+        "total_cost": 52338
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 397,
+        "price_per_piece": 311,
+        "total_cost": 123467
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 157,
+        "price_per_piece": 473,
+        "total_cost": 74261
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 169,
+        "price_per_piece": 678,
+        "total_cost": 114582
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 53,
+        "price_per_piece": 1207,
+        "total_cost": 63971
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 32,
+        "price_per_piece": 1887,
+        "total_cost": 60384
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 379,
+        "price_per_piece": 183,
+        "total_cost": 69357
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 620,
+        "price_per_piece": 311,
+        "total_cost": 192820
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 125,
+        "price_per_piece": 473,
+        "total_cost": 59125
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 389,
+        "price_per_piece": 678,
+        "total_cost": 263742
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 142,
+        "price_per_piece": 1207,
+        "total_cost": 171394
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 11,
+        "price_per_piece": 1887,
+        "total_cost": 20757
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 195,
+        "price_per_piece": 183,
+        "total_cost": 35685
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 207,
+        "price_per_piece": 311,
+        "total_cost": 64377
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 112,
+        "price_per_piece": 473,
+        "total_cost": 52976
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 91,
+        "price_per_piece": 678,
+        "total_cost": 61698
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 44,
+        "price_per_piece": 1207,
+        "total_cost": 53108
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 9,
+        "price_per_piece": 1887,
+        "total_cost": 16983
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 340,
+        "price_per_piece": 183,
+        "total_cost": 62220
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 441,
+        "price_per_piece": 311,
+        "total_cost": 137151
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 192,
+        "price_per_piece": 473,
+        "total_cost": 90816
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 179,
+        "price_per_piece": 678,
+        "total_cost": 121362
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 77,
+        "price_per_piece": 1207,
+        "total_cost": 92939
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 42,
+        "price_per_piece": 1887,
+        "total_cost": 79254
+      }
+    ]
+  },
+  {
+    "rebar_requierement_data": [{
+        "rebar_size": 6,
+        "quantity": 505,
+        "price_per_piece": 183,
+        "total_cost": 92415
+      },
+      {
+        "rebar_size": 8,
+        "quantity": 791,
+        "price_per_piece": 311,
+        "total_cost": 246001
+      },
+      {
+        "rebar_size": 10,
+        "quantity": 195,
+        "price_per_piece": 473,
+        "total_cost": 92235
+      },
+      {
+        "rebar_size": 12,
+        "quantity": 468,
+        "price_per_piece": 678,
+        "total_cost": 317304
+      },
+      {
+        "rebar_size": 16,
+        "quantity": 131,
+        "price_per_piece": 1207,
+        "total_cost": 158117
+      },
+      {
+        "rebar_size": 20,
+        "quantity": 14,
+        "price_per_piece": 1887,
+        "total_cost": 26418
       }
     ]
   }
-
-
   ],
   "other_building_materials": [{
       "other_building_materials_data": [{
@@ -87,52 +475,332 @@
         "units": "bags"
       },
       {
-        "product": "cement",
-        "quantity": 450,
-        "units": "bags"
+        "product": "Sand",
+        "quantity": 33,
+        "units": "Cubic Meter"
       },
       {
-        "product": "cement",
-        "quantity": 450,
-        "units": "bags"
+        "product": "Bricks",
+        "quantity": 17,
+        "units": "Thousand"
       },
       {
-        "product": "cement",
-        "quantity": 450,
-        "units": "bags"
+        "product": "StoneChip (20 mm)",
+        "quantity": 30,
+        "units": "Cubic Meter"
       },
       {
-        "product": "cement",
-        "quantity": 450,
-        "units": "bags"
+        "product": "StoneChip (10 mm)",
+        "quantity": 10,
+        "units": "Cubic Meter"
       }
     ]
     },
     {
       "other_building_materials_data": [{
         "product": "cement",
-        "quantity": 850,
+        "quantity": 855,
         "units": "bags"
       },
       {
+        "product": "Sand",
+        "quantity": 63,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 32,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 19,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 57,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
         "product": "cement",
-        "quantity": 450,
+        "quantity": 1285,
         "units": "bags"
       },
       {
+        "product": "Sand",
+        "quantity": 94,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 48,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 86,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 28,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
         "product": "cement",
-        "quantity": 450,
+        "quantity": 617,
         "units": "bags"
       },
       {
+        "product": "Sand",
+        "quantity": 43.5,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 21,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 42,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 14,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
         "product": "cement",
-        "quantity": 450,
+        "quantity": 1172,
         "units": "bags"
       },
       {
+        "product": "Sand",
+        "quantity": 83,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 40,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 27,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 80,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
         "product": "cement",
-        "quantity": 450,
+        "quantity": 1760,
         "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 124,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 60,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 120,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 40,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 887,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 60,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 26,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 21,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 61,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 1685,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 114,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 50,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 40,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 116,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 2528,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 171,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 74,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 60,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 174,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 1127,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 75,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 31,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 78,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 27.5,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 2142,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 143,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 60,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 52,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 148,
+        "units": "Cubic Meter"
+      }
+    ]
+    },
+    {
+      "other_building_materials_data": [{
+        "product": "cement",
+        "quantity": 3212,
+        "units": "bags"
+      },
+      {
+        "product": "Sand",
+        "quantity": 214,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "Bricks",
+        "quantity": 90,
+        "units": "Thousand"
+      },
+      {
+        "product": "StoneChip (10 mm)",
+        "quantity": 78,
+        "units": "Cubic Meter"
+      },
+      {
+        "product": "StoneChip (20 mm)",
+        "quantity": 222,
+        "units": "Cubic Meter"
       }
     ]
     }
