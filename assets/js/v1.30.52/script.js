@@ -648,7 +648,7 @@ $(document).ready(function() {
   } else if (homepage_category == 'interior') {
    categoryName = "Interior/Renovation/Modular Kitchen";
    banner_heading = "Get interior designer at best price";
-   banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Bigg-boss-2-Tamil-Yashika-Oviya.jpg";
+   banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/interior-banner.jpg";
    feature_add_title = "Estimate the price of your modular kitchen in few minutes";
    feature_add_href = "/interiors/interior-estimation.html";
    feature_add_href_title = "Get Estimate";
@@ -688,7 +688,7 @@ $(document).ready(function() {
  get_json();
 
  function get_json(index) {
-  $.get("../assets/js/v1.30.51/cards.json", function(data, status) {
+  $.get("../assets/js/v1.30.52/cards.json", function(data, status) {
    cards = data.cards;
    cards = cards.reverse();
    $(".see-more-pagination").click(function() {
@@ -921,14 +921,6 @@ $(document).ready(function() {
    }
  }
 
- // scirpt for spini video popup
- var video_url;
- $(".fb-posts img").click(function() {
-  $(".video_player").empty();
-  video_url = $(this).attr("video_script");
-  $(".video_player").append(video_url);
-  $("#video_popup").modal('toggle');
- });
 
 
 
