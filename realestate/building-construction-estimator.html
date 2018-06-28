@@ -157,7 +157,7 @@
         <i class="fa fa-location-arrow" aria-hidden="true"></i>
         <h3>Location</h3>
          <select  class="location-for-me">
-            <option>Select Location</option>
+            <option value="">Select Location</option>
             <option value="Chennai">Chennai</option>
             <option value="Coimbatore">Coimbatore</option>
             <option value="Banglore">Banglore</option>
@@ -170,7 +170,7 @@
         <i class="fa fa-object-group" aria-hidden="true"></i>
         <h3>Built up Area  </h3>
         <select class="build_up_area_per_floor">
-          <option>Select Built up Area Per Floor (sqft)</option>
+          <option value="">Select Built up Area Per Floor (sqft)</option>
           <option value="700 Sqft">700 Sqft</option>
           <option value="1000 Sqft">1000 Sqft</option>
           <option value="1250 Sqft">1250 Sqft</option>
@@ -183,7 +183,7 @@
         <i class="fa fa-building" aria-hidden="true"></i>
         <h3>Number of Floors</h3>
         <select class="no-of-floors">
-          <option>Select Number of Floors</option>
+          <option value="">Select Number of Floors</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -243,9 +243,9 @@
           <div class="modal-body">
            <form action="https://formspree.io/karthikeyan@spinircle.com"
                 method="POST">
-              <input type="text" name="name" placeholder="Enter Name">
-              <input type="email" name="email" placeholder="Enter Email">
-              <input type="number" name="mobile_number" placeholder="Enter Phone Number">
+              <input type="text" name="name" placeholder="Enter Name" required>
+              <input type="email" name="email" placeholder="Enter Email" required>
+              <input type="number" name="mobile_number" placeholder="Enter Phone Number" required>
 
               <input type="hidden" name="_next" value="https://staging.getspini.com/realestate/building-construction-estimator.html" />
               <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
@@ -279,11 +279,9 @@
 <!-- AddToAny END -->
 
 <script type="text/javascript">
-      var other_building_materials, rebar_requierment, product, show_material_estimate;
+      var other_building_materials, rebar_requierment, product, show_material_estimate, no_of_floors, build_up_area_per_floor, location_for_me;
 
       function material_calculator(){
-        var no_of_floors = $(".no-of-floors").val();
-        var build_up_area_per_floor = $(".build_up_area_per_floor").val();
           debugger                       
         // first floor
         if (no_of_floors == 1) {
@@ -327,9 +325,17 @@
         window.sessionStorage.setItem("show_material_estimate", show_material_estimate);
       }
       $('.material-calculate').click(function(){
-          $(this).prop('disabled', true);
-          // material_calculator();
-        $('#materialEstimatorModel').modal('show');
+        debugger
+          location_for_me = $(".location-for-me").val();
+          no_of_floors = $(".no-of-floors").val();
+          build_up_area_per_floor = $(".build_up_area_per_floor").val();
+          if ([location_for_me ,no_of_floors ,build_up_area_per_floor].includes('')) {
+            alert("please select the values");
+          }else{
+            $(this).prop('disabled', true);
+            $('#materialEstimatorModel').modal('show');
+          }
+          
       });
 
       
