@@ -64,6 +64,22 @@
     select{
       background-color: #ddd;
     }
+    .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #660204;
+    background-color: #c00;
+    color: #fff;
+    text-align: center;
+    }
+    .modal-body form input{
+      font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    display: block;
+    margin: auto;
+    padding: 15px 60px;
+    margin-bottom: 10px;
+    }
     @media screen and (max-width: 480px) {
       .centered {
     position: absolute;
@@ -202,7 +218,7 @@
         <table class="table table-bordered rebar-requierment">
           <thead>
             <tr>
-              <th>Rebar Size</th>
+              <th>Rebar Size in (mm)</th>
               <th>Quantity</th>
               <th>Price per piece</th>
               <th>Total Cost</th>
@@ -250,7 +266,7 @@
               <input type="hidden" name="_next" value="https://staging.getspini.com/realestate/building-construction-estimator.html" />
               <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
               <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" />
-              <input type="submit" value="Send" class="submit_material_form" onclick="material_calculator()">
+              <input class="submit-btn" type="submit" value="Send" class="submit_material_form" onclick="material_calculator()">
           </form>
           </div>
         </div>
