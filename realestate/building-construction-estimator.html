@@ -213,7 +213,7 @@
       </div>
     </div>
     <div class="material-estimator-output">
-      <div class="row">
+      <div class="row" id="output-for-me">
       <div class="col-md-6">
         <table class="table table-bordered rebar-requierment">
           <thead>
@@ -298,7 +298,7 @@
       var other_building_materials, rebar_requierment, product, show_material_estimate, no_of_floors, build_up_area_per_floor, location_for_me;
 
       function material_calculator(){
-          debugger                       
+          // debugger                       
         // first floor
         if (no_of_floors == 1) {
           if (build_up_area_per_floor == 1) {
@@ -341,7 +341,7 @@
         window.sessionStorage.setItem("show_material_estimate", show_material_estimate);
       }
       $('.material-calculate').click(function(){
-        debugger
+        // debugger
           location_for_me = $(".location-for-me").val();
           no_of_floors = $(".no-of-floors").val();
           build_up_area_per_floor = $(".build_up_area_per_floor").val();
@@ -358,8 +358,9 @@
       show_material_estimate = window.sessionStorage.getItem("show_material_estimate");
       
       if (show_material_estimate) {
+          location.href = "#output-for-me"
         $.get("../assets/js/v1.30.52/material-estimation.json", function( data ) {
-          debugger
+          // debugger
           rebar_requierment = data.rebar_requierment;
           other_building_materials = data.other_building_materials;
           
