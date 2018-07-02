@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"128",
+		"a_href":"mayfair-villas.html",
+		"card_title":"Mayfair Villas",
+		"card_img": "http://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/MY_FAIR_CAR_PARKING.jpg",
+		"card_description":"May Fair Villas located at Tellapur near Gachibowli,Spread across 27 acres with 208 villas,G+2 Floors,310 sqyrds 4000 sft,EAST & WEST Facings,Ready to Move in.",
+		"card_area":" Tellapur",
+		"card_city": "hyderabad"
+		},
+		{
 		"id":"127",
 		"a_href":"NR-pearl.html",
 		"card_title":"N R PEARL",
