@@ -472,27 +472,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 450,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 33,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 17,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 30,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 10,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -500,27 +505,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 855,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 63,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 32,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 19,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 57,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -528,27 +538,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 1285,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 94,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 48,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 86,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 28,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -556,27 +571,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 617,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 43.5,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 21,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 42,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 14,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -584,27 +604,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 1172,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 83,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 40,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 27,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 80,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -612,27 +637,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 1760,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 124,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 60,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 120,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 40,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -640,27 +670,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 887,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 60,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 26,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 21,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 61,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -668,27 +703,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 1685,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 114,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 50,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 40,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 116,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -696,27 +736,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 2528,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 171,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 74,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 60,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 174,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -724,27 +769,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 1127,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 75,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 31,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 78,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 27.5,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -752,27 +802,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 2142,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 143,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 60,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 52,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 148,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     },
@@ -780,27 +835,32 @@
       "other_building_materials_data": [{
         "product": "cement",
         "quantity": 3212,
-        "units": "bags"
+        "units": "bags",
+        "price": 350
       },
       {
         "product": "Sand",
         "quantity": 214,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 1500
       },
       {
         "product": "Bricks",
         "quantity": 90,
-        "units": "Thousand"
+        "units": "Thousand",
+        "price": 7000
       },
       {
         "product": "StoneChip (10 mm)",
         "quantity": 78,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2500
       },
       {
         "product": "StoneChip (20 mm)",
         "quantity": 222,
-        "units": "Cubic Meter"
+        "units": "Cubic Meter",
+        "price": 2400
       }
     ]
     }
