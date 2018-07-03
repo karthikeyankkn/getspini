@@ -49,6 +49,9 @@
     color: #cd0000;
     margin: 15px;
     }
+    th{
+      vertical-align: middle !important;
+    }
     .centered {
     position: absolute;
     top: 35%;
@@ -79,6 +82,27 @@
     margin: auto;
     padding: 15px 60px;
     margin-bottom: 10px;
+    }
+    .range_cost_container{
+      background: #fff;
+      padding: 20px;
+      font-size: 20px;
+      margin: 30px auto;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0px 0px 14px #ccc;
+    }
+    .range_cost_container span{
+      /*font-weight: bold;*/
+    }
+    .range_cost_container p{
+      color: #cd2f2b;
+    }
+    .range_cost_container small{
+      display: block;
+      font-size: 12px;
+      color: gray;
+      margin-top: 20px;
     }
     @media screen and (max-width: 480px) {
       .centered {
@@ -206,35 +230,42 @@
     </div>
     <div class="material-estimator-output">
       <div class="row" id="output-for-me">
-      <div class="col-md-6">
-        <table class="table table-bordered rebar-requierment">
-          <thead>
-            <tr>
-              <th>Rebar Size in (mm)</th>
-              <th>Quantity</th>
-              <th>Price per piece in (&#8377)</th>
-              <th>Total Cost in (&#8377)</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
+        <div class="col-md-6">
+          <table class="table table-bordered rebar-requierment">
+            <thead>
+              <tr>
+                <th>Rebar Size in (mm)</th>
+                <th>Quantity</th>
+                <th>Price per piece in (&#8377)</th>
+                <th>Total Cost in (&#8377)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-bordered other-building-materials">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Units</th>
+                <th>Price</th>
+                <th>Total Cost (&#8377)</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="col-md-6">
-        <table class="table table-bordered other-building-materials">
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Quantity</th>
-              <th>Units</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-          </tbody>
-        </table>
-      </div>
+      <div class="range_cost_container">
+        <p>Estimated Cost:</p>
+        &#8377 <span id="range_cost"></span> <b>To</b> &#8377 <span id="avg_cost"></span>
+        <small>* Above mentioned cost is for only materials</small>
       </div>
     </div>
   </div>
@@ -287,7 +318,7 @@
 <!-- AddToAny END -->
 
 <script type="text/javascript">
-      var other_building_materials, rebar_requierment, product, show_material_estimate, no_of_floors, build_up_area_per_floor, location_for_me;
+      var other_building_materials, rebar_requierment, product, show_material_estimate, no_of_floors, build_up_area_per_floor, location_for_me, total_price, range_cost = 0, avg_cost, range_cost2 = 0;
 
       function material_calculator(){
           // debugger                       
@@ -357,15 +388,45 @@
           other_building_materials = data.other_building_materials;
           
           for(var i=0; i< rebar_requierment[show_material_estimate].rebar_requierement_data.length; i++){
+            range_cost = rebar_requierment[show_material_estimate].rebar_requierement_data[i].total_cost + range_cost; 
             
             $('.rebar-requierment tbody').append("<tr><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].rebar_size+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].quantity+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].price_per_piece+"</td><td>"+rebar_requierment[show_material_estimate].rebar_requierement_data[i].total_cost+"</td></tr>");
           }
 
           for(var j=0; j< other_building_materials[show_material_estimate].other_building_materials_data.length; j++){
-            $('.other-building-materials tbody').append("<tr><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].product+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].quantity+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].units+"</td></tr>");
+
+            total_price = other_building_materials[show_material_estimate].other_building_materials_data[j].quantity * other_building_materials[show_material_estimate].other_building_materials_data[j].price
+            range_cost2 = total_price + range_cost2;
+            $('.other-building-materials tbody').append("<tr><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].product+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].quantity+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].units+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].price+"</td><td>"+total_price+"</td></tr>");
           }
+          debugger
+            
+            avg_cost = range_cost + range_cost2;
+            avg_cost2 = avg_cost * 0.3;
+            avg_cost2 = Math.round(avg_cost2);
+            avg_cost2 = avg_cost + avg_cost2;
+
+
+            avg_cost=avg_cost.toString();
+            var lastThree = avg_cost.substring(avg_cost.length-3);
+            var otherNumbers = avg_cost.substring(0,avg_cost.length-3);
+            if(otherNumbers != '')
+                lastThree = ',' + lastThree;
+            var res = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+
+            avg_cost2=avg_cost2.toString();
+            var lastThree = avg_cost2.substring(avg_cost2.length-3);
+            var otherNumbers = avg_cost2.substring(0,avg_cost2.length-3);
+            if(otherNumbers != '')
+                lastThree = ',' + lastThree;
+            var res2 = otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + lastThree;
+
+
+          $("#range_cost").append(res);
+          $("#avg_cost").append(res2);
         });
         $('.material-estimator-output').fadeIn();
+        
       }
     </script>
 </body>
