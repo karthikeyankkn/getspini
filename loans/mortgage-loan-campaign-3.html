@@ -65,6 +65,30 @@
     color: #433437;
     padding-right: 10px;
   }
+  .carousel-control.left, .carousel-control.right {
+    display: none;
+  }
+  .centered1 {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.centered2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.carousel-inner>.item>img{
+  height: 500px;
+}
   @media screen and (max-width: 480px) {
     .form-type input{
     display: block;
@@ -96,13 +120,57 @@
   }
   }
 </style>
+
+
+<section class="banner" style="margin-top: 60px;">
+  
+  <div class="container-fluid">
+  <div class="row">
+    <!-- Carousel -->
+    
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+      
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+            
+          <div class="centered2">
+             <h1 style="background-color: #00000078;color: #fff;">Help Your Friend And 
+                <span
+                   class="txt-rotate"
+                   data-period="2000"
+                   data-rotate='[  "Earn....!!!", "Get Amazon Coupons.", "Get Paytm Cash ₹", "Save Lifes", "Donate" ]'></span>
+              </h1>
+           </div>
+
+            <img src="../assets/images/LP.jpg" alt="hiranandani-plots" height="700" width="100%">
+           <div class="centered1"><mark style="background-color: #ffffff70;color: #cd0000;padding: 1px;"> Help Your Friend And Earn....!!!</mark>
+           </div>
+           
+        </div>
+          
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- /carousel -->
+  </div>
+</div>
+</section>
+
+
 <section>
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="col-md-6 campaign-content" style="margin-top: 70px;">
-      <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Loans/Help-and-Earn.jpg" alt="mortgage-loan1" width="100%">
+    <div class="col-md-7 campaign-content" >
+      <!-- <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Loans/Help-and-Earn.jpg" alt="mortgage-loan1" width="100%"> -->
 
-      <ul>
+      <ul style="text-align: center;">
 
         <li><i class="fa fa-home" aria-hidden="true"></i>  Is Your friend searching for a dream home to buy?</li>
 
@@ -115,10 +183,14 @@
       <p>We have connects with multiple properties across multiple locations with varying budgets. Our intelligent matching system will list all the properties that match the requirements. </p>
 
       <p style=" font-style: italic;font-weight: 700;">We will help your friend full fill his wish!</p>
+      <br>
+       <h4 style="font-weight: bold;display: inline-block;">Earn our thanks!</h4>
+      
+      <p>For every verified information we would like to express our thanks through our Amazon vouchers. Or you can get Paytm cash instead. If you dont want these, you can choose to donate this to your preferred charity.</p>
     </div>
 
-    <div class="col-md-6" style="margin-top: 50px;text-align: center;">
-      <div class="form-type" style="background-color: #433437">
+    <div class="col-md-5" style="margin-top: -150px;text-align: center;">
+      <div class="form-type" style="background-color: #fff">
           <h3 style="color: #fff;;text-align: center;padding: 10px 0px;">Help And Earn...!</h3>
           <form validate action="https://formspree.io/karthikeyan@spinircle.com" method="POST">
 
@@ -144,9 +216,9 @@
             </select>
 
 
-             <div class="checkbox">
-                <label><input type="checkbox" name="remember">  Remember me</label>
-              </div>
+            <div class="checkbox" required>
+                <label><input style="margin-top: -14px;" type="checkbox" name="remember">  Do you wish to be anonymous</label>
+            </div>
     
   
             <input type="hidden" name="_subject" value="Lead from  Refer a friend..!" />
@@ -161,16 +233,28 @@
           </form>
         </div>
     </div>
-    <div class="col-md-6" style="margin-top: 20px;">
+    
+  </div>
+</section>
 
-      <h4 style="font-weight: bold;display: inline-block;">Earn our thanks!</h4>
-      <img style="margin-right: 10px;margin-left: 10px;" src="https://pointsprizes.s3-accelerate.amazonaws.com/prizes/390/390_10.png" width="80" height="80" alt="amazon-logo">   <img src="https://www.tricksworldzz.com/wp-content/uploads/2016/07/paytm-cashback-offers-tricksworldzz.in_.png" height="80" width="80" alt="paytm-logo">
-      <p>For every verified information we would like to express our thanks through our Amazon vouchers. Or you can get Paytm cash instead. If you dont want these, you can choose to donate this to your preferred charity.<img src="http://www.3rdworcesterscouts.co.uk/communities/7/004/011/595/567/images/4587846647.png" height="80"></p>
-
-      
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+      <span style="font-weight: bold;">GET</span><img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Amazon-Gift-Card.png" alt="Amazon-Gift-Card" height="60%" width="60%"><span style="padding: 48px;font-weight: bold;">(OR)</span>
+    </div>
+    
+    <div class="col-md-4">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Paytm.png" alt="Paytm-cash" width="60%" height="60%"><span style="padding: 50px;font-weight: bold;">(OR)</span>
+    </div>
+    
+    <div class="col-md-4">
+      <img src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Donate.png" alt="Donate" width="60%" height="60%">
+    </div>
     </div>
   </div>
 </section>
+
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
@@ -178,5 +262,63 @@
   <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="../assets/js/lib/bootstrap.min.js"></script>
   <script type="text/javascript" src="../assets/js/v1.30.52/script.js"></script>
+  <script type="text/javascript">
+    var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+  </script>
 </body>
 </html>
