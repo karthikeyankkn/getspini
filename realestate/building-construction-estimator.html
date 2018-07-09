@@ -321,7 +321,7 @@
       var other_building_materials, rebar_requierment, product, show_material_estimate, no_of_floors, build_up_area_per_floor, location_for_me, total_price, range_cost = 0, avg_cost, range_cost2 = 0;
 
       function material_calculator(){
-          // debugger                       
+                                 
         // first floor
         if (no_of_floors == 1) {
           if (build_up_area_per_floor == 1) {
@@ -371,8 +371,13 @@
           if ([location_for_me ,no_of_floors ,build_up_area_per_floor].includes('')) {
             alert("please select the values");
           }else{
-            $(this).prop('disabled', true);
-            $('#materialEstimatorModel').modal('show');
+            $(this).prop('disabled', true); 
+            if (location.hash == '#spini') {
+              material_calculator();
+              location.reload();
+            }else{
+              $('#materialEstimatorModel').modal('show');
+            }
           }
           
       });
@@ -399,7 +404,7 @@
             range_cost2 = total_price + range_cost2;
             $('.other-building-materials tbody').append("<tr><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].product+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].quantity+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].units+"</td><td>"+other_building_materials[show_material_estimate].other_building_materials_data[j].price+"</td><td>"+total_price+"</td></tr>");
           }
-          debugger
+          
             
             avg_cost = range_cost + range_cost2;
             avg_cost2 = avg_cost * 0.3;
