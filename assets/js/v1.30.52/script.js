@@ -8,36 +8,39 @@ $(document).ready(function() {
  windowHight();
  // script for common device image starts
  // images for desktop
- var desktop_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune1.jpg",
+ var desktop_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/L-T-Cover.jpg",
+ "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Tata-Cover.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/nest-bn.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/hiranandani-bn.jpg",
-  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/optimized/stepsstone-bn.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune1.jpg",
   "../assets/images/banner/Nest_20Kanathur.jpg",
-  "../assets/images/banner/Stepstone_20Prasanna.jpg",
   "../assets/images/gvspl/GVSPl_20banner.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Suraj1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/BSR-Cover.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Life1.jpg"
  ];
  // images for mobile
- var mobile_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
+ var mobile_img = ["https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/L-T-Mob.jpg",
+ "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Tata-Mob.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/nest-mob-v2-1.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/akshaya-today-mob-v2-1.jpg",
-  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/stepstone-mob-v2-1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Fortune-Mob1.jpg",
   "../assets/images/banner/Nest_20Mob.jpg",
-  "../assets/images/banner/Stepstone_20Prasanna_20Mob.jpg",
   "../assets/images/gvspl/GVSPL_20Mob.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Suraj-Mob1.jpg",
+  "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/BSR-Mob.jpg",
   "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/banner/Nest-Life-Mob1.jpg"
  ];
  // links for slider
- var slider_link = ["../realestate/nest-fortune-choolaimedu.html",
+ var slider_link = ["../realestate/l-and-t-eden-park-siruseri.html",
+ "../realestate/tata-santorini.html",
   "../realestate/nest-amaze-Sholinganallur.html",
   "../realestate/hiranandani-parks-orgadam.html",
-  "../realestate/stepstone-ananthaya-Urapakkam.html",
+  "../realestate/nest-fortune-choolaimedu.html",
   "../realestate/nest-njoy-villa-kanathur.html",
-  "../realestate/stepstone-prasanas-apartments-Sholinganallur.html",
   "../realestate/gvspl-coimbatore.html",
   "../realestate/nest-suraj-mahalingapuram.html",
+  "../realestate/BSR-Balaji-Enclave.html",
   "../realestate/nest-life-thiruvanmiyur.html"
  ];
 
