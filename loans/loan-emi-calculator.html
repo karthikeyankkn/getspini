@@ -26,9 +26,17 @@
    <!-- css files ends -->
    <script type="text/javascript">
      var index_page = false;
-     var categoryName = "Loans";
+     var categoryName = "loan_emi_calculator";
    </script> 
-        
+   <!-- script files starts -->
+  <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
+  <script type="text/javascript" src="../assets/js/lib/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../assets/js/v1.30.52/script.js"></script>
+    <!-- highchart component -->
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
 </head>
 <body>
 <!-- haader starts -->
@@ -47,7 +55,9 @@
   .carousel-inner{
     padding-bottom: 30px;
   }
-  
+  .error-contact{
+    display: none !important;
+  }
 </style>
 <section>
   <div class="container emi-container">
@@ -134,20 +144,20 @@
             <h3 class="modal-title text-center">You Are Almost Done</h3>
           </div>
           <div class="modal-body">
-            <div class="contact-us">
+            <form class="contact-us" action="https://formspree.io/karthikeyan@spinircle.com" method="POST">
               <!-- <h2>Contact-Us</h2> -->
               <ul>
                 <li>
-                  <input type="text" name="name" placeholder="Enter Your Name">
+                  <input type="text" name="name" placeholder="Enter Your Name" required>
                 </li>
                 <li>
-                  <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+                  <input type="number" name="ph_number" placeholder="Enter Your Phone Number" required min="10">
                 </li>
                 <li>
-                  <input type="email" name="email" placeholder="Enter Your Email">
+                  <input type="email" name="email" placeholder="Enter Your Email" required>
                 </li>
                 <li>
-                  <select name="city">
+                  <select name="city" required>
                     <option value="" disabled>City</option>
                     <option value="Chennai">Chennai</option>
                     <option value="Coimbatore">Coimbatore</option>
@@ -159,11 +169,14 @@
                   <input type="hidden" name="emi-calculater" value="true">
                 </li>
                 <li>
+                  <input type="hidden" name="_next" value="https://site.io/thanks.html" />
+                  <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
+                  <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com" />
                   <button class="submit_innerpage">Submit</button>
                 </li>
               </ul>
               <div class="alerts_page"></div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -247,16 +260,9 @@
 <!-- body content ends -->
 <!-- footer content -->
 <footer></footer>
-<!-- script files starts -->
-  <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
-  <script type="text/javascript" src="../assets/js/lib/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/js/v1.30.52/script.js"></script>
 
-  <!-- highchart component -->
-  <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
-  <script type="text/javascript" src="https://code.highcharts.com/highcharts-more.js"></script>
-  <script type="text/javascript" src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+
+ 
 
   <!-- AddToAny BEGIN -->
     <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; left:0px; top:150px;">
