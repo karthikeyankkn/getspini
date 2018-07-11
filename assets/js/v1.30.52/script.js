@@ -4,6 +4,9 @@ $(document).ready(function() {
  var qa1, qa2, qa3, qa4, qa5, qa6, qa7;
  var short_traverse, data, check_inner_page = false,
   selected_package, ApiEndPoint, url, homepage_category, banner_heading, banner_background, cards, show_cards, card_limit_start, card_limit_end, card_location, feature_add_title, feature_add_href, feature_add_href_title, url_hash;
+
+  window.sessionStorage.setItem("location_origin", location.origin);
+  var location_origin = window.sessionStorage.getItem("location_origin", location.origin);
  // preload funcitons
  windowHight();
  // script for common device image starts
@@ -230,7 +233,7 @@ $(document).ready(function() {
   name = short_traverse.find("input[type='text']").val();
   ph_number = short_traverse.find("input[type='number']").val();
   email = short_traverse.find("input[type='email']").val();
-  debugger
+  // debugger
   if (index_page == 'scratch_card_page' || index_page == "spin_wheel_page") {
    cityName = "Chennai";
   } else {
@@ -745,6 +748,10 @@ $(document).ready(function() {
   no_of_year = parseInt(no_of_year);
   percent_per_anum = parseInt(percent_per_anum);
 
+  window.sessionStorage.setItem("principal_amt", principal_amt);
+  window.sessionStorage.setItem("no_of_year", no_of_year);
+  window.sessionStorage.setItem("percent_per_anum", percent_per_anum);
+
   if (isNaN(principal_amt) || isNaN(no_of_year) || isNaN(percent_per_anum)) {
    alert("Please fill all fields");
   } else {
@@ -758,6 +765,14 @@ $(document).ready(function() {
 
  function calculate_emi() {
   // debugger
+  principal_amt = window.sessionStorage.getItem("principal_amt");
+  no_of_year = window.sessionStorage.getItem("no_of_year");
+  percent_per_anum = window.sessionStorage.getItem("percent_per_anum");
+  
+  principal_amt = parseInt(principal_amt);
+  no_of_year = parseInt(no_of_year);
+  percent_per_anum = parseInt(percent_per_anum);
+
   no_of_months = no_of_year * 12;
   rate_of_interest = percent_per_anum / 12 / 100;
   // formula for emi
@@ -907,7 +922,7 @@ $(document).ready(function() {
  var append_form_loan = ' <div class="typeform-widget" data-url="https://spini.typeform.com/to/ygLYob" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
 
  var append_form_nest = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/m626rA" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
-
+ // debugger
  if (index_page == false) {
     if (categoryName == "Real Estate(Buying)") {
       if(propertyName == 'nest'){
@@ -918,10 +933,13 @@ $(document).ready(function() {
         $('.contact-us').append(append_form_realestate);
       } 
     
-   }else if (categoryName == "Loans") {
-    $('.contact-us ul').hide();
-    $('.contact-us').append(append_form_loan);
-   }
+    }else if (categoryName == "loan_emi_calculator") {
+      categoryName = 'Loans';
+      calculate_emi();
+    }else if(categoryName == 'Loans'){
+      $('.contact-us ul').hide();
+      $('.contact-us').append(append_form_loan);
+    }
  }
 
 
