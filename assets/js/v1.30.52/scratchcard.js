@@ -6,7 +6,7 @@
       var plot = {
                     "scratch_card":[ 
                     {
-                    "src":"http://getspini.com/assets/images/scratch-card/free_registration_coupon.jpg",
+                    "src":"https://www.getspini.com/assets/images/scratch-card/free_registration_coupon.jpg",
                     "offer": "free_registration_coupon"
                     }]
                   }
@@ -14,7 +14,7 @@
       var apartment = {
                     "scratch_card":[
                     {
-                    "src":"http://getspini.com/assets/images/scratch-card/wall_coupon.jpg",
+                    "src":"https://www.getspini.com/assets/images/scratch-card/wall_coupon.jpg",
                     "offer": "wall_coupon"
                     }]
                   }
@@ -22,7 +22,7 @@
       var villa = {
                     "scratch_card":[
                     {
-                    "src":"http://getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg",
+                    "src":"https://www.getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg",
                     "offer": "modular_kitchen_coupon"
                     }]
                   }
@@ -30,7 +30,7 @@
       var construction = {
                     "scratch_card":[
                     {
-                    "src":"http://getspini.com/assets/images/scratch-card/bathtub_coupon.jpg",
+                    "src":"https://www.getspini.com/assets/images/scratch-card/bathtub_coupon.jpg",
                     "offer": "bathtub_coupon"
                     }]
                   }

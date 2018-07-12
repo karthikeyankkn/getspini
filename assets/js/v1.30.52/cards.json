@@ -10,6 +10,114 @@
 		"card_city": ""
 		},
 		{
+		"id":"140",
+		"a_href":"ozone-greens-phase-2.html",
+		"card_title":"Ozone Greens Phase 2 ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Ozone_greens.jpg",
+		"card_description":"Greens is a modern and elegantly designed residential community created to offer an internationally crafted lifestyle.",
+		"card_area":"perumbakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"139",
+		"a_href":"casagrand-supremus.html",
+		"card_title":"Casagrand Supremus",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/casagrand_supremus_in_thalambur_elevation_photo_1wgt.jpg",
+		"card_description":"Casagrand Supremus is a residential cum commercial project by Casagrand Builder.",
+		"card_area":"Thalambur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"138",
+		"a_href":"mantri-group-solitude.html",
+		"card_title":"Mantri Group Solitude",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/im.jpg",
+		"card_description":"Mantri Group Solitude Chennai is a residential project",
+		"card_area":" Injambakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"137",
+		"a_href":"Pacifica-Aurum.html",
+		"card_title":"PACIFICA AURUM",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/cam4_area6.jpg",
+		"card_description":"Pacifica Aurum is a well-rounded and well planned gated community with 140 acres of land and 11 phases with a proposed club over 1 lac sq ft.",
+		"card_area":" padur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"136",
+		"a_href":"navins-starwood-towers-2.html",
+		"card_title":"Navins Starwood Towers 2 ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/navin_s_starwood_towers.jpg",
+		"card_description":"Navin’s Starwood Towers 2.0 is designed by Navin Housing and Properties to offer extreme happiness and joy to residents.",
+		"card_area":" Vengaivaasal",
+		"card_city": "chennai"
+		},
+		{
+		"id":"135",
+		"a_href":"akshaya-homes-tango.html",
+		"card_title":"Akshaya homes Tango ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/akshaya_tango_elevation_1135462.jpeg",
+		"card_description":"Akshaya Tango an elegantly designed project of 2 BHK, 2 BHK Smart, 3 BHK Smart, 3 BHK, 4 BHK Smart and 4 BHK apartments in Thoraipakkam, Chennai.",
+		"card_area":" Thoraipakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"134",
+		"a_href":"appaswamy-splendour.html",
+		"card_title":"Appaswamy Splendour ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Splendour_Elevation.jpg",
+		"card_description":"Splendour is a magnificent project by Appaswamy Real Estates situated in Semmacheri, Chennai.",
+		"card_area":" Semmenchery",
+		"card_city": "chennai"
+		},
+		{
+		"id":"133",
+		"a_href":"doshi-wellspring.html",
+		"card_title":"Doshi Wellspring ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/doshi_trinity_park_in_vengaivasal_elevation_photo_m57.jpg",
+		"card_description":"Wellspring is minutes away from Tambaram, OMR & Velachery.",
+		"card_area":" Vengaivasal",
+		"card_city": "chennai"
+		},
+		{
+		"id":"132",
+		"a_href":"prestige-courtyards.html",
+		"card_title":"Prestige Courtyards ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Prestige_Courtyards_Pool_Side_View.jpg",
+		"card_description":"Prestige Courtyards located in Shollinganallur on the Old Mahabalipuram Road",
+		"card_area":" Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"131",
+		"a_href":"bbcl-midland.html",
+		"card_title":"BBCL Midland ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/bbcl.jpg",
+		"card_description":"BBCL Midland is meticulously planned and crafted for those who are always on the move generation.",
+		"card_area":" Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"130",
+		"a_href":"singai-prakash-nagar.html",
+		"card_title":"Singai Prakash Nagar",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/prakash2.jpg",
+		"card_description":"villa @ 22 lakhs CMDA Approved near houses,near peter international school and madha engineering college.",
+		"card_area":" nandhambakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"129",
+		"a_href":"independent-villa.html",
+		"card_title":"Independent Villa",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/id-villa1.jpg",
+		"card_description":"Duplex villa available with 1900 Sq.ft of buildup area in 1200 Sq.ft land area, The luxurious villa is located on the VOC Nagar, velachery.",
+		"card_area":" Velachery",
+		"card_city": "chennai"
+		},
+		{
 		"id":"128",
 		"a_href":"mayfair-villas.html",
 		"card_title":"Mayfair Villas",
