@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"130",
+		"a_href":"singai-prakash-nagar.html",
+		"card_title":"Singai Prakash Nagar",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/prakash2.jpg",
+		"card_description":"villa @ 22 lakhs CMDA Approved near houses,near peter international school and madha engineering college.",
+		"card_area":" nandhambakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"129",
+		"a_href":"independent-villa.html",
+		"card_title":"Independent Villa",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/id-villa1.jpg",
+		"card_description":"Duplex villa available with 1900 Sq.ft of buildup area in 1200 Sq.ft land area, The luxurious villa is located on the VOC Nagar, velachery.",
+		"card_area":" Velachery",
+		"card_city": "chennai"
+		},
+		{
 		"id":"128",
 		"a_href":"mayfair-villas.html",
 		"card_title":"Mayfair Villas",
