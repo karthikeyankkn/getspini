@@ -10,6 +10,69 @@
 		"card_city": ""
 		},
 		{
+		"id":"147",
+		"a_href":"royalsplendour-akshara.html",
+		"card_title":"Royalsplendour AKSHARA",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/royal_splendour_akshara.jpg",
+		"card_description":"Splendour Akshara is a pre-launch property in Navallur, Chennai. ",
+		"card_area":"Semmenchery",
+		"card_city": "chennai"
+		},
+		{
+		"id":"146",
+		"a_href":"plaza-elite-acres.html",
+		"card_title":"Plaza Elite Acres",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/plaza-elite.jpg",
+		"card_description":"Elite Acres, is a premium housing project located at Thalambur in Chennai.",
+		"card_area":"Thalambur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"145",
+		"a_href":"malles-aashira.html",
+		"card_title":"Malles Aashira",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/malles_aashira_in_perumbakkam.jpg",
+		"card_description":"Malles Aashira redefines luxury and urban lifestyle.",
+		"card_area":"Perumbakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"144",
+		"a_href":"vermillion-renuka-sangamam-villas.html",
+		"card_title":"Vermillion Renuka Sangamam",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/vermillion.jpeg",
+		"card_description":"Presenting, Renuka Sangamam Villas - an address that is an oasis of calm, peace and magnificence in the hustle-bustle of the city, Chennai.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"143",
+		"a_href":"ps-srijan-developers-llp.html",
+		"card_title":"PS Nexterra",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/ps.jpeg",
+		"card_description":"PS Nexterra, A consistent amalgamation of extravagance, solace, and style mix to give away really modern outlook towards life.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"142",
+		"a_href":"baashyaam-pinnacle-crest.html",
+		"card_title":"Baashyaam Pinnacle Crest",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/baashyaam.jpeg",
+		"card_description":"Baashyaam Pinnacle Crest - an address that is an oasis of calm, peace and magnificence in the hustle-bustle of the city, Chennai.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"141",
+		"a_href":"sreenivashousing-mantra-enclave.html",
+		"card_title":"Mantra Enclave",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/mantra.jpg",
+		"card_description":"Sreenivas Housing has the experience of engaging in the promotion of Residential",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
 		"id":"140",
 		"a_href":"ozone-greens-phase-2.html",
 		"card_title":"Ozone Greens Phase 2 ",
