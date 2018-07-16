@@ -66,6 +66,8 @@
     }
     select{
       background-color: #ddd;
+      max-width: 270px;
+      margin: 0 auto 10px;
     }
     .modal-header {
     padding: 15px;
@@ -285,7 +287,8 @@
               <input type="text" name="name" placeholder="Enter Name" required>
               
               <input type="number" name="mobile_number" placeholder="Enter Phone Number" required>
-              <input type="email" name="email" placeholder="Enter Email (optional)" >
+              <!-- <input type="email" name="email" placeholder="Enter Email (optional)" > -->
+              <input type="hidden" name="Location" id="location">
               <input type="hidden" name="_next" value="https://www.getspini.com/realestate/building-construction-estimator.html" />
               <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
               <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com" />
@@ -366,6 +369,7 @@
       $('.material-calculate').click(function(){
         // debugger
           location_for_me = $(".location-for-me").val();
+          $("#location").val(location_for_me);
           no_of_floors = $(".no-of-floors").val();
           build_up_area_per_floor = $(".build_up_area_per_floor").val();
           if ([location_for_me ,no_of_floors ,build_up_area_per_floor].includes('')) {
