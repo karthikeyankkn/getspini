@@ -10,6 +10,33 @@
 		"card_city": ""
 		},
 		{
+		"id":"150",
+		"a_href":"spehene-shivalaya-thoraipakkam.html",
+		"card_title":"Spehene Shivalaya",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/shivthoraipakkam.jpg",
+		"card_description":"Sphene Shivalaya is residential development of Brownstone Foundations.",
+		"card_area":"Thoraipakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"149",
+		"a_href":"ramaniyam-mandhangini.html",
+		"card_title":"Ramaniyam Mandhangini",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/MANDHAGINI_VIEW.jpg",
+		"card_description":"Mandhangini. Comfortable enclosures with well planned amenities on the IT enclosures",
+		"card_area":"Thoraipakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"148",
+		"a_href":"color-home.html",
+		"card_title":"COLOR HOME DEVELOPERS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/color_avenue_view_3.jpeg",
+		"card_description":"Color Home Developers Pvt Ltd is luxuriously spread at OMR in Chennai.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
 		"id":"147",
 		"a_href":"royalsplendour-akshara.html",
 		"card_title":"Royalsplendour AKSHARA",
