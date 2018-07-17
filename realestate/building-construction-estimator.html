@@ -30,6 +30,9 @@
      var categoryName = "Real Estate(Buying)"; var propertyName = '';
    </script> 
     <style type="text/css">
+    #launcher{
+      display: none;
+    }
       .material-estimator-output{
         display: none;
       }
@@ -131,6 +134,12 @@
     </style>   
 </head>
 <body>
+  <link href="https://api.motion.ai/sdk/webchat.css" rel="stylesheet" type="text/css">
+<script src="https://api.motion.ai/sdk/webchat.js"></script>
+<script>
+  motionAI_Init('91684?color=CC0808&sendBtn=send&inputBox=Type%20something...&token=aad6dcf44e7d86bff89df578ef9cb9b6',true,400,470,'https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/chat-spini.png');
+  /* You may also invoke motionAI_Open() to manually open the modal. */
+</script>
 <!-- haader starts -->
 <header></header>
 <!-- haader ends -->
@@ -287,9 +296,9 @@
               <input type="text" name="name" placeholder="Enter Name" required>
               
               <input type="number" name="mobile_number" placeholder="Enter Phone Number" required>
-              <!-- <input type="email" name="email" placeholder="Enter Email (optional)" > -->
+              <input type="email" name="email" placeholder="Enter Email (optional)" >
               <input type="hidden" name="Location" id="location">
-              <input type="hidden" name="_next" value="https://www.getspini.com/realestate/building-construction-estimator.html" />
+              <input type="hidden" name="_next" value="/realestate/building-construction-estimator.html" />
               <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
               <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com" />
               <input class="submit-btn" type="submit" value="Get Estimate Now" class="submit_material_form" onclick="material_calculator()">
