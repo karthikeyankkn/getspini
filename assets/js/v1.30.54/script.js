@@ -505,7 +505,7 @@ $(document).ready(function() {
   document.getElementById("uname").innerHTML = uname;
 
   // validation script
-  if (uname == "" && umobile == "" && uemail == "") {
+  if ([uname, umobile, uemail].includes('')) {
    $(".error-mandatory").fadeIn();
   } else if (umobile.length != 10) {
    $(".error-contact-ph_number").fadeIn()
