@@ -28,6 +28,11 @@
      var index_page = false;
      var categoryName = undefined;
    </script>    
+   <style type="text/css">
+     .alerts_page{
+      display: none;
+     }
+   </style>
 </head>
 <body>
 <!-- haader starts -->
@@ -62,20 +67,20 @@
         </div>
       </div>
       <div class="col-md-1"></div>
-      <div class="col-md-4 contact-us">
+      <form action="https://formspree.io/karthikeyan@spinircle.com" method="POST" class="col-md-4 contact-us">
         <h2>Contact-Us</h2>
         <ul>
           <li>
-            <input type="text" name="name" placeholder="Enter Your Name">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
           </li>
           <li>
-            <input type="number" name="ph_number" placeholder="Enter Your Phone Number">
+            <input type="number" name="ph_number" placeholder="Enter Your Phone Number" required>
           </li>
           <li>
-            <input type="email" name="email" placeholder="Enter Your Email">
+            <input type="email" name="email" placeholder="Enter Your Email" required>
           </li>
           <li>
-            <select name="catagoryName">
+            <select name="catagoryName" required>
               <option value="Interior/Renovation/Modular Kitchen">Interiors</option>
               <option value="Real Estate(Buying)">Realestate</option>
               <option value="Loans">loan</option>
@@ -83,7 +88,7 @@
             </select>
           </li>
           <li>
-            <select name="city">
+            <select name="city" required>
               <option value="">City</option>
               <option value="Chennai">Chennai</option>
               <option value="Coimbatore">Coimbatore</option>
@@ -105,10 +110,13 @@
             <button type="submit" class="submit_innerpage">Submit</button>
           </li>
         </ul>
-        <input type="hidden" name="_subject" value="Get spini partner-with-us!" />
         <input type="text" name="_gotcha" style="display:none" />
         <div class="alerts_page"></div>
-      </div>  
+
+        <input type="hidden" name="_next" value="/thankyou-pages/thankyoupage.html" />
+        <input type="hidden" name="_subject" value="Lead from Contact-us page..!" />
+        <!-- <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com" /> -->
+      </form>  
     </div>  
   </div>
 </div>
