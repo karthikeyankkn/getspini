@@ -104,6 +104,16 @@
       text-align: center;
       box-shadow: 0px 0px 14px #ccc;
     }
+    .range_cost_container button{
+      background: #cd2f2b;
+      color: #fff;
+      font-weight: 100;
+      border: 0;
+      padding: 5px 15px;
+      margin-top: 10px;
+      border-radius: 30px;
+      font-size: 18px;
+    }
     .range_cost_container span{
       /*font-weight: bold;*/
     }
@@ -220,10 +230,11 @@
         <i class="fa fa-object-group" aria-hidden="true"></i>
         <h3>Built up Area  </h3>
         <select class="build_up_area_per_floor">
-          <option value="">Select Built up Area Per Floor(sqft)</option>
-          <option value="700 Sqft"> 700 - 1000 Sqft</option>
-          <option value="1000 Sqft"> 1000 - 1250 Sqft</option>
-          <option value="1250 Sqft"> 1250 - 1500 Sqft</option>
+
+          <option value="">Select Built up Area Per Floor (sqft)</option>
+          <option value="700 - 999 Sqft">700 - 999 Sqft</option>
+          <option value="1000 - 1249 Sqft">1000 - 1249 Sqft</option>
+          <option value="1250 - 1449 Sqft">1250 - 1449 Sqft</option>
           <option value="1500 Sqft">1500 Sqft</option>
         </select>
         <p>*Use approximate size to match your plan area!</p>
@@ -284,6 +295,7 @@
         <p>Estimated Cost:</p>
         &#8377 <span id="range_cost"></span> <b>To</b> &#8377 <span id="avg_cost"></span>
         <small>* Above mentioned cost is for only materials</small>
+        <button onclick="estimate_again()">Estimate Again</button>
       </div>
     </div>
   </div>
@@ -305,6 +317,8 @@
               <input type="number" name="mobile_number" placeholder="Enter Phone Number" required>
               <input type="email" name="email" placeholder="Enter Email (optional)" >
               <input type="hidden" name="Location" id="location">
+              <input type="hidden" name="No-of-floors" id="no-of-floors">
+              <input type="hidden" name="Built-up-Area" id="build-up-area-per-floor">
               <input type="hidden" name="_next" value="/realestate/building-construction-estimator.html" />
               <input type="hidden" name="_subject" value="Lead from Material estimation..!" />
               <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com" />
@@ -414,9 +428,11 @@
       $('.material-calculate').click(function(){
         // debugger
           location_for_me = $(".location-for-me").val();
-          $("#location").val(location_for_me);
           no_of_floors = $(".no-of-floors").val();
           build_up_area_per_floor = $(".build_up_area_per_floor").val();
+          $("#location").val(location_for_me);
+          $("#no-of-floors").val(no_of_floors);
+          $("#build-up-area-per-floor").val(build_up_area_per_floor);
           if ([location_for_me ,no_of_floors ,build_up_area_per_floor].includes('')) {
             alert("please select the values");
           }else{
@@ -433,8 +449,13 @@
 
       
       show_material_estimate = window.sessionStorage.getItem("show_material_estimate");
-      
+
+      function estimate_again(){
+        // debugger
+        $(".material-estimator-output").hide();
+      }
       if (show_material_estimate) {
+         // debugger
           location.href = "#output-for-me"
         $.get("../assets/js/v1.30.54/material-estimation.json", function( data ) {
           // debugger
