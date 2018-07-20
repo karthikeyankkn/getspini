@@ -38,7 +38,7 @@ $(document).ready(function() {
  var slider_link = ["../realestate/l-and-t-eden-park-siruseri.html",
  "../realestate/tata-santorini.html",
   "../realestate/nest-amaze-Sholinganallur.html",
-  "../realestate/hiranandani-parks-orgadam.html",
+  "../realestate/hiranandani-parks-oragadam.html",
   "../realestate/nest-fortune-choolaimedu.html",
   "../realestate/nest-njoy-villa-kanathur.html",
   "../realestate/gvspl-coimbatore.html",
