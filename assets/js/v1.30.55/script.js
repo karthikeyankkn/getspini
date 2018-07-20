@@ -646,23 +646,23 @@ $(document).ready(function() {
   }
   if (homepage_category == 'realestate') {
    categoryName = "Real Estate(Buying)";
-   banner_heading = "Your dream home is now here";
+   banner_heading = "Get your Dream Home Now!";
    banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/bg-index.jpg";
    feature_add_title = "List your property for free Ad listing on our website";
    feature_add_href = "https://spini.typeform.com/to/lNAjvb";
    feature_add_href_title = "Post Ad";
   } else if (homepage_category == 'interior') {
    categoryName = "Interior/Renovation/Modular Kitchen";
-   banner_heading = "Get interior designer at best price";
+   banner_heading = "Ger Interior Designers at Best Prices!";
    banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/interior-banner.jpg";
-   feature_add_title = "Estimate the price of your modular kitchen in few minutes";
+   feature_add_title = "Estimate the price of a modular kitchen, now!";
    feature_add_href = "/interiors/interior-estimation.html";
    feature_add_href_title = "Get Estimate";
   } else if (homepage_category == 'loans') {
    categoryName = "Loans";
    banner_heading = "Loans available @ lowest interest rate";
    banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/loan-banner.jpg";
-   feature_add_title = "Need a loan immediately with lower EMI's, Know more";
+   feature_add_title = "Do you require a loan immediately with low EMIs? Click here to know more!";
    feature_add_href = "/loans/loan-emi-calculator.html";
    feature_add_href_title = "Calculate EMI";
   }
