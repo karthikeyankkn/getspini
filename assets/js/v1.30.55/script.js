@@ -653,7 +653,7 @@ $(document).ready(function() {
    feature_add_href_title = "Post Ad";
   } else if (homepage_category == 'interior') {
    categoryName = "Interior/Renovation/Modular Kitchen";
-   banner_heading = "Ger Interior Designers at Best Prices!";
+   banner_heading = "Get Interior Designers at Best Prices!";
    banner_background = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/interior-banner.jpg";
    feature_add_title = "Estimate the price of a modular kitchen, now!";
    feature_add_href = "/interiors/interior-estimation.html";
