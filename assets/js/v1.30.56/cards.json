@@ -10,6 +10,51 @@
 		"card_city": ""
 		},
 		{
+		"id":"155",
+		"a_href":"arjunan-constructions.html",
+		"card_title":"ARJUNAN CONSTRUCTIONS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/arjunan.jpg",
+		"card_description":"Presenting 1 and 2 bhk ready to move flats without lift facility at Nanmangalam Chennai",
+		"card_area":"Nanmangalam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"154",
+		"a_href":"gk-properties-gajanand.html",
+		"card_title":"GK PROPERTIES GAJANAND",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/bheemeswar_gardens_tambaram_chennai_gk_properties.jpg",
+		"card_description":"Gajanand Located at Padasalai Street, Chrompet, Chennai, Behind SSM School.",
+		"card_area":"Chrompet",
+		"card_city": "chennai"
+		},
+		{
+		"id":"153",
+		"a_href":"cosmos-construction.html",
+		"card_title":"COSMOS CONSTRUCTION",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/cosmos_constructions_sriperumbudur_kanchipuram.jpg",
+		"card_description":"Cosmos Constructions in Sriperumbudur, Kanchipuram is a top player in the category Builders in the Kanchipuram.",
+		"card_area":"Sriperumbudur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"152",
+		"a_href":"lotus-valley.html",
+		"card_title":"LOTUS VALLEY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/p2.jpg",
+		"card_description":"We are working on the design and build of some extraordinary structures in the City.",
+		"card_area":"Surapet",
+		"card_city": "chennai"
+		},
+		{
+		"id":"151",
+		"a_href":"phoenix-city.html",
+		"card_title":"PHOENIX CITY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/phoenix_city_the_crest_elevation.jpeg",
+		"card_description":"The Crest is Located at Velachery, Chennai, Tamil Nadu, INDIA.",
+		"card_area":"Velechery",
+		"card_city": "chennai"
+		},
+		{
 		"id":"150",
 		"a_href":"spehene-shivalaya-thoraipakkam.html",
 		"card_title":"Spehene Shivalaya",
