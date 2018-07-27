@@ -10,6 +10,114 @@
 		"card_city": ""
 		},
 		{
+		"id":"167",
+		"a_href":"nest-delight.html",
+		"card_title":"Nest Delight",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Nest-delight.jpeg",
+		"card_description":"The Nest Delight, located in Chennai, is a residential development of The Nest Builders",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"166",
+		"a_href":"nest-glow.html",
+		"card_title":" NEST GLOW",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Nest-glow.jpeg",
+		"card_description":"Nest Glow is one of the residential development of The Nest.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"165",
+		"a_href":"nest-aspire.html",
+		"card_title":"NEST ASPIRE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/nest_aspire_in_sholinganallur.jpg",
+		"card_description":"Nest Aspire is a residential apartment near Sholinganallur",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"164",
+		"a_href":"shriram-properties-shreshta.html",
+		"card_title":"SHRIRAM PROPERTIES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Shriram_Shreshta.jpeg",
+		"card_description":"Shriram Shreshta With 400 exquisite villas and 102 elite apartments",
+		"card_area":"Madukkarai",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"163",
+		"a_href":"swathika-shelters-constructions.html",
+		"card_title":"SWATHIKA SHELTERS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/swathika_constructions.jpg",
+		"card_description":"SWATHIKA SHELTERS & CONSTRUCTIONS Pvt.ltd. is a company promoted and managed by professionals",
+		"card_area":"Chinnamettupalayam",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"162",
+		"a_href":"vevin-homes.html",
+		"card_title":"VEVIN HOMES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/vevin.PNG",
+		"card_description":"Presenting under construction Individual 2 and 3 bhk Villa from Vevin Homes",
+		"card_area":"Narasimhanaickenpalayam",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"161",
+		"a_href":"easypropertydevelopers.html",
+		"card_title":"Easy Property Developers",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/easyproperty.jpg",
+		"card_description":"Bharathi Nagar is one of the residential developments of Easy Property Developers.",
+		"card_area":"Periyanaickenpalayam",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"160",
+		"a_href":"aarudhra-enclave-coimbatore.html",
+		"card_title":"AARUDHRA ENCLAVE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/aarudha.jpg",
+		"card_description":"AARUDHRAS DEVELOPERS as a distinct realty brand which is nonpareil in the annals of history",
+		"card_area":"Saravanampatti",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"159",
+		"a_href":"sri-vigneshwara-property-smg-gardens.html",
+		"card_title":"Sri Vigneshwara Property ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/smg-garden.jpg",
+		"card_description":"Selling DTCP approved open plots and Individual house ",
+		"card_area":"Sokkampalayam",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"158",
+		"a_href":"sri-vigneshwara-property-sree-dharmambigai-nagar.html",
+		"card_title":"Sri Vigneshwara Property Promoters ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Dharmambigai.jpg",
+		"card_description":"Selling DTCP approved open plots and Individual house  ",
+		"card_area":"Coimbatore Junction",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"157",
+		"a_href":"sri-vigneshwara-property-ishwariya-nagar.html",
+		"card_title":"Sri Vigneshwara Property ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Ishwariya.jpg",
+		"card_description":"Selling DTCP approved open plots and Individual house ",
+		"card_area":"Pogalur",
+		"card_city": "coimbatore"
+		},
+		{
+		"id":"156",
+		"a_href":"ksquare-constructions.html",
+		"card_title":"KSQUARE CONSTRUCTIONS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/ksquare.jpg",
+		"card_description":"K Square- Presenting 2 bhk under construction flats with G+7 floor building ",
+		"card_area":"Thudiyalur",
+		"card_city": "coimbatore"
+		},
+		{
 		"id":"155",
 		"a_href":"arjunan-constructions.html",
 		"card_title":"ARJUNAN CONSTRUCTIONS",
