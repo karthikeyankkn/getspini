@@ -1,3 +1,59 @@
+<style>
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;display: block;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+.button-ani {
+  padding: 0px 15px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #cd0000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    margin: 1px;
+  box-shadow: 0 5px #999;
+}
+
+/*.button:hover {background-color: #CC0000;color:#fff; }*/
+
+.button-ani:active {
+  background-color: #1d2531;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
 <ul class="banner-header">
   <!-- logo -->
  <li class="logo">
@@ -13,11 +69,12 @@
     <a href="https://api.whatsapp.com/send?phone=918682800800"><span class="fa fa-whatsapp"></span></a>
   </li>
   <li class="pull-right hidden-xs">
-    <!-- type form script  starts-->
-    <a class="typeform-share button" href="https://spini.typeform.com/to/lNAjvb" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#89BC62;color:#CC0000;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 10px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="2" target="_blank">Post Free Ads </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-    <!-- type form script  ends-->
+     <!-- type form script  starts -->
+     <a href="../post-ad.html"><button class="button-ani">Post Free Ads</button></a>
+    <!-- <a class="typeform-share button" target="_blank" href="../post-ad.html" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#89BC62;color:#CC0000;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 10px;border-radius:25px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="2" >Post Free Ads </a> --> <!-- <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+     <!-- type form script  ends -->
   </li>
-  <li class="pull-right hidden-xs hidden-sm " style="padding-right: 50px;" >
+ <!--  <li class="pull-right hidden-xs hidden-sm " style="padding-right: 50px;" >
         <a href="../loans/loans.html">Loans</a>
   </li>
   <li class="pull-right hidden-xs hidden-sm " style="padding-right: 20px;">
@@ -25,10 +82,36 @@
   </li>
   <li class="pull-right hidden-xs hidden-sm " style="padding-right: 20px;">
         <a href="../../realestate/realestate.html">Real Estate</a>
-  </li>
-  
+  </li> -->
+     <li class="pull-right hidden-xs hidden-sm ">
+        <a href="../contact-us.html">Contact Us</a>
+      </li>
+    <li class="pull-right hidden-xs hidden-sm ">
+        <a href="https://getspini.com/blog">Blog</a>
+      </li>
+      <li class="dropdown pull-right hidden-xs hidden-sm">
+      <div class="dropdown">
+  <button class="dropbtn ">Services</button><span><i style="color: #fff;" class="fa fa-caret-down"></i></span>
+
+  <div class="dropdown-content">
+    <a style="color: #CC0000" href="../realestate/realestate.html">Find Home </a>
+    <a style="color: #CC0000" href="../interiors/interiors.html">Find Interior</a>
+    <a style="color: #CC0000" href="../loans/loans.html">Get Loan</a>
+    <a style="color: #CC0000" href="../digital-marketing-company-in-chennai/">Digital Marketing</a>
+  </div>
+</div>
+    </li>
+    <li class="pull-right hidden-xs hidden-sm ">
+        <a href="../partner-with-us.html">Partner With Us</a>
+      </li>
+      <li class="pull-right hidden-xs hidden-sm ">
+        <a href="../about-us.html">About Us</a>
+      </li>
+      
+      
+     
   <!-- hamburger -->
-  <li class="hamburger-menu">
+  <li class="hamburger-menu hidden-lg hidden-md">
     <div id="hamburger">
       <span></span>
       <span></span>
