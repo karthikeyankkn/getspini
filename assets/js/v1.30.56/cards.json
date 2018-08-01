@@ -10,6 +10,177 @@
 		"card_city": ""
 		},
 		{
+		"id":"186",
+		"a_href":"ashok-nandavanam.html",
+		"card_title":"ASHOK NANDAVANAM",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/ashok_nandavanam_thirumazhisai_phase_iii_in_thirumazhisai.jpg",
+		"card_description":"Ashok Nandavanam Consists of Plots measuring 646 - 2400 Sq ft at Thirumazhisai.",
+		"card_area":"Thirumazhisai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"185",
+		"a_href":"sprint-jupiter-avenue.html",
+		"card_title":"SPRINT JUPITER AVENUE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Sprint-Jupiter-Avenue.jpg",
+		"card_description":"Sprint is a new age Real Estate Company, formed to develop futuristic projects with innovation and freshness.",
+		"card_area":"Thirumazhisai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"184",
+		"a_href":"fomra-ragas.html",
+		"card_title":"FOMRA RAGAS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Fomra-Ragas.jpg",
+		"card_description":"Ragas is a secure, CMDA approved Gated Community plot located at Mangadu",
+		"card_area":"Mangadu",
+		"card_city": "chennai"
+		},
+		{
+		"id":"183",
+		"a_href":"accord-housing-cosmo-city.html",
+		"card_title":"ACCORD HOUSING COSMO CITY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/accord_cosmo_city_south_in_sriperumbudur.jpg",
+		"card_description":"Adopted, developed and sustained by a Global MNC, civic infrastructure is of the highest importance",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"182",
+		"a_href":"hi5builders-oviyam-flats.html",
+		"card_title":"OVIYAM FLATS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/oviyam.jpg",
+		"card_description":"The site is located amidst developed Residential area, which ensures your Convenience / Comfort",
+		"card_area":"Puzhal",
+		"card_city": "chennai"
+		},
+		{
+		"id":"181",
+		"a_href":"prince-highlands.html",
+		"card_title":"PRINCE HIGHLANDS",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Prince-Highlands.jpg",
+		"card_description":"Prince Highlands is a premium residential project spread over 6 towers",
+		"card_area":"Iyyappanthangal",
+		"card_city": "chennai"
+		},
+		{
+		"id":"180",
+		"a_href":"jkb-housing.html",
+		"card_title":"JKB HOUSING",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/jkb.jpg",
+		"card_description":"JKB Serenity is our ongoing project situated @ Sendurpuram, Kattupakkam in the primary residential zone.",
+		"card_area":"Kattupakkam",
+		"card_city": "chennai"
+		},
+		{
+		"id":"179",
+		"a_href":"ks-harmony-orchid.html",
+		"card_title":"K S HARMONY & ORCHID",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/KS-Harmony-Orchid.jpg",
+		"card_description":"Harmony apartments is our new brain child that has come as a fitting solution",
+		"card_area":"Iyyappanthangal",
+		"card_city": "chennai"
+		},
+		{
+		"id":"178",
+		"a_href":"golden-prosperous-shine.html",
+		"card_title":"GOLDEN PROSPEROUS SHINE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Golden-Prosperous-Shine.jpg",
+		"card_description":"Golden Prosperous Property Developer is a big name in the Chennai realty market.",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"177",
+		"a_href":"manju-havisha-homes.html",
+		"card_title":"MANJU HAVISHA HOMES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Manju-Havisha-Homes.jpg",
+		"card_description":"Havisha Homes is a lavish residential project spread across a sprawling manicured landscape.",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"176",
+		"a_href":"vijay-raja-ideal-homes.html",
+		"card_title":"VIJAY RAJA IDEAL HOMES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Vijay-Raja-Ideal-Homes.jpg",
+		"card_description":"Vijay Raja Ideal Homes, take in stunning vistas and beyond, as the flawless apartment structure of IDEAL HOMES",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"175",
+		"a_href":"godrej-palm-grove.html",
+		"card_title":"GODREJ PALM GROVE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Godrej-Palm-Grove.jpeg",
+		"card_description":"Godrej Palm Grove is a perfect blend of luxury and space.",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"174",
+		"a_href":"sai-ram-homes.html",
+		"card_title":"SAI RAM HOMES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Sai-Ram-Homes.jpg",
+		"card_description":"Sri Ram Homes the company has a controlled working, environment that helps us take huge leaps in construction industry.",
+		"card_area":"Mangadu",
+		"card_city": "chennai"
+		},
+		{
+		"id":"173",
+		"a_href":"arunexcello-manjari.html",
+		"card_title":"ARUNEXCELLO MANJARI",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/arun_excello_manjari.jpg",
+		"card_description":"This project “Manjari” is located in Irungattukottai, close to several MNCs on NH 4 (Bengaluru Highway), Reputed Hospitals",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"172",
+		"a_href":"rajhousing.html",
+		"card_title":"RAJHOUSING",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/raj_heritage_iyyappanthangal_chennai_raj_housing_development.jpg",
+		"card_description":"Raj Housing Mangadu is a majestic residential enclave ",
+		"card_area":"Mangadu",
+		"card_city": "chennai"
+		},
+		{
+		"id":"171",
+		"a_href":"baashyaam-le-chalet.html",
+		"card_title":"BAASHYAAM LE CHALET",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Baashyaam-Le-Chalet.jpg",
+		"card_description":"Le Chalet, is a beautiful residential project consisting of well",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"170",
+		"a_href":"ms-gardens-eco-friendly.html",
+		"card_title":"MS GARDENS ECO FRIENDLY",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/ms_green_valley_villa_normal.jpg",
+		"card_description":"All the wonderful and inimitable aspects of the MS Garden Phase II project",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"169",
+		"a_href":"romaa-paradise.html",
+		"card_title":"ROMAA PARADISE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/romaa_parradise.png",
+		"card_description":"Romaa Parradise is a remarkable constellation of 275 luxurious apartments",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
+		"id":"168",
+		"a_href":"golden-opulence.html",
+		"card_title":"GOLDEN OPULENCE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/golden-opulence.jpg",
+		"card_description":"Golden Opulence is especially for you- a progressive human being who is continuously",
+		"card_area":"Poonamallee",
+		"card_city": "chennai"
+		},
+		{
 		"id":"167",
 		"a_href":"nest-delight.html",
 		"card_title":"Nest Delight",
