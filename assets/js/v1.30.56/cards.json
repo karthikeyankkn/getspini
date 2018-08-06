@@ -10,6 +10,114 @@
 		"card_city": ""
 		},
 		{
+		"id":"198",
+		"a_href":"maxis-pavithram.html",
+		"card_title":"MAXIS PAVITHRAM",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Maxis-Pavithram.jpg",
+		"card_description":"Maxis Pavithram with luxurious apartments is located at Nolambur ",
+		"card_area":"Nolambur",
+		"card_city": "chennai"
+		},
+		{
+		"id":"197",
+		"a_href":"shri-hari-foundation-sukrit-serene.html",
+		"card_title":"SHRI HARI FOUNDATION - SUKRIT SERENE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/ShriHari-Foundation-Sukrit-Serene.jpg",
+		"card_description":"A just few meters from the Mogappair East Bus Depot.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"196",
+		"a_href":"vinoth-builders-vinoth-vamsi.html",
+		"card_title":"VINOTH BUILDERS - VINOTH VAMSI",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/vinothbuilders-Vinoth-Vamsi.jpg",
+		"card_description":"Vinoth Vamsi unheralds great convenience clubbed with elegant design.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"195",
+		"a_href":"casagrand-crescendo.html",
+		"card_title":"CASAGRAND CRESCENDO",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Casagrand-Crescendo.jpg",
+		"card_description":"Casagrand Crescendo, Ultra Luxurious Apartments Bang on the Main Road at Nolambur",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"194",
+		"a_href":"colorhome-creek.html",
+		"card_title":"COLORHOMES CREEK",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Colorhomes-Creek.jpg",
+		"card_description":"Color Homes Colorhomes Creek by Color Homes situated in Mogappair, Chennai.",
+		"card_area":"Mogappair West",
+		"card_city": "chennai"
+		},
+		{
+		"id":"193",
+		"a_href":"jain-housing-jains-sukriti.html",
+		"card_title":"JAIN HOUSING - JAINS SUKRITI",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Jain-Housing-Jains-Sukriti.jpg",
+		"card_description":"Jain Housing presents a promising opportunity to own an amenities rich premium home with guaranteed manifold investment returns",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"192",
+		"a_href":"grid-advaita.html",
+		"card_title":"GRID ADVAITA",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/Grid-advaita.jpg",
+		"card_description":"Grid Foundation Presents The Opportunity To Own An Apartment In Prime Location At Heart Of Mogappair",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"191",
+		"a_href":"svvd-green-housing.html",
+		"card_title":"SVVD GREEN HOUSING",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/SVVD-GREEN-HOUSING.jpg",
+		"card_description":"SVVD Aspen is one of the residential developments SVVD Green Housing.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"190",
+		"a_href":"adithi-homes.html",
+		"card_title":"ADITHI HOMES",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/adithi_homes_in_maduravoyal.jpg",
+		"card_description":"Adithi Homes is an exclusive project with modern designed elegant life style residential flats strategically located in West Mogapair",
+		"card_area":"Mogappair West",
+		"card_city": "chennai"
+		},
+		{
+		"id":"189",
+		"a_href":"bbcl-vajra.html",
+		"card_title":"BBCL VAJRA",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/BBCL-VAJRA.jpg",
+		"card_description":"BBCL Vajra is located in Mogappair West which is the fastest growing micro-market and is just 5 km from Anna Nagar",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"188",
+		"a_href":"vgn-habitat.html",
+		"card_title":"VGN HABITAT",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/VGN-Habitat.gif",
+		"card_description":"Surrounded by Open Space and set Amidst Thousands of Trees and Shrubs in VGN harmony at Mogappair",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"187",
+		"a_href":"vgn-monte-carlo.html",
+		"card_title":"VGN MONTE CARLO",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/VGN-Monte-Carlo.jpg",
+		"card_description":"VGN Monte Carlo is one of the residential developments of VGN Property Developers.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
 		"id":"186",
 		"a_href":"ashok-nandavanam.html",
 		"card_title":"ASHOK NANDAVANAM",
