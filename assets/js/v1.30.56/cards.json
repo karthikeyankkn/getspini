@@ -10,6 +10,51 @@
 		"card_city": ""
 		},
 		{
+		"id":"203",
+		"a_href":"sidharth-pearl.html",
+		"card_title":"SIDHARTH PEARL",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/SIDHARTH-PEARL.png",
+		"card_description":"Sidharth Pearl has 3 BHK villa style apartments with picturesque views",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"202",
+		"a_href":"vnr-milford.html",
+		"card_title":"VNR MILFORD",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/VNR-MILFORD.jpg",
+		"card_description":"VNR Milford presents premium ready to move apartments with life style amenities and indoor sports facilities.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"201",
+		"a_href":"vgn-aster.html",
+		"card_title":"VGN ASTER",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/VGN-Aster.jpg",
+		"card_description":"VGN Aster is Just 4in 1 units provides a limited and peaceful neighbourhood with good ventilation",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"200",
+		"a_href":"nova-lifespace-sprint.html",
+		"card_title":"NOVA LIFESPACE - SPRINT",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/novalifespace-sprint_img.jpg",
+		"card_description":"Nova Sprint, an ongoing residential development by Nova Lifespace is located in Nolambur",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
+		"id":"199",
+		"a_href":"sp-essense.html",
+		"card_title":"S & P ESSENSE",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/SP-Essense.png",
+		"card_description":"S & P Essense is a beautiful structure that encompasses with all the necessary amenities for a better standards of living.",
+		"card_area":"Mogappair",
+		"card_city": "chennai"
+		},
+		{
 		"id":"198",
 		"a_href":"maxis-pavithram.html",
 		"card_title":"MAXIS PAVITHRAM",
