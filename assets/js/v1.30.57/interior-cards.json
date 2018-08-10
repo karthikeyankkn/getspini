@@ -1,0 +1,39 @@
+{
+	"cards":[
+		{
+		"id":"",
+		"a_href":"",
+		"card_title":"",
+		"card_img": "",
+		"card_description":"",
+		"card_area":"",
+		"card_city": ""
+		},
+		{
+		"id":"1",
+		"a_href":"interior-estimation.html",
+		"card_title":"Interior Estimation",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/home/modular-kitchen-estimator.jpg",
+		"card_description":"Wondering how much you should set aside for your Kitchen's Interior design work? Here is an easy calculator to get a fair estimation based on your preferences.",
+		"card_area":"Avadi",
+		"card_city": "chennai"
+		},
+		{
+		"id":"2",
+		"a_href":"interior-estimation.html",
+		"card_title":"Interior Estimation 2",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/home/modular-kitchen-estimator.jpg",
+		"card_description":"Wondering how much you should set aside for your Kitchen's Interior design work? Here is an easy calculator to get a fair estimation based on your preferences.",
+		"card_area":"Avadi",
+		"card_city": "chennai"
+		},
+		{
+		"id":"",
+		"a_href":"",
+		"card_title":"",
+		"card_img": "",
+		"card_description":"",
+		"card_area":"",
+		"card_city": ""
+		}
+]}
