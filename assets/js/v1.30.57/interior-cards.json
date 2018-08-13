@@ -10,13 +10,13 @@
 		"card_city": ""
 		},
 		{
-		"id":"1",
-		"a_href":"interior-estimation.html",
-		"card_title":"Interior Estimation",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/home/modular-kitchen-estimator.jpg",
-		"card_description":"Wondering how much you should set aside for your Kitchen's Interior design work? Here is an easy calculator to get a fair estimation based on your preferences.",
-		"card_area":"Avadi",
-		"card_city": "chennai"
+		"id":"3",
+		"a_href":"style-well-interiors.html",
+		"card_title":"Style Well Interiors",
+		"card_img": "https://content3.jdmagicbox.com/comp/coimbatore/l9/0422px422.x422.180528153740.u6l9/catalogue/style-well-interiors-saravanampatti-coimbatore-interior-decorators-422mcd96y4.jpg",
+		"card_description":"Style Well Interiors based in Coimbatore are one of the leading Interior Decorators",
+		"card_area":"Saravanampatti",
+		"card_city": "coimbatore"
 		},
 		{
 		"id":"2",
@@ -26,6 +26,15 @@
 		"card_description":"We are into this industry for more than a decade and we give personalized service to our clients",
 		"card_area":"Nungambakkam",
 		"card_city": "chennai"
+		},
+		{
+		"id":"1",
+		"a_href":"genx-windoors.html",
+		"card_title":"Genx Windoors",
+		"card_img": "https://lh3.googleusercontent.com/-x4heK0F1JoE/WktAUn-LLQI/AAAAAAAAAe4/9IGcRXFH2lM6klvdiG4ZEAWopM01HgISwCHMYBhgL/s800/IMG_20160622_143953557.jpg",
+		"card_description":"GenX Windoors is a Trade Mark of Lakshmi Infraproperties (India) Pvt. Ltd., company established in 2010",
+		"card_area":"S.R. Nagar",
+		"card_city": "hyderabad"
 		},
 		{
 		"id":"",
