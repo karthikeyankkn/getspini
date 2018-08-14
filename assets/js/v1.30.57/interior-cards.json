@@ -13,9 +13,9 @@
 		"id":"3",
 		"a_href":"style-well-interiors.html",
 		"card_title":"Style Well Interiors",
-		"card_img": "https://content3.jdmagicbox.com/comp/coimbatore/l9/0422px422.x422.180528153740.u6l9/catalogue/style-well-interiors-saravanampatti-coimbatore-interior-decorators-422mcd96y4.jpg",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/int-sp-cbe-1-1.jpg",
 		"card_description":"Style Well Interiors based in Coimbatore are one of the leading Interior Decorators",
-		"card_area":"Saravanampatti",
+		"card_area":"Coimbatore",
 		"card_city": "coimbatore"
 		},
 		{
@@ -24,7 +24,7 @@
 		"card_title":"Color Coat Interiors",
 		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/int-sp-1-1.jpg",
 		"card_description":"We are into this industry for more than a decade and we give personalized service to our clients",
-		"card_area":"Nungambakkam",
+		"card_area":"Chennai",
 		"card_city": "chennai"
 		},
 		{
@@ -33,7 +33,7 @@
 		"card_title":"Genx Windoors",
 		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/int-sp-hyd-1.png",
 		"card_description":"GenX Windoors is a Trade Mark of Lakshmi Infraproperties (India) Pvt. Ltd., company established in 2010",
-		"card_area":"S.R. Nagar",
+		"card_area":"Hyderabad",
 		"card_city": "hyderabad"
 		},
 		{
