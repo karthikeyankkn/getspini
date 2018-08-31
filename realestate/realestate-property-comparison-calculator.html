@@ -9,11 +9,11 @@
         
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Realestate Propery comparison calculator</title>
-        <meta property="og:url" content="https://www.getspini.com/realestate/akshaya-today-OMR-Thaiyur.html" />
-        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/property/todaybanner.jpg" />
-        <meta name="description" content="The inspiring development of Akshaya Today in Thaiyur creates a place of peace and solace for you and your loved ones. This sprawling 21 acre project comprises of spacious 1, 2 & 3 BHK apartments....">
-        <meta name="keywords" content="apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan, packers and movers, catering service, homes for rent, property for sale,AKSHAYA TODAY OMR Thaiyur Near Kelambakkam, Chennai">
+        <title>Spini - Realestate Propery comparison calculator</title>
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta name="description" content="">
+        <meta name="keywords" content="apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan, packers and movers, catering service, homes for rent, property for sale,">
         <link rel="canonical" href="https://www.getspini.com/"/>
         <meta name="" content="">
         <!-- Mobile Specific Metas ================================================== -->
@@ -172,11 +172,33 @@
       border: 0;
       padding: 10px 20px !important;
     }
-
+    .centered {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    font-weight: bold;
+    /*background-color: #00000078;*/
+    padding: 10px;
+    width: 40%;
+    font-size: 42px;
+    }
     @media only screen and (max-width:500px) {
       .rpcc-output-container table tr td, .rpcc-output-container table tr th{
         font-size: 10px;
       }
+      .centered {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    background-color: #00000078;
+    padding: 10px;
+    font-size: 9px;
+    }
     }
   </style>
 </head>
@@ -188,33 +210,28 @@
     <!-- banner for rpcc starts -->
   <div id="myCarousel" class="carousel slide col-md-12" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+    <!-- <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+    </ol> -->
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
-        <img src="https://res.cloudinary.com/mygubbi/image/upload/f_auto/076_Comorant_L-Shape_1" alt="Los Angeles" style="width:100%;">
+      <div class="item active hidden-xs">
+        <img src="https://www.nkrealtors.com/addons/shared_addons/themes/nkr/img/banner-img-05.jpg" alt="property" style="width:100%;">
+        <div class="centered">Confused? Easy way to compare Property</div>
         <div class="carousel-caption">
-          <h3>L shape kitchen</h3>
+          <!-- <h3>L shape kitchen</h3> -->
           <!-- <p>We love the Big Apple!</p> -->
         </div>
       </div>
-      <div class="item">
-        <img src="http://blog.homelane.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/11/30114702/straight-laminate-high-gloss-BLACK-SILVER.jpg" alt="Los Angeles" style="width:100%;">
+      <div class="item active hidden-sm hidden-md hidden-lg">
+        <img src="http://mailam.vn/wp-content/uploads/2017/06/20170605090455-hcm3-370x220.jpg" alt="property" style="width:100%;">
+        <div class="centered">Confused? Easy way to compare Property</div>
         <div class="carousel-caption">
-          <h3>straight kitchen</h3>
-          <!-- <p>We love the Big Apple!</p> -->
-        </div>
-      </div>
-      <div class="item">
-        <img src="http://www.kbkitchen.com/wp-content/themes/kbkitchen/images/img_home.jpg" alt="Los Angeles" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>customized kitchen</h3>
+          <!-- <h3>L shape kitchen</h3> -->
           <!-- <p>We love the Big Apple!</p> -->
         </div>
       </div>
@@ -335,6 +352,7 @@
       <tr><td>Configuration</td></tr>
       <tr><td>No of Floors</td></tr>
       <tr><td>No of Units</td></tr>
+      <tr><td>Possession</td></tr>
       <tr><td>CCTV</td></tr>
       <tr><td>Lift</td></tr>
       <tr><td>gym</td></tr>
@@ -390,7 +408,7 @@
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <script src="../assets/js/v1.30.57/script.js"></script>
 
- <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; left:0px; top:150px;">
+ <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; right:0px; top:150px;">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
 <a class="a2a_button_facebook"></a>
 <a class="a2a_button_twitter"></a>
@@ -430,7 +448,7 @@
           // rpcc_data.rpcc[0].amenities[0].ccty fa-times fa-check
           // <tr><td>"+rpcc_data.rpcc[i].configuration+"</td></tr>
 
-          $(".rpcc-output-container").append("<table class='col-md-2 col-sm-4 col-xs-4'><thead><tr><th>"+rpcc_data.rpcc[i].builder+"</th></tr></thead><tbody><tr><td style='padding: 0;'><img src="+rpcc_data.rpcc[i].thump_img+" alt='spini-images' width='100%' height='150'/></td></tr><tr><td>"+rpcc_data.rpcc[i].city+"</td></tr><tr><td>"+rpcc_data.rpcc[i].location+"</td></tr><tr><td>"+rpcc_data.rpcc[i].budget+"</td></tr><tr><td>"+rpcc_data.rpcc[i].configuration+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_floors+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_units+"</td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].ccty+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].lift+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].gym+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].swimming_pool+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].indoor_games+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].e_library+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].children_play_area+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].power_backup+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].security+"' aria-hidden='true'></i></td></tr></tbody></table>");
+          $(".rpcc-output-container").append("<table class='col-md-2 col-sm-4 col-xs-4'><thead><tr><th>"+rpcc_data.rpcc[i].builder+"</th></tr></thead><tbody><tr><td style='padding: 0;'><img src="+rpcc_data.rpcc[i].thump_img+" alt='spini-images' width='100%' height='150'/></td></tr><tr><td>"+rpcc_data.rpcc[i].city+"</td></tr><tr><td>"+rpcc_data.rpcc[i].location+"</td></tr><tr><td>"+rpcc_data.rpcc[i].budget+"</td></tr><tr><td>"+rpcc_data.rpcc[i].configuration+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_floors+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_units+"</td></tr><tr><td>"+rpcc_data.rpcc[i].possession+"</td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].ccty+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].lift+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].gym+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].swimming_pool+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].indoor_games+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].e_library+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].children_play_area+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].power_backup+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].security+"' aria-hidden='true'></i></td></tr></tbody></table>");
         }
         // debugger   
       }
