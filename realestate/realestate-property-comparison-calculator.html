@@ -28,8 +28,155 @@
     var categoryName = "Real Estate(Buying)"; var propertyName = '';
   </script> 
   <style type="text/css">
-    .rpcc-container{
+    .mt-60{
       margin-top: 60px;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .rpcc-container{
+      margin-top: 20px;
+    }
+    .rpcc-compare-section, .rpcc-output-container{
+      padding: 15px;
+      background: #fff;
+      max-width: 95%;
+      margin: 20px auto;
+      box-shadow: 0px 0px 3px #888;
+    }
+    .rpcc-compare-section button{
+      background: #cc2f2a;
+      color: #fff;
+      border: 0;
+      padding: 7px 20px;
+      margin: 30px auto 0;
+      display: block;
+    }
+    .rpcc-compare-section ul{
+
+    }
+    .rpcc-compare-section ul li{
+
+    }
+    .rpcc-compare-section ul li span{
+      border: 1px solid rgba(36,39,44,.15);
+      display: block;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+    .rpcc-compare-section ul li span:hover{
+      box-shadow: 0px 0px 11px #88888861;
+      transition: 0.2s ease;
+    }
+    .rpcc-compare-section ul li span i{
+      font-size: 30px;
+      color: gray;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .rpcc-compare-section ul li span i p{
+      color: gray;
+      margin: 0;
+      font-size: 14px;
+      font-family: sans-serif;
+    }
+    .rpcc-select-container{
+      display: none;
+      padding: 10px;
+    }
+    .rpcc-compare-section ul li span label{
+      font-weight: 100;
+      font-size: 12px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: #fff;
+      color: #24272c54;
+      padding: 1px 6px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      border: 1px solid;
+    }
+    .rpcc-select-container select{
+      padding: 0 10px;
+      font-size: 12px;
+      height: 30px !important;
+      margin: 10px 0 0 0;
+    }
+    .rpcc-hide{
+      display: none;
+    }
+    .rpcc-show{
+      display: block;
+    }
+    .rpcc-output-container{
+      background: #fff;
+      padding: 10px;
+      max-width: 95%;
+      margin: 80px auto 20px;
+      box-shadow: 0px 0px 3px #888;
+      display: none;
+    }
+    .rpcc-output-container table{
+      display: inline-block;
+      border-collapse: collapse;
+      padding: 0;
+      border-right: 1px solid lightgray;
+      border-top: 1px solid lightgray;
+    }
+    .rpcc-output-container table tr td, .rpcc-output-container table tr th{
+      padding: 10px 0 10px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    .rpcc-output-container table tr th{
+      height: 60px;
+      text-transform: uppercase !important;
+    }
+    .rpcc-left-title td, .rpcc-left-title th{
+      color: gray;
+      text-transform: uppercase !important;
+      text-align: left !important;
+    }
+    .fa-check{
+      color: green;
+    }
+    .fa-times{
+      color: red;
+    }
+    /*spini model style*/
+    .spini-model-header{
+      color: #cd2f2b;
+      padding: 10px;
+      text-align: center;
+      border-top: 5px solid;
+    }
+    .spini-model-body form input{
+      display: block;
+      width: 100%;
+      padding: 7px;
+      margin-bottom: 15px;
+    }
+    .spini-model-body form select{
+      margin-bottom: 15px;
+      height: unset !important;
+    }
+    .spini-model-submit{
+      background: #cd2f2b;
+      color: #fff;
+      width: unset !important;
+      display: block !important;
+      margin: auto;
+      border: 0;
+      padding: 10px 20px !important;
+    }
+
+    @media only screen and (max-width:500px) {
+      .rpcc-output-container table tr td, .rpcc-output-container table tr th{
+        font-size: 10px;
+      }
     }
   </style>
 </head>
@@ -37,56 +184,203 @@
 <!-- haader starts -->
 <header></header>
 
-<!-- price comparison section starts -->
-<section class="rpcc-container">
-  <!-- banner for rpcc starts -->
+<div class="row mt-60">
+    <!-- banner for rpcc starts -->
   <div id="myCarousel" class="carousel slide col-md-12" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="https://res.cloudinary.com/mygubbi/image/upload/f_auto/076_Comorant_L-Shape_1" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>L shape kitchen</h3>
-            <!-- <p>We love the Big Apple!</p> -->
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://blog.homelane.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/11/30114702/straight-laminate-high-gloss-BLACK-SILVER.jpg" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>straight kitchen</h3>
-            <!-- <p>We love the Big Apple!</p> -->
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://www.kbkitchen.com/wp-content/themes/kbkitchen/images/img_home.jpg" alt="Los Angeles" style="width:100%;">
-          <div class="carousel-caption">
-            <h3>customized kitchen</h3>
-            <!-- <p>We love the Big Apple!</p> -->
-          </div>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="https://res.cloudinary.com/mygubbi/image/upload/f_auto/076_Comorant_L-Shape_1" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>L shape kitchen</h3>
+          <!-- <p>We love the Big Apple!</p> -->
         </div>
       </div>
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="fa fa-angle-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="fa fa-angle-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="item">
+        <img src="http://blog.homelane.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/11/30114702/straight-laminate-high-gloss-BLACK-SILVER.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>straight kitchen</h3>
+          <!-- <p>We love the Big Apple!</p> -->
+        </div>
+      </div>
+      <div class="item">
+        <img src="http://www.kbkitchen.com/wp-content/themes/kbkitchen/images/img_home.jpg" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>customized kitchen</h3>
+          <!-- <p>We love the Big Apple!</p> -->
+        </div>
+      </div>
     </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="fa fa-angle-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="fa fa-angle-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
     <!-- banner for rpcc ends -->
-
-    
+</div>
+<!-- price comparison section starts -->
+<section class="rpcc-container">
+  <div class="rpcc-compare-section">
+    <h3>Compare Properties</h3>
+    <ul class="row">
+      <li class="col-md-3 col-xs-6">
+        <span>
+          <label>x</label>
+          <i class="fa fa-plus-square-o" aria-hidden="true"> <p>Add Property</p> </i>
+          <div class="rpcc-select-container">
+            <select class="rpcc_city">
+              <option disabled>Select City</option>
+              <option value="chennai">Chennai</option>
+            </select>
+            <select class="rpcc_location">
+              <option disabled>Select Location</option>
+              <option value="sholinganallur">Sholinganallur</option>
+              <option value="poonamalle">Poonamalle</option>
+            </select>
+            <select class="rpcc_property rpcc_id_1">
+              <option disabled>Select Property</option>
+            </select>
+          </div>
+        </span>
+      </li>
+      <li class="col-md-3 col-xs-6">
+        <span>
+          <label>x</label>
+          <i class="fa fa-plus-square-o" aria-hidden="true"> <p>Add Property</p> </i>
+          <div class="rpcc-select-container">
+            <select class="rpcc_city">
+              <option disabled>Select City</option>
+              <option value="chennai">Chennai</option>
+            </select>
+            <select class="rpcc_location">
+              <option disabled>Select Location</option>
+              <option value="sholinganallur">Sholinganallur</option>
+              <option value="poonamalle">Poonamalle</option>
+            </select>
+            <select class="rpcc_property rpcc_id_2">
+              <option disabled>Select Property</option>
+            </select>
+          </div>
+        </span>
+      </li><li class="col-md-3 hidden-xs hidden-sm">
+        <span>
+          <label>x</label>
+          <i class="fa fa-plus-square-o" aria-hidden="true"> <p>Add Property</p> </i>
+          <div class="rpcc-select-container">
+            <select class="rpcc_city">
+              <option disabled>Select City</option>
+              <option value="chennai">Chennai</option>
+            </select>
+            <select class="rpcc_location">
+              <option disabled>Select Location</option>
+              <option value="sholinganallur">Sholinganallur</option>
+              <option value="poonamalle">Poonamalle</option>
+            </select>
+            <select class="rpcc_property rpcc_id_3">
+              <option disabled>Select Property</option>
+            </select>
+          </div>
+        </span>
+      </li><li class="col-md-3 hidden-xs hidden-sm">
+        <span>
+          <label>x</label>
+          <i class="fa fa-plus-square-o" aria-hidden="true"> <p>Add Property</p> </i>
+          <div class="rpcc-select-container">
+            <select class="rpcc_city">
+              <option disabled>Select City</option>
+              <option value="chennai">Chennai</option>
+            </select>
+            <select class="rpcc_location">
+              <option disabled>Select Location</option>
+              <option value="sholinganallur">Sholinganallur</option>
+              <option value="poonamalle">Poonamalle</option>
+            </select>
+            <select class="rpcc_property rpcc_id_4">
+              <option disabled>Select Property</option>
+            </select>
+          </div>
+        </span>
+      </li>
+    </ul>
+    <button class="rpcc_get_ids" data-toggle="modal" data-target="#rpccModal">Compare</button>
+  </div>
 </section>
+<!-- rpcc output codes starts here-->
+<section class="rpcc-output-container row" id="rpcc-output">
+  <h1>Overview</h1>
+  <table class="col-md-4 col-sm-4 col-xs-4 rpcc-left-title">
+    <thead>
+      <tr>
+        <th>Property Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td style='padding: 0; height: 150px;'>Image</td></tr>  
+      <tr><td>City</td></tr>
+      <tr><td>Location</td></tr>
+      <tr><td>Budget</td></tr>
+      <tr><td>Configuration</td></tr>
+      <tr><td>No of Floors</td></tr>
+      <tr><td>No of Units</td></tr>
+      <tr><td>CCTV</td></tr>
+      <tr><td>Lift</td></tr>
+      <tr><td>gym</td></tr>
+      <tr><td>swimming pool</td></tr>
+      <tr><td>Indoor games</td></tr>
+      <tr><td>E library</td></tr>
+      <tr><td>Children play area</td></tr>
+      <tr><td>Power Backup</td></tr>
+      <tr><td>Security</td></tr>
+    </tbody>
+  </table>
+</section>
+<!-- rpcc output codes ends here -->
+
+<!-- rpcc Model -->
+<div id="rpccModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- rpcc Model content-->
+    <div class="modal-content">
+      <div class="modal-header spini-model-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">You Are Almost Done..!</h4>
+      </div>
+      <div class="modal-body spini-model-body">
+        <form action="https://formspree.io/karthikeyan@spinircle.com" method="POST">
+          <input type="text" name="name" placeholder="Enter Name" required>    
+          <input type="number" name="mobile_number" placeholder="Enter Phone Number" required>
+          <input type="email" name="email" placeholder="Enter Email (optional)" >
+          <select class="form-control"   name="city" required >
+            <option  disabled selected>Select City</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Hyderabad">Hyderabad</option>                   
+          </select>
+          <input type="hidden" name="_next" value="/realestate/realestate-property-comparison-calculator.html" />
+          <input type="hidden" name="_subject" value="Lead from Realestate Property Comparison Calculator..!" />
+          <!-- <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com, intern3.spini@gmail.com" /> -->
+          <input class="submit-btn spini-model-submit" type="submit" value="Compare Now" class="submit_material_form" onclick="">
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- price comparison section ends -->
 
 <!-- footer content -->
@@ -106,5 +400,111 @@
 </div>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
+
+<script type="text/javascript">
+  // initialize variables
+  var rpcc_data, temp_this, rpcc_location, rpcc_id_1, rpcc_id_2, rpcc_id_3, rpcc_id_4, rpcc_ids = [], rpcc_push, rpcc_storedArray;
+  // check enable button
+  function check_enable_button(){
+    // debugger
+    rpcc_id_1 = $(".rpcc_id_1").val();
+    rpcc_id_2 = $(".rpcc_id_2").val();
+    rpcc_id_3 = $(".rpcc_id_3").val();
+    rpcc_id_4 = $(".rpcc_id_4").val();
+
+    if (rpcc_id_1 == null || rpcc_id_2 == null) {
+      $(".rpcc_get_ids").attr("disabled", "disabled");
+    }else{
+      $(".rpcc_get_ids").prop("disabled", false);
+    }
+  }
+
+  // function to print output
+  function rpcc_display_output(rpcc_id){
+    $.get("../assets/js/v1.30.57/rpcc.json", function( data ) {
+      rpcc_data = data;
+      // debugger
+      for(var i = 0; i < rpcc_data.rpcc.length; i++){
+        if (rpcc_data.rpcc[i].id == rpcc_id) {
+          // $(".rpcc_show_output_table").append("<li>Property Name:"+rpcc_data.rpcc[i].builder+"</li><li>ID:"+rpcc_data.rpcc[i].id+"</li>");
+          // rpcc_data.rpcc[0].amenities[0].ccty fa-times fa-check
+          // <tr><td>"+rpcc_data.rpcc[i].configuration+"</td></tr>
+
+          $(".rpcc-output-container").append("<table class='col-md-2 col-sm-4 col-xs-4'><thead><tr><th>"+rpcc_data.rpcc[i].builder+"</th></tr></thead><tbody><tr><td style='padding: 0;'><img src="+rpcc_data.rpcc[i].thump_img+" alt='spini-images' width='100%' height='150'/></td></tr><tr><td>"+rpcc_data.rpcc[i].city+"</td></tr><tr><td>"+rpcc_data.rpcc[i].location+"</td></tr><tr><td>"+rpcc_data.rpcc[i].budget+"</td></tr><tr><td>"+rpcc_data.rpcc[i].configuration+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_floors+"</td></tr><tr><td>"+rpcc_data.rpcc[i].no_of_units+"</td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].ccty+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].lift+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].gym+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].swimming_pool+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].indoor_games+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].e_library+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].children_play_area+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].power_backup+"' aria-hidden='true'></i></td></tr><tr><td><i class='fa "+rpcc_data.rpcc[i].security+"' aria-hidden='true'></i></td></tr></tbody></table>");
+        }
+        // debugger   
+      }
+    });
+  }
+
+
+  // check select box each time event occur to enable button
+  $(".rpcc_property").change(function(){
+    check_enable_button();
+  });
+  // toggle function for input section
+  $(".rpcc-compare-section ul li span").click(function(){
+    $(this).find(".rpcc_city").prop("selectedIndex",0);
+    $(this).find(".rpcc_location").prop("selectedIndex",0);
+    $(this).find(".rpcc_property").prop("selectedIndex",0);
+    $(this).children("i, label").toggle();
+    $(this).children(".rpcc-select-container").toggle();
+    check_enable_button();
+  });
+  // stop propegation for in input section to avoid toggle function
+  $(".rpcc-select-container").click(function(e){
+    e.stopPropagation();
+  });
+  // show property based on location
+  $(".rpcc_location").change(function(){
+    temp_this = $(this);
+    rpcc_location = temp_this.val();
+    // console.log(rpcc_location);
+    $(this).siblings(".rpcc_property").children().remove();
+
+    // http get request
+    $.get("../assets/js/v1.30.57/rpcc.json", function( data ) {
+      rpcc_data = data;
+      temp_this.siblings(".rpcc_property").append("<option disabled>Select Property</option>");
+      
+      for(var i = 0; i < rpcc_data.rpcc.length; i++){
+        // debugger
+        if (rpcc_data.rpcc[i].location == rpcc_location) {
+          temp_this.siblings(".rpcc_property").append("<option value="+rpcc_data.rpcc[i].id+">"+rpcc_data.rpcc[i].builder+"</option>");
+        }
+      }
+      temp_this.siblings(".rpcc_property").prop("selectedIndex",0);
+    });
+  });
+  // push rpcc ids
+  $(".rpcc_get_ids").click(function(){
+    $(".rpcc_get_ids").prop("disabled", false);
+    rpcc_ids = [];
+    check_enable_button();
+    for(var i = 1; i <= 4; i++){
+      
+      rpcc_push = "rpcc_id_"+i;
+      rpcc_push = eval(rpcc_push);
+      if (rpcc_push){
+        rpcc_ids.push(rpcc_push);
+      }
+    }
+      window.sessionStorage.setItem("rpcc_ids_items", JSON.stringify(rpcc_ids));
+
+  });
+  rpcc_storedArray = JSON.parse(sessionStorage.getItem("rpcc_ids_items"));//no brackets
+  if (rpcc_storedArray) {
+    location.href = "#rpcc-output"
+    $(".rpcc-output-container").fadeIn();
+    for (var i = 0; i < rpcc_storedArray.length; i++) {
+      // console.log(rpcc_storedArray[i]);
+      // alert(rpcc_storedArray[i]);
+      rpcc_display_output(rpcc_storedArray[i]);
+    }
+  }
+  check_enable_button();
+  
+  
+</script>
 </body>
 </html>
