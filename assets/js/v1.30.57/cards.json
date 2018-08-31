@@ -10,6 +10,15 @@
 		"card_city": ""
 		},
 		{
+		"id":"204",
+		"a_href":"nest-elite.html",
+		"card_title":"Nest Elite",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/nest-elite.jpeg",
+		"card_description":"Nest Elite, a residential development by Nest Homes Builders is located in Sholinganallur, Chennai South.",
+		"card_area":"Sholinganallur",
+		"card_city": "chennai"
+		},
+		{
 		"id":"203",
 		"a_href":"sidharth-pearl.html",
 		"card_title":"SIDHARTH PEARL",
