@@ -696,7 +696,7 @@ $(document).ready(function() {
         card_category = "cards";
     } else if (categoryName == "Interior/Renovation/Modular Kitchen") {
         card_category = "interior-cards";
-        card_limit_end = 4;
+        card_limit_end = 6;
     }
 
     
