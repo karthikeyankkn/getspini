@@ -10,6 +10,24 @@
 		"card_city": ""
 		},
 		{
+		"id":"6",
+		"a_href":"et-modularkitchen.html",
+		"card_title":"ET MODULAR KITCHEN ",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/et-mk4.jpg",
+		"card_description":"We have successfully accomplished various residential and commercial projects",
+		"card_area":"Chennai",
+		"card_city": "chennai"
+		},
+		{
+		"id":"5",
+		"a_href":"adorn.html",
+		"card_title":"Adorn",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/adorn1.jpg",
+		"card_description":"We sincerely hope that each and every client entering our company will find exactly what he/she is looking for.",
+		"card_area":"Chennai",
+		"card_city": "chennai"
+		},
+		{
 		"id":"4",
 		"a_href":"mutual-link-attractive-solutions.html",
 		"card_title":"Mutual Link Attractive Solutions",
@@ -31,7 +49,7 @@
 		"id":"2",
 		"a_href":"color-coat-interiors.html",
 		"card_title":"Color Coat Interiors",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/int-sp-1-1.jpg",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/color-coat-interiors.jpg",
 		"card_description":"We are into this industry for more than a decade and we give personalized service to our clients",
 		"card_area":"Chennai",
 		"card_city": "chennai"
@@ -40,7 +58,7 @@
 		"id":"1",
 		"a_href":"genx-windoors.html",
 		"card_title":"Genx Windoors",
-		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/int-sp-hyd-1.png",
+		"card_img": "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/genx-win.jpg",
 		"card_description":"GenX Windoors is a Trade Mark of Lakshmi Infraproperties (India) Pvt. Ltd., company established in 2010",
 		"card_area":"Hyderabad",
 		"card_city": "hyderabad"
