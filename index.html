@@ -555,10 +555,18 @@
     </div>
   </div>
 </section>
-
-
-
 <!-- post leads ends -->
+
+<!-- google map integration for land value starts -->
+<div class="container">
+  <div class="col-md-8">
+    <div id="map"></div>
+  </div>
+  <div class="col-md-4 gm_vl_container">
+    <ul></ul>
+  </div>
+</div>
+<!-- google map integration for land value ends -->
 
 <!-- footer content -->
 <footer>
@@ -708,5 +716,68 @@
   motionAI_Init('82734?color=CC5555&sendBtn=SEND&inputBox=Type%20something...&token=474dc0b49f03529eb625230aac09cc80',true,400,470,'https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/Chat-spini-2.png');
   /* You may also invoke motionAI_Open() to manually open the modal. */
 </script>
+
+<script>
+      var map, gm_lv_features;
+      // set map function
+      function setMap(lat, long, price){
+        // debugger
+        map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: new google.maps.LatLng(lat, long),
+        mapTypeId: 'roadmap'
+        });
+
+        if (price) {
+
+          gm_lv_features.forEach(function(feature) {
+            var infowindow = new google.maps.InfoWindow({
+              position: new google.maps.LatLng(feature.latitude, feature.longitude),
+              content: "₹ "+feature.price,
+            });
+            infowindow.open(map);
+          });
+
+          var infowindow = new google.maps.InfoWindow({
+            position: new google.maps.LatLng(lat,long),
+            content: "₹ "+price,
+          });
+          infowindow.open(map);
+        }
+      }
+
+
+      function initMap() {
+
+        //get request for gm_lv json 
+        $.get("../assets/js/v1.30.57/gm_land_value.json", function( data ) {
+          gm_lv_features = data.gm_lv_datas;
+
+          setMap(gm_lv_features[0].latitude, gm_lv_features[0].longitude);
+
+          gm_lv_features.forEach(function(feature) {
+            var infowindow = new google.maps.InfoWindow({
+              position: new google.maps.LatLng(feature.latitude, feature.longitude),
+              content: "₹ "+feature.price,
+            });
+            infowindow.open(map);
+
+            // onclick='setMap("+feature.latitude+","+feature.longitude+", "+feature.price+"
+            // append datas to list
+              $(".gm_vl_container ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"</h4><label>₹ "+feature.price+"/sq.ft</label</li>");
+          });
+          $(".gm_vl_container ul li:last").addClass("gm_vl_container_active");          
+        });
+      }
+
+      $(document).on('click', '.gm_vl_container ul li', function() {
+        $(this).addClass("gm_vl_container_active").siblings().removeClass("gm_vl_container_active");
+        setMap($(this).attr("latitude"), $(this).attr("longitude"), $(this).attr("price"));
+      });
+       $("div.gm-style-iw").siblings().hide();
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBboYGQty5SI60DqIpKaoLW3p_ZAv3NdF0&callback=initMap">
+    </script>
+    
 </body>
 </html>
