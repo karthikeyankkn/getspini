@@ -742,13 +742,13 @@
 
         if (price) {
 
-          gm_lv_features.forEach(function(feature) {
-            var infowindow = new google.maps.InfoWindow({
-              position: new google.maps.LatLng(feature.latitude, feature.longitude),
-              content: "₹ "+feature.price,
-            });
-            infowindow.open(map);
-          });
+          // gm_lv_features.forEach(function(feature) {
+          //   var infowindow = new google.maps.InfoWindow({
+          //     position: new google.maps.LatLng(feature.latitude, feature.longitude),
+          //     content: "₹ "+feature.price,
+          //   });
+          //   infowindow.open(map);
+          // });
 
           var infowindow = new google.maps.InfoWindow({
             position: new google.maps.LatLng(lat,long),
