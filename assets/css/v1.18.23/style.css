@@ -30,7 +30,6 @@ canvas {
     max-height: 600px;
     margin: auto
 }
-
 .mt-20 {
     margin-top: 2px
 }
@@ -2084,43 +2083,103 @@ html input[disabled] {
   border-bottom-right-radius: 25px;
   text-align: center;
   font-weight: bold;
+  z-index: 22000;
+  width: 80% !important;
+  left: 0 !important;
+  right: 0;
+  top: 9px !important;
+  margin: auto;
 }
 #map {
-    height: 300px;
+    height: 450px;
     width: 100%;
   }
   .gm_vl_container{
     background: #fff;
-    height: 300px;
+    padding: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 3px #888;
+    border-radius: 5px;
+  }
+  .gm_vl_list{
+    background: #fff;
+    height: 450px;
     padding: 0;
     overflow: auto;
+    border: 1px solid #f4d6d5;
   }
-  .gm_vl_container ul{
+  .gm_vl_list ul{
 
   }
-  .gm_vl_container ul li{
+  .gm_vl_list ul li{
     border-left: 5px solid transparent;
     padding-left: 7px;
     cursor: pointer;
   }
-  .gm_vl_container ul li:hover{
+  .gm_vl_list ul li:nth-child(even){
+    background: #d3d3d33d;
+  }
+  .gm_vl_list ul li:hover{
     border-color: #cc2f2a;
     /*background: #cc2f2a2b;*/
   }
-  .gm_vl_container_active{
+  .gm_vl_list_active{
     border-color: #cc2f2a !important;
-    background: #cc2f2a2b;
+    background: #cc2f2a2b !important;
   }
-  .gm_vl_container ul li h4{
+  .gm_vl_list ul li h4{
     margin: 0;
     color: #000;
     text-transform: uppercase;
     font-size: 18px;
     padding: 10px 0 5px;
   }
-  .gm_vl_container ul li label{
-    color: #cc2f2a;
+  .gm_vl_list ul li h4 a{
+    background: #cc2f2a;
+    color: #fff;
+    padding: 3px 10px;
+    font-weight: 100;
+    font-size: 12px;
+    float: right;
+    border-radius: 25px;
+    text-transform: capitalize;
+    margin: 0 10px;
+  }
+  .gm_vl_list ul li label{
+    color: rgba(0,0,0,.5);
     font-size: 14px;
+  }
+  .gm_vl_list ul li b{
+    padding: 0 10px;
+    float: right;
+    font-weight: 400;
+  }
+  .gm_lv_trend{
+    text-align: center;
+    margin: 10px 0 15px;
+  }
+  .gm_lv_trend li{
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background: #f4f4f4;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .gm_lv_trend li:hover{
+    background: #cc2f2a2b;
+  }
+  .gm_lv_trend_active{
+    background: #cc2f2a !important;
+    color: #fff;
+    transition: 0.5s ease;
+  }
+  .gm_lv_negative{
+   color: #cc2f2a;
+  }
+  .gm_lv_positive{
+    color: green;
   }
 /*land value style ends*/
 
@@ -2210,5 +2269,12 @@ html input[disabled] {
         height: 100px;
         display: block;
         margin: 0 auto 30px
+    }
+    .gm_lv_trend li{
+      margin: 5px;
+    }
+    .gm_vl_list, #map{
+      height: 200px;
+      margin-bottom: 10px;
     }
 }

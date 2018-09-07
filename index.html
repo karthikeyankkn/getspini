@@ -329,8 +329,31 @@
 </section>
 <!-- E-book  -->
 
+<!-- google map integration for land value starts -->
+ <h3 class="Spini-Projects">FEATURED LOCALITIES</h3>
+<div class="container gm_vl_container">
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="gm_lv_trend">
+        <li trend="all">All</li>
+        <li trend="popular">Popular</li>
+        <li trend="economical">Econamical</li>
+        <li trend="best_invesment">Best Invesment</li>
+        <li trend="luxury">Luxury</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-6 gm_vl_list">
+    <ul></ul>
+  </div>
+  <div class="col-md-6">
+    <div id="map"></div>
+  </div>
+</div>
+<!-- google map integration for land value ends -->
+
   <!-- Slider starts -->
-<body>
+
  <section>
     <div class="container slider-container1 mt-30">
       <h3 class="Spini-Projects">OUR SERVICES </h3>
@@ -557,17 +580,6 @@
 </section>
 <!-- post leads ends -->
 
-<!-- google map integration for land value starts -->
-<div class="container">
-  <div class="col-md-8">
-    <div id="map"></div>
-  </div>
-  <div class="col-md-4 gm_vl_container">
-    <ul></ul>
-  </div>
-</div>
-<!-- google map integration for land value ends -->
-
 <!-- footer content -->
 <footer>
   <section>
@@ -718,7 +730,7 @@
 </script>
 
 <script>
-      var map, gm_lv_features;
+      var map, gm_lv_features, gm_lv_trend;
       // set map function
       function setMap(lat, long, price){
         // debugger
@@ -748,7 +760,6 @@
 
 
       function initMap() {
-
         //get request for gm_lv json 
         $.get("../assets/js/v1.30.57/gm_land_value.json", function( data ) {
           gm_lv_features = data.gm_lv_datas;
@@ -762,19 +773,33 @@
             });
             infowindow.open(map);
 
-            // onclick='setMap("+feature.latitude+","+feature.longitude+", "+feature.price+"
             // append datas to list
-              $(".gm_vl_container ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"</h4><label>₹ "+feature.price+"/sq.ft</label</li>");
-          });
-          $(".gm_vl_container ul li:last").addClass("gm_vl_container_active");          
+              $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+          });         
         });
       }
 
-      $(document).on('click', '.gm_vl_container ul li', function() {
-        $(this).addClass("gm_vl_container_active").siblings().removeClass("gm_vl_container_active");
+      // click to view map
+      $(document).on('click', '.gm_vl_list ul li', function() {
+        $(this).addClass("gm_vl_list_active").siblings().removeClass("gm_vl_list_active");
         setMap($(this).attr("latitude"), $(this).attr("longitude"), $(this).attr("price"));
       });
-       $("div.gm-style-iw").siblings().hide();
+
+      // click trend show list
+      $(".gm_lv_trend li").click(function(){
+        gm_lv_trend = $(this).attr("trend");
+        $(".gm_vl_list ul li").remove();
+
+        gm_lv_features.forEach(function(feature) {
+          if(gm_lv_trend == feature.trend) {
+            $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+          }else if(gm_lv_trend == "all"){
+            $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+          }
+        });
+        $(this).addClass("gm_lv_trend_active").siblings().removeClass("gm_lv_trend_active");
+      });
+      $(".gm_lv_trend li:first").addClass("gm_lv_trend_active");
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBboYGQty5SI60DqIpKaoLW3p_ZAv3NdF0&callback=initMap">
     </script>
