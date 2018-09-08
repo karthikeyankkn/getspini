@@ -758,6 +758,9 @@
         }
       }
 
+      function append_list(feature){
+        $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+      }
 
       function initMap() {
         //get request for gm_lv json 
@@ -774,7 +777,7 @@
             infowindow.open(map);
 
             // append datas to list
-              $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+              append_list(feature);
           });         
         });
       }
@@ -792,9 +795,9 @@
 
         gm_lv_features.forEach(function(feature) {
           if(gm_lv_trend == feature.trend) {
-            $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+            append_list(feature);
           }else if(gm_lv_trend == "all"){
-            $(".gm_vl_list ul").append("<li latitude='"+feature.latitude+"' longitude='"+feature.longitude+"' price="+feature.price+" )'><h4>"+feature.location+"<a href='"+feature.link_href+"'>See Properties</a></h4><label>₹ "+feature.price+"/sq.ft</label><b class="+feature.stock_value_class+">"+feature.stock_value+"%</b></li>");
+            append_list(feature);
           }
         });
         $(this).addClass("gm_lv_trend_active").siblings().removeClass("gm_lv_trend_active");
