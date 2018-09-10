@@ -797,7 +797,7 @@
           if(gm_lv_trend == feature.trend) {
             append_list(feature);
           }else if(gm_lv_trend == "all"){
-            append_list(feature);
+            location.reload();
           }
         });
         $(this).addClass("gm_lv_trend_active").siblings().removeClass("gm_lv_trend_active");
