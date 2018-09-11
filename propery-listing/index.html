@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Basic Page Needs ================================================== -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+        <title>Spini - AARUDHRA ENCLAVE  Saravanampatti, Coimbatore</title>
+        <meta property="og:url" content="https://www.getspini.com/realestate/aarudhra-enclave-coimbatore.html" />
+        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/landing/aarudha.jpg" />
+        <meta name="description" content="AARUDHRAS DEVELOPERS as a distinct realty brand which is nonpareil in the annals of history of realty and property development in coimbatore region. AARUDHRAS DEVELOPERS should emerge as a synonym for realty and property development......">
+        <meta name="keywords" content="apartment for rent, apartment for sale, personal loan, flats for rent, flats for sale, jewel loan, packers and movers, catering service, homes for rent, property for sale, AARUDHRA ENCLAVE  Saravanampatti, Coimbatore">
+        <link rel="canonical" href="https://www.getspini.com/"/>
+        <meta name="" content="">
+        <!-- Mobile Specific Metas ================================================== -->
+
+  <!-- css files starts -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.23/style.css">
+   <!-- css files ends -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+   <script>
+     var index_page = false;
+     var categoryName = "Real Estate(Buying)"; var propertyName = '';
+   </script> 
+        
+</head>
+<body ng-app="plApp" >
+<!-- haader starts -->
+<header></header>
+<!-- haader ends -->
+
+<ng-view></ng-view>
+<!-- footer content -->
+<footer></footer>
+<!-- script files starts -->
+  <script src="../assets/js/lib/jquery.min.js"></script>
+  <script src="../assets/js/lib/bootstrap.min.js"></script>
+  <script src="../assets/js/v1.30.57/script.js"></script>
+
+ <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; left:0px; top:150px;">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_linkedin"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+
+<script>
+var app = angular.module("plApp", ["ngRoute"]);
+var vm = this;
+app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
+    
+    $http.get("../assets/js/v1.30.57/gm_land_value.json")
+    .then(function(response) {
+        $scope.propertyData = response.data.gm_lv_datas;
+    });
+
+    $scope.changeView = function(view, id){      
+            // $scope.fullData = $scope.propertyData[id];
+            $location.path(view+"/"+id); // path not hash
+    }
+
+    $scope.functionTwo = function(){
+      var id = $routeParams.id
+
+      var url = "https://api.spini.co/v1/home/campaigns?location_id=1";
+             $http.get(url).then(function(response) {
+              debugger
+               $scope.property_data = response.data.data[id].attributes.caption;
+              });
+      
+    }
+});
+// router
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "property-details.html"
+    })
+    .when("/:view/:id", {
+        templateUrl : "property-lead.html"
+    });
+});
+</script>
+</body>
+</html>
