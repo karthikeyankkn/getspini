@@ -72,6 +72,7 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     // debugger
     $http.get("http://localhost:3000/property_deals")
     .then(function(response) {
+      debugger
         $scope.propertyData = response.data;
     });
 
@@ -109,6 +110,37 @@ app.config(function($routeProvider) {
         templateUrl : "property-details.html"
     });
 });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".submit_gs_form").click(function(){
+      var data = {"lead_params": {
+                    "name": $("input[name=gs_name]").val(),
+                    "category": $("input[name=gs_category]").val(),
+                    "email": $("input[name=gs_email]").val(),
+                    "city": $('select[name=gs_city]').find(":selected").text(),
+                    "phone_number" : $("input[name=gs_ph_number]").val()
+                  }
+        };
+        $(".gs_loading, .bg-overlay").show();
+      $.ajax({
+        type: "POST",
+        url: "http://localhost:3000/post-lead",
+        header:{"content-type": "application/json"},
+        data: data,
+        success: function(data){
+              $(".gs_loading, .bg-overlay").hide();
+              window.location="/thankyou-pages/thankyoupage.html"; 
+            },
+
+            error: function(data){
+               alert("Please check all the fields");
+               $(".gs_loading, .bg-overlay").hide();
+            }
+      });       
+    });
+  });
 </script>
 </body>
 </html>
