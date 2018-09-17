@@ -1,0 +1,23 @@
+<section style="margin-top:100px;" ng-controller="plCtrl" ng-init="functionTwo()">
+  <!-- <ul ng-repeat="kkn in propertyData">
+    <li>{{kkn.location}} - {{kkn.trend}} - {{kkn.id}}</li>
+  </ul> -->
+  <div class="container">
+  	<div class="col-md-6">
+  		<img src="{{property_data.offer_img_url}}" alt="property_data.seo_url" width="100%">
+  	</div>
+  	<div class="col-md-6">
+  		<h2>{{property_data.title}}</h2>
+  		<p>{{property_data.offer_details}}</p>
+  		
+  		<p>{{property_data.address}}</p>
+  	</div>
+  	<div class="col-md-12">
+  		<uib-tabset active="active">
+		    <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}">
+		      {{tab.content}}
+		    </uib-tab>
+		  </uib-tabset>
+  	</div>
+  </div>
+</section>

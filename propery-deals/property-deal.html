@@ -1,0 +1,14 @@
+<section ng-controller="plCtrl" class="propety_deals">
+	<div class="pd-card-container container">
+		<div ng-repeat="item in propertyData" class="col-md-3 col-sm-6 col-xs-6 pd-card" ng-click="changeView(item.seo_url,item.id)">
+			<img src="{{item.offer_img_url}}" alt="item.seo_url">
+			<ul>
+				<li><h4>{{item.title}}</h4></li>
+				<li><p>{{item.offer_details}}</p></li>
+			</ul>			
+		</div>
+	</div>
+  <!-- <ul ng-repeat="item in propertyData">
+    <li ng-click="changeView(item.seo_url,item.id)">{{item.id}} - {{item.title}} - {{item.offer_details}} - {{item.address}} - {{kkn.seo_url}}</li>
+  </ul> -->
+</section>
