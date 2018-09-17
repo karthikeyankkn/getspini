@@ -2183,11 +2183,40 @@ html input[disabled] {
   }
 /*land value style ends*/
 
-/*pl styles starts*/
-.propety_leads{
-    margin-top: 60px;
+/*pd styles starts*/
+.propety_deals{
+    margin-top: 100px;
 }
-/*pl styles ends*/
+.pd-card{
+    
+}
+.pd-card ul{
+    background: #fff;
+    padding: 10px;
+}
+.pd-card img{
+    width: 100%;
+    height: 180px;
+}
+.pd-card ul li h4{
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.pd-card ul li p{
+    margin: 0;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+form.tab-form-demo .tab-pane {
+    margin: 20px 20px;
+  }
+  .tab-content{
+    padding: 10px;
+  }
+/*pd styles ends*/
 @media only screen and (max-width:500px) {
     .multiple-scratch-cards-container ul li span img,
     .spini-customers ul li a img {

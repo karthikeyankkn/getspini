@@ -22,8 +22,12 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.23/style.css">
    <!-- css files ends -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+  <!-- Angular js library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
    <script>
      var index_page = false;
@@ -56,13 +60,19 @@
 <!-- AddToAny END -->
 
 <script>
-var app = angular.module("plApp", ["ngRoute"]);
+  // jqurey
+  $(".tab-tabs li a").click(function(k) {
+      k.preventDefault();
+  });
+
+  // angular js
+var app = angular.module("plApp", ["ngRoute", 'ui.bootstrap']);
 var vm = this;
 app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
-    
-    $http.get("../assets/js/v1.30.57/gm_land_value.json")
+    // debugger
+    $http.get("http://localhost:3000/property_deals")
     .then(function(response) {
-        $scope.propertyData = response.data.gm_lv_datas;
+        $scope.propertyData = response.data;
     });
 
     $scope.changeView = function(view, id){      
@@ -73,22 +83,30 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     $scope.functionTwo = function(){
       var id = $routeParams.id
 
-      var url = "https://api.spini.co/v1/home/campaigns?location_id=1";
-             $http.get(url).then(function(response) {
-              debugger
-               $scope.property_data = response.data.data[id].attributes.caption;
-              });
-      
+      var url = "http://localhost:3000/property_deals/"+id;
+      $http.get(url).then(function(response) {
+         $scope.property_data = response.data;
+
+         $scope.tabs = [
+          { title:'About', content: $scope.property_data.about },
+          { title:'Description', content: $scope.property_data.description },
+          { title:'Terms', content: $scope.property_data.terms }
+        ];
+
+        $scope.model = {
+          name: 'Tabs'
+        };
+      }); 
     }
 });
 // router
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "property-details.html"
+        templateUrl : "property-deal.html"
     })
     .when("/:view/:id", {
-        templateUrl : "property-lead.html"
+        templateUrl : "property-details.html"
     });
 });
 </script>
