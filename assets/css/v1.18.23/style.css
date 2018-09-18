@@ -2188,11 +2188,13 @@ html input[disabled] {
     margin-top: 100px;
 }
 .pd-card{
-    
+    height: 260px;
+    margin-bottom: 10px;
 }
 .pd-card ul{
-    background: #fff;
+    background: #f0f0f2;
     padding: 10px;
+    box-shadow: 0px 2px 2px lightgrey;
 }
 .pd-card img{
     width: 100%;
@@ -2201,6 +2203,11 @@ html input[disabled] {
 .pd-card ul li h4{
     text-transform: capitalize;
     margin: 0 0 10px;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pd-card ul li p{
     margin: 0;
