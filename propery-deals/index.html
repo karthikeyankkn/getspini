@@ -33,6 +33,12 @@
      var index_page = false;
      var categoryName = "Real Estate(Buying)"; var propertyName = '';
    </script> 
+   <style type="text/css">
+     .carousel-control.left span, .carousel-control.right span{
+      line-height: 20px;
+      font-size: 20px;
+     }
+   </style>
         
 </head>
 <body ng-app="plApp" >
@@ -67,13 +73,62 @@
 
   // angular js
 var app = angular.module("plApp", ["ngRoute", 'ui.bootstrap']);
+  
 var vm = this;
 app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     // debugger
-    $http.get("http://localhost:3000/property_deals")
-    .then(function(response) {
-      debugger
+    $http.get("http://localhost:3000/property_deals").then(function(response) {
+      
         $scope.propertyData = response.data;
+
+        // banner code starts
+        $scope.myInterval = 5000;
+        $scope.noWrapSlides = false;
+        // $scope.active = 0;
+        var slides = $scope.slides = [];
+        var currIndex = 0;
+
+        $scope.addSlide = function(img,seourl,pdid) {
+          var newWidth = 600 + slides.length + 1;
+          slides.push({
+            image: img,
+            text: ['Nice image','I love that'],
+            id: currIndex++,
+            pd_id: pdid,
+            seo_url: seourl
+          });
+        };
+
+        $scope.randomize = function() {
+          var indexes = generateIndexesArray();
+          assignNewIndexesToSlides(indexes);
+        };
+
+        for (var i = 0; i < $scope.propertyData.length; i++) {
+          debugger
+          if ($scope.propertyData[i].banner_url != null) {
+            $scope.addSlide($scope.propertyData[i].banner_url, $scope.propertyData[i].seo_url, $scope.propertyData[i].id);
+          }
+          
+        }
+
+        // Randomize logic below
+
+        function assignNewIndexesToSlides(indexes) {
+          for (var i = 0, l = slides.length; i < l; i++) {
+            slides[i].id = indexes.pop();
+          }
+        }
+
+        function generateIndexesArray() {
+          var indexes = [];
+          for (var i = 0; i < currIndex; ++i) {
+            indexes[i] = i;
+          }
+          return shuffle(indexes);
+        }
+
+        // banner code ends
     });
 
     $scope.changeView = function(view, id){      
@@ -99,7 +154,10 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
         };
       }); 
     }
+
+
 });
+
 // router
 app.config(function($routeProvider) {
     $routeProvider
@@ -110,6 +168,7 @@ app.config(function($routeProvider) {
         templateUrl : "property-details.html"
     });
 });
+
 </script>
 
 <script type="text/javascript">

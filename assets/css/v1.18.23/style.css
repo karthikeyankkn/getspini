@@ -2217,6 +2217,9 @@ html input[disabled] {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.pd-card-container{
+    margin-top: 20px;
+}
 form.tab-form-demo .tab-pane {
     margin: 20px 20px;
   }
