@@ -38,6 +38,16 @@
       line-height: 20px;
       font-size: 20px;
      }
+     pre{
+      font-family: unset !important;
+      font-size: 16px !important;
+      background: unset !important;
+      border: none !important;
+      border-left: 4px solid #be403a !important;
+      margin: 20px 0 !important;
+      padding: 0px 15px !important;
+      width: max-content !important;
+     }
    </style>
         
 </head>
@@ -146,7 +156,8 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
          $scope.tabs = [
           { title:'About', content: $scope.property_data.about },
           { title:'Description', content: $scope.property_data.description },
-          { title:'Terms', content: $scope.property_data.terms }
+          { title:'Terms', content: $scope.property_data.terms },
+          { title:'Address', content: $scope.property_data.address }
         ];
 
         $scope.model = {
