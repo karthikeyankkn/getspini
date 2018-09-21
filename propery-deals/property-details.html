@@ -8,14 +8,46 @@
   	</div>
   	<div class="col-md-6">
   		<h2>{{property_data.title}}</h2>
-  		<p>{{property_data.offer_details}}</p>
-  		
-  		<p>{{property_data.address}}</p>
+  		<pre>{{property_data.offer_details}}</pre>
+  		<!-- model for contact us -->
+  		<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Contact Us</button>
+			<!-- Modal -->
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">Contact us</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form class="gs_form_container">
+			        	<li><input type="text" class="form-control" placeholder="Enter Name" name="gs_name" required></li>
+			        	<li><input type="number" class="form-control" placeholder="Enter Phone Number" name="gs_ph_number" required></li>
+			        	<li><input type="email" class="form-control" placeholder="Enter Email" name="gs_email" required></li>
+			        	<li><input type="hidden" class="form-control" placeholder="Enter Name" name="gs_category" value="{{property_data.title}}"></li>
+			        	<li>
+			        		<select class="form-control"   name="gs_city" required >
+			              <option  value="" selected>Select City</option>
+			              <option value="Chennai">Chennai</option>
+			              <option value="Coimbatore">Coimbatore</option>
+			              <option value="Bangalore">Bangalore</option>
+			              <option value="Hyderabad">Hyderabad</option>                   
+			            </select>
+			        	</li>
+			        	<li><button class="btn btn-danger submit_gs_form">Submit</button></li>
+			        </form>
+			      </div>
+			    </div>
+
+			  </div>
+			</div>
   	</div>
   	<div class="col-md-12">
   		<uib-tabset active="active">
 		    <uib-tab index="$index + 1" ng-repeat="tab in tabs" heading="{{tab.title}}">
-		      {{tab.content}}
+		      <p><pre>{{tab.content}}</pre></p>
 		    </uib-tab>
 		  </uib-tabset>
   	</div>

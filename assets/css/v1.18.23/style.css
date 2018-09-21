@@ -2188,11 +2188,13 @@ html input[disabled] {
     margin-top: 100px;
 }
 .pd-card{
-    
+    height: 260px;
+    margin-bottom: 10px;
 }
 .pd-card ul{
-    background: #fff;
+    background: #f0f0f2;
     padding: 10px;
+    box-shadow: 0px 2px 2px lightgrey;
 }
 .pd-card img{
     width: 100%;
@@ -2201,6 +2203,11 @@ html input[disabled] {
 .pd-card ul li h4{
     text-transform: capitalize;
     margin: 0 0 10px;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .pd-card ul li p{
     margin: 0;
@@ -2210,11 +2217,32 @@ html input[disabled] {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.pd-card-container{
+    margin-top: 20px;
+}
 form.tab-form-demo .tab-pane {
     margin: 20px 20px;
   }
   .tab-content{
     padding: 10px;
+  }
+  .gs_form_container{
+
+  }
+  .gs_form_container li{
+    margin: 10px 0;
+    text-align: center;
+  }
+  .gs_loading{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 20%;
+    z-index: 2000;
   }
 /*pd styles ends*/
 @media only screen and (max-width:500px) {
