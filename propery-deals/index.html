@@ -87,7 +87,7 @@ var app = angular.module("plApp", ["ngRoute", 'ui.bootstrap']);
 var vm = this;
 app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     // debugger
-    $http.get("http://localhost:3000/property_deals").then(function(response) {
+    $http.get("https://getspini-backend.herokuapp.com/property_deals").then(function(response) {
       
         $scope.propertyData = response.data;
 
@@ -149,7 +149,7 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     $scope.functionTwo = function(){
       var id = $routeParams.id
 
-      var url = "http://localhost:3000/property_deals/"+id;
+      var url = "https://getspini-backend.herokuapp.com/property_deals/"+id;
       $http.get(url).then(function(response) {
          $scope.property_data = response.data;
 
@@ -196,7 +196,7 @@ app.config(function($routeProvider) {
         $(".gs_loading, .bg-overlay").show();
       $.ajax({
         type: "POST",
-        url: "http://localhost:3000/post-lead",
+        url: "https://getspini-backend.herokuapp.com/post-lead/",
         header:{"content-type": "application/json"},
         data: data,
         success: function(data){
