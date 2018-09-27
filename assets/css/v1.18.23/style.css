@@ -986,6 +986,7 @@ footer p {
 }
 
 .spini-contact-form p input,
+select, .spini-contact-form form input,
 select {
     border: 1px solid #ddd;
     color: #000;
@@ -2243,6 +2244,17 @@ form.tab-form-demo .tab-pane {
     margin: 0 auto;
     width: 20%;
     z-index: 2000;
+  }
+
+  /*ccv style*/
+  .ccv_popup_heading{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .ccv_popup_image{
+    display: block;
+    margin: auto;
   }
 /*pd styles ends*/
 @media only screen and (max-width:500px) {
