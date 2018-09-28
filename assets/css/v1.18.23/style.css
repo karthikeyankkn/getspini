@@ -999,7 +999,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     height: 50px!important;
-    border-radius: 0!important;
+    border-radius: 0;
     background: #fff
 }
 
@@ -2255,6 +2255,18 @@ form.tab-form-demo .tab-pane {
   .ccv_popup_image{
     display: block;
     margin: auto;
+  }
+  .send_sw_data{
+    max-width: 150px;
+    margin: auto;
+    border-radius: 25px !important;
+  }
+  .ccv_share_button{
+    line-height: 32px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    max-width: 200px;
   }
 /*pd styles ends*/
 @media only screen and (max-width:500px) {

@@ -64,7 +64,10 @@
                 <input type="text" name="Name" placeholder="Enter name">
                 <input type="number" name="Phone Number" placeholder="Enter phone number">
                 <!-- <input type="email" name="email" placeholder="Enter email"> -->
-                <input type="submit" value="Send" class="send_sw_data"> 
+                <input type="hidden" name="_subject" value="Spini ccv lead" / required>
+                <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" / required>
+                <input type="hidden" name="_next" value="/realestate/spini_ccv.html" />
+                <input type="submit" value="Send" class="send_sw_data btn btn-danger"> 
             </form>
           </div>
           <div class="spini-poup-nav">
@@ -168,7 +171,15 @@
         <div class="modal-body">
           <h3 class="ccv_popup_heading"></h3>
           <img src="" class="ccv_popup_image">
-          <a href="https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2Flocalhost%3A8080%2Frealestate%2Fspini_ccv.html&linkname=Spini%20-%20Spin%20wheel%20for%20chekka%20chivantha%20vanam&linknote=" class="btn btn-primary">Share</a>
+          <!-- AddToAny BEGIN -->
+          <div class="a2a_kit a2a_kit_size_32 a2a_default_style ccv_share_button">
+          <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_google_plus"></a>
+          </div>
+          <script async src="https://static.addtoany.com/menu/page.js"></script>
+          <!-- AddToAny END -->
         </div>
       </div>
     </div>
@@ -182,18 +193,7 @@
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
   <script src="../assets/js/v1.30.57/script.js"></script>
-
- <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; left:0px; top:150px;">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_google_plus"></a>
-<a class="a2a_button_whatsapp"></a>
-<a class="a2a_button_linkedin"></a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
-
+  
   <script>
     var sw_price;
     // Create new wheel object specifying the parameters at creation time.
