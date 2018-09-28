@@ -9,12 +9,12 @@
   <!-- Basic Page Needs ================================================== -->
         
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
-        <title>Spini - Chekka Chivantha Vaanam Tickets</title>
+        <title>Win CCV Tickets - Spin the Wheel - Spini</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
-        <meta property="og:url" content="https://www.getspini.com/realestate/win-movie-tickets.html" />
-        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" / class="og_img">
-        <meta name="description" content="Find out which character from CCV you are with our exceptional tool! Spini is in the business of Real Estate, Interiors, and Loans! " class="og_description">
+        <meta property="og:url" content="https://www.getspini.com/realestate/win-movie-tickets.html">
+        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" class="og_img">
+        <meta name="description" content="Find out which character from CCV you are with our exceptional tool! Spini is in the business of Real Estate, Interiors, and Loans!  #CCV #Spini #MadrasTalkies #GetSpini #Facebook #SonyMusic #RealEstate #Interior #Loans" class="og_description">
         <meta name="keywords" content="CCV, Spini, MadrasTalkies, GetSpini, Facebook, SonyMusic, RealEstate, Interior, Loans ">
         <link rel="canonical" href="https://www.getspini.com/"/>
         <meta name="" content="">
@@ -56,7 +56,7 @@
     </div>
     <button>Book site vist to claim prize</button>
   </div>
-  <button id="spin_button" class="btn btn-danger sw-open-popup">Spin</button>
+  <button id="spin_button" class="btn btn-danger sw-open-popup">Spin the wheel</button>
 
            <!--  <td width="318" height="418" class="" align="center" valign="center">
               <canvas id="canvas" width="315" height="418"></canvas>
@@ -75,9 +75,10 @@
                 <input type="number" name="Phone Number" placeholder="Enter phone number" required min="10">
                 <!-- <input type="email" name="email" placeholder="Enter email"> -->
                 <input type="hidden" name="_subject" value="Spini ccv lead" / required>
-                <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" / required>
-                <input type="hidden" name="_next" value="/realestate/spini_ccv.html" />
-                <input type="submit" value="Send" class="send_sw_data btn btn-danger"> 
+                <input type="hidden" name="_cc" value="anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com, contact@spinircle.com, joshua.simon@spinircle.com, intern3.spini@gmail.com" / required>
+                <input type="hidden" name="_next" value="/realestate/win-movie-tickets.html" />
+                <input type="submit" value="Send" class="send_sw_data btn btn-danger" style="background: #622728;
+    color: #fff;"> 
             </form>
           </div>
           <div class="spini-poup-nav">
@@ -398,14 +399,14 @@
         $(".wmt_lable").text(wmt_lable);
 
         $(".og_img").attr("content", sw_coupon_image);
-        $(".og_description").attr("content", wmt_lable);
+        // $(".og_description").attr("content", wmt_lable);
     }
     
 
     
 
     $(".sw-open-popup").click(function(){
-      $(".toggle-page-container").fadeIn();
+      $(".toggle-page-container, .bg-overlay").fadeIn();
     });
 
     $(".sw-cliam-prize button").click(function(){

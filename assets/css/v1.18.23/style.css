@@ -2283,9 +2283,12 @@ form.tab-form-demo .tab-pane {
     background: #692124;
     color: #fff;
     margin: 10px auto;
-    padding: 5px 20px;
+    padding: 10px 50px
     border-radius: 25px;
     display: block;
+  }
+  .toggle-page-container{
+    height: unset !important;
   }
 /*pd styles ends*/
 @media only screen and (max-width:500px) {
