@@ -13,8 +13,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
         <meta property="og:url" content="https://www.getspini.com/realestate/win-movie-tickets.html" />
-        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" />
-        <meta name="description" content="">
+        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" / class="og_img">
+        <meta name="description" content="" class="og_description">
         <meta name="keywords" content="">
         <link rel="canonical" href="https://www.getspini.com/"/>
         <meta name="" content="">
@@ -47,16 +47,16 @@
   </div>
 </div>
   <div style="margin-top: 5px;" class="container sw-container sw-cliam-prize">
-    <h1>Which CCV movie character are you?</h1>
+    <h1>Get to know which CCV Character You Are! Spin the Wheel!</h1>
     <div class="col-md-6">
       <img style="margin-top: 30px;" src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" alt="CCV images" width="100%">
     </div>
     <div class="col-md-6 the_wheel">
-      <canvas id="canvas" width="315" height="418"></canvas>
+      <canvas id="canvas" width="350" height="418"></canvas>
     </div>
     <button>Book site vist to claim prize</button>
   </div>
-  <button id="spin_button" class="sw-open-popup">Spin</button>
+  <button id="spin_button" class="btn btn-danger sw-open-popup">Spin</button>
 
            <!--  <td width="318" height="418" class="" align="center" valign="center">
               <canvas id="canvas" width="315" height="418"></canvas>
@@ -71,8 +71,8 @@
           <h2>You are just a step away</h2>
           <div class="spini-contact-form">
             <form action="https://formspree.io/karthikeyan@spinircle.com" method="POST">
-                <input type="text" name="Name" placeholder="Enter name">
-                <input type="number" name="Phone Number" placeholder="Enter phone number">
+                <input type="text" name="Name" placeholder="Enter name" required>
+                <input type="number" name="Phone Number" placeholder="Enter phone number" required min="10">
                 <!-- <input type="email" name="email" placeholder="Enter email"> -->
                 <input type="hidden" name="_subject" value="Spini ccv lead" / required>
                 <input type="hidden" name="_cc" value="another@email.com,yetanother@email.com" / required>
@@ -176,11 +176,13 @@
       <div class="modal-content">
         <div class="modal-header text-center">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+          <!-- <h4 class="modal-title">Modal Header</h4> -->
         </div>
         <div class="modal-body">
           <h3 class="ccv_popup_heading"></h3>
           <img src="" class="ccv_popup_image">
+          <p class="wmt_lable"></p>
+          <p class="wmt_share_txt">Share it with your friends right now and make them jealous!</p>
           <!-- AddToAny BEGIN -->
           <div class="a2a_kit a2a_kit_size_32 a2a_default_style ccv_share_button">
           <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
@@ -205,7 +207,7 @@
   <script src="../assets/js/v1.30.57/script.js"></script>
   
   <script>
-    var sw_price;
+    var sw_price, wmt_lable;
     // Create new wheel object specifying the parameters at creation time.
     var theWheel = new Winwheel({
         'numSegments'       : 8,         // Specify number of segments.
@@ -223,14 +225,14 @@
         'textFillStyle'     : 'white',
         'segments'     :                // Define segments.
         [
-           {'text' : 'one_more_spin'},//One More Spin
-           {'text' : 'free_registration_coupon'},//Free Registration
-           {'text' : 'better_luck_next_time'},//Better Luck Next Time
-           {'text' : 'free_naturals_vouchers'},//Free Naturals Voucher
-           {'text' : 'bathtub_coupon'},//Jacuzzi Bathtub Free
-           {'text' : 'modular_kitchen_coupon'},//Free Modular Kitchen
-           {'text' : 'free_pickup_and_drop'},//Free Pickup & Drop
-           {'text' : 'wall_coupon'} //Free Textured Wall
+           {'text' : 'Thiyagu'},//One More Spin
+           {'text' : 'Rasool'},//Free Registration
+           {'text' : 'Chitra'},//Better Luck Next Time
+           {'text' : 'Renu'},//Free Naturals Voucher
+           {'text' : 'Parvathi'},//Jacuzzi Bathtub Free
+           {'text' : 'Chaya'},//Free Modular Kitchen
+           {'text' : 'Ethi'},//Free Pickup & Drop
+           {'text' : 'Varathan'} //Free Textured Wall
            
         ],
         'animation' :                   // Specify the animation to use.
@@ -253,7 +255,7 @@
     }
 
     // Set the image source, once complete this will trigger the onLoad callback (above).
-    loadedImg.src = "../assets/images/spin-wheel/sw.png";
+    loadedImg.src = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/ccv-character-spini.png";
 
 
 
@@ -361,39 +363,42 @@
         debugger
         sw_price = indicatedSegment.text;
         var sw_coupon_image;
-        if (sw_price == "one_more_spin") {
-          alert("Do One more spin");
-          resetWheel();
-          startSpin();
-        }else if(sw_price == "better_luck_next_time"){
-          alert("Sorry better luck next time");
-          location.reload();
-        }else if(sw_price == "free_registration_coupon"){
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/free_registration_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
-        }else if(sw_price == "free_naturals_vouchers"){
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/naturals_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
+        if (sw_price == "Thiyagu") {
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Thyagu.JPG";
+          wmt_lable = "Uber Cool, Suave, Handsome";
+        }else if(sw_price == "Rasool"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Rasool.JPG";
+          wmt_lable = "Smart, Calm, Friendly";
+        }else if(sw_price == "Chitra"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Chitra.JPG";
+          wmt_lable = "Homely, Affectionate, Humble";
+        }else if(sw_price == "Renu"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Renu.JPG";
+          wmt_lable = "Soft, Calm, Loving";
         }
-        else if(sw_price == "bathtub_coupon"){
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/bathtub_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
+        else if(sw_price == "Parvathi"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Parvathi.JPG";
+          wmt_lable = "Beautiful, Gorgeous";
         }
-        else if(sw_price == "modular_kitchen_coupon"){
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/modular_kitchen_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
+        else if(sw_price == "Chaya"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Chaya.JPG";
+          wmt_lable = "Hippy, Fun-Loving";
         }
-        else if(sw_price == "free_pickup_and_drop"){
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/pickup_drop_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
-        }else if (sw_price == "wall_coupon") {
-          sw_coupon_image = "https://www.getspini.com/assets/images/scratch-card/wall_coupon.jpg";
-          // alert("Congratz.. You Have won " + sw_price +"<img src="+sw_coupon_image+" />");
+        else if(sw_price == "Ethi"){
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Ethi.JPG";
+          wmt_lable = "Mass, Classy, Stylish";
+        }else if (sw_price == "Varathan") {
+          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Varathan.JPG";
+          wmt_lable = "Gangster, Playboy, Powerful";
         }
         localStorage.setItem("coupon_image", sw_coupon_image);
         $("#spini_ccv_Modal").modal('toggle');
         $(".ccv_popup_heading").text(sw_price);
         $(".ccv_popup_image").attr("src", sw_coupon_image);
+        $(".wmt_lable").text(wmt_lable);
+
+        $(".og_img").attr("content", sw_coupon_image);
+        $(".og_description").attr("content", wmt_lable);
     }
     
 
@@ -461,7 +466,7 @@
     });
     var sw_state = window.sessionStorage.getItem("sw_rotate_state");
     if (sw_state == "true") {
-      // window.sessionStorage.setItem("sw_rotate_state", false);
+      window.sessionStorage.setItem("sw_rotate_state", false);
       startSpin();
     }
   </script>

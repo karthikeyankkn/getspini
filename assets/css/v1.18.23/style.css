@@ -2268,6 +2268,25 @@ form.tab-form-demo .tab-pane {
     text-align: center;
     max-width: 200px;
   }
+  .wmt_lable{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #692124;
+  }
+  .wmt_share_txt{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #spin_button{
+    background: #692124;
+    color: #fff;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border-radius: 25px;
+    display: block;
+  }
 /*pd styles ends*/
 @media only screen and (max-width:500px) {
     .multiple-scratch-cards-container ul li span img,
