@@ -21,7 +21,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.23/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.24/style.css">
    <!-- css files ends -->
   <script>
     var index_page = false;
@@ -414,7 +414,7 @@
 <!-- script files starts -->
   <script src="../assets/js/lib/jquery.min.js"></script>
   <script src="../assets/js/lib/bootstrap.min.js"></script>
-  <script src="../assets/js/v1.30.57/script.js"></script>
+  <script src="../assets/js/v1.30.58/script.js"></script>
 
  <div class="a2a_kit a2a_kit_size_32 a2a_vertical_style" style="position:fixed; right:0px; top:150px;">
 <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
@@ -447,7 +447,7 @@
 
   // function to print output
   function rpcc_display_output(rpcc_id){
-    $.get("../assets/js/v1.30.57/rpcc.json", function( data ) {
+    $.get("../assets/js/v1.30.58/rpcc.json", function( data ) {
       rpcc_data = data;
       // debugger
       for(var i = 0; i < rpcc_data.rpcc.length; i++){
@@ -489,7 +489,7 @@
     $(this).siblings(".rpcc_property").children().remove();
 
     // http get request
-    $.get("../assets/js/v1.30.57/rpcc.json", function( data ) {
+    $.get("../assets/js/v1.30.58/rpcc.json", function( data ) {
       rpcc_data = data;
       temp_this.siblings(".rpcc_property").append("<option disabled>Select Property</option>");
       

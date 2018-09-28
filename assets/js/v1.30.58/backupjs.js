@@ -702,7 +702,7 @@ $(document).ready(function() {
     
 
     function get_json(index) {
-        $.get("../assets/js/v1.30.57/" + card_category + ".json", function(data, status) {
+        $.get("../assets/js/v1.30.58/" + card_category + ".json", function(data, status) {
             // debugger
             cards = data.cards;
             cards = cards.reverse();
