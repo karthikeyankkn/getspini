@@ -13,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" type="image/png" href="../assets/images/favicon.png">
         <meta property="og:url" content="https://www.getspini.com/realestate/win-movie-tickets.html">
-        <meta property="og:image" content="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" class="og_img">
+        <meta property="og:image" content="https://www.getspini.com/assets/images/ccv_img/1Chekka_Chivantha_Vaanam.jpg" class="og_img">
         <meta name="description" content="Find out which character from CCV you are with our exceptional tool! Spini is in the business of Real Estate, Interiors, and Loans!  #CCV #Spini #MadrasTalkies #GetSpini #Facebook #SonyMusic #RealEstate #Interior #Loans" class="og_description">
         <meta name="keywords" content="CCV, Spini, MadrasTalkies, GetSpini, Facebook, SonyMusic, RealEstate, Interior, Loans ">
         <link rel="canonical" href="https://www.getspini.com/"/>
@@ -51,11 +51,11 @@
     <div class="col-md-6">
       <img style="margin-top: 30px;" src="https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/1Chekka_Chivantha_Vaanam.jpg" alt="CCV images" width="100%">
       <h4><b>Term & Condition</b></h4>
-     <p> *By simply spinning the wheel it does not guarantee that you’ll win the tickets for sure.</p>
+     <p> *Spinning the wheel and getting the tickets is subject to a selection process.</p>
       <p>*The selection process is random and we will be announcing the winners shortly.</p>
     <p>*We are not liable for any other information that has been posted on this website. </p>
     <p>*CCV and all other trademarks are properties of Madras Talkies Pvt Ltd. All rights reserved. </p>
-
+    <p>*One person is limited to two tickets only.</p>
     </div>
     <div class="col-md-6 the_wheel">
       <canvas id="canvas" width="350" height="418"></canvas>
@@ -262,7 +262,7 @@
     }
 
     // Set the image source, once complete this will trigger the onLoad callback (above).
-    loadedImg.src = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/ccv-character-spini.png";
+    loadedImg.src = "../assets/images/ccv_img/ccv-character-spini.png";
 
 
 
@@ -371,31 +371,31 @@
         sw_price = indicatedSegment.text;
         var sw_coupon_image;
         if (sw_price == "Thiyagu") {
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Thyagu.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Thyagu.JPG";
           wmt_lable = "Uber Cool, Suave, Handsome";
         }else if(sw_price == "Rasool"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Rasool.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Rasool.JPG";
           wmt_lable = "Smart, Calm, Friendly";
         }else if(sw_price == "Chitra"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Chitra.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Chitra.JPG";
           wmt_lable = "Homely, Affectionate, Humble";
         }else if(sw_price == "Renu"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Renu.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Renu.JPG";
           wmt_lable = "Soft, Calm, Loving";
         }
         else if(sw_price == "Parvathi"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Parvathi.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Parvathi.JPG";
           wmt_lable = "Beautiful, Gorgeous";
         }
         else if(sw_price == "Chaya"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Chaya.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Chaya.JPG";
           wmt_lable = "Hippy, Fun-Loving";
         }
         else if(sw_price == "Ethi"){
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Ethi.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Ethi.JPG";
           wmt_lable = "Mass, Classy, Stylish";
         }else if (sw_price == "Varathan") {
-          sw_coupon_image = "https://s3-ap-southeast-1.amazonaws.com/cdn.getspini.com/ccv/Varathan.JPG";
+          sw_coupon_image = "../assets/images/ccv_img/Varathan.JPG";
           wmt_lable = "Gangster, Playboy, Powerful";
         }
         localStorage.setItem("coupon_image", sw_coupon_image);
