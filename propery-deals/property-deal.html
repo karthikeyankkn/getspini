@@ -2,7 +2,7 @@
 	<!-- banner images -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<div>
 		    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
 		      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
 		        <img ng-src="{{slide.image}}" style="margin:auto; width: 100%;" ng-click="changeView(slide.seo_url,slide.pd_id)">
@@ -14,32 +14,20 @@
 		    </div>
 		  </div>
 		</div>
-	  <!-- <div class="row">
-	    <div class="col-md-6">
-	      <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
-	      <button type="button" class="btn btn-info" ng-click="randomize()">Randomize slides</button>
-	      <div class="checkbox">
-	        <label>
-	          <input type="checkbox" ng-model="noWrapSlides">
-	          Disable Slide Looping
-	        </label>
-	      </div>
-	    </div>
-	    <div class="col-md-6">
-	      Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval">
-	      <br />Enter a negative number or 0 to stop the interval.
-	    </div>
-	  </div>
-	</div> -->
-	<!-- list card -->
-	<div class="row">
-		<div class="pd-card-container container">
-			<div ng-repeat="item in propertyData" class="col-md-3 col-sm-6 col-xs-6 pd-card" ng-click="changeView(item.seo_url,item.id)">
-				<img ng-src="{{item.offer_img_url}}" alt="item.seo_url">
+		<div class="row">
+			<div class="pdc-container">
 				<ul>
-					<li><h4>{{item.title}}</h4></li>
-					<li><p>{{item.offer_details}}</p></li>
-				</ul>			
+					<li ng-repeat="item in propertyData" class="col-md-12 col-xs-6 col-sm-6">
+						<div class="col-md-4" style="padding: 0">
+							<img ng-src="{{item.offer_img_url}}" alt="item.seo_url">
+						</div>
+						<div class="col-md-8">
+							<h3>{{item.title}}</h3>
+							<pre>{{item.offer_details}}</pre>
+							<button ng-click="changeView(item.seo_url,item.id)" class="btn btn-danger">GET DEAL</button>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
