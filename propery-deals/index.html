@@ -82,12 +82,21 @@
   });
 
   // angular js
+var apiUrl;
 var app = angular.module("plApp", ["ngRoute", 'ui.bootstrap']);
+
+if (location.host == "localhost:8080") {
+  apiUrl = "http://localhost:3000/";
+}else if(location.host == "staging.getspini.com"){
+  apiUrl = "http://13.233.38.238/";
+}else{
+  apiUrl = "http://13.233.38.238/";
+}
   
 var vm = this;
 app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     // debugger
-    $http.get("http://localhost:3000/property_deals").then(function(response) {
+    $http.get(apiUrl+"property_deals").then(function(response) {
       
         $scope.propertyData = response.data;
 
@@ -149,7 +158,7 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     $scope.functionTwo = function(){
       var id = $routeParams.id
 
-      var url = "http://localhost:3000/property_deals/"+id;
+      var url = apiUrl+"property_deals/"+id;
       $http.get(url).then(function(response) {
          $scope.property_data = response.data;
 
@@ -197,7 +206,7 @@ app.config(function($routeProvider) {
         $(".gs_loading, .bg-overlay").show();
       $.ajax({
         type: "POST",
-        url: "http://localhost:3000/post-lead",
+        url: apiUrl+"post-lead",
         header:{"content-type": "application/json"},
         data: data,
         success: function(data){
