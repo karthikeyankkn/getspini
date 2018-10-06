@@ -340,7 +340,7 @@
         </span>
       </li>
     </ul>
-    <button class="rpcc_get_ids" data-toggle="modal" data-target="#rpccModal">Compare</button>
+    <button class="rpcc_get_ids" data-toggle="modal">Compare</button>
   </div>
 </section>
 <!-- rpcc output codes starts here-->
@@ -516,7 +516,8 @@
       }
     }
       window.sessionStorage.setItem("rpcc_ids_items", JSON.stringify(rpcc_ids));
-
+      // remove reload for get user details
+      location.reload();
   });
   rpcc_storedArray = JSON.parse(sessionStorage.getItem("rpcc_ids_items"));//no brackets
   if (rpcc_storedArray) {
