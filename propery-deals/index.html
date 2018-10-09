@@ -88,9 +88,9 @@ var app = angular.module("plApp", ["ngRoute", 'ui.bootstrap']);
 if (location.host == "localhost:8080") {
   apiUrl = "http://localhost:3000/";
 }else if(location.host == "staging.getspini.com"){
-  apiUrl = "http://sbackend.getspini.com/";
+  apiUrl = "https://sbackend.getspini.com/";
 }else{
-  apiUrl = "http://sbackend.getspini.com/";
+  apiUrl = "https://backend.getspini.com/";
 }
   
 var vm = this;
