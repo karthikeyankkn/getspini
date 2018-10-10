@@ -175,9 +175,31 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
       }); 
     }
 
-
+    $scope.submit_lead = function(){
+      var lead_data = {"lead_params": {
+                    "name": $scope.lead.name,
+                    "category": $scope.lead.category = document.getElementById("category").value,
+                    "email": $scope.lead.email,
+                    "city": $scope.lead.city,
+                    "phone_number" : $scope.lead.phone_number
+                    }
+                  };
+                  debugger
+      $http({
+        method: 'POST',
+        url: apiUrl+"leads",
+        data: lead_data
+      });
+      window.location="/thankyou-pages/thankyoupage.html";
+    }
+    
 });
 
+// services
+app.config(function ($httpProvider, $httpParamSerializerJQLikeProvider){
+    $httpProvider.defaults.transformRequest.unshift($httpParamSerializerJQLikeProvider.$get());
+    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=utf-8';    
+});
 // router
 app.config(function($routeProvider) {
     $routeProvider
@@ -206,7 +228,7 @@ app.config(function($routeProvider) {
         $(".gs_loading, .bg-overlay").show();
       $.ajax({
         type: "POST",
-        url: apiUrl+"post-lead",
+        url: apiUrl+"leads",
         header:{"content-type": "application/json"},
         data: data,
         success: function(data){
@@ -218,7 +240,8 @@ app.config(function($routeProvider) {
                alert("Please check all the fields");
                $(".gs_loading, .bg-overlay").hide();
             }
-      });       
+      }); 
+
     });
   });
 </script>
