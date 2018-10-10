@@ -206,7 +206,7 @@ app.config(function($routeProvider) {
         $(".gs_loading, .bg-overlay").show();
       $.ajax({
         type: "POST",
-        url: apiUrl+"post-lead",
+        url: apiUrl+"leads",
         header:{"content-type": "application/json"},
         data: data,
         success: function(data){
