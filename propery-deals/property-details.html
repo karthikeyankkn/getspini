@@ -23,12 +23,12 @@
 			      </div>
 			      <div class="modal-body">
 			        <form class="gs_form_container">
-			        	<li><input type="text" class="form-control" placeholder="Enter Name" name="gs_name" required></li>
-			        	<li><input type="number" class="form-control" placeholder="Enter Phone Number" name="gs_ph_number" required></li>
-			        	<li><input type="email" class="form-control" placeholder="Enter Email" name="gs_email" required></li>
-			        	<li><input type="hidden" class="form-control" placeholder="Enter Name" name="gs_category" value="{{property_data.title}}"></li>
+			        	<li><input type="text" class="form-control" placeholder="Enter Name" name="gs_name" required ng-model="lead.name"></li>
+			        	<li><input type="number" class="form-control" placeholder="Enter Phone Number" name="gs_ph_number" required ng-model="lead.phone_number"></li>
+			        	<li><input type="email" class="form-control" placeholder="Enter Email" name="gs_email" required ng-model="lead.email"></li>
+			        	<li><input type="hidden" class="form-control" name="gs_category" value="{{property_data.title}}" id="category"></li>
 			        	<li>
-			        		<select class="form-control"   name="gs_city" required >
+			        		<select class="form-control"   name="gs_city" required ng-model="lead.city">
 			              <option  value="" selected>Select City</option>
 			              <option value="Chennai">Chennai</option>
 			              <option value="Coimbatore">Coimbatore</option>
@@ -36,7 +36,7 @@
 			              <option value="Hyderabad">Hyderabad</option>                   
 			            </select>
 			        	</li>
-			        	<li><button class="btn btn-danger submit_gs_form">Submit</button></li>
+			        	<li><button class="btn btn-danger" ng-click="submit_lead()">Submit</button></li>
 			        </form>
 			      </div>
 			    </div>
