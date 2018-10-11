@@ -124,7 +124,7 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
         };
 
         for (var i = 0; i < $scope.propertyData.length; i++) {
-          debugger
+          // debugger
           if ($scope.propertyData[i].banner_url != "") {
             $scope.addSlide($scope.propertyData[i].banner_url, $scope.propertyData[i].seo_url, $scope.propertyData[i].id);
           }
