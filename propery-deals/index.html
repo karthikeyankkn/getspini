@@ -158,7 +158,7 @@ app.controller('plCtrl', function($scope, $http, $location, $routeParams) {
     $scope.functionTwo = function(){
       var id = $routeParams.id
 
-      var url = apiUrl+"property_deals/"+id;
+      var url = apiUrl+"property_deals_show_json/"+id;
       $http.get(url).then(function(response) {
          $scope.property_data = response.data;
 
