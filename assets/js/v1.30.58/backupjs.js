@@ -91,8 +91,11 @@ $(document).ready(function() {
     // debugger
     if (location.hostname == "staging.getspini.com" || location.hostname == "localhost") {
         ApiEndPoint = 'https://sapi.getspini.com:8443';
+        AccessKey = "fghjfghjertyuhjkbnmsdfghjqwert";
+
     } else {
         ApiEndPoint = 'https://api.getspini.com:8443';
+        AccessKey = "OoO522HFEj2W8kOUYezrWSzp0t12sCQ8gOGeQh";
     }
     // ApiEndPoint = 'https://sapi.getspini.com:8443';
 
@@ -329,7 +332,7 @@ $(document).ready(function() {
             type: "POST",
             headers: {
                 'Content-Type': 'application/json',
-                'X-SPIN-API-ACCESS-TOKEN': 'OoO522HFEj2W8kOUYezrWSzp0t12sCQ8gOGeQh'
+                'X-SPIN-API-ACCESS-TOKEN': AccessKey
             },
             data: JSON.stringify(data),
             success: function(response) {
