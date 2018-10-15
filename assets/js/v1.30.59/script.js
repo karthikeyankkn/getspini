@@ -673,13 +673,13 @@ $(document).ready(function() {
     });
     $('.home-page-categories li:nth-child(1)').click();
     var i = 2;
-    // var interval = setInterval(function() {
-    //     $('.home-page-categories li:nth-child(' + i + ')').click();
-    //     i++;
-    //     if (i > 3) {
-    //         i = 1;
-    //     }
-    // }, 5000);
+    var interval = setInterval(function() {
+        $('.home-page-categories li:nth-child(' + i + ')').click();
+        i++;
+        if (i > 3) {
+            i = 1;
+        }
+    }, 5000);
 
 
     // script files for banner page ends
