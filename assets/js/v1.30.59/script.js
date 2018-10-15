@@ -374,7 +374,7 @@ $(document).ready(function() {
         $(".success-contact, .loading_image").fadeIn();
         setTimeout(function() {
             // location.reload();
-            window.location.href = '../thankyou-pages/thankyoupage-template.html';
+            window.location.href = '../thankyou-pages/thankyoupage.html';
         }, 3000);
         $(".submit").hide();
     }
