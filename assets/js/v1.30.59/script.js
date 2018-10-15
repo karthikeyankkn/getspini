@@ -91,8 +91,11 @@ $(document).ready(function() {
     // debugger
     if (location.hostname == "staging.getspini.com" || location.hostname == "localhost") {
         ApiEndPoint = 'https://sapi.getspini.com:8443';
+        AccessKey = "fghjfghjertyuhjkbnmsdfghjqwert";
+
     } else {
         ApiEndPoint = 'https://api.getspini.com:8443';
+        AccessKey = "OoO522HFEj2W8kOUYezrWSzp0t12sCQ8gOGeQh";
     }
     // ApiEndPoint = 'https://sapi.getspini.com:8443';
 
@@ -329,7 +332,7 @@ $(document).ready(function() {
             type: "POST",
             headers: {
                 'Content-Type': 'application/json',
-                'X-SPIN-API-ACCESS-TOKEN': 'OoO522HFEj2W8kOUYezrWSzp0t12sCQ8gOGeQh'
+                'X-SPIN-API-ACCESS-TOKEN': AccessKey
             },
             data: JSON.stringify(data),
             success: function(response) {
@@ -371,7 +374,7 @@ $(document).ready(function() {
         $(".success-contact, .loading_image").fadeIn();
         setTimeout(function() {
             // location.reload();
-            window.location.href = '../thankyou-pages/thankyoupage-template.html';
+            window.location.href = '../thankyou-pages/thankyoupage.html';
         }, 3000);
         $(".submit").hide();
     }
@@ -702,7 +705,7 @@ $(document).ready(function() {
     
 
     function get_json(index) {
-        $.get("../assets/js/v1.30.58/" + card_category + ".json", function(data, status) {
+        $.get("../assets/js/v1.30.59/" + card_category + ".json", function(data, status) {
             // debugger
             cards = data.cards;
             cards = cards.reverse();
@@ -926,38 +929,39 @@ $(document).ready(function() {
     // emi script end
 
 
-    // temporary typeform for realestate
+    // temporary typeform for realestate -------------------------------------  STARTS
     
-    var append_form_realestate = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/yxPRFr" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>'
+    // var append_form_realestate = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/yxPRFr" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>'
 
-    var append_form_loan = ' <div class="typeform-widget" data-url="https://spini.typeform.com/to/ygLYob" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
+    // var append_form_loan = ' <div class="typeform-widget" data-url="https://spini.typeform.com/to/ygLYob" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
 
-    var append_form_nest = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/m626rA" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
+    // var append_form_nest = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/m626rA" data-transparency="50" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
 
-    var append_form_interior = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/YVkxqW" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
+    // var append_form_interior = '<div class="typeform-widget" data-url="https://spini.typeform.com/to/YVkxqW" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>'
     // debugger
-    if (index_page == false) {
-        if (categoryName == "Real Estate(Buying)") {
-            if (propertyName == 'nest') {
-                $('.contact-us ul').hide();
-                $('.contact-us').append(append_form_nest);
-            } else {
-                $('.contact-us ul').hide();
-                $('.contact-us').append(append_form_realestate);
-            }
+    // if (index_page == false) {
+    //     if (categoryName == "Real Estate(Buying)") {
+    //         if (propertyName == 'nest') {
+    //             $('.contact-us ul').hide();
+    //             $('.contact-us').append(append_form_nest);
+    //         } else {
+    //             $('.contact-us ul').hide();
+    //             $('.contact-us').append(append_form_realestate);
+    //         }
 
-        } else if (categoryName == "loan_emi_calculator") {
-            categoryName = 'Loans';
-            calculate_emi();
-        } else if (categoryName == 'Loans') {
-            $('.contact-us ul').hide();
-            $('.contact-us').append(append_form_loan);
-        }else if (categoryName == 'Interior/Renovation/Modular Kitchen') {
-            $('.contact-us ul').hide();
-            $('.contact-us').append(append_form_interior);
-        }
-    }
+    //     } else if (categoryName == "loan_emi_calculator") {
+    //         categoryName = 'Loans';
+    //         calculate_emi();
+    //     } else if (categoryName == 'Loans') {
+    //         $('.contact-us ul').hide();
+    //         $('.contact-us').append(append_form_loan);
+    //     }else if (categoryName == 'Interior/Renovation/Modular Kitchen') {
+    //         $('.contact-us ul').hide();
+    //         $('.contact-us').append(append_form_interior);
+    //     }
+    // }
 
+    // temporary typeform for realestate -------------------------------------  ENDS
 
 
 

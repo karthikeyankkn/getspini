@@ -14,7 +14,7 @@
   <!-- css files starts -->
   <link rel="stylesheet" type="text/css" href="../assets/css/lib/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.24/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/v1.18.25/style.css">
    <!-- css files ends -->
 
   <script type="text/javascript">
@@ -68,7 +68,7 @@
               <input type="submit" id="submit-ebook" value="Download Ebook" />
             </li>
           </ul>
-          <input type="hidden" name="_next" value="../thankyou-pages/thankyoupage-template.html" />
+          <input type="hidden" name="_next" value="../thankyou-pages/thankyoupage.html" />
           <!-- <input type="hidden" name="_cc" value="karthikeyan@spinircle.com, anand.kumar@spinircle.com, anuradha.v@spinircle.com, shabuddeen@spinircle.com" /> -->
         </div>
       </div>
@@ -79,7 +79,7 @@
 <!-- script files starts -->
   <script type="text/javascript" src="../assets/js/lib/jquery.min.js"></script>
   <script type="text/javascript" src="../assets/js/lib/bootstrap.min.js"></script>
-  <script type="text/javascript" src="../assets/js/v1.30.58/script.js"></script>
+  <script type="text/javascript" src="../assets/js/v1.30.59/script.js"></script>
 
   <script type="text/javascript">
     // download ebook script
@@ -98,7 +98,7 @@
           var name = $("input[name='name']").val();
           var ph_number = $("input[name='ph_number']").val();
           var city = $("select[name='city']").val();
-          var next = "../thankyou-pages/thankyoupage-template.html";
+          var next = "../thankyou-pages/thankyoupage.html";
           // debugger
           $.ajax({
               url: "https://formspree.io/contact@getspini.com", 
@@ -115,7 +115,7 @@
 
           setTimeout(function(){ 
             // location.reload();
-            window.location.href = '../thankyou-pages/thankyoupage-template.html';
+            window.location.href = '../thankyou-pages/thankyoupage.html';
           }, 1000);
         }
           
